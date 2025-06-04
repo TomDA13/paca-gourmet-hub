@@ -30,13 +30,13 @@ const ServicesSection = () => {
               </div>
               <CardTitle className="text-xl text-primary">Viandes & Poissons</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3 flex-1">
-              <div className="text-sm text-gray-700">
-                <p className="font-medium mb-2">• Bœuf en race à viande HVE et BIO</p>
-                <p className="font-medium mb-2">• Porc plein air des Alpes et de la Crau HVE et BIO</p>
-                <p className="font-medium mb-2">• Agneau du Lubéron et de La Crau HVE et BIO</p>
-                <p className="font-medium mb-2">• Volailles Label Rouge et BIO</p>
-                <p className="font-medium mb-2">• Taureau de Camargue AOP</p>
+            <CardContent className="space-y-3 flex-1 text-center">
+              <div className="text-base text-gray-700">
+                <p className="font-medium mb-3">• Bœuf en race à viande HVE et BIO</p>
+                <p className="font-medium mb-3">• Porc plein air des Alpes et de la Crau HVE et BIO</p>
+                <p className="font-medium mb-3">• Agneau du Lubéron et de La Crau HVE et BIO</p>
+                <p className="font-medium mb-3">• Volailles Label Rouge et BIO</p>
+                <p className="font-medium mb-3">• Taureau de Camargue AOP</p>
                 <p className="font-medium">• Loup du Frioul BIO</p>
               </div>
             </CardContent>
@@ -50,11 +50,11 @@ const ServicesSection = () => {
               </div>
               <CardTitle className="text-xl text-primary">Produits laitiers & Œufs</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3 flex-1">
-              <div className="text-sm text-gray-700">
-                <p className="font-medium mb-2">• Fromage blanc, crème et yaourt (100g, 1kg, 5kg)</p>
-                <p className="font-medium mb-2">• Fromages pasteurisés ou au lait cru à la découpe</p>
-                <p className="font-medium mb-2">• Œufs 100% plein air ou BIO (coquille ou coulé)</p>
+            <CardContent className="space-y-3 flex-1 text-center">
+              <div className="text-base text-gray-700">
+                <p className="font-medium mb-3">• Fromage blanc, crème et yaourt (100g, 1kg, 5kg)</p>
+                <p className="font-medium mb-3">• Fromages pasteurisés ou au lait cru à la découpe</p>
+                <p className="font-medium mb-3">• Œufs 100% plein air ou BIO (coquille ou coulé)</p>
                 <p className="font-medium">• Beurre, lait...</p>
               </div>
             </CardContent>
@@ -68,29 +68,29 @@ const ServicesSection = () => {
               </div>
               <CardTitle className="text-xl text-primary">Fruits & Légumes</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3 flex-1">
-              <div className="text-sm text-gray-700">
-                <p className="font-medium mb-2 text-green-600">De saison uniquement !</p>
-                <p className="font-medium mb-2">• 1ère et 4ème gamme avec calibres adaptés</p>
+            <CardContent className="space-y-3 flex-1 text-center">
+              <div className="text-base text-gray-700">
+                <p className="font-medium mb-3 text-green-600">De saison uniquement !</p>
+                <p className="font-medium mb-3">• 1ère et 4ème gamme avec calibres adaptés</p>
                 <p className="font-medium">• Récoltés à juste maturité pour vos jours de consommation</p>
               </div>
             </CardContent>
           </Card>
 
-          {/* Et aussi... */}
+          {/* Épicerie */}
           <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Wheat className="w-8 h-8 text-white" />
               </div>
-              <CardTitle className="text-xl text-primary">Et aussi...</CardTitle>
+              <CardTitle className="text-xl text-primary">Épicerie</CardTitle>
             </CardHeader>
-            <CardContent className="flex-1">
+            <CardContent className="flex-1 text-center">
               <div className="space-y-3">
-                <div className="text-sm text-gray-700">
-                  <p className="font-medium mb-2">• Légumineuses équitables</p>
-                  <p className="font-medium mb-2">• Farines BIO, Riz de Camargue IGP</p>
-                  <p className="font-medium mb-2">• Confitures, Miel IGP</p>
+                <div className="text-base text-gray-700">
+                  <p className="font-medium mb-3">• Légumineuses équitables</p>
+                  <p className="font-medium mb-3">• Farines BIO, Riz de Camargue IGP</p>
+                  <p className="font-medium mb-3">• Confitures, Miel IGP</p>
                   <p className="font-medium">• Conserves, Jus HVE...</p>
                 </div>
               </div>
