@@ -39,9 +39,9 @@ const Header = () => {
             <a href="#actualites" className="text-gray-700 hover:text-primary transition-colors">
               Actualités
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">
+            <Button className="bg-secondary hover:bg-secondary/90 text-white">
               Contact
-            </a>
+            </Button>
           </nav>
 
           {/* Mobile menu button */}
@@ -69,9 +69,9 @@ const Header = () => {
               <a href="#actualites" className="text-gray-700 hover:text-primary transition-colors">
                 Actualités
               </a>
-              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">
+              <Button className="bg-secondary hover:bg-secondary/90 text-white w-fit">
                 Contact
-              </a>
+              </Button>
             </div>
           </div>
         )}
