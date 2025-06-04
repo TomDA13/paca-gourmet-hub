@@ -14,11 +14,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-primary/40"></div>
       </div>
 
-      {/* Floating elements */}
-      <div className="absolute top-32 right-16 w-24 h-24 bg-secondary/20 rounded-full animate-pulse"></div>
-      <div className="absolute bottom-32 left-16 w-32 h-32 bg-primary/20 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
-      <div className="absolute top-64 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">

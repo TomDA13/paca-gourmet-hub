@@ -49,8 +49,13 @@ const TestimonialsSection = () => {
   }, [api]);
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="relative py-16 bg-white overflow-hidden">
+      {/* Floating elements */}
+      <div className="absolute top-20 right-16 w-28 h-28 bg-primary/15 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-20 left-16 w-24 h-24 bg-secondary/15 rounded-full animate-pulse" style={{animationDelay: '1.8s'}}></div>
+      <div className="absolute top-1/3 left-1/4 w-20 h-20 bg-accent/60 rounded-full animate-pulse" style={{animationDelay: '0.7s'}}></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Témoignages
