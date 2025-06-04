@@ -20,8 +20,8 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Grille principale avec toutes les sections */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-16">
+        {/* Grille 2x2 avec les 4 sections principales */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Viandes & Poissons */}
           <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary">
             <CardHeader className="text-center pb-4">
@@ -77,63 +77,31 @@ const ServicesSection = () => {
             </CardContent>
           </Card>
 
-          {/* Et aussi... - maintenant intégré dans la grille */}
-          <Card className="lg:col-span-2 bg-gradient-to-br from-amber-50 to-amber-100 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-l-amber-500">
+          {/* Et aussi... */}
+          <Card className="bg-gradient-to-br from-amber-50 to-amber-100 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-l-amber-500">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Wheat className="w-8 h-8 text-white" />
               </div>
-              <CardTitle className="text-2xl text-primary">Et aussi...</CardTitle>
+              <CardTitle className="text-xl text-primary">Et aussi...</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-white/70 p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-2">Légumineuses</h4>
-                  <p className="text-sm text-gray-600">Équitables</p>
+              <div className="grid grid-cols-1 gap-3">
+                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-primary mb-1 text-sm">Légumineuses</h4>
+                  <p className="text-xs text-gray-600">Équitables</p>
                 </div>
-                <div className="bg-white/70 p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-2">Farines & Céréales</h4>
-                  <p className="text-sm text-gray-600">Farines BIO, Riz de Camargue IGP, Semoules/pâtes BIO</p>
+                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-primary mb-1 text-sm">Farines & Céréales</h4>
+                  <p className="text-xs text-gray-600">Farines BIO, Riz de Camargue IGP</p>
                 </div>
-                <div className="bg-white/70 p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-2">Épicerie Fine</h4>
-                  <p className="text-sm text-gray-600">Confitures au chaudron, Tartinables, Miel IGP et Label Rouge</p>
+                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-primary mb-1 text-sm">Épicerie Fine</h4>
+                  <p className="text-xs text-gray-600">Confitures, Miel IGP</p>
                 </div>
-                <div className="bg-white/70 p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-2">Conserves & Jus</h4>
-                  <p className="text-sm text-gray-600">Conserves, Jus HVE...</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Process de Livraison - maintenant dans la grille */}
-          <Card className="bg-gradient-to-br from-primary/10 to-secondary/10 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-l-primary">
-            <CardHeader className="text-center pb-4">
-              <CardTitle className="text-xl text-primary">Process de Livraison</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="flex flex-col items-center text-center space-y-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold shadow-md">1</div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1 text-sm">Commande & Planning</h4>
-                  <p className="text-gray-600 text-xs">Plateforme en ligne ou contact commercial dédié</p>
-                </div>
-              </div>
-              
-              <div className="flex flex-col items-center text-center space-y-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold shadow-md">2</div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1 text-sm">Préparation & Conditionnement</h4>
-                  <p className="text-gray-600 text-xs">Respect de la chaîne du froid et normes HACCP</p>
-                </div>
-              </div>
-              
-              <div className="flex flex-col items-center text-center space-y-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 text-white rounded-full flex items-center justify-center font-bold shadow-md">3</div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1 text-sm">Livraison Express</h4>
-                  <p className="text-gray-600 text-xs">24h à 48h selon zones, créneaux adaptés</p>
+                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-primary mb-1 text-sm">Conserves & Jus</h4>
+                  <p className="text-xs text-gray-600">Conserves, Jus HVE...</p>
                 </div>
               </div>
             </CardContent>
