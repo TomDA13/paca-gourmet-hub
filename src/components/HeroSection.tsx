@@ -38,9 +38,6 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-
-      {/* Diagonal transition */}
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-r from-accent via-white to-accent transform skew-y-1 origin-bottom-left"></div>
     </section>
   );
 };
