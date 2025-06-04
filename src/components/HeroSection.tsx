@@ -30,7 +30,7 @@ const HeroSection = () => {
           <img 
             src="/lovable-uploads/3c8f6a3d-67be-497f-b393-06800f4b4b47.png" 
             alt="Badge 100 valeurs du Sud" 
-            className="w-20 h-20 md:w-24 md:h-24 opacity-90"
+            className="w-28 h-28 md:w-32 md:h-32 opacity-90"
           />
         </div>
       </div>
