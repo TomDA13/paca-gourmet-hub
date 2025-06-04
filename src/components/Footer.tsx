@@ -17,7 +17,7 @@ const Footer = () => {
               Les vrais produits de nos régions PACA. Approvisionnement direct pour professionnels 
               de la restauration collective et commerciale.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
@@ -28,29 +28,33 @@ const Footer = () => {
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
+            <div className="text-gray-300 space-y-1">
+              <p>07 82 35 21 27</p>
+              <p>contact@localizz.fr</p>
+            </div>
           </div>
 
-          {/* Services */}
+          {/* Pages */}
           <div>
-            <h4 className="font-semibold mb-4">Nos Services</h4>
+            <h4 className="font-semibold mb-4">Pages</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">Viandes & Charcuteries</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Fruits & Légumes</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Poissons & Fruits de Mer</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Épicerie Fine</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Livraison Express</a></li>
+              <li><a href="#mission" className="hover:text-white transition-colors">Notre Mission</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Nos Services</a></li>
+              <li><a href="#commitments" className="hover:text-white transition-colors">Nos Engagements</a></li>
+              <li><a href="#about" className="hover:text-white transition-colors">À Propos</a></li>
+              <li><a href="#news" className="hover:text-white transition-colors">Actualités</a></li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Informations */}
           <div>
             <h4 className="font-semibold mb-4">Informations</h4>
             <ul className="space-y-2 text-gray-300">
+              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Média</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Mentions Légales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Conditions Générales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Politique de Confidentialité</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">RGPD</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Plan du Site</a></li>
             </ul>
           </div>
         </div>
