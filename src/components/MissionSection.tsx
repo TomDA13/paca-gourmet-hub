@@ -1,4 +1,3 @@
-
 const MissionSection = () => {
   return (
     <section id="mission" className="relative py-20 bg-gradient-to-br from-accent to-white overflow-hidden">
@@ -50,9 +49,6 @@ const MissionSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Diagonal transition */}
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-white transform -skew-y-1 origin-bottom-right"></div>
     </section>
   );
 };

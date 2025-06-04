@@ -1,12 +1,8 @@
-
 import { Button } from '@/components/ui/button';
 
 const ServicesSection = () => {
   return (
     <section id="services" className="relative py-20 bg-gradient-to-bl from-white via-gray-50 to-accent/30 overflow-hidden">
-      {/* Decorative wave */}
-      <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-r from-white via-accent/50 to-white transform skew-y-1 origin-top-left"></div>
-      
       {/* Floating elements */}
       <div className="absolute top-20 right-10 w-32 h-32 bg-secondary/20 rounded-full animate-pulse"></div>
       <div className="absolute bottom-20 left-10 w-24 h-24 bg-primary/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -105,9 +101,6 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Diagonal transition */}
-      <div className="absolute bottom-0 right-0 w-full h-20 bg-primary transform skew-y-1 origin-bottom-left"></div>
     </section>
   );
 };
