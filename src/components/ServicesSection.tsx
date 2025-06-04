@@ -1,11 +1,10 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Beef, Fish, Egg, Apple, Wheat, Droplets, ArrowRight } from 'lucide-react';
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="relative py-20 bg-gradient-to-bl from-white via-gray-50 to-accent/30 overflow-hidden">
+    <section id="services" className="relative py-20 bg-accent overflow-hidden">
       {/* Floating elements */}
       <div className="absolute top-20 right-10 w-32 h-32 bg-secondary/20 rounded-full animate-pulse"></div>
       <div className="absolute bottom-20 left-10 w-24 h-24 bg-primary/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -23,7 +22,7 @@ const ServicesSection = () => {
         {/* Grille 2x2 avec les 4 sections principales */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Viandes & Poissons */}
-          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Beef className="w-8 h-8 text-white" />
@@ -43,7 +42,7 @@ const ServicesSection = () => {
           </Card>
 
           {/* Produits laitiers et Œufs */}
-          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Droplets className="w-8 h-8 text-white" />
@@ -61,7 +60,7 @@ const ServicesSection = () => {
           </Card>
 
           {/* Fruits & Légumes */}
-          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Apple className="w-8 h-8 text-white" />
@@ -78,7 +77,7 @@ const ServicesSection = () => {
           </Card>
 
           {/* Épicerie */}
-          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Wheat className="w-8 h-8 text-white" />
