@@ -27,13 +27,11 @@ const CommitmentsSection = () => {
 
         {/* Carte géographique */}
         <div className="flex justify-center mb-12">
-          <div className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-all duration-300">
-            <img 
-              src="/lovable-uploads/1c09120e-1a27-4f58-8f8d-804a42bc8898.png" 
-              alt="Carte de notre zone d'intervention" 
-              className="max-w-xs md:max-w-sm h-auto rounded-lg"
-            />
-          </div>
+          <img 
+            src="/lovable-uploads/1c09120e-1a27-4f58-8f8d-804a42bc8898.png" 
+            alt="Carte de notre zone d'intervention" 
+            className="max-w-md md:max-w-lg h-auto"
+          />
         </div>
 
         {/* Bouton En savoir plus */}
