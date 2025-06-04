@@ -20,7 +20,7 @@ const HeroSection = () => {
           Les vrais produits de nos régions
         </h1>
         <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-          Approvisionnement direct auprès des producteurs locaux de PACA pour vos cuisines centrales, cantines d'entreprise et restaurants professionnels
+          La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.4s'}}>
           <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
