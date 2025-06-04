@@ -1,4 +1,6 @@
 
+import { Linkedin, Facebook, Instagram } from 'lucide-react';
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-white py-12">
@@ -17,13 +19,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                LinkedIn
+                <Linkedin className="w-6 h-6" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Facebook
+                <Facebook className="w-6 h-6" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                Instagram
+                <Instagram className="w-6 h-6" />
               </a>
             </div>
           </div>
