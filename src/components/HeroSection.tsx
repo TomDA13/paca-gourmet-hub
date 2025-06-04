@@ -9,7 +9,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png')",
-          backgroundPosition: "center 50%"
+          backgroundPosition: "center 55%"
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-primary/50"></div>
@@ -30,7 +30,7 @@ const HeroSection = () => {
           <img 
             src="/lovable-uploads/3c8f6a3d-67be-497f-b393-06800f4b4b47.png" 
             alt="Badge 100 valeurs du Sud" 
-            className="w-28 h-28 md:w-32 md:h-32 opacity-90"
+            className="w-32 h-32 md:w-36 md:h-36 opacity-90"
           />
         </div>
       </div>
