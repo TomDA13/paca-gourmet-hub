@@ -37,6 +37,26 @@ const PartnersSection = () => {
     {
       name: "Mille et un repas",
       logo: "/lovable-uploads/56ecd2f6-29f5-4808-b86c-cb1c0d3041e8.png"
+    },
+    {
+      name: "Le Loubatas",
+      logo: "/lovable-uploads/d9ab88e7-3454-4a2f-8484-8f0cd434f783.png"
+    },
+    {
+      name: "AC Sent de Provence",
+      logo: "/lovable-uploads/18916636-2083-4611-a0a3-3740630fabfc.png"
+    },
+    {
+      name: "Auriol",
+      logo: "/lovable-uploads/e8d0e64f-1c18-49ea-ac70-fe2928d8b2f1.png"
+    },
+    {
+      name: "Les Pennes-Mirabeau",
+      logo: "/lovable-uploads/b2652914-24e9-4ada-b7c5-1c70e2fb789e.png"
+    },
+    {
+      name: "Rouet Vert",
+      logo: "/lovable-uploads/69064758-c886-46e2-be2d-7ec10f654e5f.png"
     }
   ];
 
