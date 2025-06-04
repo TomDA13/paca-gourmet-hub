@@ -31,11 +31,6 @@ const TargetAudienceSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
             Avec qui nous travaillons
           </h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Vous êtes un <strong>PROFESSIONNEL DE LA RESTAURATION COLLECTIVE (SCOLAIRE, ENTREPRISE, ÉTABLISSEMENT DE SANTÉ)</strong>, 
-            de la <strong>RESTAURATION COMMERCIALE</strong>, un <strong>HÔTEL</strong> et vous souhaitez vous engager pour la planète 
-            en faisant des économies ? Découvrez comment nous pouvons vous accompagner.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
