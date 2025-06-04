@@ -1,6 +1,7 @@
 
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
+import TargetAudienceSection from '@/components/TargetAudienceSection';
 import PartnersSection from '@/components/PartnersSection';
 import MissionSection from '@/components/MissionSection';
 import ServicesSection from '@/components/ServicesSection';
@@ -14,6 +15,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <TargetAudienceSection />
       <PartnersSection />
       <MissionSection />
       <ServicesSection />
