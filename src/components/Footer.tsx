@@ -38,11 +38,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Pages</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#mission" className="hover:text-white transition-colors">Notre Mission</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Nos Services</a></li>
-              <li><a href="#commitments" className="hover:text-white transition-colors">Nos Engagements</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">À Propos</a></li>
-              <li><a href="#news" className="hover:text-white transition-colors">Actualités</a></li>
+              <li><a href="#notre-offre" className="hover:text-white transition-colors">Notre Offre</a></li>
+              <li><a href="#nos-engagements" className="hover:text-white transition-colors">Nos Engagements</a></li>
+              <li><a href="#qui-sommes-nous" className="hover:text-white transition-colors">Qui Sommes Nous</a></li>
+              <li><a href="#actualites" className="hover:text-white transition-colors">Actualités</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 

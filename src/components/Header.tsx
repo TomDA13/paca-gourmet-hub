@@ -27,24 +27,21 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#mission" className="text-gray-700 hover:text-primary transition-colors">
-              Notre Mission
+            <a href="#notre-offre" className="text-gray-700 hover:text-primary transition-colors">
+              Notre Offre
             </a>
-            <a href="#services" className="text-gray-700 hover:text-primary transition-colors">
-              Nos Services
-            </a>
-            <a href="#commitments" className="text-gray-700 hover:text-primary transition-colors">
+            <a href="#nos-engagements" className="text-gray-700 hover:text-primary transition-colors">
               Nos Engagements
             </a>
-            <a href="#about" className="text-gray-700 hover:text-primary transition-colors">
-              À Propos
+            <a href="#qui-sommes-nous" className="text-gray-700 hover:text-primary transition-colors">
+              Qui Sommes Nous
             </a>
-            <a href="#news" className="text-gray-700 hover:text-primary transition-colors">
+            <a href="#actualites" className="text-gray-700 hover:text-primary transition-colors">
               Actualités
             </a>
-            <Button className="bg-secondary hover:bg-secondary/90 text-white">
+            <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">
               Contact
-            </Button>
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -60,24 +57,21 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-4">
-              <a href="#mission" className="text-gray-700 hover:text-primary transition-colors">
-                Notre Mission
+              <a href="#notre-offre" className="text-gray-700 hover:text-primary transition-colors">
+                Notre Offre
               </a>
-              <a href="#services" className="text-gray-700 hover:text-primary transition-colors">
-                Nos Services
-              </a>
-              <a href="#commitments" className="text-gray-700 hover:text-primary transition-colors">
+              <a href="#nos-engagements" className="text-gray-700 hover:text-primary transition-colors">
                 Nos Engagements
               </a>
-              <a href="#about" className="text-gray-700 hover:text-primary transition-colors">
-                À Propos
+              <a href="#qui-sommes-nous" className="text-gray-700 hover:text-primary transition-colors">
+                Qui Sommes Nous
               </a>
-              <a href="#news" className="text-gray-700 hover:text-primary transition-colors">
+              <a href="#actualites" className="text-gray-700 hover:text-primary transition-colors">
                 Actualités
               </a>
-              <Button className="bg-secondary hover:bg-secondary/90 text-white w-fit">
+              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">
                 Contact
-              </Button>
+              </a>
             </div>
           </div>
         )}
