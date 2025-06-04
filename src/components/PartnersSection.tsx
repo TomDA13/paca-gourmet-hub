@@ -83,7 +83,7 @@ const PartnersSection = () => {
             Ils nous font confiance
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            NOUS COLLABORONS AVEC DES COMMUNES & COLLECTIVITÉS ET DES PROFESSIONNELS ENGAGÉS DE LA RESTAURATION COLLECTIVE (SCOLAIRE, ENTREPRISE, SANTÉ) & DE LA RESTAURATION COMMERCIALE
+            Nous collaborons avec des communes, collectivités et professionnels de la restauration collective et commerciale
           </p>
         </div>
 
