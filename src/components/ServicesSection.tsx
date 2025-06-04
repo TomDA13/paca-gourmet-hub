@@ -143,7 +143,7 @@ const ServicesSection = () => {
         {/* Bouton CTA en bas */}
         <div className="text-center">
           <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-12">
-            Demander un devis personnalisé
+            Rejoignez-nous
           </Button>
         </div>
       </div>
