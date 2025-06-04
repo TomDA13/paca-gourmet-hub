@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
@@ -65,7 +64,7 @@ const PartnersSection = () => {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 3000); // Défilement automatique toutes les 3 secondes
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [api]);
@@ -100,11 +99,11 @@ const PartnersSection = () => {
               {partners.map((partner, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <div className="p-4">
-                    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 h-32 flex items-center justify-center group hover:scale-105">
+                    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 h-40 flex items-center justify-center group hover:scale-105">
                       <img
                         src={partner.logo}
                         alt={`Logo ${partner.name}`}
-                        className="max-h-20 max-w-full object-contain transition-all duration-300"
+                        className="max-h-28 max-w-full object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
