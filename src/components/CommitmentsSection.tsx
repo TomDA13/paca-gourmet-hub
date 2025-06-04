@@ -25,6 +25,17 @@ const CommitmentsSection = () => {
           </div>
         </div>
 
+        {/* Carte géographique */}
+        <div className="flex justify-center mb-12">
+          <div className="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-all duration-300">
+            <img 
+              src="/lovable-uploads/1c09120e-1a27-4f58-8f8d-804a42bc8898.png" 
+              alt="Carte de notre zone d'intervention" 
+              className="max-w-xs md:max-w-sm h-auto rounded-lg"
+            />
+          </div>
+        </div>
+
         {/* Bouton En savoir plus */}
         <div className="text-center">
           <Button 
@@ -32,7 +43,7 @@ const CommitmentsSection = () => {
             className="bg-white/90 text-primary hover:bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 group font-semibold"
             onClick={() => {/* TODO: Navigate to commitments page */}}
           >
-            En savoir plus sur nos engagements
+            En savoir plus
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 text-primary" />
           </Button>
         </div>
