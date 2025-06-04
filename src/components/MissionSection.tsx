@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -28,7 +29,7 @@ const MissionSection = () => {
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-4">Une juste rémunération de nos producteurs partenaires</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Avec qui nous travaillons main dans la main et que nous accompagnons au quotidien
+                    Avec qui nous travaillons <strong>main dans la main</strong> et que nous accompagnons <strong>au quotidien</strong>
                   </p>
                 </div>
               </div>
@@ -43,7 +44,7 @@ const MissionSection = () => {
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-4">Des produits locaux et de saison sélectionnés avec soin</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Fruits, légumes, BOF, viande, charcuterie et produits d'épicerie, tous sourcés dans la région SUD PACA
+                    Fruits, légumes, BOF, viande, charcuterie et produits d'épicerie, tous sourcés dans la <strong>région SUD PACA</strong>
                   </p>
                 </div>
               </div>
@@ -58,7 +59,7 @@ const MissionSection = () => {
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-4">Une logistique optimisée en flux tendu</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Offrant des produits ultrafrais en circuits courts, dans le respect de la chaîne du froid, et avec des DDM et DLC longues
+                    Offrant des produits <strong>ultrafrais</strong> en <strong>circuits courts</strong>, dans le respect de la <strong>chaîne du froid</strong>, et avec des DDM et DLC longues
                   </p>
                 </div>
               </div>
@@ -73,7 +74,7 @@ const MissionSection = () => {
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-4">Des produits sous signes de qualité</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Des produits labélisés et certifiés répondant aux exigences de la loi EGALIM en restauration collective
+                    Des produits <strong>labélisés et certifiés</strong> répondant aux exigences de la <strong>loi EGALIM</strong> en restauration collective
                   </p>
                 </div>
               </div>
