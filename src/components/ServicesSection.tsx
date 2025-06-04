@@ -23,14 +23,14 @@ const ServicesSection = () => {
         {/* Grille 2x2 avec les 4 sections principales */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Viandes & Poissons */}
-          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary">
+          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Beef className="w-8 h-8 text-white" />
               </div>
               <CardTitle className="text-xl text-primary">Viandes & Poissons</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
+            <CardContent className="space-y-3 flex-1">
               <div className="text-sm text-gray-700">
                 <p className="font-medium mb-2">• Bœuf en race à viande HVE et BIO</p>
                 <p className="font-medium mb-2">• Porc plein air des Alpes et de la Crau HVE et BIO</p>
@@ -43,14 +43,14 @@ const ServicesSection = () => {
           </Card>
 
           {/* Produits laitiers et Œufs */}
-          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary">
+          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Droplets className="w-8 h-8 text-white" />
               </div>
               <CardTitle className="text-xl text-primary">Produits laitiers & Œufs</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
+            <CardContent className="space-y-3 flex-1">
               <div className="text-sm text-gray-700">
                 <p className="font-medium mb-2">• Fromage blanc, crème et yaourt (100g, 1kg, 5kg)</p>
                 <p className="font-medium mb-2">• Fromages pasteurisés ou au lait cru à la découpe</p>
@@ -61,14 +61,14 @@ const ServicesSection = () => {
           </Card>
 
           {/* Fruits & Légumes */}
-          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500">
+          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Apple className="w-8 h-8 text-white" />
               </div>
               <CardTitle className="text-xl text-primary">Fruits & Légumes</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
+            <CardContent className="space-y-3 flex-1">
               <div className="text-sm text-gray-700">
                 <p className="font-medium mb-2 text-green-600">De saison uniquement !</p>
                 <p className="font-medium mb-2">• 1ère et 4ème gamme avec calibres adaptés</p>
@@ -78,30 +78,20 @@ const ServicesSection = () => {
           </Card>
 
           {/* Et aussi... */}
-          <Card className="bg-gradient-to-br from-amber-50 to-amber-100 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-l-amber-500">
+          <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Wheat className="w-8 h-8 text-white" />
               </div>
               <CardTitle className="text-xl text-primary">Et aussi...</CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 gap-3">
-                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-1 text-sm">Légumineuses</h4>
-                  <p className="text-xs text-gray-600">Équitables</p>
-                </div>
-                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-1 text-sm">Farines & Céréales</h4>
-                  <p className="text-xs text-gray-600">Farines BIO, Riz de Camargue IGP</p>
-                </div>
-                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-1 text-sm">Épicerie Fine</h4>
-                  <p className="text-xs text-gray-600">Confitures, Miel IGP</p>
-                </div>
-                <div className="bg-white/70 p-3 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-primary mb-1 text-sm">Conserves & Jus</h4>
-                  <p className="text-xs text-gray-600">Conserves, Jus HVE...</p>
+            <CardContent className="flex-1">
+              <div className="space-y-3">
+                <div className="text-sm text-gray-700">
+                  <p className="font-medium mb-2">• Légumineuses équitables</p>
+                  <p className="font-medium mb-2">• Farines BIO, Riz de Camargue IGP</p>
+                  <p className="font-medium mb-2">• Confitures, Miel IGP</p>
+                  <p className="font-medium">• Conserves, Jus HVE...</p>
                 </div>
               </div>
             </CardContent>
