@@ -30,7 +30,7 @@ const CommitmentsSection = () => {
           <img 
             src="/lovable-uploads/1c09120e-1a27-4f58-8f8d-804a42bc8898.png" 
             alt="Carte de notre zone d'intervention" 
-            className="max-w-md md:max-w-lg h-auto"
+            className="max-w-lg md:max-w-xl lg:max-w-2xl h-auto"
           />
         </div>
 
