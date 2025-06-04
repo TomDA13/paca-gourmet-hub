@@ -11,7 +11,7 @@ const HeroSection = () => {
           backgroundImage: "url('/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png')"
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-primary/40"></div>
       </div>
 
       {/* Content */}
@@ -23,10 +23,10 @@ const HeroSection = () => {
           Approvisionnement direct auprès des producteurs locaux de PACA pour vos cuisines centrales, cantines d'entreprise et restaurants professionnels
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg">
+          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Découvrir nos produits
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
+          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Devenir partenaire
           </Button>
         </div>
@@ -38,6 +38,9 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
+
+      {/* Diagonal transition */}
+      <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-r from-accent via-white to-accent transform skew-y-1 origin-bottom-left"></div>
     </section>
   );
 };

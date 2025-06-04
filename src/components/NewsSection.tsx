@@ -24,8 +24,15 @@ const NewsSection = () => {
   ];
 
   return (
-    <section id="news" className="py-20 bg-accent">
-      <div className="container mx-auto px-4">
+    <section id="news" className="relative py-20 bg-gradient-to-tr from-accent via-white to-accent/50 overflow-hidden">
+      {/* Decorative wave at top */}
+      <div className="absolute top-0 left-0 w-full h-16 bg-white transform -skew-y-1 origin-top-right"></div>
+      
+      {/* Floating elements */}
+      <div className="absolute top-32 left-20 w-20 h-20 bg-primary/10 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-32 right-20 w-16 h-16 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
             Actualités
@@ -37,21 +44,21 @@ const NewsSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {newsItems.map((item, index) => (
-            <article key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <article key={index} className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group">
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-sm text-gray-500">{item.date}</span>
-                  <span className="text-xs bg-secondary text-white px-2 py-1 rounded-full">
+                  <span className="text-xs bg-gradient-to-r from-secondary to-secondary/80 text-white px-3 py-1 rounded-full shadow-sm">
                     {item.category}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-3 line-clamp-2">
+                <h3 className="text-xl font-semibold text-primary mb-3 line-clamp-2 group-hover:text-secondary transition-colors duration-200">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                   {item.excerpt}
                 </p>
-                <button className="text-secondary font-medium text-sm hover:underline">
+                <button className="text-secondary font-medium text-sm hover:text-primary transition-colors duration-200 hover:underline">
                   Lire la suite →
                 </button>
               </div>
@@ -60,11 +67,14 @@ const NewsSection = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Voir toutes les actualités
           </Button>
         </div>
       </div>
+
+      {/* Diagonal transition */}
+      <div className="absolute bottom-0 right-0 w-full h-20 bg-gradient-to-l from-white via-accent/30 to-white transform -skew-y-1 origin-bottom-left"></div>
     </section>
   );
 };
