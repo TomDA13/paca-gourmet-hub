@@ -1,0 +1,28 @@
+
+const BannerSection = () => {
+  return (
+    <section className="relative w-full h-64 md:h-80 overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src="/lovable-uploads/397eff38-3549-4d6d-ac27-5b15135db085.png"
+          alt="Produits locaux de Provence"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
+      
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
+        <div className="text-center text-white">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4">
+            Les saveurs authentiques de nos régions
+          </h2>
+          <p className="text-lg md:text-xl opacity-90">
+            Découvrez nos produits locaux d'exception
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BannerSection;
