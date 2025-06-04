@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Beef, Fish, Egg, Apple, Wheat, Droplets } from 'lucide-react';
+import { Beef, Fish, Egg, Apple, Wheat, Droplets, ArrowRight } from 'lucide-react';
 
 const ServicesSection = () => {
   return (
@@ -21,7 +21,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Grille 2x2 avec les 4 sections principales */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Viandes & Poissons */}
           <Card className="bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full">
             <CardHeader className="text-center pb-4">
@@ -98,10 +98,14 @@ const ServicesSection = () => {
           </Card>
         </div>
 
-        {/* Bouton CTA en bas */}
+        {/* Bouton En savoir plus */}
         <div className="text-center">
-          <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-12">
-            Rejoignez-nous
+          <Button 
+            className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 group"
+            onClick={() => {/* TODO: Navigate to services page */}}
+          >
+            Découvrir toute notre offre
+            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </Button>
         </div>
       </div>

@@ -1,4 +1,7 @@
 
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+
 const MissionSection = () => {
   return (
     <section id="mission" className="relative py-20 bg-gradient-to-br from-accent to-white overflow-hidden">
@@ -14,7 +17,7 @@ const MissionSection = () => {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Une juste rémunération */}
             <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-6">
@@ -74,6 +77,17 @@ const MissionSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Bouton En savoir plus */}
+          <div className="text-center">
+            <Button 
+              className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 group"
+              onClick={() => {/* TODO: Navigate to mission page */}}
+            >
+              En savoir plus sur notre mission
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
           </div>
         </div>
       </div>
