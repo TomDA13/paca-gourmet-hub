@@ -1,4 +1,3 @@
-
 import { Linkedin, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -14,8 +13,7 @@ const Footer = () => {
               className="h-8 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 mb-4 max-w-md">
-              Les vrais produits de nos régions PACA. Approvisionnement direct pour professionnels 
-              de la restauration collective et commerciale.
+              La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
             </p>
             <div className="flex space-x-4 mb-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
