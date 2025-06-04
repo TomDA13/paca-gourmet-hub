@@ -3,28 +3,24 @@ import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png')"
+          backgroundImage: "url('/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png')",
+          backgroundPosition: "center 30%"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-primary/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-primary/50"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up flex items-center justify-center gap-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
           Relocalisez !
-          <img 
-            src="/lovable-uploads/3d0d3557-1b51-4a73-a639-33c72eaddf43.png" 
-            alt="Icône localisation" 
-            className="w-12 h-12 md:w-16 md:h-16"
-          />
         </h1>
-        <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+        <p className="text-xl md:text-2xl mb-8 opacity-95 animate-fade-in-up font-medium text-shadow-lg" style={{animationDelay: '0.2s', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
           La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
         </p>
         <div className="flex flex-col items-center gap-6 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
