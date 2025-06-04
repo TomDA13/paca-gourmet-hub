@@ -10,23 +10,20 @@ const CommitmentsSection = () => {
         <div className="bg-gradient-to-r from-white/15 to-secondary/20 backdrop-blur-sm rounded-2xl p-12 text-center shadow-xl">
           <div className="grid md:grid-cols-3 gap-12">
             <div className="bg-white/10 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-secondary mb-4 drop-shadow-lg">200+</div>
-              <p className="opacity-90 text-lg">Producteurs partenaires</p>
+              <div className="text-5xl font-bold text-secondary mb-4 drop-shadow-lg">150</div>
+              <p className="opacity-90 text-lg">Producteurs partenaires locaux</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-secondary mb-4 drop-shadow-lg">1500+</div>
-              <p className="opacity-90 text-lg">Références de produits</p>
+              <div className="text-5xl font-bold text-secondary mb-4 drop-shadow-lg">700</div>
+              <p className="opacity-90 text-lg">Références de produits locaux</p>
             </div>
             <div className="bg-white/10 p-8 rounded-xl">
-              <div className="text-5xl font-bold text-secondary mb-4 drop-shadow-lg">850</div>
-              <p className="opacity-90 text-lg">Tonnes livrées en 2024</p>
+              <div className="text-5xl font-bold text-secondary mb-4 drop-shadow-lg">760</div>
+              <p className="opacity-90 text-lg">Tonnes de produits locaux livrés en 2024</p>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Diagonal transition */}
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-white transform skew-y-1 origin-bottom-right"></div>
     </section>
   );
 };
