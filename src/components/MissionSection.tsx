@@ -4,8 +4,13 @@ import { ArrowRight } from 'lucide-react';
 
 const MissionSection = () => {
   return (
-    <section id="mission" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="mission" className="relative py-20 bg-white overflow-hidden">
+      {/* Floating elements */}
+      <div className="absolute top-24 right-20 w-28 h-28 bg-secondary/15 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-24 left-20 w-24 h-24 bg-primary/15 rounded-full animate-pulse" style={{animationDelay: '1.8s'}}></div>
+      <div className="absolute top-1/3 right-1/3 w-20 h-20 bg-accent/80 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 animate-fade-in">
