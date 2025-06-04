@@ -27,17 +27,15 @@ const HeroSection = () => {
         <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
           La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
         </p>
-        <div className="flex justify-center animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+        <div className="flex flex-col items-center gap-6 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
           <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Découvrir nos produits
           </Button>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+          <img 
+            src="/lovable-uploads/3c8f6a3d-67be-497f-b393-06800f4b4b47.png" 
+            alt="Badge 100 valeurs du Sud" 
+            className="w-20 h-20 md:w-24 md:h-24 opacity-90"
+          />
         </div>
       </div>
     </section>
