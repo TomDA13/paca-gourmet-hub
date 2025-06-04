@@ -26,8 +26,8 @@ const HeroSection = () => {
           <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Découvrir nos produits
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-            Devenir partenaire
+          <Button size="lg" variant="outline" className="border-white text-primary bg-white hover:bg-gray-100 hover:text-primary px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            Rejoignez-nous
           </Button>
         </div>
       </div>
