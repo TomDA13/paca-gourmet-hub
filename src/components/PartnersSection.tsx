@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
@@ -53,6 +52,15 @@ const PartnersSection = () => {
   return (
     <section className="py-16 bg-accent">
       <div className="container mx-auto px-4">
+        {/* Image de la carte PACA */}
+        <div className="text-center mb-8">
+          <img
+            src="/lovable-uploads/ded281be-ca1b-41f7-803a-3ca40db00236.png"
+            alt="Carte de la région PACA"
+            className="max-w-xs mx-auto h-auto"
+          />
+        </div>
+
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Ils nous font confiance
