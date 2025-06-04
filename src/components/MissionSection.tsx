@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -13,8 +12,9 @@ const MissionSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 animate-fade-in">
-              Notre Mission
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 animate-fade-in">
+              <span className="text-secondary">Notre </span>
+              <span className="text-secondary">ADN</span>
             </h2>
           </div>
           
