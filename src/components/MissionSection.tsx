@@ -4,12 +4,8 @@ import { ArrowRight } from 'lucide-react';
 
 const MissionSection = () => {
   return (
-    <section id="mission" className="relative py-20 bg-gradient-to-br from-accent to-white overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -translate-y-32 translate-x-32"></div>
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/10 rounded-full translate-y-24 -translate-x-24"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="mission" className="py-20 bg-white">
+      <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 animate-fade-in">
@@ -19,7 +15,7 @@ const MissionSection = () => {
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Une juste rémunération */}
-            <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <div className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                   <span className="text-2xl text-white">🤝</span>
@@ -34,7 +30,7 @@ const MissionSection = () => {
             </div>
 
             {/* Produits locaux et de saison */}
-            <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <div className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                   <span className="text-2xl text-white">🌱</span>
@@ -49,7 +45,7 @@ const MissionSection = () => {
             </div>
 
             {/* Logistique optimisée */}
-            <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <div className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                   <span className="text-2xl text-white">🚚</span>
@@ -64,7 +60,7 @@ const MissionSection = () => {
             </div>
 
             {/* Produits sous signes de qualité */}
-            <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <div className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                   <span className="text-2xl text-white">🏆</span>
