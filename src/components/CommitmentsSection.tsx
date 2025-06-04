@@ -25,6 +25,15 @@ const CommitmentsSection = () => {
           </div>
         </div>
 
+        {/* Image de la carte */}
+        <div className="text-center mb-12">
+          <img 
+            src="/lovable-uploads/54dbc675-ac96-4c39-9d87-0216f2c4fb71.png" 
+            alt="Carte de la région PACA avec Localizz"
+            className="mx-auto max-w-md w-full h-auto"
+          />
+        </div>
+
         {/* Bouton En savoir plus */}
         <div className="text-center">
           <Button 
@@ -32,7 +41,7 @@ const CommitmentsSection = () => {
             className="bg-white/90 text-primary hover:bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 group font-semibold"
             onClick={() => {/* TODO: Navigate to commitments page */}}
           >
-            En savoir plus sur nos engagements
+            En savoir plus
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 text-primary" />
           </Button>
         </div>
