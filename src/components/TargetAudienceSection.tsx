@@ -1,26 +1,41 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, Building, Heart, Hotel } from 'lucide-react';
+import { ArrowRight, Users, Building, Hotel, Wheat, HandHeart, Factory } from 'lucide-react';
 
 const TargetAudienceSection = () => {
-  const targetGroups = [
+  const restaurateurs = [
     {
       icon: Users,
-      title: "RESTAURATION COLLECTIVE",
-      subtitle: "(SCOLAIRE, ENTREPRISE, ÉTABLISSEMENT DE SANTÉ)",
-      description: "Solutions adaptées pour nourrir vos convives avec des produits locaux de qualité"
+      title: "Restauration collective",
+      description: "Scolaire, entreprise, établissement de santé"
     },
     {
       icon: Building,
-      title: "RESTAURATION COMMERCIALE",
-      subtitle: "",
-      description: "Valorisez votre carte avec des produits authentiques de notre région"
+      title: "Restauration commerciale", 
+      description: "Restaurants, brasseries, pizzerias"
     },
     {
       icon: Hotel,
-      title: "HÔTELS",
-      subtitle: "",
-      description: "Offrez une expérience culinaire unique avec nos produits du terroir"
+      title: "Hôtels",
+      description: "Hébergements touristiques et d'affaires"
+    }
+  ];
+
+  const producteurs = [
+    {
+      icon: Wheat,
+      title: "Agriculteurs",
+      description: "Producteurs locaux de fruits, légumes, céréales"
+    },
+    {
+      icon: Factory,
+      title: "Coopératives",
+      description: "Coopératives agricoles et artisanales"
+    },
+    {
+      icon: HandHeart,
+      title: "Artisans",
+      description: "Transformateurs et producteurs artisanaux"
     }
   ];
 
@@ -38,38 +53,84 @@ const TargetAudienceSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {targetGroups.map((group, index) => (
-            <div 
-              key={index}
-              className="bg-accent p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:scale-105 group"
-            >
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
-                <group.icon className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-2">
-                {group.title}
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Section Restaurateurs */}
+          <div className="bg-accent p-8 rounded-xl">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-primary mb-4">
+                Restaurateurs
               </h3>
-              {group.subtitle && (
-                <p className="text-sm text-gray-600 mb-4 font-medium">
-                  {group.subtitle}
-                </p>
-              )}
-              <p className="text-gray-600 leading-relaxed">
-                {group.description}
+              <p className="text-gray-600">
+                Nous accompagnons tous types d'établissements de restauration
               </p>
             </div>
-          ))}
-        </div>
+            
+            <div className="space-y-6 mb-8">
+              {restaurateurs.map((item, index) => (
+                <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">
+                      {item.title}
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-        <div className="text-center">
-          <Button 
-            size="lg"
-            className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group font-semibold"
-          >
-            Rejoignez-nous
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </Button>
+            <div className="text-center">
+              <Button 
+                className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              >
+                Rejoignez-nous
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+            </div>
+          </div>
+
+          {/* Section Producteurs */}
+          <div className="bg-accent p-8 rounded-xl">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-primary mb-4">
+                Producteurs
+              </h3>
+              <p className="text-gray-600">
+                Nous mettons en valeur la production locale de qualité
+              </p>
+            </div>
+            
+            <div className="space-y-6 mb-8">
+              {producteurs.map((item, index) => (
+                <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary mb-1">
+                      {item.title}
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Button 
+                className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              >
+                Rejoignez-nous
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
