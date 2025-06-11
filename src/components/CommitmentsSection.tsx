@@ -25,15 +25,6 @@ const CommitmentsSection = () => {
           </div>
         </div>
 
-        {/* Image de la carte */}
-        <div className="text-center mb-12">
-          <img 
-            src="/lovable-uploads/54dbc675-ac96-4c39-9d87-0216f2c4fb71.png" 
-            alt="Carte de la région PACA avec Localizz"
-            className="mx-auto max-w-md w-full h-auto"
-          />
-        </div>
-
         {/* Bouton En savoir plus */}
         <div className="text-center">
           <Button 

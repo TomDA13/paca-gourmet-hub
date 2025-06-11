@@ -6,6 +6,7 @@ import PartnersSection from '@/components/PartnersSection';
 import MissionSection from '@/components/MissionSection';
 import ServicesSection from '@/components/ServicesSection';
 import CommitmentsSection from '@/components/CommitmentsSection';
+import TerrainDeJeuSection from '@/components/TerrainDeJeuSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import BannerSection from '@/components/BannerSection';
 import Footer from '@/components/Footer';
@@ -20,6 +21,7 @@ const Index = () => {
       <MissionSection />
       <ServicesSection />
       <CommitmentsSection />
+      <TerrainDeJeuSection />
       <TestimonialsSection />
       <BannerSection />
       <Footer />
