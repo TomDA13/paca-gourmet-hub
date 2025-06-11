@@ -1,47 +1,26 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, Building, Hotel, Wheat, Factory, Handshake } from 'lucide-react';
+import { ArrowRight, Users, Building, Heart, Hotel } from 'lucide-react';
 
 const TargetAudienceSection = () => {
-  const restaurateurs = [
+  const targetGroups = [
     {
       icon: Users,
-      title: "Restauration Collective",
-      subtitle: "Scolaire, Entreprise, Établissement de santé",
+      title: "RESTAURATION COLLECTIVE",
+      subtitle: "(SCOLAIRE, ENTREPRISE, ÉTABLISSEMENT DE SANTÉ)",
       description: "Solutions adaptées pour nourrir vos convives avec des produits locaux de qualité"
     },
     {
       icon: Building,
-      title: "Restauration Commerciale",
-      subtitle: "Restaurants, Brasseries, Cafés",
+      title: "RESTAURATION COMMERCIALE",
+      subtitle: "",
       description: "Valorisez votre carte avec des produits authentiques de notre région"
     },
     {
       icon: Hotel,
-      title: "Hôtels",
-      subtitle: "Hôtellerie & Tourisme",
+      title: "HÔTELS",
+      subtitle: "",
       description: "Offrez une expérience culinaire unique avec nos produits du terroir"
-    }
-  ];
-
-  const producteurs = [
-    {
-      icon: Wheat,
-      title: "Agriculteurs",
-      subtitle: "Producteurs locaux",
-      description: "Partenaires agriculteurs engagés dans une agriculture de qualité et respectueuse"
-    },
-    {
-      icon: Factory,
-      title: "Coopératives",
-      subtitle: "Groupements de producteurs",
-      description: "Coopératives agricoles et groupements pour une offre diversifiée et structurée"
-    },
-    {
-      icon: Handshake,
-      title: "Transformateurs",
-      subtitle: "Artisans du goût",
-      description: "Artisans et transformateurs locaux pour des produits élaborés de qualité"
     }
   ];
 
@@ -59,74 +38,28 @@ const TargetAudienceSection = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-12">
-          {/* Section Restaurateurs */}
-          <div className="space-y-8">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-primary mb-2">Restaurateurs</h3>
-              <p className="text-gray-600">Nos partenaires de la restauration</p>
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {targetGroups.map((group, index) => (
+            <div 
+              key={index}
+              className="bg-accent p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300 hover:scale-105 group"
+            >
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
+                <group.icon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">
+                {group.title}
+              </h3>
+              {group.subtitle && (
+                <p className="text-sm text-gray-600 mb-4 font-medium">
+                  {group.subtitle}
+                </p>
+              )}
+              <p className="text-gray-600 leading-relaxed">
+                {group.description}
+              </p>
             </div>
-            
-            <div className="space-y-6">
-              {restaurateurs.map((group, index) => (
-                <div 
-                  key={index}
-                  className="bg-accent p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 group"
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center group-hover:bg-secondary transition-colors duration-300 flex-shrink-0">
-                      <group.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-lg font-bold text-primary mb-1">
-                        {group.title}
-                      </h4>
-                      <p className="text-sm text-gray-600 mb-2 font-medium">
-                        {group.subtitle}
-                      </p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        {group.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Section Producteurs */}
-          <div className="space-y-8">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-primary mb-2">Producteurs</h3>
-              <p className="text-gray-600">Nos partenaires producteurs</p>
-            </div>
-            
-            <div className="space-y-6">
-              {producteurs.map((group, index) => (
-                <div 
-                  key={index}
-                  className="bg-accent p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 group"
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors duration-300 flex-shrink-0">
-                      <group.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-lg font-bold text-primary mb-1">
-                        {group.title}
-                      </h4>
-                      <p className="text-sm text-gray-600 mb-2 font-medium">
-                        {group.subtitle}
-                      </p>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        {group.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="text-center">
