@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
@@ -41,7 +42,7 @@ const MissionSection = () => {
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  src="/lovable-uploads/d5ec88bd-a124-419c-8f97-60beb373bc26.png" 
                   alt="Sélection de produits locaux" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
