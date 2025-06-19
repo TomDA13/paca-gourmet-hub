@@ -16,7 +16,8 @@ const ServicesSection = () => {
             Notre Offre
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Des solutions complètes d'approvisionnement adaptées aux besoins de chaque professionnel de la restauration
+            + de 700 références de produits alimentaires sourcés dans la région SUD 
+            pour les professionnels de la région
           </p>
         </div>
 
