@@ -2,7 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Beef, Egg, Apple, Package } from 'lucide-react';
+import { Beef, Egg, Apple, Package, Truck, Link, Award, MessageSquare } from 'lucide-react';
 
 const NotreOffre = () => {
   return (
@@ -124,7 +124,7 @@ const NotreOffre = () => {
           {/* Logistique optimisée Section */}
           <section id="logistique-optimisee" className="mb-20">
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-3xl font-bold text-primary mb-6">Logistique optimisée</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6 text-center">Logistique optimisée</h2>
               
               {/* Description */}
               <div className="text-center mb-12">
@@ -144,11 +144,85 @@ const NotreOffre = () => {
 
           {/* Livraisons 100% locale Section */}
           <section id="livraisons-locale" className="mb-20">
-            <div className="bg-secondary/10 p-8 rounded-lg">
-              <h2 className="text-3xl font-bold text-primary mb-6">Livraisons 100% locale</h2>
-              <p className="text-gray-700 text-lg">
-                Contenu à venir pour la section Livraisons 100% locale...
-              </p>
+            <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-xl border border-secondary/20">
+              <h2 className="text-3xl font-bold text-primary mb-12 text-center">Livraisons 100% locales</h2>
+              
+              <div className="space-y-8">
+                {/* Point 1 */}
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-l-blue-500 hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Truck className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Une solution logistique clé en main pour les professionnels de la restauration</h3>
+                      <div className="space-y-3 text-gray-700">
+                        <p><strong>Périmètre de livraison (13,84,04,05,06,83) :</strong> Livraison quotidienne de produits <strong>100% Sud PACA</strong> en palettes multiproduits avec nos propres camions</p>
+                        <p><strong>Approvisionnements :</strong> Produits collectés directement chez les producteurs par nos chauffeurs</p>
+                        <p><strong>0 gaspi :</strong> grâce à une logistique en flux tendu</p>
+                        <p><strong>Juste maturité :</strong> Fruits et légumes récoltés au plus proche de votre jour de livraison</p>
+                        <p><strong>Ultra frais :</strong> Viandes, épicerie et BOF produits à la demande pour des DLC et DDM longues</p>
+                        <p><strong>Economie circulaire :</strong> Récupération des cagettes sur vos restaurants pour les ramener aux producteurs</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Point 2 */}
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-l-green-500 hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Link className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Une chaîne de valeurs optimisée grâce aux circuits courts</h3>
+                      <div className="space-y-3 text-gray-700">
+                        <p><strong>Circuit court local :</strong> Localizz est l'unique intermédiaire entre vous et les producteurs</p>
+                        <p><strong>Juste rémunération :</strong> garantie aux producteurs en fonction de leurs coûts de production réels</p>
+                        <p><strong>Prix compétitifs et cohérents :</strong> pour vous grâce à une logistique optimisée</p>
+                        <p><strong>Valoriser votre terroir :</strong> Un accès direct à votre bassin de producteurs ultra locaux</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Point 3 */}
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-l-orange-500 hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <Award className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Des produits locaux de qualité adaptés à votre segment d'activité</h3>
+                      <div className="space-y-3 text-gray-700">
+                        <p><strong>Qualité des produits :</strong> Agréage lors des ramasses, à réception et avant livraison</p>
+                        <p><strong>Juste maturité des fruits :</strong> récoltés à maturité et livrés en fonction de vos jours de consommation</p>
+                        <p><strong>Calibres :</strong> Adaptés à vos besoins et coûts portions</p>
+                        <p><strong>Fruits et légumes moches :</strong> Pour soutenir les producteurs et vous proposer des produits hors calibres à moindre coût</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Point 4 */}
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-l-purple-500 hover:shadow-xl transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <MessageSquare className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-primary mb-3">Des outils de communication pour redonner du sens à une consommation de proximité</h3>
+                      <div className="space-y-3 text-gray-700">
+                        <p><strong>Supports de communication :</strong> Transmis à chaque livraison pour valoriser les producteurs auprès de vos convives</p>
+                        <p><strong>Animations :</strong> au sein de votre structure pour sensibiliser vos convives</p>
+                        <p><strong>Visites d'exploitations agricoles :</strong> pour les enfants et les chefs, afin de recréer du lien et du sens</p>
+                        <p><strong>Formations :</strong> via Le Loubatas, membre des Cuisines Nourricières</p>
+                        <p><strong>Statistiques d'achats :</strong> transmis à la demande pour piloter vos achats EGALIM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </div>
