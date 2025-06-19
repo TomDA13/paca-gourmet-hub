@@ -1,8 +1,71 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
+import CommitmentCard from '@/components/CommitmentCard';
 
 const NosEngagements = () => {
+  const commitments = [
+    {
+      id: 1,
+      title: "Des produits locaux garantis toute l'année",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=400&fit=crop",
+      content: {
+        subtitle: "Des produits locaux garantis toute l'année, sans rupture et en toute transparence",
+        points: [
+          "Planification : des cultures planifiées avec nos producteurs à l'année en fonction de vos volumes",
+          "Sécurité d'approvisionnement : via notre réseau de producteurs locaux multi-terroirs",
+          "Des produits éligibles EGALIM : HVE, BIO, IGP ou équitables garantis toute l'année",
+          "Une origine 100% Sud PACA garantie : aucun produit d'import ne vous sera livré",
+          "100% valeurs du Sud : Nous portons cette certification pour vous assurer une traçabilité régionale"
+        ]
+      }
+    },
+    {
+      id: 2,
+      title: "L'ADN de Localizz certifiée par notre statut ESS",
+      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&h=400&fit=crop",
+      content: {
+        subtitle: "L'ADN de Localizz certifiée par notre statut ESS d'entreprise à missions",
+        description: "Depuis 2022 nous sommes une entreprise à missions. Concrètement, c'est désormais l'ADN de la société qui se retrouve dans ses statuts : Faciliter l'accès à une alimentation saine et durable à travers une économie circulaire, sociale et solidaire",
+        subtitle2: "L'équipe Localizz vous garantit ainsi le respect et l'engagement de nos valeurs autour de 3 points clés :",
+        points: [
+          "Ancrage de notre activité dans une économie circulaire",
+          "Être facilitateur d'une alimentation saine et durable",
+          "Initier et soutenir les démarches solidaires liées à notre activité"
+        ]
+      }
+    },
+    {
+      id: 3,
+      title: "Une qualité de sourcing, de produits et de suivi",
+      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=500&h=400&fit=crop",
+      content: {
+        subtitle: "Une qualité de sourcing, de produits et de suivi",
+        points: [
+          "Qualité des produits : Producteurs audités et suivis par nos 3 ingénieurs agronomes",
+          "Démarche HACCP : validée et auditée par des organismes tiers depuis 2017",
+          "Livraisons de palettes mixte BIO/non BIO : certification BIO depuis 2021",
+          "Traçabilité et transparence : complète et immédiate de chaque produit livré chez vous"
+        ]
+      }
+    },
+    {
+      id: 4,
+      title: "Une relocalisation de vos approvisionnements",
+      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=400&fit=crop",
+      content: {
+        subtitle: "Une relocalisation de vos approvisionnements",
+        points: [
+          "Planification de vos menus : accompagnement quotidien pour intégrer des produits locaux et de saison",
+          "Sourcing: Accompagnement en amont pour répondre à la commande publique",
+          "Régie agricole : Mise en place d'une organisation tripartite pour valoriser du local et de l'ultra local",
+          "D'une pierre deux coups : des produits locaux et EGALIM livrés toute l'année"
+        ]
+      }
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -18,12 +81,15 @@ const NosEngagements = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <p className="text-gray-700 text-lg">
-                Contenu à venir pour la page Nos Engagements...
-              </p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {commitments.map((commitment) => (
+              <CommitmentCard
+                key={commitment.id}
+                title={commitment.title}
+                image={commitment.image}
+                content={commitment.content}
+              />
+            ))}
           </div>
         </div>
       </main>
