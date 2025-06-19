@@ -141,10 +141,10 @@ const NotreOffre = () => {
             </div>
           </section>
 
-          {/* Livraisons 100% locale Section */}
-          <section id="livraisons-locale" className="mb-20">
+          {/* Un service 360° Section */}
+          <section id="service-360" className="mb-20">
             <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-xl border border-secondary/20">
-              <h2 className="text-3xl font-bold text-primary mb-12 text-center">Livraisons 100% locales</h2>
+              <h2 className="text-3xl font-bold text-primary mb-12 text-center">Un service 360°</h2>
               
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Point 1 */}

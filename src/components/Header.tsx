@@ -32,7 +32,7 @@ const menuItems: MenuItem[] = [
     subItems: [
       { title: "Notre Gamme", href: "/notre-offre#notre-gamme" },
       { title: "Logistique optimisée", href: "/notre-offre#logistique-optimisee" },
-      { title: "Livraisons 100% locale", href: "/notre-offre#livraisons-locale" }
+      { title: "Un service 360°", href: "/notre-offre#service-360" }
     ]
   },
   {
