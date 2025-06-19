@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import Timeline from '@/components/Timeline';
+import TeamSection from '@/components/TeamSection';
 
 const QuiSommesNous = () => {
   return (
@@ -25,12 +26,7 @@ const QuiSommesNous = () => {
 
           {/* L'équipe Section */}
           <section id="equipe" className="mb-20">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-3xl font-bold text-primary mb-6">L'équipe</h2>
-              <p className="text-gray-700 text-lg">
-                Contenu à venir pour la section L'équipe...
-              </p>
-            </div>
+            <TeamSection />
           </section>
         </div>
       </main>
