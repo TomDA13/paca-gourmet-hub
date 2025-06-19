@@ -114,8 +114,8 @@ const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
             
-            <Button className="bg-secondary hover:bg-secondary/90 text-white ml-4">
-              Contact
+            <Button asChild className="bg-secondary hover:bg-secondary/90 text-white ml-4">
+              <a href="/contact">Contact</a>
             </Button>
 
             {/* Bouton accès particulier - plus visible */}
@@ -162,8 +162,8 @@ const Header = () => {
                   )}
                 </div>
               ))}
-              <Button className="bg-secondary hover:bg-secondary/90 text-white w-fit">
-                Contact
+              <Button asChild className="bg-secondary hover:bg-secondary/90 text-white w-fit">
+                <a href="/contact">Contact</a>
               </Button>
               
               {/* Bouton accès particulier en mobile - plus visible */}
