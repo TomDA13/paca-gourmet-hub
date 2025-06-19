@@ -10,10 +10,10 @@ const TerrainDeJeuSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Notre terrain de jeu
+            Notre Zone d'activité
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            La région Sud PACA, notre territoire d'expertise pour un approvisionnement local de qualité
+            Approvisionnement direct auprès des producteurs locaux et livraison dans toute la région PACA
           </p>
         </div>
 
