@@ -1,5 +1,7 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BannerSection from '@/components/BannerSection';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Beef, Egg, Apple, Package, Truck, Link, Award, MessageSquare } from 'lucide-react';
 
@@ -227,6 +229,7 @@ const NotreOffre = () => {
         </div>
       </main>
       
+      <BannerSection />
       <Footer />
     </div>
   );

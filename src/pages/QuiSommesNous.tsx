@@ -1,6 +1,6 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BannerSection from '@/components/BannerSection';
 
 const QuiSommesNous = () => {
   return (
@@ -41,6 +41,7 @@ const QuiSommesNous = () => {
         </div>
       </main>
       
+      <BannerSection />
       <Footer />
     </div>
   );

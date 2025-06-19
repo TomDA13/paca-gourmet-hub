@@ -15,12 +15,9 @@ const BannerSection = () => {
       
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
         <div className="text-center text-white">
-          <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            Les saveurs authentiques de nos régions
+          <h2 className="text-2xl md:text-4xl font-bold mb-6">
+            Commencez dès maintenant à Relocaliser !
           </h2>
-          <p className="text-lg md:text-xl opacity-90 mb-6">
-            Découvrez nos produits locaux d'exception
-          </p>
           <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8">
             Rejoignez-nous
           </Button>
