@@ -25,7 +25,7 @@ const MissionSection = () => {
                 <img 
                   src="/lovable-uploads/682c4a34-56e2-4abc-9dbd-4e7bebbf0508.png" 
                   alt="Partenariat avec les producteurs" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/40 to-transparent"></div>
               </div>
