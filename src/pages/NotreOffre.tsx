@@ -25,18 +25,10 @@ const NotreOffre = () => {
             <div className="bg-accent p-8 rounded-lg">
               <h2 className="text-3xl font-bold text-primary mb-6 text-center">Notre Gamme</h2>
               
-              {/* Description avec icône */}
+              {/* Description */}
               <div className="text-center mb-12">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3">
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary">🍃 Les feuilles Motif</h3>
-                </div>
-                <p className="text-lg font-semibold text-secondary uppercase tracking-wide">
-                  + DE 700 RÉFÉRENCES DE PRODUITS ALIMENTAIRES SOURCÉS DANS LA RÉGION SUD POUR LES PROFESSIONNELS DE LA RESTAURATION
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+                  Plus de 700 références de produits alimentaires sourcés dans la région Sud pour les professionnels de la restauration
                 </p>
               </div>
 
@@ -46,7 +38,12 @@ const NotreOffre = () => {
                 <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                      🥩 Viandes & Poissons
+                      <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M7 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM1 3c0-.55.45-1 1-1h1c.55 0 1 .45 1 1v1h13l-4 7.68c-.25.5-.76.82-1.31.82H6.75c-.65 0-1.26-.42-1.49-1.03L3.58 5H2c-.55 0-1-.45-1-1V3z"/>
+                        </svg>
+                      </div>
+                      Viandes & Poissons
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
@@ -65,7 +62,12 @@ const NotreOffre = () => {
                 <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                      🧀 Produits laitiers & Œufs
+                      <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
+                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                      </div>
+                      Produits laitiers & Œufs
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
@@ -82,7 +84,12 @@ const NotreOffre = () => {
                 <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                      🍎 Fruits & Légumes
+                      <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l3.09 6.26L22 9l-5.91 5.74L17.18 22 12 19.27 6.82 22l1.09-7.26L2 9l6.91-1.74L12 2z"/>
+                        </svg>
+                      </div>
+                      Fruits & Légumes
                     </CardTitle>
                     <p className="text-green-600 font-semibold italic">de saison uniquement !</p>
                   </CardHeader>
@@ -98,7 +105,12 @@ const NotreOffre = () => {
                 <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500">
                   <CardHeader className="pb-4">
                     <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                      🏪 Épicerie
+                      <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center mr-3">
+                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+                        </svg>
+                      </div>
+                      Épicerie
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
