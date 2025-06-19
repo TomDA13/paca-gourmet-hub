@@ -80,7 +80,7 @@ const MissionSection = () => {
                 <img 
                   src="/lovable-uploads/43df592e-022b-4339-98d7-4493c89beddd.png" 
                   alt="Produits de qualité certifiés" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover object-[50%_20%] hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-amber-600/80 via-amber-500/40 to-transparent"></div>
               </div>
