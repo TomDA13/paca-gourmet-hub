@@ -1,7 +1,10 @@
 
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const BannerSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative w-full h-64 md:h-80 overflow-hidden">
       <div className="absolute inset-0">
@@ -18,7 +21,10 @@ const BannerSection = () => {
           <h2 className="text-2xl md:text-4xl font-bold mb-6">
             Commencez dès maintenant à Relocaliser !
           </h2>
-          <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8">
+          <Button 
+            className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
+            onClick={() => navigate('/contact')}
+          >
             Rejoignez-nous
           </Button>
         </div>

@@ -1,8 +1,11 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, ChefHat, Hotel, Wheat, Hammer, Factory } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const TargetAudienceSection = () => {
+  const navigate = useNavigate();
+
   const restaurateurs = [
     {
       icon: Users,
@@ -86,6 +89,7 @@ const TargetAudienceSection = () => {
             <div className="text-center">
               <Button 
                 className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+                onClick={() => navigate('/contact')}
               >
                 Rejoignez-nous
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -125,6 +129,7 @@ const TargetAudienceSection = () => {
             <div className="text-center">
               <Button 
                 className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+                onClick={() => navigate('/contact')}
               >
                 Rejoignez-nous
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
