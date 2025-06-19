@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -9,7 +8,7 @@ const NosEngagements = () => {
     {
       id: 1,
       title: "Des produits locaux garantis toute l'année",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=400&fit=crop",
+      image: "/lovable-uploads/669762be-c175-4482-b5ca-17831ee6903e.png",
       content: {
         subtitle: "Des produits locaux garantis toute l'année, sans rupture et en toute transparence",
         points: [
@@ -24,7 +23,7 @@ const NosEngagements = () => {
     {
       id: 2,
       title: "L'ADN de Localizz certifiée par notre statut ESS",
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&h=400&fit=crop",
+      image: "/lovable-uploads/e343e47b-a78a-4c1a-b332-f1567b2d2156.png",
       content: {
         subtitle: "L'ADN de Localizz certifiée par notre statut ESS d'entreprise à missions",
         description: "Depuis 2022 nous sommes une entreprise à missions. Concrètement, c'est désormais l'ADN de la société qui se retrouve dans ses statuts : Faciliter l'accès à une alimentation saine et durable à travers une économie circulaire, sociale et solidaire",
