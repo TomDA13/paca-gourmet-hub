@@ -1,3 +1,4 @@
+
 const Timeline = () => {
   const timelineData = [
     {
@@ -84,7 +85,7 @@ const Timeline = () => {
                 <img 
                   src={item.image} 
                   alt={item.title}
-                  className="w-32 h-32 object-cover rounded-full border-4 border-secondary shadow-lg"
+                  className="w-40 h-40 object-cover rounded-full border-4 border-secondary shadow-lg"
                 />
               </div>
             </div>
