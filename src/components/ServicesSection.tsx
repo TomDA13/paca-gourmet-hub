@@ -34,7 +34,6 @@ const ServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4">
                 <h3 className="text-xl font-bold text-white mb-1">Viandes & Poissons</h3>
-                <p className="text-white/90 text-sm">Produits frais de qualité supérieure</p>
               </div>
             </div>
           </Card>
@@ -51,7 +50,6 @@ const ServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4">
                 <h3 className="text-xl font-bold text-white mb-1">Produits laitiers & Œufs</h3>
-                <p className="text-white/90 text-sm">Fromages artisanaux et produits frais</p>
               </div>
             </div>
           </Card>
@@ -68,7 +66,6 @@ const ServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4">
                 <h3 className="text-xl font-bold text-white mb-1">Fruits & Légumes</h3>
-                <p className="text-white/90 text-sm">Produits de saison, fraîcheur optimale</p>
               </div>
             </div>
           </Card>
@@ -85,7 +82,6 @@ const ServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4">
                 <h3 className="text-xl font-bold text-white mb-1">Épicerie</h3>
-                <p className="text-white/90 text-sm">Épices, légumineuses et produits fins</p>
               </div>
             </div>
           </Card>
