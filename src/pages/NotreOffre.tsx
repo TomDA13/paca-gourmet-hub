@@ -5,18 +5,8 @@ import BannerSection from '@/components/BannerSection';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Beef, Egg, Apple, Package, Truck, Link, Award, MessageSquare } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const NotreOffre = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
-  };
-
   return (
     <div className="min-h-screen">
       <Header />
@@ -154,10 +144,7 @@ const NotreOffre = () => {
 
               {/* Bouton Rejoignez-nous */}
               <div className="text-center">
-                <Button 
-                  className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
-                  onClick={() => handleNavigation('/contact')}
-                >
+                <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8">
                   Rejoignez-nous
                 </Button>
               </div>

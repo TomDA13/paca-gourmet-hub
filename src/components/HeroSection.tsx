@@ -1,17 +1,7 @@
 
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
-  };
-
   return (
     <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -34,11 +24,7 @@ const HeroSection = () => {
           La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
         </p>
         <div className="flex flex-col items-center gap-6 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-          <Button 
-            size="lg" 
-            className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            onClick={() => handleNavigation('/notre-offre')}
-          >
+          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
             Découvrir nos produits
           </Button>
           <img 

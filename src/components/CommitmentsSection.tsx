@@ -1,10 +1,8 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const CommitmentsSection = () => {
-  const navigate = useNavigate();
-
   return (
     <section id="commitments" className="relative py-20 bg-accent overflow-hidden">
       {/* Decorative elements */}
@@ -31,7 +29,7 @@ const CommitmentsSection = () => {
         <div className="text-center">
           <Button 
             className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 group font-semibold"
-            onClick={() => navigate('/nos-engagements')}
+            onClick={() => {/* TODO: Navigate to commitments page */}}
           >
             En savoir plus
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

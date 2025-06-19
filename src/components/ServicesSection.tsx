@@ -2,18 +2,8 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const ServicesSection = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
-  };
-
   return (
     <section id="services" className="relative py-20 bg-accent overflow-hidden">
       {/* Floating elements */}
@@ -102,7 +92,7 @@ const ServicesSection = () => {
         <div className="text-center">
           <Button 
             className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 group"
-            onClick={() => handleNavigation('/notre-offre')}
+            onClick={() => {/* TODO: Navigate to services page */}}
           >
             Découvrir toute notre offre
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
