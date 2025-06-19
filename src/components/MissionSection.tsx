@@ -1,8 +1,15 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const MissionSection = () => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate('/nos-engagements');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section id="mission" className="relative py-20 bg-white overflow-hidden">
       {/* Floating elements */}
@@ -97,7 +104,7 @@ const MissionSection = () => {
           <div className="text-center">
             <Button 
               className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 group"
-              onClick={() => {/* TODO: Navigate to mission page */}}
+              onClick={handleLearnMore}
             >
               En savoir plus sur notre mission
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
