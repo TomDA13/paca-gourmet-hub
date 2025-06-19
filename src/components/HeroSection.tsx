@@ -5,6 +5,13 @@ import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
   const navigate = useNavigate();
 
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -30,7 +37,7 @@ const HeroSection = () => {
           <Button 
             size="lg" 
             className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            onClick={() => navigate('/notre-offre')}
+            onClick={() => handleNavigation('/notre-offre')}
           >
             Découvrir nos produits
           </Button>
