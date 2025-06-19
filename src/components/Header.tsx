@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, User } from 'lucide-react';
@@ -124,6 +125,16 @@ const Header = () => {
             <Button className="bg-secondary hover:bg-secondary/90 text-white ml-4">
               Contact
             </Button>
+
+            {/* Bouton accès particulier - plus visible */}
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="ml-2 text-primary border-primary hover:bg-primary hover:text-white transition-colors"
+            >
+              <User className="w-4 h-4 mr-2" />
+              Accès particulier
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -162,25 +173,19 @@ const Header = () => {
               <Button className="bg-secondary hover:bg-secondary/90 text-white w-fit">
                 Contact
               </Button>
+              
+              {/* Bouton accès particulier en mobile - plus visible */}
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="text-primary border-primary hover:bg-primary hover:text-white w-fit"
+              >
+                <User className="w-4 h-4 mr-2" />
+                Accès particulier
+              </Button>
             </div>
           </div>
         )}
-      </div>
-
-      {/* Barre pour l'accès particulier - maintenant en dessous de la nav */}
-      <div className="bg-accent/50 border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-end py-2">
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              className="text-sm text-gray-600 hover:text-primary hover:bg-white/50"
-            >
-              <User className="w-4 h-4 mr-2" />
-              Accès site particulier
-            </Button>
-          </div>
-        </div>
       </div>
     </header>
   );
