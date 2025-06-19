@@ -25,28 +25,28 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     title: "Notre Offre",
-    href: "#notre-offre",
+    href: "/notre-offre",
     subItems: [
-      { title: "Notre Gamme", href: "#notre-gamme" },
-      { title: "Logistique optimisée", href: "#logistique-optimisee" },
-      { title: "Livraisons 100% locale", href: "#livraisons-locale" }
+      { title: "Notre Gamme", href: "/notre-offre#notre-gamme" },
+      { title: "Logistique optimisée", href: "/notre-offre#logistique-optimisee" },
+      { title: "Livraisons 100% locale", href: "/notre-offre#livraisons-locale" }
     ]
   },
   {
     title: "Nos Engagements",
-    href: "#nos-engagements"
+    href: "/nos-engagements"
   },
   {
     title: "Qui Sommes Nous",
-    href: "#qui-sommes-nous",
+    href: "/qui-sommes-nous",
     subItems: [
-      { title: "Notre histoire", href: "#notre-histoire" },
-      { title: "L'équipe", href: "#equipe" }
+      { title: "Notre histoire", href: "/qui-sommes-nous#notre-histoire" },
+      { title: "L'équipe", href: "/qui-sommes-nous#equipe" }
     ]
   },
   {
     title: "Actualités",
-    href: "#actualites"
+    href: "/actualites"
   }
 ];
 
