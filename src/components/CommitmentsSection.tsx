@@ -12,16 +12,16 @@ const CommitmentsSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div className="bg-white p-8 rounded-xl text-center hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border-l-4 border-l-primary">
-            <div className="text-6xl md:text-7xl font-bold text-primary mb-4 drop-shadow-lg">150</div>
-            <p className="text-gray-700 text-lg">Producteurs partenaires locaux</p>
+            <div className="text-6xl md:text-7xl font-bold text-secondary mb-4 drop-shadow-lg">150</div>
+            <p className="text-white text-lg">Producteurs partenaires locaux</p>
           </div>
           <div className="bg-white p-8 rounded-xl text-center hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border-l-4 border-l-primary">
-            <div className="text-6xl md:text-7xl font-bold text-primary mb-4 drop-shadow-lg">700</div>
-            <p className="text-gray-700 text-lg">Références de produits locaux</p>
+            <div className="text-6xl md:text-7xl font-bold text-secondary mb-4 drop-shadow-lg">700</div>
+            <p className="text-white text-lg">Références de produits locaux</p>
           </div>
           <div className="bg-white p-8 rounded-xl text-center hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border-l-4 border-l-primary">
-            <div className="text-6xl md:text-7xl font-bold text-primary mb-4 drop-shadow-lg">760</div>
-            <p className="text-gray-700 text-lg">Tonnes de produits locaux livrés en 2024</p>
+            <div className="text-6xl md:text-7xl font-bold text-secondary mb-4 drop-shadow-lg">760</div>
+            <p className="text-white text-lg">Tonnes de produits locaux livrés en 2024</p>
           </div>
         </div>
 
