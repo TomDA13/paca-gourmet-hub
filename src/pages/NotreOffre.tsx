@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Beef, Egg, Apple, Package, Truck, Link, Award, MessageSquare } from 'lucide-react';
 
 const NotreOffre = () => {
@@ -135,10 +136,17 @@ const NotreOffre = () => {
               </div>
 
               {/* Espace pour le schéma logistique */}
-              <div className="bg-gray-50 p-8 rounded-lg text-center">
+              <div className="bg-gray-50 p-8 rounded-lg text-center mb-8">
                 <p className="text-gray-500 italic">
                   Schéma logistique à venir...
                 </p>
+              </div>
+
+              {/* Bouton Rejoignez-nous */}
+              <div className="text-center">
+                <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8">
+                  Rejoignez-nous
+                </Button>
               </div>
             </div>
           </section>
