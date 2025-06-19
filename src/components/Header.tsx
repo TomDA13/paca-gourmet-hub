@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, User } from 'lucide-react';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -67,6 +67,22 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
+      {/* Barre supérieure pour l'accès particulier */}
+      <div className="bg-accent/50 border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-end py-2">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="text-sm text-gray-600 hover:text-primary hover:bg-white/50"
+            >
+              <User className="w-4 h-4 mr-2" />
+              Accès site particulier
+            </Button>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -140,6 +156,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-4">
+              {/* Bouton accès particulier en mobile */}
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className="text-sm text-gray-600 hover:text-primary w-fit"
+              >
+                <User className="w-4 h-4 mr-2" />
+                Accès site particulier
+              </Button>
+              
               {menuItems.map((item) => (
                 <div key={item.title}>
                   <a href={item.href} className="text-gray-700 hover:text-primary transition-colors block">
