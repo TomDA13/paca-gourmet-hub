@@ -1,7 +1,6 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import BannerSection from '@/components/BannerSection';
 
 const Actualites = () => {
   return (
@@ -29,7 +28,6 @@ const Actualites = () => {
         </div>
       </main>
       
-      <BannerSection />
       <Footer />
     </div>
   );

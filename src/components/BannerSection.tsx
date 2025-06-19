@@ -1,26 +1,30 @@
 
+import { Button } from '@/components/ui/button';
+
 const BannerSection = () => {
   return (
-    <section className="relative py-20 overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
+    <section className="relative w-full h-64 md:h-80 overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src="/lovable-uploads/397eff38-3549-4d6d-ac27-5b15135db085.png"
+          alt="Produits locaux de Provence"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-          Commencez dès maintenant à Relocaliser !
-        </h2>
-        
-        <button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors hover:shadow-lg">
-          Découvrir nos produits
-        </button>
+      
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
+        <div className="text-center text-white">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4">
+            Les saveurs authentiques de nos régions
+          </h2>
+          <p className="text-lg md:text-xl opacity-90 mb-6">
+            Découvrez nos produits locaux d'exception
+          </p>
+          <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8">
+            Rejoignez-nous
+          </Button>
+        </div>
       </div>
     </section>
   );
