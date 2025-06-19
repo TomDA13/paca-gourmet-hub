@@ -19,26 +19,6 @@ const MissionSection = () => {
             </h2>
           </div>
           
-          {/* Entreprise à Mission - Section spéciale */}
-          <div className="bg-gradient-to-r from-blue-50 to-red-50 rounded-2xl p-8 mb-12 border border-gray-100 shadow-lg">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-shrink-0">
-                <img 
-                  src="/lovable-uploads/e55b6652-5ab6-4943-8378-88d40043aca9.png" 
-                  alt="Entreprise à Mission" 
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl font-bold text-primary mb-4">L'ADN de Localizz certifiée par notre statut ESS</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Depuis 2022 nous sommes une <strong>entreprise à missions</strong>. Concrètement, c'est désormais l'ADN de la société qui se retrouve dans ses statuts : 
-                  <em> Faciliter l'accès à une alimentation saine et durable à travers une économie circulaire, sociale et solidaire</em>
-                </p>
-              </div>
-            </div>
-          </div>
-          
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Une juste rémunération */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 overflow-hidden">

@@ -9,17 +9,6 @@ const CommitmentsSection = () => {
       <div className="absolute top-0 left-0 w-96 h-96 bg-secondary/20 rounded-full -translate-y-48 -translate-x-48 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/10 rounded-full translate-y-40 translate-x-40"></div>
       
-      {/* Image en haut à droite */}
-      <div className="absolute top-8 right-8 hidden lg:block">
-        <div className="w-64 h-48 rounded-xl overflow-hidden shadow-lg">
-          <img 
-            src="/lovable-uploads/44ee06a6-57e2-49bf-a8cc-e1cba964cd76.png" 
-            alt="Produits locaux disponibles toute l'année" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div className="bg-primary p-8 rounded-xl text-center hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border-l-4 border-l-primary">
