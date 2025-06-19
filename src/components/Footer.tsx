@@ -1,4 +1,5 @@
 
+
 import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
@@ -17,7 +18,7 @@ const Footer = () => {
               La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
             </p>
             <div className="flex space-x-4 mb-4">
-              <a href="https://www.linkedin.com/company/localizz" className="text-blue-500 hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/company/localizz" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
             </div>
@@ -63,3 +64,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
