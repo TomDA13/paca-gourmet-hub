@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, Building, Hotel, Wheat, HandHeart, Factory } from 'lucide-react';
+import { ArrowRight, Users, ChefHat, Hotel, Wheat, Hammer, Factory } from 'lucide-react';
 
 const TargetAudienceSection = () => {
   const restaurateurs = [
@@ -10,7 +10,7 @@ const TargetAudienceSection = () => {
       description: "Scolaire, entreprise, établissement de santé"
     },
     {
-      icon: Building,
+      icon: ChefHat,
       title: "Restauration commerciale", 
       description: "Restaurants, brasseries, pizzerias"
     },
@@ -33,7 +33,7 @@ const TargetAudienceSection = () => {
       description: "Coopératives agricoles et artisanales"
     },
     {
-      icon: HandHeart,
+      icon: Hammer,
       title: "Artisans",
       description: "Transformateurs et producteurs artisanaux"
     }
@@ -68,7 +68,7 @@ const TargetAudienceSection = () => {
             <div className="space-y-6 mb-8">
               {restaurateurs.map((item, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ const TargetAudienceSection = () => {
             <div className="space-y-6 mb-8">
               {producteurs.map((item, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
