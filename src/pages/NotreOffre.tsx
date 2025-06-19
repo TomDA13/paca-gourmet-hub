@@ -142,63 +142,62 @@ const NotreOffre = () => {
             </div>
           </section>
 
-          {/* Livraisons 100% locale Section */}
+          {/* Livraisons 100% locale Section - Style complètement différent */}
           <section id="livraisons-locale" className="mb-20">
-            <div className="bg-gradient-to-br from-secondary/10 to-primary/5 p-8 rounded-lg">
-              <h2 className="text-3xl font-bold text-primary mb-12 text-center">Livraisons 100% locales</h2>
+            <div className="bg-primary text-white p-12 rounded-2xl relative overflow-hidden">
+              {/* Effet de fond décoratif */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -translate-y-32 translate-x-32"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
               
-              {/* Grid des 4 points */}
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* Point 1 */}
-                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-t-blue-500">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Truck className="w-6 h-6 text-white" />
+              <div className="relative z-10">
+                <h2 className="text-4xl font-bold mb-4 text-center">Livraisons 100% locales</h2>
+                <div className="w-24 h-1 bg-secondary mx-auto mb-16"></div>
+                
+                {/* Liste des 4 points en style minimaliste */}
+                <div className="max-w-4xl mx-auto space-y-8">
+                  {/* Point 1 */}
+                  <div className="flex items-center space-x-6 group">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                      <Truck className="w-8 h-8 text-white" />
                     </div>
-                    <div>
-                      <p className="text-gray-800 font-medium leading-relaxed">
+                    <div className="flex-1">
+                      <p className="text-xl leading-relaxed">
                         Une solution logistique clé en main pour les professionnels de la restauration
                       </p>
                     </div>
                   </div>
-                </div>
 
-                {/* Point 2 */}
-                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-t-green-500">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Target className="w-6 h-6 text-white" />
+                  {/* Point 2 */}
+                  <div className="flex items-center space-x-6 group">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                      <Target className="w-8 h-8 text-white" />
                     </div>
-                    <div>
-                      <p className="text-gray-800 font-medium leading-relaxed">
+                    <div className="flex-1">
+                      <p className="text-xl leading-relaxed">
                         Une chaîne de valeurs optimisée grâce aux circuits courts
                       </p>
                     </div>
                   </div>
-                </div>
 
-                {/* Point 3 */}
-                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-t-amber-500">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Award className="w-6 h-6 text-white" />
+                  {/* Point 3 */}
+                  <div className="flex items-center space-x-6 group">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                      <Award className="w-8 h-8 text-white" />
                     </div>
-                    <div>
-                      <p className="text-gray-800 font-medium leading-relaxed">
+                    <div className="flex-1">
+                      <p className="text-xl leading-relaxed">
                         Des produits locaux de qualité adaptés à votre segment d'activité
                       </p>
                     </div>
                   </div>
-                </div>
 
-                {/* Point 4 */}
-                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-t-purple-500">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MessageCircle className="w-6 h-6 text-white" />
+                  {/* Point 4 */}
+                  <div className="flex items-center space-x-6 group">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
+                      <MessageCircle className="w-8 h-8 text-white" />
                     </div>
-                    <div>
-                      <p className="text-gray-800 font-medium leading-relaxed">
+                    <div className="flex-1">
+                      <p className="text-xl leading-relaxed">
                         Des outils de communication pour redonner du sens à une consommation de proximité
                       </p>
                     </div>
