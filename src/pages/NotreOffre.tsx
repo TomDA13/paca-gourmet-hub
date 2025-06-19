@@ -2,7 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ShoppingCart, Wheat, Apple, Package, Truck, Target, Award, MessageCircle } from 'lucide-react';
+import { Fish, Milk, Apple, Package, Truck, Users, Award, MessageCircle } from 'lucide-react';
 
 const NotreOffre = () => {
   return (
@@ -37,7 +37,7 @@ const NotreOffre = () => {
                   <CardHeader className="pb-4">
                     <CardTitle className="text-2xl font-bold text-primary flex items-center">
                       <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">
-                        <ShoppingCart className="w-5 h-5 text-white" />
+                        <Fish className="w-5 h-5 text-white" />
                       </div>
                       Viandes & Poissons
                     </CardTitle>
@@ -59,7 +59,7 @@ const NotreOffre = () => {
                   <CardHeader className="pb-4">
                     <CardTitle className="text-2xl font-bold text-primary flex items-center">
                       <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
-                        <Package className="w-5 h-5 text-white" />
+                        <Milk className="w-5 h-5 text-white" />
                       </div>
                       Produits laitiers & Œufs
                     </CardTitle>
@@ -98,7 +98,7 @@ const NotreOffre = () => {
                   <CardHeader className="pb-4">
                     <CardTitle className="text-2xl font-bold text-primary flex items-center">
                       <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center mr-3">
-                        <Wheat className="w-5 h-5 text-white" />
+                        <Package className="w-5 h-5 text-white" />
                       </div>
                       Épicerie
                     </CardTitle>
@@ -142,67 +142,68 @@ const NotreOffre = () => {
             </div>
           </section>
 
-          {/* Livraisons 100% locale Section - Style complètement différent */}
+          {/* Livraisons 100% locale Section */}
           <section id="livraisons-locale" className="mb-20">
-            <div className="bg-primary text-white p-12 rounded-2xl relative overflow-hidden">
-              {/* Effet de fond décoratif */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -translate-y-32 translate-x-32"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
+            <div className="bg-secondary/10 p-8 rounded-lg">
+              <h2 className="text-3xl font-bold text-primary mb-6 text-center">Livraisons 100% locale</h2>
               
-              <div className="relative z-10">
-                <h2 className="text-4xl font-bold mb-4 text-center">Livraisons 100% locales</h2>
-                <div className="w-24 h-1 bg-secondary mx-auto mb-16"></div>
-                
-                {/* Liste des 4 points en style minimaliste */}
-                <div className="max-w-4xl mx-auto space-y-8">
-                  {/* Point 1 */}
-                  <div className="flex items-center space-x-6 group">
-                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
-                      <Truck className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-xl leading-relaxed">
+              {/* Grille des 4 points */}
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Point 1 */}
+                <Card className="bg-white shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-l-blue-500">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Truck className="w-5 h-5 text-white" />
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
                         Une solution logistique clé en main pour les professionnels de la restauration
                       </p>
                     </div>
-                  </div>
+                  </CardContent>
+                </Card>
 
-                  {/* Point 2 */}
-                  <div className="flex items-center space-x-6 group">
-                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
-                      <Target className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-xl leading-relaxed">
+                {/* Point 2 */}
+                <Card className="bg-white shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-l-green-500">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Users className="w-5 h-5 text-white" />
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
                         Une chaîne de valeurs optimisée grâce aux circuits courts
                       </p>
                     </div>
-                  </div>
+                  </CardContent>
+                </Card>
 
-                  {/* Point 3 */}
-                  <div className="flex items-center space-x-6 group">
-                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
-                      <Award className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-xl leading-relaxed">
+                {/* Point 3 */}
+                <Card className="bg-white shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-l-orange-500">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Award className="w-5 h-5 text-white" />
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
                         Des produits locaux de qualité adaptés à votre segment d'activité
                       </p>
                     </div>
-                  </div>
+                  </CardContent>
+                </Card>
 
-                  {/* Point 4 */}
-                  <div className="flex items-center space-x-6 group">
-                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
-                      <MessageCircle className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-xl leading-relaxed">
+                {/* Point 4 */}
+                <Card className="bg-white shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-l-purple-500">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <MessageCircle className="w-5 h-5 text-white" />
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
                         Des outils de communication pour redonner du sens à une consommation de proximité
                       </p>
                     </div>
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </section>
