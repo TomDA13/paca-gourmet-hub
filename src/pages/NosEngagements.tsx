@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -38,7 +39,7 @@ const NosEngagements = () => {
     {
       id: 3,
       title: "Une qualité de sourcing, de produits et de suivi",
-      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=500&h=400&fit=crop",
+      image: "/lovable-uploads/7531bbf6-b9d3-486f-a9d6-d0b982a17e72.png",
       content: {
         subtitle: "Une qualité de sourcing, de produits et de suivi",
         points: [
@@ -52,7 +53,7 @@ const NosEngagements = () => {
     {
       id: 4,
       title: "Une relocalisation de vos approvisionnements",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=500&h=400&fit=crop",
+      image: "/lovable-uploads/cf62e900-37c5-4905-8438-90128e767871.png",
       content: {
         subtitle: "Une relocalisation de vos approvisionnements",
         points: [
