@@ -54,7 +54,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto bg-accent py-12 px-8 rounded-lg">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-primary mb-4">Notre histoire</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
