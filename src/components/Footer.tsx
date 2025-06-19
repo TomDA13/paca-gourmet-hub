@@ -1,5 +1,5 @@
 
-import { Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,14 +17,8 @@ const Footer = () => {
               La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
             </p>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/localizz" className="text-blue-500 hover:text-blue-400 transition-colors">
                 <Linkedin className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Instagram className="w-6 h-6" />
               </a>
             </div>
             <div className="text-gray-300 space-y-1">
@@ -58,12 +52,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm">
+        <div className="border-t border-white/20 mt-8 pt-8">
+          <p className="text-gray-300 text-sm text-center">
             © 2024 Localizz. Tous droits réservés.
-          </p>
-          <p className="text-gray-300 text-sm mt-4 md:mt-0">
-            Made with ❤️ in Provence-Alpes-Côte d'Azur
           </p>
         </div>
       </div>
