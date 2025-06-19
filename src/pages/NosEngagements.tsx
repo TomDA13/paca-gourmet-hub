@@ -1,6 +1,7 @@
 
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BannerSection from '@/components/BannerSection';
 
 const NosEngagements = () => {
   return (
@@ -28,6 +29,7 @@ const NosEngagements = () => {
         </div>
       </main>
       
+      <BannerSection />
       <Footer />
     </div>
   );

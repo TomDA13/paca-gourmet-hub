@@ -2,6 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactSection from '@/components/ContactSection';
+import BannerSection from '@/components/BannerSection';
 
 const Contact = () => {
   return (
@@ -23,6 +24,7 @@ const Contact = () => {
         <ContactSection />
       </main>
       
+      <BannerSection />
       <Footer />
     </div>
   );
