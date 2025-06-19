@@ -20,13 +20,13 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Grille 2x2 avec les 4 images optimisées */}
+        {/* Grille 2x2 avec les 4 nouvelles images optimisées */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Viandes & Poissons */}
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full overflow-hidden group">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="/lovable-uploads/3ea8ff4b-d03a-44e5-abf1-8048c99852bd.png" 
+                src="/lovable-uploads/47e0a558-801f-4ef3-adc0-8f62a229fd1f.png" 
                 alt="Viandes et Poissons frais" 
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 style={{ imageRendering: 'crisp-edges' }}
@@ -42,7 +42,7 @@ const ServicesSection = () => {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full overflow-hidden group">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="/lovable-uploads/1749ed36-1ac4-46ec-8899-4094836780b4.png" 
+                src="/lovable-uploads/b650fece-a4de-4296-894f-187b48fb735a.png" 
                 alt="Produits laitiers et fromages" 
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 style={{ imageRendering: 'crisp-edges' }}
@@ -58,7 +58,7 @@ const ServicesSection = () => {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full overflow-hidden group">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="/lovable-uploads/c3c893bb-e47a-4576-bf1f-1cde41dc41d9.png" 
+                src="/lovable-uploads/b0581c11-96e5-4547-838e-003518167057.png" 
                 alt="Fruits et légumes frais de saison" 
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 style={{ imageRendering: 'crisp-edges' }}
@@ -74,7 +74,7 @@ const ServicesSection = () => {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full overflow-hidden group">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="/lovable-uploads/fe72f7a5-fb92-4f22-919d-6a1f1c9f56fd.png" 
+                src="/lovable-uploads/69c8c5f0-7825-4770-ab31-b54fbb8f0a9f.png" 
                 alt="Épicerie fine et produits d'épicerie" 
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 style={{ imageRendering: 'crisp-edges' }}
