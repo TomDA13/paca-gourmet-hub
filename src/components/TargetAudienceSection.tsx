@@ -68,7 +68,7 @@ const TargetAudienceSection = () => {
             <div className="space-y-6 mb-8">
               {restaurateurs.map((item, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#F28A23'}}>
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ const TargetAudienceSection = () => {
             <div className="space-y-6 mb-8">
               {producteurs.map((item, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style={{backgroundColor: '#F28A23'}}>
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
