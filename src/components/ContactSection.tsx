@@ -132,7 +132,7 @@ const ContactSection = () => {
                     <div>
                       <h3 className="font-semibold text-primary mb-2">Téléphone</h3>
                       <p className="text-gray-800 font-medium text-lg mb-1">
-                        +33 (0)4 42 XX XX XX
+                        07 82 35 21 27
                       </p>
                       <div className="flex items-center text-gray-600 text-sm">
                         <Clock className="w-4 h-4 mr-1" />
