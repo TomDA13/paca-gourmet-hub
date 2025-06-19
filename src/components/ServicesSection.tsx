@@ -1,6 +1,7 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Beef, Fish, Egg, Apple, Wheat, Droplets, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const ServicesSection = () => {
   return (
@@ -19,80 +20,85 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Grille 2x2 avec les 4 sections principales */}
+        {/* Grille 2x2 avec les 4 images */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Viandes & Poissons */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full overflow-hidden group">
+            <div className="relative h-48 overflow-hidden">
+              <img 
+                src="/lovable-uploads/3ea8ff4b-d03a-44e5-abf1-8048c99852bd.png" 
+                alt="Viandes et Poissons frais" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Beef className="w-8 h-8 text-white" />
-              </div>
-              <CardTitle className="text-xl text-primary">Viandes & Poissons</CardTitle>
+              <CardTitle className="text-xl text-primary mb-2">Viandes & Poissons</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3 flex-1 text-center">
-              <div className="text-base text-gray-700">
-                <p className="font-medium mb-3">• Bœuf en race à viande HVE et BIO</p>
-                <p className="font-medium mb-3">• Porc plein air des Alpes et de la Crau HVE et BIO</p>
-                <p className="font-medium mb-3">• Agneau du Lubéron et de La Crau HVE et BIO</p>
-                <p className="font-medium mb-3">• Volailles Label Rouge et BIO</p>
-                <p className="font-medium mb-3">• Taureau de Camargue AOP</p>
-                <p className="font-medium">• Loup du Frioul BIO</p>
-              </div>
+            <CardContent className="text-center">
+              <p className="text-gray-700 font-medium">
+                Produits frais de qualité supérieure, sélectionnés avec soin
+              </p>
             </CardContent>
           </Card>
 
           {/* Produits laitiers et Œufs */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full overflow-hidden group">
+            <div className="relative h-48 overflow-hidden">
+              <img 
+                src="/lovable-uploads/1749ed36-1ac4-46ec-8899-4094836780b4.png" 
+                alt="Produits laitiers et fromages" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Droplets className="w-8 h-8 text-white" />
-              </div>
-              <CardTitle className="text-xl text-primary">Produits laitiers & Œufs</CardTitle>
+              <CardTitle className="text-xl text-primary mb-2">Produits laitiers & Œufs</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3 flex-1 text-center">
-              <div className="text-base text-gray-700">
-                <p className="font-medium mb-3">• Fromage blanc, crème et yaourt (100g, 1kg, 5kg)</p>
-                <p className="font-medium mb-3">• Fromages pasteurisés ou au lait cru à la découpe</p>
-                <p className="font-medium mb-3">• Œufs 100% plein air ou BIO (coquille ou coulé)</p>
-                <p className="font-medium">• Beurre, lait...</p>
-              </div>
+            <CardContent className="text-center">
+              <p className="text-gray-700 font-medium">
+                Fromages artisanaux, produits laitiers frais et œufs de qualité
+              </p>
             </CardContent>
           </Card>
 
           {/* Fruits & Légumes */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full overflow-hidden group">
+            <div className="relative h-48 overflow-hidden">
+              <img 
+                src="/lovable-uploads/c3c893bb-e47a-4576-bf1f-1cde41dc41d9.png" 
+                alt="Fruits et légumes frais de saison" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Apple className="w-8 h-8 text-white" />
-              </div>
-              <CardTitle className="text-xl text-primary">Fruits & Légumes</CardTitle>
+              <CardTitle className="text-xl text-primary mb-2">Fruits & Légumes</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3 flex-1 text-center">
-              <div className="text-base text-gray-700">
-                <p className="font-medium mb-3 text-green-600">De saison uniquement !</p>
-                <p className="font-medium mb-3">• 1ère et 4ème gamme avec calibres adaptés</p>
-                <p className="font-medium">• Récoltés à juste maturité pour vos jours de consommation</p>
-              </div>
+            <CardContent className="text-center">
+              <p className="text-gray-700 font-medium">
+                Produits de saison, récoltés à maturité pour une fraîcheur optimale
+              </p>
             </CardContent>
           </Card>
 
           {/* Épicerie */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full overflow-hidden group">
+            <div className="relative h-48 overflow-hidden">
+              <img 
+                src="/lovable-uploads/fe72f7a5-fb92-4f22-919d-6a1f1c9f56fd.png" 
+                alt="Épicerie fine et produits d'épicerie" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
             <CardHeader className="text-center pb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <Wheat className="w-8 h-8 text-white" />
-              </div>
-              <CardTitle className="text-xl text-primary">Épicerie</CardTitle>
+              <CardTitle className="text-xl text-primary mb-2">Épicerie</CardTitle>
             </CardHeader>
-            <CardContent className="flex-1 text-center">
-              <div className="space-y-3">
-                <div className="text-base text-gray-700">
-                  <p className="font-medium mb-3">• Légumineuses équitables</p>
-                  <p className="font-medium mb-3">• Farines BIO, Riz de Camargue IGP</p>
-                  <p className="font-medium mb-3">• Confitures, Miel IGP</p>
-                  <p className="font-medium">• Conserves, Jus HVE...</p>
-                </div>
-              </div>
+            <CardContent className="text-center">
+              <p className="text-gray-700 font-medium">
+                Épices, légumineuses, farines et produits d'épicerie fine
+              </p>
             </CardContent>
           </Card>
         </div>
