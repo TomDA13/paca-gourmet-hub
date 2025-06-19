@@ -125,9 +125,20 @@ const NotreOffre = () => {
           <section id="logistique-optimisee" className="mb-20">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h2 className="text-3xl font-bold text-primary mb-6">Logistique optimisée</h2>
-              <p className="text-gray-700 text-lg">
-                Contenu à venir pour la section Logistique optimisée...
-              </p>
+              
+              {/* Description */}
+              <div className="text-center mb-12">
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+                  une logistique en circuit court et en flux tendu basée sur une économie circulaire
+                </p>
+              </div>
+
+              {/* Espace pour le schéma logistique */}
+              <div className="bg-gray-50 p-8 rounded-lg text-center">
+                <p className="text-gray-500 italic">
+                  Schéma logistique à venir...
+                </p>
+              </div>
             </div>
           </section>
 
