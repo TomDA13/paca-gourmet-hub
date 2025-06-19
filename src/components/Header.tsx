@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, User } from 'lucide-react';
@@ -28,11 +27,9 @@ const menuItems: MenuItem[] = [
     title: "Notre Offre",
     href: "#notre-offre",
     subItems: [
-      { title: "Une gamme complète", href: "#gamme-complete" },
-      { title: "Une solution logistique", href: "#solution-logistique" },
-      { title: "Une chaîne de valeurs", href: "#chaine-valeurs" },
-      { title: "Des produits adaptés à votre segment d'activité", href: "#produits-adaptes" },
-      { title: "Des outils de communication", href: "#outils-communication" }
+      { title: "Notre Gamme", href: "#notre-gamme" },
+      { title: "Logistique optimisée", href: "#logistique-optimisee" },
+      { title: "Livraisons 100% locale", href: "#livraisons-locale" }
     ]
   },
   {
@@ -43,18 +40,13 @@ const menuItems: MenuItem[] = [
     title: "Qui Sommes Nous",
     href: "#qui-sommes-nous",
     subItems: [
-      { title: "Nos Missions", href: "#nos-missions" },
-      { title: "Notre Équipe", href: "#notre-equipe" },
-      { title: "Notre Histoire", href: "#notre-histoire" }
+      { title: "Notre histoire", href: "#notre-histoire" },
+      { title: "L'équipe", href: "#equipe" }
     ]
   },
   {
     title: "Actualités",
-    href: "#actualites",
-    subItems: [
-      { title: "Le Blog", href: "#blog" },
-      { title: "Ils parlent de nous", href: "#presse" }
-    ]
+    href: "#actualites"
   }
 ];
 
