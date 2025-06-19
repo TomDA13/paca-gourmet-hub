@@ -1,4 +1,3 @@
-
 const Timeline = () => {
   const timelineData = [
     {
@@ -19,7 +18,7 @@ const Timeline = () => {
       year: "2017",
       title: "Déménagement et agrandissement",
       description: "En 2017, Localizz se sentant un peu à l'étroit, déménage dans de nouveaux locaux 5 fois plus grands et se dote d'une chambre froide de plus de 200m2.\n\nCet agrandissement permet la mise en place du système de qualité HACCP. Par la suite Localizz décroche son premier contrat avec les cantines de la ville d'Aix-en-Provence.",
-      image: "/lovable-uploads/0a885bfd-cebc-4658-b4a9-be830aa96917.png",
+      image: "/lovable-uploads/b4d51488-674e-44af-b366-3871a45785bb.png",
       position: "left"
     },
     {
