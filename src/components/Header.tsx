@@ -1,4 +1,5 @@
 
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, User } from 'lucide-react';
@@ -54,6 +55,14 @@ const menuItems: MenuItem[] = [
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleMainMenuClick = (href: string) => {
+    // Navigate to the page and scroll to top
+    window.location.href = href;
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
@@ -77,7 +86,10 @@ const Header = () => {
                   <NavigationMenuItem key={item.title}>
                     {item.subItems ? (
                       <>
-                        <NavigationMenuTrigger className="text-gray-700 hover:text-primary transition-colors bg-transparent hover:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
+                        <NavigationMenuTrigger 
+                          className="text-gray-700 hover:text-primary transition-colors bg-transparent hover:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent cursor-pointer"
+                          onClick={() => handleMainMenuClick(item.href)}
+                        >
                           {item.title}
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
@@ -141,7 +153,11 @@ const Header = () => {
             <div className="flex flex-col space-y-4">
               {menuItems.map((item) => (
                 <div key={item.title}>
-                  <a href={item.href} className="text-gray-700 hover:text-primary transition-colors block">
+                  <a 
+                    href={item.href} 
+                    className="text-gray-700 hover:text-primary transition-colors block"
+                    onClick={() => handleMainMenuClick(item.href)}
+                  >
                     {item.title}
                   </a>
                   {item.subItems && (
@@ -181,3 +197,4 @@ const Header = () => {
 };
 
 export default Header;
+
