@@ -1,6 +1,8 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
+import Timeline from '@/components/Timeline';
 
 const QuiSommesNous = () => {
   return (
@@ -14,19 +16,11 @@ const QuiSommesNous = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               Qui Sommes Nous
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Découvrez notre histoire et rencontrez l'équipe passionnée derrière Localizz
-            </p>
           </div>
 
           {/* Notre histoire Section */}
           <section id="notre-histoire" className="mb-20">
-            <div className="bg-accent p-8 rounded-lg">
-              <h2 className="text-3xl font-bold text-primary mb-6">Notre histoire</h2>
-              <p className="text-gray-700 text-lg">
-                Contenu à venir pour la section Notre histoire...
-              </p>
-            </div>
+            <Timeline />
           </section>
 
           {/* L'équipe Section */}
