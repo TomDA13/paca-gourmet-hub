@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -147,7 +146,7 @@ const NotreOffre = () => {
             <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-xl border border-secondary/20">
               <h2 className="text-3xl font-bold text-primary mb-12 text-center">Livraisons 100% locales</h2>
               
-              <div className="space-y-8">
+              <div className="grid md:grid-cols-2 gap-8">
                 {/* Point 1 */}
                 <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-l-blue-500 hover:shadow-xl transition-all duration-300">
                   <div className="flex items-start space-x-4">
