@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, User } from 'lucide-react';
@@ -53,23 +54,19 @@ const menuItems: MenuItem[] = [
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button onClick={scrollToTop} className="focus:outline-none">
+            <a href="/" className="focus:outline-none">
               <img 
                 src="/lovable-uploads/1b5b3d5d-d99b-4720-ac02-f36e48c49406.png" 
                 alt="Localizz" 
                 className="h-12 w-auto hover:opacity-80 transition-opacity"
               />
-            </button>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
