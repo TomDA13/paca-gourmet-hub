@@ -31,7 +31,7 @@ export const articles: Article[] = [
       
       <p>Un grand merci à SIF Aïcha, Ludovic Mille, Sophie Laroche, Géraldine Lassarat, la Ville de Marseille et Monsieur le maire Benoît PAYAN pour la qualité de ces échanges et leur confiance.</p>
     `,
-    image: "/lovable-uploads/397eff38-3549-4d6d-ac27-5b15135db085.png",
+    image: "/lovable-uploads/f140422d-b9aa-4a8e-a5d8-76c58d50305b.png",
     date: "20 Déc 2024",
     category: "Partenariats",
     readTime: "4 min",
@@ -64,7 +64,7 @@ export const articles: Article[] = [
       
       <p>Ce débat a permis de rappeler que le prix d'un repas juste et équilibré est supérieur à ce que l'on imagine, mais qu'il est essentiel pour assurer une alimentation de qualité et soutenir durablement nos producteurs locaux, avec l'appui indispensable de la commande publique. <a href="/qui-sommes-nous" class="text-primary hover:underline">En savoir plus sur notre mission</a>.</p>
     `,
-    image: "/lovable-uploads/ab303051-df5e-4115-89b0-3d254f762a71.png",
+    image: "/lovable-uploads/a766770d-1877-4b41-9e5a-ff2a6424de30.png",
     date: "15 Déc 2024",
     category: "Événements",
     readTime: "6 min",
@@ -90,7 +90,7 @@ export const articles: Article[] = [
       
       <p>Un grand merci à Localizz pour leur soutien précieux et leur engagement quotidien pour une alimentation plus responsable. Ensemble, nous œuvrons pour un avenir où l'écologie et la santé sont au cœur de l'éducation et des pratiques alimentaires. <a href="/nos-engagements" class="text-primary hover:underline">Découvrez nos engagements environnementaux</a>.</p>
     `,
-    image: "/lovable-uploads/397eff38-3549-4d6d-ac27-5b15135db085.png",
+    image: "/lovable-uploads/49b57210-23d2-4260-a44c-004a093e3ab0.png",
     date: "10 Déc 2024",
     category: "Éducation",
     readTime: "3 min",
@@ -109,7 +109,7 @@ export const articles: Article[] = [
       
       <p>Ces initiatives s'inscrivent parfaitement dans <a href="/nos-engagements" class="text-primary hover:underline">notre mission d'entreprise à missions</a>, où l'éducation et la sensibilisation sont des piliers essentiels de notre action.</p>
     `,
-    image: "/lovable-uploads/ab303051-df5e-4115-89b0-3d254f762a71.png",
+    image: "/lovable-uploads/9da6c3d0-b5d9-42d8-99a8-7e5519209cf4.png",
     date: "05 Déc 2024",
     category: "Éducation",
     readTime: "3 min",
@@ -136,7 +136,7 @@ export const articles: Article[] = [
       
       <p>Au final, si nos poubelles sont presque vides, c'est simplement parce qu'elles servent très peu : chaque produit compte et chaque geste vise à préserver la planète tout en valorisant le travail de nos producteurs locaux. Cette approche s'inscrit pleinement dans <a href="/nos-engagements" class="text-primary hover:underline">nos engagements environnementaux et sociaux</a>.</p>
     `,
-    image: "/lovable-uploads/397eff38-3549-4d6d-ac27-5b15135db085.png",
+    image: "/lovable-uploads/60e1a5d6-971d-4812-9859-a8d339093648.png",
     date: "01 Déc 2024",
     category: "Environnement",
     readTime: "4 min",
