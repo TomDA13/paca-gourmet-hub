@@ -17,6 +17,9 @@ interface CommitmentCardProps {
 const CommitmentCard = ({ title, image, content }: CommitmentCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
+  // Déterminer si c'est l'image ESS pour appliquer un style différent
+  const isESSImage = image.includes('e343e47b-a78a-4c1a-b332-f1567b2d2156');
+
   return (
     <div className="relative h-96 perspective-1000">
       <div
@@ -32,7 +35,7 @@ const CommitmentCard = ({ title, image, content }: CommitmentCardProps) => {
             <img
               src={image}
               alt={title}
-              className="w-full h-full object-cover"
+              className={`w-full h-full ${isESSImage ? 'object-contain bg-white' : 'object-cover'}`}
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
               <div className="p-6 w-full">
