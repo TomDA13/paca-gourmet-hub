@@ -1,5 +1,4 @@
 
-
 import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
@@ -44,8 +43,6 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Informations</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Média</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Mentions Légales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Conditions Générales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Politique de Confidentialité</a></li>
@@ -64,4 +61,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
