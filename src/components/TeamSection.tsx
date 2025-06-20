@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 const TeamSection = () => {
@@ -13,7 +12,7 @@ const TeamSection = () => {
       name: "Géraldine",
       title: "",
       description: "Le bras droit d'Olivier ! Au quotidien, c'est elle qui gère tous les approvisionnements en fruits et légumes et de la gestion de la préparation de vos commandes.\nSensible depuis toujours aux produits de saison, sains et locaux, elle a à cœur au quotidien de vous assurer des produits de qualité à livraison.\n\nC'est également elle qui veille à ce que Localizz respecte ses missions en tant qu'Entreprise à Missions.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/08733ac6-d040-4063-8af2-08b4ea7db1ac.png"
     },
     {
       name: "Pauline",
