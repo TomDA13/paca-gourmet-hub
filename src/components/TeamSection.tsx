@@ -42,7 +42,7 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="bg-white py-12 px-8 rounded-lg shadow-sm">
+    <section className="py-12 px-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-primary mb-4">L'équipe</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
