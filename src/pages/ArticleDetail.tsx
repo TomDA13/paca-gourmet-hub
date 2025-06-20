@@ -4,6 +4,7 @@ import { getArticleById, getRelatedArticles } from '@/data/articles';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleCard from '@/components/ArticleCard';
+import BannerSection from '@/components/BannerSection';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 
@@ -111,6 +112,7 @@ const ArticleDetail = () => {
         </section>
       )}
       
+      <BannerSection />
       <Footer />
     </div>
   );
