@@ -5,24 +5,46 @@ import BannerSection from '@/components/BannerSection';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Beef, Egg, Apple, Package, Truck, Link, Award, MessageSquare } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const NotreOffre = () => {
+  const navigate = useNavigate();
+
+  const handleJoinUs = () => {
+    navigate('/contact');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
       
-      <main className="py-16">
-        <div className="container mx-auto px-4">
-          {/* Hero Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Notre Offre
-            </h1>
+      <main>
+        {/* Hero Section - Dark background */}
+        <section className="relative py-20 bg-primary overflow-hidden">
+          {/* Floating elements */}
+          <div className="absolute top-16 right-12 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-16 left-12 w-20 h-20 bg-accent/30 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Notre Offre
+              </h1>
+            </div>
           </div>
+        </section>
 
-          {/* Notre Gamme Section */}
-          <section id="notre-gamme" className="mb-20">
-            <div className="bg-accent p-8 rounded-lg">
+        {/* Notre Gamme Section - Light background */}
+        <section id="notre-gamme" className="relative py-20 bg-accent overflow-hidden">
+          {/* Floating elements */}
+          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+          <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-primary/5 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
               <h2 className="text-3xl font-bold text-primary mb-6 text-center">Notre Gamme</h2>
               
               {/* Description */}
@@ -121,11 +143,18 @@ const NotreOffre = () => {
                 </Card>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Logistique optimisée Section */}
-          <section id="logistique-optimisee" className="mb-20">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+        {/* Logistique optimisée Section - White background */}
+        <section id="logistique-optimisee" className="relative py-20 bg-white overflow-hidden">
+          {/* Floating elements */}
+          <div className="absolute top-16 right-10 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-16 left-10 w-20 h-20 bg-primary/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="bg-accent p-8 rounded-lg shadow-sm">
               <h2 className="text-3xl font-bold text-primary mb-6 text-center">Logistique optimisée</h2>
               
               {/* Description */}
@@ -144,15 +173,25 @@ const NotreOffre = () => {
 
               {/* Bouton Rejoignez-nous */}
               <div className="text-center">
-                <Button className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8">
+                <Button 
+                  className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
+                  onClick={handleJoinUs}
+                >
                   Rejoignez-nous
                 </Button>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* Un service 360° Section */}
-          <section id="service-360" className="mb-20">
+        {/* Un service 360° Section - Light background */}
+        <section id="service-360" className="relative py-20 bg-accent overflow-hidden">
+          {/* Floating elements */}
+          <div className="absolute top-20 left-8 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-20 right-8 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+          <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-primary/5 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-xl border border-secondary/20">
               <h2 className="text-3xl font-bold text-primary mb-12 text-center">Un service 360°</h2>
               
@@ -233,8 +272,8 @@ const NotreOffre = () => {
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
       
       <BannerSection />
