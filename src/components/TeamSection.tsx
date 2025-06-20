@@ -7,7 +7,7 @@ const TeamSection = () => {
       name: "Olivier Da Rold",
       title: "le Gérant",
       description: "Fondateur de Localizz en 2013 avec son associé, il a tenu à créer une solution logistique fiable pour les producteurs et les restaurateurs afin de proposer des produits locaux PACA dans les assiettes de la région.\nFort de son expérience dans la restauration collective pendant plus de 20 ans, il a permis la création de Localizz et son succès aujourd'hui.",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/d53e194a-e836-475d-a6b8-70c29fe2d643.png"
     },
     {
       name: "Géraldine",
@@ -19,25 +19,25 @@ const TeamSection = () => {
       name: "Pauline",
       title: "",
       description: "Saisie de commande, gestion des factures dans Chorus, suivi de la facturation des producteurs, préparation de commande… Elle suit",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/54569a65-ccc1-4334-9851-fc8f3542f076.png"
     },
     {
       name: "Maximilien",
       title: "",
       description: "Ingénieur agronome, il s'occupe de tous les approvisionnements des produits secs et frais, tout en étant votre interlocuteur au quotidien pour la prise des commandes. Il adore manger des bons produits et prend soin de vous les préparer !",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/27c9ddc2-4e43-476b-9fee-4de390b585cf.png"
     },
     {
       name: "Rachel",
       title: "",
       description: "Saisie de commande, gestion des factures dans Chorus, suivi de la facturation des producteurs, préparation de commande… Elle veille au quotidien à ce que tout",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+      image: "/lovable-uploads/a6acdfe0-1f83-406a-9587-52840726ae99.png"
     },
     {
       name: "Noël, Johann et Larbi",
       title: "",
       description: "Nos 3 chauffeurs livreurs qui vous assurent les préparations de commandes et les livraisons chaque jour.\nSensibles à la qualité des produits, ce sont eux qui vont chercher les produits chez les producteurs et qui vous assurent des palettes multiproduits, vous pouvez compter sur eux !",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=400&fit=crop&crop=faces"
+      image: "/lovable-uploads/c39b9e71-814c-418a-adb8-3dc7e698ca44.png"
     }
   ];
 
