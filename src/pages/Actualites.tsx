@@ -36,7 +36,7 @@ const Actualites = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Actualités
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Découvrez toutes nos actualités, partenariats et nouveautés
             </p>
           </div>

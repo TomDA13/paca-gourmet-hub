@@ -82,7 +82,7 @@ const NosEngagements = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Nos Engagements
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Découvrez nos valeurs et notre engagement pour un approvisionnement local et responsable
             </p>
           </div>
