@@ -57,11 +57,11 @@ const Timeline = () => {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-primary mb-4">Notre histoire</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Tout part de la volonté d'Olivier Darold de monter une plateforme d'approvisionnement en produits locaux qui puisse répondre aux besoins des professionnels et des particuliers
+          Tout part de la volonté d'Olivier Da Rold de monter une plateforme d'approvisionnement en produits locaux qui puisse répondre aux besoins des professionnels et des particuliers
         </p>
       </div>
       
-      <div className="relative max-w-4xl mx-auto">
+      <div className="relative max-w-6xl mx-auto">
         {/* Central timeline line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-secondary h-full"></div>
         
