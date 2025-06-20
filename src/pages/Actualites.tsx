@@ -2,15 +2,31 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
+import ArticleCard from '@/components/ArticleCard';
+import { articles } from '@/data/articles';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 
 const Actualites = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('Tous');
+
+  const categories = ['Tous', ...Array.from(new Set(articles.map(article => article.category)))];
+
+  const filteredArticles = articles.filter(article => {
+    const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesCategory = selectedCategory === 'Tous' || article.category === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
+
   return (
     <div className="min-h-screen">
       <Header />
       
-      {/* Hero Section - Dark background */}
+      {/* Hero Section */}
       <section className="relative py-20 bg-primary overflow-hidden">
-        {/* Floating elements */}
         <div className="absolute top-16 right-12 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
         <div className="absolute bottom-16 left-12 w-20 h-20 bg-accent/30 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
         <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
@@ -21,27 +37,66 @@ const Actualites = () => {
               Actualités
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Restez informé de toutes nos actualités et nouveautés
+              Découvrez toutes nos actualités, partenariats et nouveautés
             </p>
           </div>
         </div>
       </section>
 
-      {/* Content Section - Light background */}
-      <section className="relative py-20 bg-accent overflow-hidden">
-        {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-primary/5 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
+      {/* Search and Filter Section */}
+      <section className="py-12 bg-accent/50">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <p className="text-gray-700 text-lg">
-                Contenu à venir pour la page Actualités...
-              </p>
+            <div className="flex flex-col md:flex-row gap-4 mb-8">
+              <div className="flex-1">
+                <Input
+                  placeholder="Rechercher un article..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full"
+                />
+              </div>
+              <div className="flex gap-2 flex-wrap">
+                {categories.map(category => (
+                  <Button
+                    key={category}
+                    variant={selectedCategory === category ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setSelectedCategory(category)}
+                    className="whitespace-nowrap"
+                  >
+                    {category}
+                  </Button>
+                ))}
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Articles Grid */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {filteredArticles.map((article) => (
+              <ArticleCard
+                key={article.id}
+                id={article.id}
+                image={article.image}
+                title={article.title}
+                excerpt={article.excerpt}
+                date={article.date}
+                category={article.category}
+                readTime={article.readTime}
+              />
+            ))}
+          </div>
+          
+          {filteredArticles.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-gray-500 text-lg">Aucun article trouvé pour votre recherche.</p>
+            </div>
+          )}
         </div>
       </section>
       
