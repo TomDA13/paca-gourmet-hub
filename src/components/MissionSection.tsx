@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -83,7 +84,7 @@ const MissionSection = () => {
 
             {/* Produits sous signes de qualité */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <img 
                   src="/lovable-uploads/1d6bbf14-846c-4283-86bd-43a619a37a92.png" 
                   alt="Produits de qualité certifiés" 
