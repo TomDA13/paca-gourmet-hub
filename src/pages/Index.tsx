@@ -25,20 +25,6 @@ const Index = () => {
       <TerrainDeJeuSection />
       <TestimonialsSection />
       <NewsSection />
-      
-      {/* Logo Région Sud */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/2d046682-fe20-4ed7-96ec-488b4b4414cc.png" 
-              alt="Logo 100 Valeurs du Sud - Région Sud" 
-              className="w-32 h-32 md:w-40 md:h-40 opacity-90 hover:opacity-100 transition-opacity duration-300"
-            />
-          </div>
-        </div>
-      </section>
-      
       <BannerSection />
       <Footer />
     </div>
