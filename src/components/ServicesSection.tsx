@@ -35,7 +35,7 @@ const ServicesSection = () => {
           <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full overflow-hidden group">
             <div className="relative h-64 overflow-hidden">
               <img 
-                src="/lovable-uploads/47e0a558-801f-4ef3-adc0-8f62a229fd1f.png" 
+                src="/lovable-uploads/a0c11191-ad14-4b3a-a77a-d687a92bf3a5.png" 
                 alt="Viandes et Poissons frais" 
                 className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
                 style={{ imageRendering: 'crisp-edges' }}
