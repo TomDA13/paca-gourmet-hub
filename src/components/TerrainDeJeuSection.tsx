@@ -18,11 +18,11 @@ const TerrainDeJeuSection = () => {
         </div>
 
         {/* Image de la carte */}
-        <div className="w-full -mx-4">
+        <div className="text-center">
           <img 
-            src="/lovable-uploads/2f496935-832c-480e-82ed-f5ef769256f0.png" 
+            src="/lovable-uploads/ab303051-df5e-4115-89b0-3d254f762a71.png" 
             alt="Carte de la région PACA avec Localizz"
-            className="w-full h-auto shadow-lg"
+            className="mx-auto max-w-4xl w-full h-auto shadow-lg rounded-lg"
           />
         </div>
       </div>
