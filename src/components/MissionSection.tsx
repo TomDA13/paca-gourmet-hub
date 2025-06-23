@@ -68,7 +68,7 @@ const MissionSection = () => {
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/aa42c912-35f8-49dc-b8cb-9cb500614882.png" 
+                  src="/lovable-uploads/29efec49-d02e-490f-993e-e7cc876ab546.png" 
                   alt="Équipe Localizz avec camion de livraison" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
