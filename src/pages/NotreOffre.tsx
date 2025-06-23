@@ -161,11 +161,13 @@ const NotreOffre = () => {
               </p>
             </div>
 
-            {/* Espace pour le schéma logistique */}
-            <div className="bg-gray-50 p-8 rounded-lg text-center mb-8">
-              <p className="text-gray-500 italic">
-                Schéma logistique à venir...
-              </p>
+            {/* Photo de l'équipe avec le camion */}
+            <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
+              <img 
+                src="/lovable-uploads/0dcedd5f-1041-4732-8728-74a0503e8ae5.png" 
+                alt="L'équipe Localizz avec le camion de livraison"
+                className="w-full max-w-4xl mx-auto rounded-lg"
+              />
             </div>
 
             {/* Bouton Rejoignez-nous */}
