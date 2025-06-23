@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -86,7 +85,7 @@ const MissionSection = () => {
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/47e0a558-801f-4ef3-adc0-8f62a229fd1f.png" 
+                  src="/lovable-uploads/1d6bbf14-846c-4283-86bd-43a619a37a92.png" 
                   alt="Produits de qualité certifiés" 
                   className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
                 />
