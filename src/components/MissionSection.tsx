@@ -32,11 +32,11 @@ const MissionSection = () => {
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/682c4a34-56e2-4abc-9dbd-4e7bebbf0508.png" 
-                  alt="Partenariat avec les producteurs" 
-                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  src="/lovable-uploads/63417364-a34e-4356-9f70-63d27f86bb1c.png" 
+                  alt="Viandes et poissons de qualité" 
+                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 via-secondary/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/20 via-secondary/10 to-transparent"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">Une juste rémunération de nos producteurs partenaires</h3>
@@ -54,7 +54,7 @@ const MissionSection = () => {
                   alt="Sélection de produits locaux" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-600/40 via-green-500/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-green-600/20 via-green-500/10 to-transparent"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">Des produits locaux et de saison sélectionnés avec soin</h3>
@@ -72,7 +72,7 @@ const MissionSection = () => {
                   alt="Équipe Localizz avec camion de livraison" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-primary/10 to-transparent"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">Une logistique optimisée en flux tendu</h3>
@@ -90,7 +90,7 @@ const MissionSection = () => {
                   alt="Produits de qualité certifiés" 
                   className="w-full h-full object-cover object-[50%_20%] hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-amber-600/40 via-amber-500/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-600/20 via-amber-500/10 to-transparent"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">Des produits sous signes de qualité</h3>
