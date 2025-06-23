@@ -1,9 +1,6 @@
-
-
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, User } from 'lucide-react';
+import { Menu, User, Home } from 'lucide-react';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -26,6 +23,10 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
+  {
+    title: "Accueil",
+    href: "/"
+  },
   {
     title: "Notre Offre",
     href: "/notre-offre",
@@ -204,5 +205,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
