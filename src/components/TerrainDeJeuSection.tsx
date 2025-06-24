@@ -20,7 +20,7 @@ const TerrainDeJeuSection = () => {
         {/* Image de la carte */}
         <div className="text-center">
           <img 
-            src="/lovable-uploads/ab303051-df5e-4115-89b0-3d254f762a71.png" 
+            src="/lovable-uploads/bc1dea26-9d5f-4dd1-9448-902c337455d7.png" 
             alt="Carte de la région PACA avec Localizz"
             className="mx-auto max-w-4xl w-full h-auto shadow-lg rounded-lg"
           />
