@@ -43,7 +43,7 @@ const CommitmentCard = ({ title, image, content }: CommitmentCardProps) => {
             <img
               src={image}
               alt={title}
-              className={`w-full h-full ${isESSImage ? 'object-contain bg-white' : 'object-cover'}`}
+              className={`w-full h-full ${isESSImage ? 'object-contain bg-white' : 'object-cover object-top'}`}
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
               <div className="p-6 w-full">
