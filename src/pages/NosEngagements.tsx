@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -9,7 +8,7 @@ const NosEngagements = () => {
     {
       id: 1,
       title: "Des produits locaux garantis toute l'année",
-      image: "/lovable-uploads/669762be-c175-4482-b5ca-17831ee6903e.png",
+      image: "/lovable-uploads/2508dbbe-a7e0-4e9c-a471-ce894d62c52a.png",
       content: {
         subtitle: "Des produits locaux garantis toute l'année, sans rupture et en toute transparence",
         points: [
