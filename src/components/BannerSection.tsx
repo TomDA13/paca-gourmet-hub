@@ -38,7 +38,7 @@ const BannerSection = () => {
             <img
               src="/lovable-uploads/f5aa6d66-eda4-4d3a-a3b9-36b0c48fe5ad.png"
               alt="100 Valeurs du Sud"
-              className="h-16 w-auto opacity-90 hover:opacity-100 transition-opacity"
+              className="h-24 w-auto opacity-90 hover:opacity-100 transition-opacity"
             />
           </div>
         </div>
