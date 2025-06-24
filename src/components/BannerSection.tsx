@@ -14,7 +14,7 @@ const BannerSection = () => {
     <section className="relative w-full h-64 md:h-80 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/397eff38-3549-4d6d-ac27-5b15135db085.png"
+          src="/lovable-uploads/0ff5f2e6-a1fb-4734-934e-06bb06e5d3c1.png"
           alt="Produits locaux de Provence"
           className="w-full h-full object-cover"
         />

@@ -52,7 +52,7 @@ const NosEngagements = () => {
     {
       id: 4,
       title: "Une relocalisation de vos approvisionnements",
-      image: "/lovable-uploads/cf62e900-37c5-4905-8438-90128e767871.png",
+      image: "/lovable-uploads/49d82e29-84e6-45c0-a8c6-a2c19fe37be3.png",
       content: {
         subtitle: "Une relocalisation de vos approvisionnements",
         points: [
