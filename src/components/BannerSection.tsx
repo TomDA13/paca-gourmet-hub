@@ -27,11 +27,20 @@ const BannerSection = () => {
             Commencez dès maintenant à Relocaliser !
           </h2>
           <Button 
-            className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
+            className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8 mb-6"
             onClick={handleJoinUs}
           >
             Rejoignez-nous
           </Button>
+          
+          {/* Logo 100 Valeurs du Sud */}
+          <div className="flex justify-center">
+            <img
+              src="/lovable-uploads/f5aa6d66-eda4-4d3a-a3b9-36b0c48fe5ad.png"
+              alt="100 Valeurs du Sud"
+              className="h-16 w-auto opacity-90 hover:opacity-100 transition-opacity"
+            />
+          </div>
         </div>
       </div>
     </section>
