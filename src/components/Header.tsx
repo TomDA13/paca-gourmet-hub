@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, User, Home } from 'lucide-react';
@@ -129,16 +130,15 @@ const Header = () => {
               <a href="/contact">Contact</a>
             </Button>
 
-            {/* Bouton accès particulier - plus visible */}
+            {/* Bouton accès particulier - coloré en marron */}
             <Button 
               asChild
-              variant="outline" 
               size="sm" 
-              className="ml-2 text-primary border-primary hover:bg-primary hover:text-white transition-colors"
+              className="ml-2 bg-primary text-white hover:bg-white hover:text-primary border border-primary transition-colors"
             >
               <a href="https://www.localizz.fr/home-particulier">
                 <User className="w-4 h-4 mr-2" />
-                Accès particulier
+                Accès site particulier
               </a>
             </Button>
           </div>
@@ -184,16 +184,15 @@ const Header = () => {
                 <a href="/contact">Contact</a>
               </Button>
               
-              {/* Bouton accès particulier en mobile - plus visible */}
+              {/* Bouton accès particulier en mobile - coloré en marron */}
               <Button 
                 asChild
-                variant="outline" 
                 size="sm" 
-                className="text-primary border-primary hover:bg-primary hover:text-white w-fit"
+                className="bg-primary text-white hover:bg-white hover:text-primary border border-primary w-fit"
               >
                 <a href="https://www.localizz.fr/home-particulier">
                   <User className="w-4 h-4 mr-2" />
-                  Accès particulier
+                  Accès site particulier
                 </a>
               </Button>
             </div>
