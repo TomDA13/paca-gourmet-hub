@@ -20,14 +20,22 @@ const CommitmentCard = ({ title, image, content }: CommitmentCardProps) => {
   // Déterminer si c'est l'image ESS pour appliquer un style différent
   const isESSImage = image.includes('e343e47b-a78a-4c1a-b332-f1567b2d2156');
 
+  const handleMouseEnter = () => {
+    setIsFlipped(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsFlipped(false);
+  };
+
   return (
     <div className="relative h-96 perspective-1000">
       <div
-        className={`relative w-full h-full duration-700 transform-style-preserve-3d cursor-pointer ${
+        className={`relative w-full h-full duration-500 transform-style-preserve-3d cursor-pointer ${
           isFlipped ? 'rotate-y-180' : ''
         }`}
-        onMouseEnter={() => setIsFlipped(true)}
-        onMouseLeave={() => setIsFlipped(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         {/* Front face */}
         <div className="absolute inset-0 w-full h-full backface-hidden rounded-lg overflow-hidden shadow-lg">
