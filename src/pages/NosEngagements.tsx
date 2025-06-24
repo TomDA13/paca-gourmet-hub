@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -52,7 +53,7 @@ const NosEngagements = () => {
     {
       id: 4,
       title: "Une relocalisation de vos approvisionnements",
-      image: "/lovable-uploads/49d82e29-84e6-45c0-a8c6-a2c19fe37be3.png",
+      image: "/lovable-uploads/0ff5f2e6-a1fb-4734-934e-06bb06e5d3c1.png",
       content: {
         subtitle: "Une relocalisation de vos approvisionnements",
         points: [
