@@ -34,7 +34,7 @@ const menuItems: MenuItem[] = [
     subItems: [
       { title: "Notre Gamme", href: "/notre-offre#notre-gamme" },
       { title: "Logistique optimisée", href: "/notre-offre#logistique-optimisee" },
-      { title: "Un service 360°", href: "/notre-offre#service-360" }
+      { title: "Un service complet", href: "/notre-offre#service-360" }
     ]
   },
   {
@@ -74,7 +74,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <a href="/" className="focus:outline-none">
               <img 
-                src="/lovable-uploads/1b5b3d5d-d99b-4720-ac02-f36e48c49406.png" 
+                src="/lovable-uploads/ffe265ec-1118-47a3-afa2-2dc463429d8d.png" 
                 alt="Localizz" 
                 className="h-12 w-auto hover:opacity-80 transition-opacity"
               />
@@ -130,7 +130,7 @@ const Header = () => {
               <a href="/contact">Contact</a>
             </Button>
 
-            {/* Bouton accès particulier - coloré en marron */}
+            {/* Bouton ventes aux particuliers - coloré en marron */}
             <Button 
               asChild
               size="sm" 
@@ -138,7 +138,7 @@ const Header = () => {
             >
               <a href="https://www.localizz.fr/home-particulier">
                 <User className="w-4 h-4 mr-2" />
-                Accès site particulier
+                Ventes aux particuliers
               </a>
             </Button>
           </div>
@@ -184,7 +184,7 @@ const Header = () => {
                 <a href="/contact">Contact</a>
               </Button>
               
-              {/* Bouton accès particulier en mobile - coloré en marron */}
+              {/* Bouton ventes aux particuliers en mobile - coloré en marron */}
               <Button 
                 asChild
                 size="sm" 
@@ -192,7 +192,7 @@ const Header = () => {
               >
                 <a href="https://www.localizz.fr/home-particulier">
                   <User className="w-4 h-4 mr-2" />
-                  Accès site particulier
+                  Ventes aux particuliers
                 </a>
               </Button>
             </div>

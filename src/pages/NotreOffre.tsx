@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -180,7 +179,7 @@ const NotreOffre = () => {
           </div>
         </section>
 
-        {/* Un service 360° Section - Light background */}
+        {/* Un service complet Section - Light background */}
         <section id="service-360" className="relative py-20 bg-accent overflow-hidden">
           {/* Floating elements */}
           <div className="absolute top-20 left-8 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
@@ -188,7 +187,7 @@ const NotreOffre = () => {
           <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-primary/5 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-3xl font-bold text-primary mb-12 text-center">Un service 360°</h2>
+            <h2 className="text-3xl font-bold text-primary mb-12 text-center">Un service complet</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Point 1 */}
