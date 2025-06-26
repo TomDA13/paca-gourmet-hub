@@ -53,7 +53,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="bg-accent py-12 px-8 rounded-lg">
+    <div className="bg-accent py-12 px-4 md:px-8 rounded-lg">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-primary mb-4">Notre histoire</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -62,31 +62,61 @@ const Timeline = () => {
       </div>
       
       <div className="relative max-w-6xl mx-auto">
-        {/* Central timeline line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-secondary h-full"></div>
+        {/* Central timeline line - hidden on mobile */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-secondary h-full hidden md:block"></div>
+        
+        {/* Mobile timeline line - left aligned */}
+        <div className="absolute left-8 w-1 bg-secondary h-full md:hidden"></div>
         
         {timelineData.map((item, index) => (
-          <div key={index} className={`relative flex items-center mb-16 ${item.position === 'left' ? 'flex-row-reverse' : ''}`}>
-            {/* Content side - always left aligned text */}
-            <div className={`w-5/12 ${item.position === 'left' ? 'pr-8' : 'pl-8'}`}>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold text-secondary mb-2 text-left">{item.year}</div>
-                <h3 className="text-xl font-semibold text-primary mb-3 text-left">{item.title}</h3>
-                <p className="text-gray-700 leading-relaxed whitespace-pre-line text-left">{item.description}</p>
+          <div key={index}>
+            {/* Desktop layout */}
+            <div className={`relative hidden md:flex items-center mb-16 ${item.position === 'left' ? 'flex-row-reverse' : ''}`}>
+              {/* Content side */}
+              <div className={`w-5/12 ${item.position === 'left' ? 'pr-8' : 'pl-8'}`}>
+                <div className="bg-white p-6 rounded-lg shadow-lg">
+                  <div className="text-2xl font-bold text-secondary mb-2 text-left">{item.year}</div>
+                  <h3 className="text-xl font-semibold text-primary mb-3 text-left">{item.title}</h3>
+                  <p className="text-gray-700 leading-relaxed whitespace-pre-line text-left">{item.description}</p>
+                </div>
+              </div>
+              
+              {/* Central year marker */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg z-10"></div>
+              
+              {/* Image side */}
+              <div className={`w-5/12 ${item.position === 'left' ? 'pl-8' : 'pr-8'}`}>
+                <div className="flex justify-center">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-40 h-40 object-cover rounded-full border-4 border-secondary shadow-lg"
+                  />
+                </div>
               </div>
             </div>
-            
-            {/* Central year marker */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg z-10"></div>
-            
-            {/* Image side */}
-            <div className={`w-5/12 ${item.position === 'left' ? 'pl-8' : 'pr-8'}`}>
-              <div className="flex justify-center">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-40 h-40 object-cover rounded-full border-4 border-secondary shadow-lg"
-                />
+
+            {/* Mobile layout */}
+            <div className="relative flex md:hidden mb-8">
+              {/* Timeline marker */}
+              <div className="absolute left-8 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg z-10"></div>
+              
+              {/* Content */}
+              <div className="ml-16 flex-1">
+                <div className="bg-white p-4 rounded-lg shadow-lg mb-4">
+                  <div className="text-xl font-bold text-secondary mb-2">{item.year}</div>
+                  <h3 className="text-lg font-semibold text-primary mb-3">{item.title}</h3>
+                  <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">{item.description}</p>
+                </div>
+                
+                {/* Image below content on mobile */}
+                <div className="flex justify-center">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-32 h-32 object-cover rounded-full border-4 border-secondary shadow-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
