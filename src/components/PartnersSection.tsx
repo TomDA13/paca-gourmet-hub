@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
@@ -22,8 +23,8 @@ const PartnersSection = () => {
       logo: "/lovable-uploads/65258fc7-c511-4b99-ba55-367f8794cfb4.png"
     },
     {
-      name: "Aix-en-Provence",
-      logo: "/lovable-uploads/0649c824-09af-4924-bf33-70ca0e494def.png"
+      name: "Allauch Terre de Provence",
+      logo: "/lovable-uploads/8c10890e-1098-4b68-8083-73ecf862debb.png"
     },
     {
       name: "Ville de Septèmes-les-Vallons",
@@ -56,6 +57,14 @@ const PartnersSection = () => {
     {
       name: "Rouet Vert",
       logo: "/lovable-uploads/69064758-c886-46e2-be2d-7ec10f654e5f.png"
+    },
+    {
+      name: "Valaé",
+      logo: "/lovable-uploads/d7fbd255-4139-485f-9b55-233a4576345d.png"
+    },
+    {
+      name: "Ciné Fabrique",
+      logo: "/lovable-uploads/be35d69a-3bf2-4470-807b-7102a1a013f9.png"
     }
   ];
 
