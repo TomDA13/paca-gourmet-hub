@@ -29,7 +29,7 @@ const HeroSection = () => {
           Relocalisez !
         </h1>
         <p className="text-xl md:text-2xl mb-8 opacity-95 animate-fade-in-up font-medium text-shadow-lg" style={{animationDelay: '0.2s', textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
-          La solution clé en main d'approvisionnement 100% local en région Sud PACA pour les restaurateurs, depuis plus de 10 ans
+          La solution clé en main d'approvisionnement 100% local en région Sud PACA
         </p>
         <div className="flex flex-col items-center gap-6 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
           <Button 
