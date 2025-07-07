@@ -4,20 +4,20 @@ const TeamSection = () => {
   const teamMembers = [
     {
       name: "Olivier Da Rold",
-      title: "le Gérant",
+      title: "le Gérant", 
       description: "Fondateur de Localizz en 2013 avec son associé, il a tenu à créer une solution logistique fiable pour les producteurs et les restaurateurs afin de proposer des produits locaux PACA dans les assiettes de la région.\nFort de son expérience dans la restauration collective pendant plus de 20 ans, il a permis la création de Localizz et son succès aujourd'hui.",
       image: "/lovable-uploads/d53e194a-e836-475d-a6b8-70c29fe2d643.png"
     },
     {
       name: "Géraldine",
       title: "",
-      description: "Le bras droit d'Olivier ! Au quotidien, c'est elle qui gère tous les approvisionnements en fruits et légumes et de la gestion de la préparation de vos commandes.\nSensible depuis toujours aux produits de saison, sains et locaux, elle a à cœur au quotidien de vous assurer des produits de qualité à livraison.\n\nC'est également elle qui veille à ce que Localizz respecte ses missions en tant qu'Entreprise à Missions.",
+      description: "Le bras droit d'Olivier ! Au quotidien, c'est elle qui gère tous les approvisionnements en fruits et légumes et de la gestion de la préparation de vos commandes.\nSensible depuis toujours aux produits de saison, sains et locaux, elle a à cœur au quotidien de vous assurer des produits de qualité à livraison.",
       image: "/lovable-uploads/08733ac6-d040-4063-8af2-08b4ea7db1ac.png"
     },
     {
       name: "Pauline",
       title: "",
-      description: "Saisie de commande, gestion des factures dans Chorus, suivi de la facturation des producteurs, préparation de commande… Elle suit",
+      description: "Sourcing des producteurs locaux, réponse aux appels d'offres publics, liens avec les producteurs et clients au quotidien, communication et qualité… Si vous avez la moindre question, elle saura vous aiguiller pour avoir de bons produits dans vos assiettes !",
       image: "/lovable-uploads/54569a65-ccc1-4334-9851-fc8f3542f076.png"
     },
     {
@@ -29,7 +29,7 @@ const TeamSection = () => {
     {
       name: "Rachel",
       title: "",
-      description: "Saisie de commande, gestion des factures dans Chorus, suivi de la facturation des producteurs, préparation de commande… Elle veille au quotidien à ce que tout",
+      description: "Saisie de commande, gestion des factures dans Chorus, suivi de la facturation des producteurs, préparation de commande… Elle veille au quotidien à ce que tout se déroule pour le mieux pour vous.",
       image: "/lovable-uploads/a6acdfe0-1f83-406a-9587-52840726ae99.png"
     },
     {
