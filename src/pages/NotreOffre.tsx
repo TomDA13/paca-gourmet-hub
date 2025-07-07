@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -54,7 +55,29 @@ const NotreOffre = () => {
 
             {/* Grille des 4 catégories */}
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Viandes & Poissons */}
+              {/* Fruits & Légumes - Haut gauche */}
+              <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-2xl font-bold text-primary flex items-center">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                      <Apple className="w-5 h-5 text-white" />
+                    </div>
+                    Fruits & Légumes
+                  </CardTitle>
+                  <p className="text-green-600 font-semibold italic">de saison uniquement !</p>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="space-y-2 text-gray-700">
+                    <p>• <strong>Récoltés à juste maturité</strong> en fonction de vos jours de consommation</p>
+                    <p>• <strong>Une variété toute l'année</strong> sans rupture</p>
+                    <p>• <strong>Des calibres adaptés</strong> à vos besoins</p>
+                    <p>• <strong>Une offre en 1ère gamme et 4ème gamme</strong> pour s'adapter à vos services</p>
+                    <p>• <strong>Des fruits et légumes « moches »</strong> pour soutenir les producteurs</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Viandes & Poissons - Haut droite */}
               <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl font-bold text-primary flex items-center">
@@ -71,12 +94,12 @@ const NotreOffre = () => {
                     <p>• <strong>Agneau</strong> du Lubéron et de la Plaine de La Crau HVE et BIO</p>
                     <p>• <strong>Volailles</strong> Label Rouge et BIO</p>
                     <p>• <strong>Taureau de Camargue</strong> AOP</p>
-                    <p>• <strong>Loup du Frioul</strong> BIO</p>
+                    <p>• <strong>Charcuterie et saucisserie</strong></p>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Produits laitiers et Œufs */}
+              {/* Produits laitiers et Œufs - Bas gauche */}
               <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl font-bold text-primary flex items-center">
@@ -88,34 +111,16 @@ const NotreOffre = () => {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="space-y-2 text-gray-700">
-                    <p>• <strong>Fromage blanc, crème et yaourt</strong> conditionnés en pots de 100g, 1kg et 5kg</p>
+                    <p>• <strong>Des produits en direct</strong> des Alpes du Sud</p>
+                    <p>• <strong>Fromages blancs et yaourts</strong> conditionnés et pots de 100g, 1kg ou 5kg</p>
                     <p>• <strong>Fromages</strong> pasteurisés ou au lait cru à la découpe</p>
+                    <p>• <strong>Beurre, lait, crèmes, faisselles</strong></p>
                     <p>• <strong>Œufs</strong> en 100% plein air ou BIO : en coquille ou en coule !</p>
-                    <p>• <strong>Beurre, lait...</strong></p>
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Fruits & Légumes */}
-              <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                      <Apple className="w-5 h-5 text-white" />
-                    </div>
-                    Fruits & Légumes
-                  </CardTitle>
-                  <p className="text-green-600 font-semibold italic">de saison uniquement !</p>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="space-y-2 text-gray-700">
-                    <p>• <strong>1ère et 4ème gamme</strong> avec des calibres selon vos besoins</p>
-                    <p>• <strong>Récoltés à juste maturité</strong> pour vos jours de consommation</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Épicerie */}
+              {/* Épicerie - Bas droite */}
               <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl font-bold text-primary flex items-center">
@@ -128,14 +133,10 @@ const NotreOffre = () => {
                 <CardContent className="space-y-3">
                   <div className="space-y-2 text-gray-700">
                     <p>• <strong>Légumineuses</strong> équitables</p>
-                    <p>• <strong>Farines</strong> BIO</p>
+                    <p>• <strong>Semoules, pâtes, farines</strong> BIO</p>
                     <p>• <strong>Riz de Camargue</strong> IGP</p>
-                    <p>• <strong>Semoules/pâtes</strong> BIO</p>
-                    <p>• <strong>Confitures</strong> au chaudron</p>
-                    <p>• <strong>Tartinables</strong></p>
-                    <p>• <strong>Miel</strong> IGP et Label Rouge</p>
-                    <p>• <strong>Conserves</strong></p>
-                    <p>• <strong>Jus</strong> HVE...</p>
+                    <p>• <strong>Produits de petits déjeuner :</strong> miel, confitures, jus</p>
+                    <p>• <strong>Gamme apéritive</strong></p>
                   </div>
                 </CardContent>
               </Card>
