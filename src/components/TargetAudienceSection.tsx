@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, ChefHat, Hotel, Wheat, Hammer, Factory } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -32,17 +33,17 @@ const TargetAudienceSection = () => {
     {
       icon: Wheat,
       title: "Agriculteurs",
-      description: "Producteurs locaux de fruits, légumes, céréales"
+      description: "Producteurs de fruits et légumes, BOF, épicerie et produits carnés"
     },
     {
       icon: Factory,
       title: "Coopératives",
-      description: "Coopératives agricoles et artisanales"
+      description: "Pour valoriser vos produits en restauration collective"
     },
     {
       icon: Hammer,
-      title: "Artisans",
-      description: "Transformateurs et producteurs artisanaux"
+      title: "PME agroalimentaires",
+      description: "le meilleur de notre région"
     }
   ];
 
@@ -108,7 +109,7 @@ const TargetAudienceSection = () => {
                 Producteurs
               </h3>
               <p className="text-gray-600">
-                Nous mettons en valeur la production locale de qualité
+                Nous mettons en valeur votre production locale en circuits courts
               </p>
             </div>
             
