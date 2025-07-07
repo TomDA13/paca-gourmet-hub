@@ -38,7 +38,7 @@ const NosEngagements = () => {
     {
       id: 3,
       title: "Une qualité de sourcing, de produits et de suivi",
-      image: "/lovable-uploads/d289d873-6ee0-4f19-add9-ef37c32b5df7.png",
+      image: "/lovable-uploads/183b426c-4420-48a1-882c-f9875a78accd.png",
       content: {
         subtitle: "Une qualité de sourcing, de produits et de suivi",
         points: [
