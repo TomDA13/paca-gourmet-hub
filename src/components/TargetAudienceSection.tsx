@@ -1,6 +1,5 @@
-
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, ChefHat, Hotel, Wheat, Hammer, Factory } from 'lucide-react';
+import { ArrowRight, Users, ChefHat, Hotel, Wheat, Factory } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const TargetAudienceSection = () => {
@@ -41,7 +40,7 @@ const TargetAudienceSection = () => {
       description: "Pour valoriser vos produits en restauration collective"
     },
     {
-      icon: Hammer,
+      icon: Factory,
       title: "PME agroalimentaires",
       description: "le meilleur de notre région"
     }
