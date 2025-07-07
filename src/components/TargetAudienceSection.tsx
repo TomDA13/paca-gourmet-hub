@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, ChefHat, Hotel, Wheat, Hammer, Factory } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -14,18 +13,18 @@ const TargetAudienceSection = () => {
   const restaurateurs = [
     {
       icon: Users,
-      title: "Restauration collective",
-      description: "Scolaire, entreprise, établissement de santé"
+      title: "Restauration collective publique",
+      description: "Réponse aux appels d'offres publics, MAPA, gré à gré"
     },
     {
       icon: ChefHat,
-      title: "Restauration commerciale", 
-      description: "Restaurants, brasseries, pizzerias"
+      title: "Sociétés de restauration", 
+      description: "Scolaire, entreprise, santé et médico-social"
     },
     {
       icon: Hotel,
-      title: "Hôtels",
-      description: "Hébergements touristiques et d'affaires"
+      title: "Restauration commerciale et hôtellerie",
+      description: "Petits déjeuners, restauration, offre apéritive de terroir"
     }
   ];
 
@@ -69,7 +68,7 @@ const TargetAudienceSection = () => {
                 Restaurateurs
               </h3>
               <p className="text-gray-600">
-                Nous accompagnons tous types d'établissements de restauration
+                Nous vous accompagnons au quotidien depuis plus de 10 ans
               </p>
             </div>
             
