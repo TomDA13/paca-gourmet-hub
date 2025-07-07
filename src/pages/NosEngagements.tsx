@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -9,7 +8,7 @@ const NosEngagements = () => {
     {
       id: 1,
       title: "Des produits locaux garantis toute l'année",
-      image: "/lovable-uploads/2508dbbe-a7e0-4e9c-a471-ce894d62c52a.png",
+      image: "/lovable-uploads/428a8813-d5e6-4afc-acf6-082451d73f53.png",
       content: {
         subtitle: "Des produits locaux garantis toute l'année, sans rupture et en toute transparence",
         points: [
@@ -39,7 +38,7 @@ const NosEngagements = () => {
     {
       id: 3,
       title: "Une qualité de sourcing, de produits et de suivi",
-      image: "/lovable-uploads/7531bbf6-b9d3-486f-a9d6-d0b982a17e72.png",
+      image: "/lovable-uploads/d289d873-6ee0-4f19-add9-ef37c32b5df7.png",
       content: {
         subtitle: "Une qualité de sourcing, de produits et de suivi",
         points: [
@@ -53,7 +52,7 @@ const NosEngagements = () => {
     {
       id: 4,
       title: "Une relocalisation de vos approvisionnements",
-      image: "/lovable-uploads/0ff5f2e6-a1fb-4734-934e-06bb06e5d3c1.png",
+      image: "/lovable-uploads/d95f018f-6105-4119-a1fc-988490ac60fb.png",
       content: {
         subtitle: "Une relocalisation de vos approvisionnements",
         points: [
