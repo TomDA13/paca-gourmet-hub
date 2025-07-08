@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -44,21 +43,22 @@ const NotreOffre = () => {
           <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-primary/5 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
           
           <div className="container mx-auto px-4 relative z-10">
-            {/* Titre avec logo à droite */}
-            <div className="flex flex-col md:flex-row items-center justify-between mb-6">
-              <h2 className="text-3xl font-bold text-primary mb-4 md:mb-0">Notre Gamme</h2>
-              <img 
-                src="/lovable-uploads/5d92b68c-0931-4b04-a795-34c52321739a.png" 
-                alt="100 Valeurs du Sud" 
-                className="w-20 h-20 md:w-24 md:h-24 opacity-90 hover:opacity-100 transition-opacity duration-300"
-              />
-            </div>
+            <h2 className="text-3xl font-bold text-primary mb-6 text-center">Notre Gamme</h2>
             
             {/* Description */}
             <div className="text-center mb-8">
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
                 Plus de <strong>700 références</strong> de produits alimentaires sourcés dans la région Sud pour les professionnels de la restauration
               </p>
+            </div>
+
+            {/* Logo 100 Valeurs du Sud */}
+            <div className="flex justify-center mb-12">
+              <img 
+                src="/lovable-uploads/5d92b68c-0931-4b04-a795-34c52321739a.png" 
+                alt="100 Valeurs du Sud" 
+                className="w-24 h-24 md:w-32 md:h-32 opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
             </div>
 
             {/* Grille des 4 catégories */}
@@ -231,7 +231,7 @@ const NotreOffre = () => {
                       <p><strong>Juste rémunération :</strong> garantie aux producteurs en fonction de leurs coûts de production réels</p>
                       <p><strong>Prix compétitifs et cohérents :</strong> pour vous grâce à une logistique optimisée</p>
                       <p><strong>Valoriser votre terroir :</strong> Un accès direct à votre bassin de producteurs ultra locaux</p>
-                      <p><strong>Économie circulaire :</strong> Récupération des cagettes sur vos restaurants pour les ramener aux producteurs</p>
+                      <p><strong>Economie circulaire :</strong> Récupération des cagettes sur vos restaurants pour les ramener aux producteurs</p>
                     </div>
                   </div>
                 </div>
