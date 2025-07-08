@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -214,7 +213,6 @@ const NotreOffre = () => {
                       <p><strong>0 gaspi :</strong> grâce à une logistique en flux tendu</p>
                       <p><strong>Juste maturité :</strong> Fruits et légumes récoltés au plus proche de votre jour de livraison</p>
                       <p><strong>Ultra frais :</strong> Viandes, épicerie et BOF produits à la demande pour des DLC et DDM longues</p>
-                      <p><strong>Economie circulaire :</strong> Récupération des cagettes sur vos restaurants pour les ramener aux producteurs</p>
                     </div>
                   </div>
                 </div>
@@ -233,6 +231,7 @@ const NotreOffre = () => {
                       <p><strong>Juste rémunération :</strong> garantie aux producteurs en fonction de leurs coûts de production réels</p>
                       <p><strong>Prix compétitifs et cohérents :</strong> pour vous grâce à une logistique optimisée</p>
                       <p><strong>Valoriser votre terroir :</strong> Un accès direct à votre bassin de producteurs ultra locaux</p>
+                      <p><strong>Economie circulaire :</strong> Récupération des cagettes sur vos restaurants pour les ramener aux producteurs</p>
                     </div>
                   </div>
                 </div>
