@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -43,22 +44,21 @@ const NotreOffre = () => {
           <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-primary/5 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-3xl font-bold text-primary mb-6 text-center">Notre Gamme</h2>
+            {/* Title with Logo */}
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-3xl font-bold text-primary">Notre Gamme</h2>
+              <img 
+                src="/lovable-uploads/5d92b68c-0931-4b04-a795-34c52321739a.png" 
+                alt="100 Valeurs du Sud" 
+                className="w-16 h-16 md:w-20 md:h-20 opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
             
             {/* Description */}
             <div className="text-center mb-8">
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
                 Plus de <strong>700 références</strong> de produits alimentaires sourcés dans la région Sud pour les professionnels de la restauration
               </p>
-            </div>
-
-            {/* Logo 100 Valeurs du Sud */}
-            <div className="flex justify-center mb-12">
-              <img 
-                src="/lovable-uploads/5d92b68c-0931-4b04-a795-34c52321739a.png" 
-                alt="100 Valeurs du Sud" 
-                className="w-24 h-24 md:w-32 md:h-32 opacity-90 hover:opacity-100 transition-opacity duration-300"
-              />
             </div>
 
             {/* Grille des 4 catégories */}
