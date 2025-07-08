@@ -1,0 +1,70 @@
+
+import { useState, useEffect } from 'react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import { ExternalLink, X } from 'lucide-react';
+
+const WelcomePopup = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    // Afficher la popup après un court délai
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleRedirect = () => {
+    window.open('https://www.localizz.boutique.fr', '_blank');
+  };
+
+  return (
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      <DialogContent className="sm:max-w-md mx-4">
+        <DialogHeader className="text-center pb-4">
+          {/* Logo Localizz */}
+          <div className="flex justify-center mb-4">
+            <img 
+              src="/lovable-uploads/37f85174-2263-460a-bed5-95824557da6d.png" 
+              alt="Localizz - Les vrais produits de nos régions" 
+              className="h-16 md:h-20 w-auto"
+            />
+          </div>
+          
+          <DialogTitle className="text-lg font-semibold text-primary mb-4">
+            Bienvenue sur Localizz Professionnel
+          </DialogTitle>
+        </DialogHeader>
+        
+        <div className="text-center space-y-4">
+          <p className="text-gray-600 leading-relaxed">
+            Vous êtes sur le site professionnel de Localizz. Si vous souhaitez passer une commande de produits locaux, veuillez vous rendre sur le site boutique en cliquant sur ce lien.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-3 pt-4">
+            <Button 
+              onClick={handleRedirect}
+              className="flex-1 bg-accent hover:bg-accent/90 text-white"
+            >
+              <ExternalLink className="w-4 h-4 mr-2" />
+              Aller à la boutique
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              onClick={() => setIsOpen(false)}
+              className="flex-1"
+            >
+              <X className="w-4 h-4 mr-2" />
+              Rester ici
+            </Button>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+export default WelcomePopup;

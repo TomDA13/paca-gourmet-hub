@@ -11,10 +11,12 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import NewsSection from '@/components/NewsSection';
 import BannerSection from '@/components/BannerSection';
 import Footer from '@/components/Footer';
+import WelcomePopup from '@/components/WelcomePopup';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <WelcomePopup />
       <Header />
       <HeroSection />
       <TargetAudienceSection />
