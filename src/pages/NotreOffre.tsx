@@ -1,3 +1,4 @@
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
@@ -22,9 +23,17 @@ const NotreOffre = () => {
         {/* Hero Section - Dark background */}
         <section className="relative py-20 bg-primary overflow-hidden">
           {/* Floating elements */}
-          <div className="absolute top-16 right-12 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
           <div className="absolute bottom-16 left-12 w-20 h-20 bg-accent/30 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
           <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
+          
+          {/* Logo 100 Valeurs du Sud en haut à droite */}
+          <div className="absolute top-16 right-12">
+            <img 
+              src="/lovable-uploads/5d92b68c-0931-4b04-a795-34c52321739a.png" 
+              alt="100 Valeurs du Sud" 
+              className="w-24 h-24 md:w-32 md:h-32 opacity-90 hover:opacity-100 transition-opacity duration-300"
+            />
+          </div>
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center">
@@ -50,15 +59,6 @@ const NotreOffre = () => {
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
                 Plus de <strong>700 références</strong> de produits alimentaires sourcés dans la région Sud pour les professionnels de la restauration
               </p>
-            </div>
-
-            {/* Logo 100 Valeurs du Sud */}
-            <div className="flex justify-center mb-12">
-              <img 
-                src="/lovable-uploads/5d92b68c-0931-4b04-a795-34c52321739a.png" 
-                alt="100 Valeurs du Sud" 
-                className="w-24 h-24 md:w-32 md:h-32 opacity-90 hover:opacity-100 transition-opacity duration-300"
-              />
             </div>
 
             {/* Grille des 4 catégories */}
