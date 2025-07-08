@@ -46,7 +46,7 @@ const WelcomePopup = () => {
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
             <Button 
               onClick={handleRedirect}
-              className="flex-1 bg-accent hover:bg-accent/90 text-white"
+              className="flex-1 bg-secondary hover:bg-secondary/90 text-white"
             >
               <ExternalLink className="w-4 h-4 mr-2" />
               Aller à la boutique
