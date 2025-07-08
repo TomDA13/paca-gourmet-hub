@@ -43,7 +43,7 @@ const TargetAudienceSection = () => {
     {
       icon: Building2,
       title: "PME agroalimentaires",
-      description: "le meilleur de notre région"
+      description: "Le meilleur de notre région"
     }
   ];
 
