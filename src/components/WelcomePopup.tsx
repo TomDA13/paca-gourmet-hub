@@ -34,13 +34,13 @@ const WelcomePopup = () => {
           </div>
           
           <DialogTitle className="text-lg font-semibold text-primary mb-4">
-            Bienvenue sur Localizz Professionnel
+            Bienvenue sur notre nouveau site pour les professionnels
           </DialogTitle>
         </DialogHeader>
         
         <div className="text-center space-y-4">
           <p className="text-gray-600 leading-relaxed">
-            Vous êtes sur le site professionnel de Localizz. Si vous souhaitez passer une commande de produits locaux, veuillez vous rendre sur le site boutique en cliquant sur ce lien.
+            Si vous souhaitez passer une commande de produits locaux, veuillez vous rendre sur le site boutique.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
