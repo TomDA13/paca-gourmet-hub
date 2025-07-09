@@ -17,7 +17,7 @@ const WelcomePopup = () => {
   }, []);
 
   const handleRedirect = () => {
-    window.open('https://www.localizz.boutique.fr', '_blank');
+    window.open('https://boutique.localizz.fr', '_blank');
   };
 
   return (

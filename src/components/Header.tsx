@@ -136,7 +136,7 @@ const Header = () => {
               size="sm" 
               className="ml-2 bg-primary text-white hover:bg-white hover:text-primary border border-primary transition-colors"
             >
-              <a href="https://www.localizz.fr/home-particulier">
+              <a href="https://boutique.localizz.fr">
                 <User className="w-4 h-4 mr-2" />
                 Ventes aux particuliers
               </a>
@@ -190,7 +190,7 @@ const Header = () => {
                 size="sm" 
                 className="bg-primary text-white hover:bg-white hover:text-primary border border-primary w-fit"
               >
-                <a href="https://www.localizz.fr/home-particulier">
+                <a href="https://boutique.localizz.fr">
                   <User className="w-4 h-4 mr-2" />
                   Ventes aux particuliers
                 </a>
