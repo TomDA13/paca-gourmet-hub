@@ -5,34 +5,14 @@ import { useEffect, useState } from "react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "Avec Localizz, commander et recevoir nos produits n'a jamais été aussi facile, ce qui nous permet de nous concentrer sur l'essentiel : offrir une cuisine de qualité.",
-      author: "Anthony Delama",
-      position: "Chef de cuisine Elior"
+      quote: "Travailler avec Localizz nous a permis d'accéder à des nouveaux marchés pour les pros et collectivités et de nous assurer des volumes. J'apprécie notre relation au travers des années et leur sérieux !",
+      author: "Loïc Laber",
+      position: "GAEC des Bougainvilliers (Aix en Provence, 13)"
     },
     {
-      quote: "Travailler avec Localizz est un vrai plaisir ! Leurs produits locaux sont d'une qualité exceptionnelle et nous permettent de servir le meilleur de notre région dans nos assiettes.",
-      author: "Philipe Therran",
-      position: "Chef de cuisine Elior"
-    },
-    {
-      quote: "Localizz simplifie notre approvisionnement tout en valorisant les producteurs locaux. Une collaboration où tout le monde y trouve son compte !",
-      author: "Alexandre Martin",
-      position: "Chef de cuisine Elior"
-    },
-    {
-      quote: "La fraîcheur des produits Localizz fait toute la différence dans nos plats. Nos clients le remarquent immédiatement et apprécient cette qualité locale.",
-      author: "Marie Dubois",
-      position: "Chef de cuisine Sodexo"
-    },
-    {
-      quote: "Grâce à Localizz, nous proposons désormais des menus 100% locaux qui racontent l'histoire de notre terroir provençal à chaque bouchée.",
-      author: "Jean-Luc Moreau",
-      position: "Responsable restauration collective"
-    },
-    {
-      quote: "L'efficacité de la logistique Localizz nous fait gagner un temps précieux. Plus besoin de courir après les fournisseurs, tout arrive à l'heure !",
-      author: "Sophie Legrand",
-      position: "Chef de cuisine Compass Group"
+      quote: "Des produits locaux sur lesquels on peut compter avec une délicieuse gamme de produits laitiers!!! Bienveillance au menu !!",
+      author: "Sophie Imbert",
+      position: "La Cinéfabrique (Marseille, 13)"
     }
   ];
 
@@ -76,7 +56,7 @@ const TestimonialsSection = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/2">
                   <div className="bg-accent rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
                     <div className="mb-4">
                       <svg className="w-8 h-8 text-secondary mb-4" fill="currentColor" viewBox="0 0 24 24">
