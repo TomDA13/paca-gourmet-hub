@@ -4,6 +4,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useState } from 'react';
 import { Phone, Mail, Clock } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -13,11 +15,51 @@ const ContactSection = () => {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the data to your backend
+    setIsSubmitting(true);
+
+    try {
+      console.log('Envoi du formulaire:', formData);
+      
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) {
+        console.error('Erreur Supabase:', error);
+        throw error;
+      }
+
+      console.log('Réponse de la fonction:', data);
+
+      toast({
+        title: "Message envoyé !",
+        description: "Nous avons bien reçu votre demande. Nous vous répondrons dans les plus brefs délais.",
+      });
+
+      // Réinitialiser le formulaire
+      setFormData({
+        company: '',
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+
+    } catch (error: any) {
+      console.error('Erreur lors de l\'envoi:', error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -50,6 +92,7 @@ const ContactSection = () => {
                     value={formData.company}
                     onChange={handleChange}
                     className="w-full"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -65,6 +108,7 @@ const ContactSection = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
+                      disabled={isSubmitting}
                     />
                   </div>
                   <div>
@@ -77,6 +121,7 @@ const ContactSection = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
+                      disabled={isSubmitting}
                     />
                   </div>
                 </div>
@@ -93,6 +138,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -108,11 +154,16 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Décrivez-nous votre activité et vos besoins..."
+                    disabled={isSubmitting}
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90 text-white">
-                  Envoyer ma demande
+                <Button 
+                  type="submit" 
+                  className="w-full bg-secondary hover:bg-secondary/90 text-white"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
                 </Button>
               </form>
             </div>
