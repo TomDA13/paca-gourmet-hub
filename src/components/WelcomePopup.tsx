@@ -8,10 +8,10 @@ const WelcomePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Afficher la popup après un court délai
+    // Afficher la popup après 3 secondes
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 1000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -40,7 +40,7 @@ const WelcomePopup = () => {
         
         <div className="text-center space-y-4">
           <p className="text-gray-600 leading-relaxed">
-            Si vous souhaitez passer une commande de produits locaux, veuillez vous rendre sur le site boutique.
+            Si vous êtes un particulier et que vous souhaitez passer une commande de produits locaux, veuillez vous rendre sur le site boutique.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
