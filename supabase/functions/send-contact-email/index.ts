@@ -50,7 +50,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Email sent successfully:", emailResponse);
 
-    // Envoyer un email de confirmation au client
+    // Envoyer un email de confirmation au client avec le logo
     const confirmationResponse = await resend.emails.send({
       from: "Localizz Pro <noreply@localizz.fr>",
       to: [email],
@@ -68,6 +68,10 @@ const handler = async (req: Request): Promise<Response> => {
         
         <hr>
         <p><em>Ceci est un message automatique, merci de ne pas y répondre.</em></p>
+        
+        <div style="text-align: center; margin-top: 30px;">
+          <img src="https://9a10466f-1d0a-4902-a074-bb0659792f3e.lovableproject.com/lovable-uploads/475e126c-bf1e-4009-a57e-06b851fa8b80.png" alt="Logo Localizz" style="max-width: 300px; height: auto;" />
+        </div>
       `,
     });
 
