@@ -8,12 +8,17 @@ const WelcomePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Afficher la popup après 3 secondes
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-    }, 3000);
+    // Vérifier si l'utilisateur vient d'arriver sur le site (pas de navigation interne)
+    const isDirectAccess = !document.referrer || !document.referrer.includes(window.location.hostname);
+    
+    if (isDirectAccess) {
+      // Afficher la popup après 3 secondes seulement pour un accès direct
+      const timer = setTimeout(() => {
+        setIsOpen(true);
+      }, 3000);
 
-    return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const handleRedirect = () => {

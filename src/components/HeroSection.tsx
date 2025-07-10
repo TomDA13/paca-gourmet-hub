@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
@@ -24,7 +25,7 @@ const HeroSection = () => {
         animationDelay: '0.2s',
         textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
       }} className="text-xl mb-8 opacity-95 animate-fade-in-up text-shadow-lg font-bold md:text-3xl">
-          La solution clé en main d'approvisionnement 100% local en région Sud PACA
+          La solution clé en main d'approvisionnement 100% local en région SUD PACA pour la restauration
         </p>
         <div className="flex flex-col items-center gap-6 animate-fade-in-up" style={{
         animationDelay: '0.4s'

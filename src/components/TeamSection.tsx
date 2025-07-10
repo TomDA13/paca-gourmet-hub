@@ -33,7 +33,7 @@ const TeamSection = () => {
       image: "/lovable-uploads/a6acdfe0-1f83-406a-9587-52840726ae99.png"
     },
     {
-      name: "Noël, Johann et Larbi",
+      name: "Noël, Johann, Larbi et Lenny",
       title: "",
       description: "Nos 3 chauffeurs livreurs qui vous assurent les préparations de commandes et les livraisons chaque jour.\nSensibles à la qualité des produits, ce sont eux qui vont chercher les produits chez les producteurs et qui vous assurent des palettes multiproduits, vous pouvez compter sur eux !",
       image: "/lovable-uploads/c39b9e71-814c-418a-adb8-3dc7e698ca44.png"
