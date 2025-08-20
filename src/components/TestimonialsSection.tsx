@@ -13,6 +13,16 @@ const TestimonialsSection = () => {
       quote: "Des produits locaux sur lesquels on peut compter avec une délicieuse gamme de produits laitiers!!! Bienveillance au menu !!",
       author: "Sophie Imbert",
       position: "La Cinéfabrique (Marseille, 13)"
+    },
+    {
+      quote: "Nous sommes fiers de collaborer avec Localizz, un partenaire engagé qui met tout son savoir-faire et sa passion dans la qualité de ses produits. Leur exigence, leur sérieux et leur respect des valeurs artisanales font toute la différence. Grâce à leur travail, nous pouvons garantir des produits d'exceptions, conçus avec soin et dans le respect de l'environnement.",
+      author: "Augustin Savin",
+      position: "Chef gérant pour Acsent de Provence"
+    },
+    {
+      quote: "Très satisfait des produits de Localizz depuis le début de notre collaboration il y a quelques années : sérieux et professionnalisme des équipes, produits locaux de qualité et de saison.",
+      author: "Thierry De Marcos",
+      position: "gérant de site ELIOR"
     }
   ];
 
