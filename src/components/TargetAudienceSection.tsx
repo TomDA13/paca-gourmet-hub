@@ -1,146 +1,71 @@
-
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, ChefHat, Hotel, Wheat, Factory, Building2 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Card, CardContent } from '@/components/ui/card';
+import { 
+  ChefHat, 
+  Building2, 
+  GraduationCap,
+  HeartHandshake,
+  Users,
+  Hotel
+} from 'lucide-react';
 
 const TargetAudienceSection = () => {
-  const navigate = useNavigate();
-
-  const handleJoinUs = () => {
-    navigate('/contact');
-    window.scrollTo(0, 0);
-  };
-
-  const restaurateurs = [
-    {
-      icon: Users,
-      title: "Restauration collective publique",
-      description: "Réponse aux appels d'offres publics, MAPA, gré à gré"
-    },
-    {
-      icon: ChefHat,
-      title: "Sociétés de restauration", 
-      description: "Scolaire, entreprise, santé et médico-social"
-    },
-    {
-      icon: Hotel,
-      title: "Restauration commerciale et hôtellerie",
-      description: "Petits déjeuners, restauration, offre apéritive de terroir"
-    }
-  ];
-
-  const producteurs = [
-    {
-      icon: Wheat,
-      title: "Agriculteurs",
-      description: "Producteurs de fruits et légumes, BOF, épicerie et produits carnés"
-    },
-    {
-      icon: Factory,
-      title: "Coopératives",
-      description: "Pour valoriser vos produits en restauration collective"
-    },
-    {
-      icon: Building2,
-      title: "PME agroalimentaires",
-      description: "Le meilleur de notre région"
-    }
-  ];
-
   return (
-    <section className="relative py-20 bg-white overflow-hidden">
-      {/* Floating elements */}
-      <div className="absolute top-16 right-12 w-28 h-28 bg-primary/10 rounded-full animate-pulse"></div>
-      <div className="absolute bottom-16 left-12 w-20 h-20 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
-      <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-accent/60 rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
-
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="py-20 bg-gradient-to-br from-accent via-accent to-white">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-            Avec qui nous travaillons
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            À qui s'adresse notre offre ?
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Section Restaurateurs */}
-          <div className="bg-accent p-8 rounded-xl">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Restaurateurs
-              </h3>
-              <p className="text-gray-600">
-                Nous vous accompagnons au quotidien depuis plus de 10 ans
-              </p>
-            </div>
-            
-            <div className="space-y-6 mb-8">
-              {restaurateurs.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-primary mb-1">
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Restaurants */}
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary">
+            <CardContent className="flex flex-col items-center justify-center p-6">
+              <ChefHat className="w-10 h-10 text-primary mb-4" />
+              <h3 className="text-xl font-bold text-primary mb-2">Restaurants</h3>
+            </CardContent>
+          </Card>
 
-            <div className="text-center">
-              <Button 
-                className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
-                onClick={handleJoinUs}
-              >
-                Rejoignez-nous
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
-            </div>
-          </div>
+          {/* Collectivités */}
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary">
+            <CardContent className="flex flex-col items-center justify-center p-6">
+              <Building2 className="w-10 h-10 text-secondary mb-4" />
+              <h3 className="text-xl font-bold text-secondary mb-2">Collectivités</h3>
+            </CardContent>
+          </Card>
 
-          {/* Section Producteurs */}
-          <div className="bg-accent p-8 rounded-xl">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Producteurs
-              </h3>
-              <p className="text-gray-600">
-                Nous mettons en valeur votre production locale en circuits courts
-              </p>
-            </div>
-            
-            <div className="space-y-6 mb-8">
-              {producteurs.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-primary mb-1">
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          {/* Établissements scolaires */}
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500">
+            <CardContent className="flex flex-col items-center justify-center p-6">
+              <GraduationCap className="w-10 h-10 text-green-500 mb-4" />
+              <h3 className="text-xl font-bold text-green-500 mb-2">Établissements scolaires</h3>
+            </CardContent>
+          </Card>
 
-            <div className="text-center">
-              <Button 
-                className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
-                onClick={handleJoinUs}
-              >
-                Rejoignez-nous
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
-            </div>
-          </div>
+          {/* Associations */}
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500">
+            <CardContent className="flex flex-col items-center justify-center p-6">
+              <HeartHandshake className="w-10 h-10 text-amber-500 mb-4" />
+              <h3 className="text-xl font-bold text-amber-500 mb-2">Associations</h3>
+            </CardContent>
+          </Card>
+
+          {/* Traiteurs et Événementiel */}
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-purple-500">
+            <CardContent className="flex flex-col items-center justify-center p-6">
+              <Users className="w-10 h-10 text-purple-500 mb-4" />
+              <h3 className="text-xl font-bold text-purple-500 mb-2">Traiteurs et Événementiel</h3>
+            </CardContent>
+          </Card>
+
+          {/* Hôtellerie */}
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-blue-500">
+            <CardContent className="flex flex-col items-center justify-center p-6">
+              <Hotel className="w-10 h-10 text-blue-500 mb-4" />
+              <h3 className="text-xl font-bold text-blue-500 mb-2">Hôtellerie</h3>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
