@@ -22,8 +22,8 @@ const Index = () => {
       <PhoneBanner />
       <HeroSection />
       <TargetAudienceSection />
-      <PartnersSection />
       <ServicesSection />
+      <PartnersSection />
       <MissionSection />
       <CommitmentsSection />
       <TerrainDeJeuSection />
