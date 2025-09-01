@@ -1,5 +1,6 @@
 
 import Header from '@/components/Header';
+import PhoneBanner from '@/components/PhoneBanner';
 import HeroSection from '@/components/HeroSection';
 import TargetAudienceSection from '@/components/TargetAudienceSection';
 import PartnersSection from '@/components/PartnersSection';
@@ -18,6 +19,7 @@ const Index = () => {
     <div className="min-h-screen">
       <WelcomePopup />
       <Header />
+      <PhoneBanner />
       <HeroSection />
       <TargetAudienceSection />
       <PartnersSection />
