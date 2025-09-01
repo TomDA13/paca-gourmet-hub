@@ -90,9 +90,6 @@ const PartnersSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Ils nous font confiance
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Nous collaborons avec des communes, collectivités et professionnels de la restauration collective et commerciale
-          </p>
         </div>
 
         <div className="relative max-w-6xl mx-auto">
