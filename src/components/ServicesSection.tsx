@@ -21,7 +21,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
-            Notre Offre
+            Nos produits
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             + de 700 références de produits alimentaires sourcés dans la région SUD 
