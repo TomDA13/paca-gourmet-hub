@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { Phone } from 'lucide-react';
+import { Phone, Sparkles } from 'lucide-react';
 
 const FeaturedProductsSection = () => {
   return (
@@ -10,32 +10,42 @@ const FeaturedProductsSection = () => {
           {/* Produits mis en avant */}
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-4">
-              <div className="w-20 h-20 rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="/lovable-uploads/44886672-833c-4a35-9136-87e1904f657b.png" 
-                  alt="Viande fraîche locale" 
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative">
+                <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/44886672-833c-4a35-9136-87e1904f657b.png" 
+                    alt="Steak Haché de Taureau" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-2 -right-2 bg-secondary text-white text-xs px-2 py-1 rounded-full flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" />
+                  Nouveauté
+                </div>
               </div>
               <div>
-                <h3 className="font-semibold text-primary">Viandes fraîches</h3>
-                <p className="text-sm text-gray-600">De nos producteurs locaux</p>
+                <h3 className="font-semibold text-primary text-lg">Steak Haché de Taureau</h3>
               </div>
             </div>
             
-            <div className="hidden sm:block w-px h-12 bg-gray-300"></div>
+            <div className="hidden sm:block w-px h-16 bg-gray-300"></div>
             
             <div className="flex items-center gap-4">
-              <div className="w-20 h-20 rounded-lg overflow-hidden shadow-md">
-                <img 
-                  src="/lovable-uploads/8b336d1e-d4f6-498a-8018-ebdb3bd49091.png" 
-                  alt="Légumes frais de saison" 
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative">
+                <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/8b336d1e-d4f6-498a-8018-ebdb3bd49091.png" 
+                    alt="Carottes de Provence" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-2 -right-2 bg-secondary text-white text-xs px-2 py-1 rounded-full flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" />
+                  Nouveauté
+                </div>
               </div>
               <div>
-                <h3 className="font-semibold text-primary">Légumes de saison</h3>
-                <p className="text-sm text-gray-600">Fraîcheur garantie</p>
+                <h3 className="font-semibold text-primary text-lg">Carottes de Provence</h3>
               </div>
             </div>
           </div>
