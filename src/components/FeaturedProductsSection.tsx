@@ -28,7 +28,7 @@ const FeaturedProductsSection = () => {
               </div>
             </div>
             
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 relative">
               <div className="relative">
                 <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
                   <img 
@@ -40,6 +40,20 @@ const FeaturedProductsSection = () => {
                 <div className="absolute -top-2 -right-2 bg-secondary text-white text-xs px-2 py-1 rounded-full flex items-center gap-1">
                   <Sparkles className="w-3 h-3" />
                   Nouveauté
+                </div>
+                {/* Call to action commander - overlay transparent */}
+                <div className="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <div className="text-center">
+                    <p className="text-white text-sm font-bold mb-2">COMMANDER</p>
+                    <Button 
+                      size="sm"
+                      className="bg-secondary hover:bg-secondary/90 text-white px-3 py-1 text-xs shadow-lg hover:shadow-xl transition-all duration-300"
+                      onClick={() => window.open('tel:+33426309540', '_self')}
+                    >
+                      <Phone className="mr-1 w-3 h-3" />
+                      04 26 30 95 40
+                    </Button>
+                  </div>
                 </div>
               </div>
               <div className="text-center">
@@ -64,21 +78,6 @@ const FeaturedProductsSection = () => {
               <div className="text-center">
                 <h3 className="font-semibold text-primary text-lg">Truites saumonées</h3>
               </div>
-            </div>
-          </div>
-
-          {/* Call to action commander - style étiquette */}
-          <div className="flex flex-col items-center gap-4">
-            <div className="bg-secondary/10 border-2 border-secondary rounded-lg px-6 py-4 text-center">
-              <p className="text-lg font-bold text-primary mb-2">COMMANDER MAINTENANT</p>
-              <p className="text-sm text-gray-600 mb-3">Livraison rapide en région Sud</p>
-              <Button 
-                className="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('tel:+33426309540', '_self')}
-              >
-                <Phone className="mr-2 w-4 h-4" />
-                04 26 30 95 40
-              </Button>
             </div>
           </div>
         </div>
