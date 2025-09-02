@@ -3,9 +3,10 @@ import Header from '@/components/Header';
 import PhoneBanner from '@/components/PhoneBanner';
 import HeroSection from '@/components/HeroSection';
 import TargetAudienceSection from '@/components/TargetAudienceSection';
+import FeaturedProductsSection from '@/components/FeaturedProductsSection';
+import ServicesSection from '@/components/ServicesSection';
 import PartnersSection from '@/components/PartnersSection';
 import MissionSection from '@/components/MissionSection';
-import ServicesSection from '@/components/ServicesSection';
 import CommitmentsSection from '@/components/CommitmentsSection';
 import TerrainDeJeuSection from '@/components/TerrainDeJeuSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -22,6 +23,7 @@ const Index = () => {
       <PhoneBanner />
       <HeroSection />
       <TargetAudienceSection />
+      <FeaturedProductsSection />
       <ServicesSection />
       <PartnersSection />
       <MissionSection />
