@@ -2,8 +2,8 @@
 import Header from '@/components/Header';
 import PhoneBanner from '@/components/PhoneBanner';
 import HeroSection from '@/components/HeroSection';
-import TargetAudienceSection from '@/components/TargetAudienceSection';
 import FeaturedProductsSection from '@/components/FeaturedProductsSection';
+import TargetAudienceSection from '@/components/TargetAudienceSection';
 import ServicesSection from '@/components/ServicesSection';
 import PartnersSection from '@/components/PartnersSection';
 import MissionSection from '@/components/MissionSection';
@@ -22,8 +22,8 @@ const Index = () => {
       <Header />
       <PhoneBanner />
       <HeroSection />
-      <TargetAudienceSection />
       <FeaturedProductsSection />
+      <TargetAudienceSection />
       <ServicesSection />
       <PartnersSection />
       <MissionSection />
