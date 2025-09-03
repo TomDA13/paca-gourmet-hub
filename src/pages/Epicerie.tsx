@@ -17,24 +17,20 @@ const Epicerie = () => {
 
   const productTypes = [
     {
-      name: "Huiles d'olive",
-      image: "/lovable-uploads/3c8f6a3d-67be-497f-b393-06800f4b4b47.png"
-    },
-    {
-      name: "Miel",
-      image: "/lovable-uploads/3d0d3557-1b51-4a73-a639-33c72eaddf43.png"
-    },
-    {
-      name: "Conserves",
-      image: "/lovable-uploads/3ea8ff4b-d03a-44e5-abf1-8048c99852bd.png"
-    },
-    {
-      name: "Épices",
-      image: "/lovable-uploads/428a8813-d5e6-4afc-acf6-082451d73f53.png"
+      name: "Riz",
+      image: "/lovable-uploads/riz.png"
     },
     {
       name: "Pâtes",
-      image: "/lovable-uploads/43df592e-022b-4339-98d7-4493c89beddd.png"
+      image: "/lovable-uploads/pate500.png"
+    },
+    {
+      name: "Miel",
+      image: "/lovable-uploads/miel.png"
+    },
+    {
+      name: "Calissons",
+      image: "/lovable-uploads/calisson.png"
     }
   ];
 

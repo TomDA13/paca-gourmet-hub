@@ -18,19 +18,19 @@ const ViandesPoissons = () => {
   const productTypes = [
     {
       name: "Taureau",
-      image: "/lovable-uploads/042de31e-4f7b-49d7-9cd3-7c180508c5f9.png"
+      image: "/lovable-uploads/taureau.jpg"
     },
     {
       name: "Bœuf",
-      image: "/lovable-uploads/0649c824-09af-4924-bf33-70ca0e494def.png"
+      image: "/lovable-uploads/boeuf.png"
     },
     {
       name: "Porc",
-      image: "/lovable-uploads/08733ac6-d040-4063-8af2-08b4ea7db1ac.png"
+      image: "/lovable-uploads/porc.png"
     },
     {
-      name: "Charcuterie",
-      image: "/lovable-uploads/0a885bfd-cebc-4658-b4a9-be830aa96917.png"
+      name: "Loup",
+      image: "/lovable-uploads/loup.jpg"
     },
     {
       name: "Poissons",

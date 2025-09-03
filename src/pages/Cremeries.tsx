@@ -42,13 +42,13 @@ const Cremeries = () => {
     {
       name: "Fromagerie des Alpilles",
       description: "Maître fromager depuis 20 ans, Jean-Claude perpétue les traditions fromagères provençales. Ses fromages de chèvre affinés dans les caves naturelles des Alpilles développent des saveurs uniques.",
-      image: "/lovable-uploads/397eff38-3549-4d6d-ac27-5b15135db085.png",
+      image: "/lovable-uploads/fromager.avif",
       specialty: "Fromages de chèvre AOP"
     },
     {
       name: "Ferme laitière du Ventoux",
       description: "Élevage de vaches laitières en agriculture biologique au pied du Mont Ventoux. Leurs produits laitiers sont transformés à la ferme selon des méthodes artisanales traditionnelles.",
-      image: "/lovable-uploads/3bd1004b-52d8-4cc6-94f1-7cb44b81d01e.png",
+      image: "/lovable-uploads/fromager2.avif",
       specialty: "Produits laitiers Bio"
     }
   ];

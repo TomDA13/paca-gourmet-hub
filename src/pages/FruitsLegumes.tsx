@@ -18,23 +18,19 @@ const FruitsLegumes = () => {
   const productTypes = [
     {
       name: "Tomates",
-      image: "/lovable-uploads/1749ed36-1ac4-46ec-8899-4094836780b4.png"
+      image: "/lovable-uploads/tomate.png"
     },
     {
       name: "Courgettes",
-      image: "/lovable-uploads/183b426c-4420-48a1-882c-f9875a78accd.png"
+      image: "/lovable-uploads/courgette.jpg"
     },
     {
-      name: "Aubergines",
-      image: "/lovable-uploads/18916636-2083-4611-a0a3-3740630fabfc.png"
+      name: "Carottes",
+      image: "/lovable-uploads/carotte.jpg"
     },
     {
-      name: "Melons",
-      image: "/lovable-uploads/1b5b3d5d-d99b-4720-ac02-f36e48c49406.png"
-    },
-    {
-      name: "Pêches",
-      image: "/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png"
+      name: "Oignon",
+      image: "/lovable-uploads/oignon.jpg"
     }
   ];
 
