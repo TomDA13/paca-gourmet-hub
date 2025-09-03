@@ -51,52 +51,58 @@ const NotreOffre = () => {
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
           <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-primary/5 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">Notre Gamme</h2>
             
             {/* Description */}
-            <div className="text-center mb-8">
+            <div className="text-center mb-16">
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
                 Plus de <strong>700 références</strong> de produits alimentaires sourcés dans la région Sud pour les professionnels de la restauration
               </p>
             </div>
 
-            {/* Grille des 4 catégories */}
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Fruits & Légumes - Haut gauche */}
-              <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                      <Apple className="w-5 h-5 text-white" />
+            {/* Disposition alternée des 4 catégories */}
+            <div className="space-y-20">
+              
+              {/* Fruits & Légumes - Texte à gauche, image à droite */}
+              <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                <div className="flex-1 lg:pr-8">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                      <Apple className="w-6 h-6 text-white" />
                     </div>
-                    Fruits & Légumes
-                  </CardTitle>
-                  <p className="text-green-600 font-semibold italic">de saison uniquement !</p>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="space-y-2 text-gray-700">
+                    <div>
+                      <h3 className="text-3xl font-bold text-primary">Fruits & Légumes</h3>
+                      <p className="text-green-600 font-semibold italic text-lg">de saison uniquement !</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                     <p>• <strong>Récoltés à juste maturité</strong> en fonction de vos jours de consommation</p>
                     <p>• <strong>Une variété toute l'année</strong> sans rupture</p>
                     <p>• <strong>Des calibres adaptés</strong> à vos besoins</p>
                     <p>• <strong>Une offre en 1ère gamme et 4ème gamme</strong> pour s'adapter à vos services</p>
                     <p>• <strong>Des fruits et légumes « moches »</strong> pour soutenir les producteurs</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="flex-1">
+                  <img 
+                    src="/lovable-uploads/89039801-447c-45bc-a999-b5c9cddf0ec9.png" 
+                    alt="Fruits et légumes frais de saison" 
+                    className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
 
-              {/* Viandes & Poissons - Haut droite */}
-              <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">
-                      <Beef className="w-5 h-5 text-white" />
+              {/* Viandes & Poissons - Image à gauche, texte à droite */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16">
+                <div className="flex-1 lg:pl-8">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                      <Beef className="w-6 h-6 text-white" />
                     </div>
-                    Viandes & Poissons
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="space-y-2 text-gray-700">
+                    <h3 className="text-3xl font-bold text-primary">Viandes & Poissons</h3>
+                  </div>
+                  <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                     <p>• <strong>Bœuf</strong> en race à viande HVE et BIO</p>
                     <p>• <strong>Porc</strong> plein air des Alpes et de la plaine de la Crau HVE et BIO</p>
                     <p>• <strong>Agneau</strong> du Lubéron et de la Plaine de La Crau HVE et BIO</p>
@@ -104,50 +110,68 @@ const NotreOffre = () => {
                     <p>• <strong>Taureau de Camargue</strong> AOP</p>
                     <p>• <strong>Charcuterie et saucisserie</strong></p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="flex-1">
+                  <img 
+                    src="/lovable-uploads/475e126c-bf1e-4009-a57e-06b851fa8b80.png" 
+                    alt="Viandes et poissons de qualité" 
+                    className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
 
-              {/* Produits laitiers et Œufs - Bas gauche */}
-              <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                    <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
-                      <Egg className="w-5 h-5 text-white" />
+              {/* Produits laitiers & Œufs - Texte à gauche, image à droite */}
+              <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                <div className="flex-1 lg:pr-8">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                      <Egg className="w-6 h-6 text-white" />
                     </div>
-                    Produits laitiers & Œufs
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="space-y-2 text-gray-700">
+                    <h3 className="text-3xl font-bold text-primary">Produits laitiers & Œufs</h3>
+                  </div>
+                  <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                     <p>• <strong>Des produits en direct</strong> des Alpes du Sud</p>
                     <p>• <strong>Fromages blancs et yaourts</strong> conditionnés et pots de 100g, 1kg ou 5kg</p>
                     <p>• <strong>Fromages</strong> pasteurisés ou au lait cru à la découpe</p>
                     <p>• <strong>Beurre, lait, crèmes, faisselles</strong></p>
                     <p>• <strong>Œufs</strong> en 100% plein air ou BIO : en coquille ou en coule !</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="flex-1">
+                  <img 
+                    src="/lovable-uploads/2f6355be-a3e7-4186-b863-c38017577eb5.png" 
+                    alt="Produits laitiers et fromages artisanaux" 
+                    className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
 
-              {/* Épicerie - Bas droite */}
-              <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl font-bold text-primary flex items-center">
-                    <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center mr-3">
-                      <Package className="w-5 h-5 text-white" />
+              {/* Épicerie - Image à gauche, texte à droite */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16">
+                <div className="flex-1 lg:pl-8">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mr-4">
+                      <Package className="w-6 h-6 text-white" />
                     </div>
-                    Épicerie
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="space-y-2 text-gray-700">
+                    <h3 className="text-3xl font-bold text-primary">Épicerie</h3>
+                  </div>
+                  <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                     <p>• <strong>Légumineuses</strong> équitables</p>
                     <p>• <strong>Semoules, pâtes, farines</strong> BIO</p>
                     <p>• <strong>Riz de Camargue</strong> IGP</p>
                     <p>• <strong>Produits de petits déjeuner :</strong> miel, confitures, jus</p>
                     <p>• <strong>Gamme apéritive</strong></p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+                <div className="flex-1">
+                  <img 
+                    src="/lovable-uploads/584b1a6e-aa93-48f0-a6a0-b257cfc38550.png" 
+                    alt="Produits d'épicerie fine et bio" 
+                    className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
