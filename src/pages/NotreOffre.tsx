@@ -113,7 +113,7 @@ const NotreOffre = () => {
                 </div>
                 <div className="flex-1">
                   <img 
-                    src="/lovable-uploads/475e126c-bf1e-4009-a57e-06b851fa8b80.png" 
+                    src="/lovable-uploads/4ba5f9c5-bb1b-4179-add5-31143353af00.png" 
                     alt="Viandes et poissons de qualité" 
                     className="w-full h-80 object-cover rounded-2xl shadow-lg"
                   />
