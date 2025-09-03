@@ -86,7 +86,7 @@ const FeaturedProductsSection = () => {
               <CarouselNext />
             </Carousel>
           ) : (
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center max-w-4xl mx-auto">
               {products.map((product, index) => (
                 <ProductCard key={index} product={product} />
               ))}
