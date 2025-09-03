@@ -127,7 +127,7 @@ const CoffretsEntreprises = () => {
             <div className="text-center group">
               <div className="w-full h-48 mb-6 overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png"
+                  src="/lovable-uploads/82c65f87-6503-4130-bc1b-fe53acd69e82.png"
                   alt="Coffret de Noël avec produits locaux"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -143,7 +143,7 @@ const CoffretsEntreprises = () => {
             <div className="text-center group">
               <div className="w-full h-48 mb-6 overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/212b7c19-2973-4da1-b68f-efd4542bac70.png"
+                  src="/lovable-uploads/631f1ef7-a043-48d8-803d-e3164ed2a751.png"
                   alt="Préparation des paniers par les ESAT"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -159,7 +159,7 @@ const CoffretsEntreprises = () => {
             <div className="text-center group">
               <div className="w-full h-48 mb-6 overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/d5ec88bd-a124-419c-8f97-60beb373bc26.png"
+                  src="/lovable-uploads/014c2ad9-7d0c-486f-8984-1d228d8819e8.png"
                   alt="Camion de livraison Localizz"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
