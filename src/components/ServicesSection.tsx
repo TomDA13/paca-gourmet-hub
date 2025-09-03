@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
@@ -9,6 +8,17 @@ const ServicesSection = () => {
 
   const handleDiscoverOffer = () => {
     navigate('/notre-offre');
+    window.scrollTo(0, 0);
+  };
+
+  const handleProductClick = (productType: string) => {
+    const routes = {
+      'viandes': '/nos-produits/viandes-et-poissons',
+      'cremeries': '/nos-produits/cremeries',
+      'fruits': '/nos-produits/fruits-et-legumes',
+      'epicerie': '/nos-produits/epicerie'
+    };
+    navigate(routes[productType as keyof typeof routes]);
     window.scrollTo(0, 0);
   };
 
@@ -32,7 +42,7 @@ const ServicesSection = () => {
         {/* Grille 2x2 avec les 4 nouvelles images optimisées */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Viandes & Poissons */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full overflow-hidden group">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-primary h-full overflow-hidden group cursor-pointer" onClick={() => handleProductClick('viandes')}>
             <div className="relative h-64 overflow-hidden">
               <img 
                 src="/lovable-uploads/8598ed60-318b-42be-b446-f7d15a65b64b.png" 
@@ -48,7 +58,7 @@ const ServicesSection = () => {
           </Card>
 
           {/* Produits laitiers et Œufs */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full overflow-hidden group">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-secondary h-full overflow-hidden group cursor-pointer" onClick={() => handleProductClick('cremeries')}>
             <div className="relative h-64 overflow-hidden">
               <img 
                 src="/lovable-uploads/b650fece-a4de-4296-894f-187b48fb735a.png" 
@@ -64,7 +74,7 @@ const ServicesSection = () => {
           </Card>
 
           {/* Fruits & Légumes */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full overflow-hidden group">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-green-500 h-full overflow-hidden group cursor-pointer" onClick={() => handleProductClick('fruits')}>
             <div className="relative h-64 overflow-hidden">
               <img 
                 src="/lovable-uploads/b0581c11-96e5-4547-838e-003518167057.png" 
@@ -80,7 +90,7 @@ const ServicesSection = () => {
           </Card>
 
           {/* Épicerie */}
-          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full overflow-hidden group">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-l-amber-500 h-full overflow-hidden group cursor-pointer" onClick={() => handleProductClick('epicerie')}>
             <div className="relative h-64 overflow-hidden">
               <img 
                 src="/lovable-uploads/69c8c5f0-7825-4770-ab31-b54fbb8f0a9f.png" 
