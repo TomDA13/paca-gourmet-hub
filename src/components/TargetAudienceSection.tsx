@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Users, ChefHat, Hotel, Wheat, Factory, Building2 } from 'lucide-react';
+import { ArrowRight, Users, ChefHat, Hotel, Wheat, Factory, Building2, Gift, Heart, Truck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const TargetAudienceSection = () => {
@@ -44,6 +44,24 @@ const TargetAudienceSection = () => {
       icon: Building2,
       title: "PME agroalimentaires",
       description: "Le meilleur de notre région"
+    }
+  ];
+
+  const coffretsElements = [
+    {
+      icon: Gift,
+      title: "Sélection locale",
+      description: "Produits artisanaux de Provence"
+    },
+    {
+      icon: Heart,
+      title: "Confection ESAT",
+      description: "Préparation solidaire"
+    },
+    {
+      icon: Truck,
+      title: "Livraison directe",
+      description: "Partout en région PACA"
     }
   ];
 
@@ -137,6 +155,48 @@ const TargetAudienceSection = () => {
                 onClick={handleJoinUs}
               >
                 Rejoignez-nous
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Section Entreprises & CSE */}
+        <div className="mt-12">
+          <div className="bg-accent p-6 rounded-xl">
+            <div className="text-center mb-6">
+              <h3 className="text-xl font-bold text-primary mb-2">
+                Entreprises & CSE
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Des coffrets gourmands locaux, durables et solidaires
+              </p>
+            </div>
+            
+            <div className="flex flex-wrap justify-center gap-6">
+              {coffretsElements.map((item, index) => (
+                <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition-shadow duration-300 min-w-0 flex-shrink-0">
+                  <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="text-center">
+                    <h4 className="font-semibold text-primary text-sm mb-1">
+                      {item.title}
+                    </h4>
+                    <p className="text-xs text-gray-600">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-6">
+              <Button 
+                className="bg-secondary hover:bg-secondary/90 text-white px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group text-sm"
+                onClick={handleJoinUs}
+              >
+                Demandez un devis
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
             </div>
