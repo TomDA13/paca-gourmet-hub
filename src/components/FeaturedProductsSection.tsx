@@ -7,7 +7,7 @@ const FeaturedProductsSection = () => {
 
   const handleProductClick = (productType: string) => {
     const routes = {
-      'viande': '/nos-produits/viandes-et-poissons',
+      'viande': '/nos-produits/viandes',
       'fruits': '/nos-produits/fruits-et-legumes', 
       'cremerie': '/nos-produits/cremeries',
       'epicerie': '/nos-produits/epicerie'

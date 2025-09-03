@@ -13,7 +13,7 @@ const ServicesSection = () => {
 
   const handleProductClick = (productType: string) => {
     const routes = {
-      'viandes': '/nos-produits/viandes-et-poissons',
+      'viandes': '/nos-produits/viandes',
       'cremeries': '/nos-produits/cremeries',
       'fruits': '/nos-produits/fruits-et-legumes',
       'epicerie': '/nos-produits/epicerie'
