@@ -38,15 +38,22 @@ const menuItems: MenuItem[] = [
     ]
   },
   {
-    title: "Nos Engagements",
-    href: "/nos-engagements"
+    title: "Nos Produits",
+    href: "/nos-produits",
+    subItems: [
+      { title: "Fruits et légumes", href: "/nos-produits/fruits-et-legumes" },
+      { title: "Viandes", href: "/nos-produits/viandes" },
+      { title: "Crémeries", href: "/nos-produits/cremeries" },
+      { title: "Épicerie", href: "/nos-produits/epicerie" }
+    ]
   },
   {
     title: "Qui Sommes Nous",
     href: "/qui-sommes-nous",
     subItems: [
       { title: "Notre histoire", href: "/qui-sommes-nous#notre-histoire" },
-      { title: "L'équipe", href: "/qui-sommes-nous#equipe" }
+      { title: "L'équipe", href: "/qui-sommes-nous#equipe" },
+      { title: "Nos Engagements", href: "/nos-engagements" }
     ]
   },
   {
