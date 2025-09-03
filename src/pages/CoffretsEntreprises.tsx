@@ -74,7 +74,7 @@ const CoffretsEntreprises = () => {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building className="w-8 h-8 text-white" />
@@ -109,6 +109,33 @@ const CoffretsEntreprises = () => {
               <p className="text-muted-foreground text-center">
                 Surprenez vos invités avec une sélection de terroir.
               </p>
+            </div>
+          </div>
+
+          {/* Bandeau Entreprises & CSE */}
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Entreprises & CSE
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Des coffrets personnalisés pour vos collaborateurs, événements d'entreprise et comités d'entreprise.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium text-foreground mb-2">
+                    Éléments des coffrets :
+                  </h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Produits artisanaux de Provence</li>
+                    <li>• Spécialités locales et de saison</li>
+                    <li>• Emballage éco-responsable</li>
+                    <li>• Carte de présentation des producteurs</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
