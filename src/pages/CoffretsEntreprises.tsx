@@ -65,7 +65,56 @@ const CoffretsEntreprises = () => {
         </div>
       </section>
 
-      {/* Section 1 - La promesse */}
+      {/* Section 1 - À qui s'adressent nos coffrets ? */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              À qui s'adressent nos coffrets ?
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                <Building className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
+                Entreprises
+              </h3>
+              <p className="text-muted-foreground text-center">
+                Remerciez vos équipes et partenaires avec un cadeau porteur de sens.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
+                Collectivités
+              </h3>
+              <p className="text-muted-foreground text-center">
+                Offrez aux habitants des coffrets locaux, responsables et festifs.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Calendar className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
+                Événementiel & hôtellerie
+              </h3>
+              <p className="text-muted-foreground text-center">
+                Surprenez vos invités avec une sélection de terroir.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2 - La promesse */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -108,55 +157,6 @@ const CoffretsEntreprises = () => {
               </h3>
               <p className="text-muted-foreground">
                 Une logistique optimisée pour livrer vos coffrets directement là où vous en avez besoin.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 2 - À qui s'adressent nos coffrets ? */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              À qui s'adressent nos coffrets ?
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                <Building className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
-                Entreprises
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Remerciez vos équipes et partenaires avec un cadeau porteur de sens.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
-                Collectivités
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Offrez aux habitants des coffrets locaux, responsables et festifs.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <Calendar className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
-                Événementiel & hôtellerie
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Surprenez vos invités avec une sélection de terroir.
               </p>
             </div>
           </div>
