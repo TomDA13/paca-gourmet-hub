@@ -1,15 +1,27 @@
-
 import { Button } from '@/components/ui/button';
-import { Phone, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const FeaturedProductsSection = () => {
+  const navigate = useNavigate();
+
+  const handleProductClick = (productType: string) => {
+    const routes = {
+      'viande': '/nos-produits/viandes-et-poissons',
+      'fruits': '/nos-produits/fruits-et-legumes', 
+      'cremerie': '/nos-produits/cremeries',
+      'epicerie': '/nos-produits/epicerie'
+    };
+    navigate(routes[productType as keyof typeof routes]);
+  };
+
   return (
     <section className="py-12 bg-gradient-to-r from-primary/5 to-secondary/5">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-8">
           {/* Produits mis en avant - centrés */}
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 cursor-pointer hover:transform hover:scale-105 transition-all duration-300" onClick={() => handleProductClick('viande')}>
               <div className="relative">
                 <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
                   <img 
@@ -28,7 +40,7 @@ const FeaturedProductsSection = () => {
               </div>
             </div>
             
-            <div className="flex flex-col items-center gap-4 relative">
+            <div className="flex flex-col items-center gap-4 cursor-pointer hover:transform hover:scale-105 transition-all duration-300" onClick={() => handleProductClick('fruits')}>
               <div className="relative">
                 <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
                   <img 
@@ -41,27 +53,13 @@ const FeaturedProductsSection = () => {
                   <Sparkles className="w-3 h-3" />
                   Nouveauté
                 </div>
-                {/* Call to action commander - overlay transparent */}
-                <div className="absolute inset-0 bg-black/40 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <div className="text-center">
-                    <p className="text-white text-sm font-bold mb-2">COMMANDER</p>
-                    <Button 
-                      size="sm"
-                      className="bg-secondary hover:bg-secondary/90 text-white px-3 py-1 text-xs shadow-lg hover:shadow-xl transition-all duration-300"
-                      onClick={() => window.open('tel:+33426309540', '_self')}
-                    >
-                      <Phone className="mr-1 w-3 h-3" />
-                      04 26 30 95 40
-                    </Button>
-                  </div>
-                </div>
               </div>
               <div className="text-center">
                 <h3 className="font-semibold text-primary text-lg">Carottes de Provence</h3>
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4 cursor-pointer hover:transform hover:scale-105 transition-all duration-300" onClick={() => handleProductClick('cremerie')}>
               <div className="relative">
                 <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
                   <img 
@@ -77,6 +75,25 @@ const FeaturedProductsSection = () => {
               </div>
               <div className="text-center">
                 <h3 className="font-semibold text-primary text-lg">Truites saumonées</h3>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center gap-4 cursor-pointer hover:transform hover:scale-105 transition-all duration-300" onClick={() => handleProductClick('epicerie')}>
+              <div className="relative">
+                <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png" 
+                    alt="Lentilles bio" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-2 -right-2 bg-secondary text-white text-xs px-2 py-1 rounded-full flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" />
+                  Nouveauté
+                </div>
+              </div>
+              <div className="text-center">
+                <h3 className="font-semibold text-primary text-lg">Lentilles bio</h3>
               </div>
             </div>
           </div>
