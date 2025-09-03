@@ -34,7 +34,8 @@ const menuItems: MenuItem[] = [
     subItems: [
       { title: "Notre Gamme", href: "/notre-offre#notre-gamme" },
       { title: "Logistique optimisée", href: "/notre-offre#logistique-optimisee" },
-      { title: "Un service complet", href: "/notre-offre#service-360" }
+      { title: "Un service complet", href: "/notre-offre#service-360" },
+      { title: "Nos Coffrets Entreprises", href: "/nos-coffrets-entreprises" }
     ]
   },
   {
