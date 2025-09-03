@@ -17,23 +17,51 @@ const CoffretsEntreprises = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/lovable-uploads/733a6292-c8dd-407c-8dba-008f6a7f47b5.png"
-            alt="Coffrets gourmands locaux"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+          style={{
+            backgroundImage: "url('/lovable-uploads/733a6292-c8dd-407c-8dba-008f6a7f47b5.png')",
+            backgroundPosition: "center 55%"
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-primary/50"></div>
         </div>
-        
-        <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+
+        {/* Content */}
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up">
             Des coffrets gourmands locaux, durables et solidaires
           </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed">
+          <p 
+            style={{
+              animationDelay: '0.2s',
+              textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+            }} 
+            className="text-xl mb-6 opacity-95 animate-fade-in-up text-shadow-lg font-bold md:text-3xl"
+          >
             Localizz conçoit, confectionne et livre des coffrets sur-mesure pour vos collaborateurs, clients ou bénéficiaires.
           </p>
+          <div 
+            className="flex flex-col items-center gap-4 animate-fade-in-up" 
+            style={{
+              animationDelay: '0.4s'
+            }}
+          >
+            <Button 
+              size="lg" 
+              className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" 
+              onClick={handleDemandeDevis}
+            >
+              Demandez un devis
+            </Button>
+            <img 
+              src="/lovable-uploads/3c8f6a3d-67be-497f-b393-06800f4b4b47.png" 
+              alt="Badge 100 valeurs du Sud" 
+              className="w-24 h-24 md:w-28 md:h-28 opacity-90" 
+            />
+          </div>
         </div>
       </section>
 
@@ -136,21 +164,37 @@ const CoffretsEntreprises = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-secondary">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Prêt à offrir des coffrets qui ont du sens ?
-          </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Contactez-nous pour concevoir ensemble vos coffrets sur-mesure
-          </p>
-          <Button 
-            onClick={handleDemandeDevis}
-            size="lg"
-            className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 text-lg py-6 px-8 shadow-lg"
-          >
-            Demandez un devis
-          </Button>
+      <section className="relative w-full h-64 md:h-80 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/lovable-uploads/49d82e29-84e6-45c0-a8c6-a2c19fe37be3.png"
+            alt="Produits locaux de Provence"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
+          <div className="text-center text-white">
+            <h2 className="text-2xl md:text-4xl font-bold mb-6">
+              Prêt à offrir des coffrets qui ont du sens ?
+            </h2>
+            <Button 
+              className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8 mb-6"
+              onClick={handleDemandeDevis}
+            >
+              Demandez un devis
+            </Button>
+            
+            {/* Logo 100 Valeurs du Sud */}
+            <div className="flex justify-center">
+              <img
+                src="/lovable-uploads/f5aa6d66-eda4-4d3a-a3b9-36b0c48fe5ad.png"
+                alt="100 Valeurs du Sud"
+                className="h-24 w-auto opacity-90 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
