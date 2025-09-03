@@ -18,23 +18,23 @@ const Cremeries = () => {
   const productTypes = [
     {
       name: "Fromages",
-      image: "/lovable-uploads/2508dbbe-a7e0-4e9c-a471-ce894d62c52a.png"
+      image: "/lovable-uploads/raclette.png"
     },
     {
       name: "Yaourts",
-      image: "/lovable-uploads/26bc8792-94be-455e-ae70-7fc968a75259.png"
+      image: "/lovable-uploads/faisselle.png"
+    },
+    {
+      name: "Lait",
+      image: "/lovable-uploads/lait.png"
     },
     {
       name: "Beurre",
-      image: "/lovable-uploads/27c9ddc2-4e43-476b-9fee-4de390b585cf.png"
-    },
-    {
-      name: "Crème",
-      image: "/lovable-uploads/29efec49-d02e-490f-993e-e7cc876ab546.png"
+      image: "/lovable-uploads/beurre.png"
     },
     {
       name: "Œufs",
-      image: "/lovable-uploads/37f85174-2263-460a-bed5-95824557da6d.png"
+      image: "/lovable-uploads/oeuf.jpg"
     }
   ];
 
@@ -97,7 +97,7 @@ const Cremeries = () => {
             </div>
             <div className="relative">
               <img
-                src="/lovable-uploads/2f6355be-a3e7-4186-b863-c38017577eb5.png"
+                src="/lovable-uploads/fromage.jpg"
                 alt="Produits laitiers artisanaux"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

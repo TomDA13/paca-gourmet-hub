@@ -97,7 +97,7 @@ const Epicerie = () => {
             </div>
             <div className="relative">
               <img
-                src="/lovable-uploads/584b1a6e-aa93-48f0-a6a0-b257cfc38550.png"
+                src="/lovable-uploads/pates.jpg"
                 alt="Produits d'épicerie fine"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

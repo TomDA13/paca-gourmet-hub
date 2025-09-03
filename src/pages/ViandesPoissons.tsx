@@ -104,7 +104,7 @@ const ViandesPoissons = () => {
             </div>
             <div className="relative">
               <img
-                src="/lovable-uploads/89039801-447c-45bc-a999-b5c9cddf0ec9.png"
+                src="/lovable-uploads/viande.jpg"
                 alt="Viandes et poissons de qualité"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
