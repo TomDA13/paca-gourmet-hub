@@ -1,0 +1,183 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import BannerSection from '@/components/BannerSection';
+import PhoneBanner from '@/components/PhoneBanner';
+import { Button } from '@/components/ui/button';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Card, CardContent } from '@/components/ui/card';
+import { useNavigate } from 'react-router-dom';
+
+const FruitsLegumes = () => {
+  const navigate = useNavigate();
+
+  const handleContactUs = () => {
+    navigate('/contact');
+    window.scrollTo(0, 0);
+  };
+
+  const productTypes = [
+    {
+      name: "Tomates",
+      image: "/lovable-uploads/1749ed36-1ac4-46ec-8899-4094836780b4.png"
+    },
+    {
+      name: "Courgettes",
+      image: "/lovable-uploads/183b426c-4420-48a1-882c-f9875a78accd.png"
+    },
+    {
+      name: "Aubergines",
+      image: "/lovable-uploads/18916636-2083-4611-a0a3-3740630fabfc.png"
+    },
+    {
+      name: "Melons",
+      image: "/lovable-uploads/1b5b3d5d-d99b-4720-ac02-f36e48c49406.png"
+    },
+    {
+      name: "Pêches",
+      image: "/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png"
+    }
+  ];
+
+  const producers = [
+    {
+      name: "Ferme Bio du Luberon",
+      description: "Installés depuis 15 ans au pied du Luberon, Marie et Pierre cultivent leurs fruits et légumes en agriculture biologique. Leurs tomates cerises et courgettes sont reconnues pour leur saveur exceptionnelle.",
+      image: "/lovable-uploads/1d6bbf14-846c-4283-86bd-43a619a37a92.png",
+      specialty: "Légumes Bio du Luberon"
+    },
+    {
+      name: "Vergers de Provence",
+      description: "Exploitation familiale de 3ème génération, spécialisée dans les fruits à noyaux. Leurs pêches, abricots et melons bénéficient du soleil généreux de la Provence.",
+      image: "/lovable-uploads/1f842070-584e-48cc-bae2-e013363e5e32.png",
+      specialty: "Fruits de Provence"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      
+      <section className="py-16 bg-gradient-to-br from-background to-secondary/5">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Nos Fruits & Légumes
+              </h1>
+              <div className="text-lg text-muted-foreground space-y-4">
+                <p>
+                  Savourez la fraîcheur et l'authenticité de nos fruits et légumes, 
+                  cultivés avec passion par nos producteurs locaux.
+                </p>
+                <ul className="space-y-2 ml-4">
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span>Récolte quotidienne pour une fraîcheur optimale</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span>Agriculture raisonnée et biologique</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span>Variétés anciennes et savoureuses</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                    <span>Zéro pesticide, goût authentique</span>
+                  </li>
+                </ul>
+              </div>
+              <Button 
+                onClick={handleContactUs}
+                className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 mt-8"
+              >
+                Découvrir nos produits
+              </Button>
+            </div>
+            <div className="relative">
+              <img
+                src="/lovable-uploads/212b7c19-2973-4da1-b68f-efd4542bac70.png"
+                alt="Fruits et légumes frais"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
+            Nos Spécialités
+          </h2>
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {productTypes.map((product, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/4">
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <CardContent className="p-0">
+                      <div className="aspect-square relative overflow-hidden rounded-lg">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div className="absolute bottom-4 left-4 right-4">
+                          <h3 className="text-white font-semibold text-lg text-center">
+                            {product.name}
+                          </h3>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-br from-secondary/5 to-background">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">
+            Nos Producteurs Partenaires
+          </h2>
+          <div className="space-y-16">
+            {producers.map((producer, index) => (
+              <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                  <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                    {producer.specialty}
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    {producer.name}
+                  </h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    {producer.description}
+                  </p>
+                </div>
+                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+                  <img
+                    src={producer.image}
+                    alt={producer.name}
+                    className="w-full h-auto rounded-2xl shadow-xl"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <BannerSection />
+      <PhoneBanner />
+      <Footer />
+    </div>
+  );
+};
+
+export default FruitsLegumes;
