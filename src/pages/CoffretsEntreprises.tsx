@@ -125,8 +125,12 @@ const CoffretsEntreprises = () => {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
-                <Gift className="w-10 h-10 text-white" />
+              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/lovable-uploads/1c0f7a3f-8d50-4114-8fa1-f64d6a5d8893.png"
+                  alt="Coffret de Noël avec produits locaux"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Sélection de produits locaux et artisanaux de Provence
@@ -137,8 +141,12 @@ const CoffretsEntreprises = () => {
             </div>
 
             <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
-                <Heart className="w-10 h-10 text-white" />
+              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/lovable-uploads/212b7c19-2973-4da1-b68f-efd4542bac70.png"
+                  alt="Préparation des paniers par les ESAT"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Confection par des ESAT, pour donner du sens à vos cadeaux
@@ -149,8 +157,12 @@ const CoffretsEntreprises = () => {
             </div>
 
             <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
-                <Truck className="w-10 h-10 text-white" />
+              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/lovable-uploads/d5ec88bd-a124-419c-8f97-60beb373bc26.png"
+                  alt="Camion de livraison Localizz"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Livraison directe sur vos sites, partout en région PACA
