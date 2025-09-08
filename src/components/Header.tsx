@@ -40,7 +40,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "Nos Produits",
-    href: "/nos-produits",
+    href: "/nos-produits/fruits-et-legumes",
     subItems: [
       { title: "Fruits et légumes", href: "/nos-produits/fruits-et-legumes" },
       { title: "Viandes", href: "/nos-produits/viandes" },
