@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PhoneBanner from '@/components/PhoneBanner';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { Gift, Heart, Truck, Users, Building, Calendar } from 'lucide-react';
