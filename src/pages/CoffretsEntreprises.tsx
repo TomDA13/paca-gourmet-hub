@@ -19,7 +19,7 @@ const CoffretsEntreprises = () => {
       <PhoneBanner />
       
       {/* Hero Section */}
-      <section className="relative h-[57vh] flex items-center justify-center overflow-hidden pt-10">
+      <section className="relative h-[52vh] flex items-center justify-center overflow-hidden pt-10">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
