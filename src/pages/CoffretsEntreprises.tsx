@@ -131,7 +131,8 @@ const CoffretsEntreprises = () => {
                 <img 
                   src="/lovable-uploads/82c65f87-6503-4130-bc1b-fe53acd69e82.png"
                   alt="Coffret de Noël avec produits locaux"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+
                 />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">
