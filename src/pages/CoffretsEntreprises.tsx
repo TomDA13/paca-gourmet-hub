@@ -15,6 +15,7 @@ const CoffretsEntreprises = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <PhoneBanner />
       
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden pt-10">
