@@ -63,11 +63,11 @@ const Cremeries = () => {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Nos Crémeries</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Beurre oeuf et fromage</h1>
               <div className="text-lg text-muted-foreground space-y-4">
                 <p>
-                  Redécouvrez le goût authentique des produits laitiers artisanaux, élaborés dans le respect des
-                  traditions fromagères provençales.
+                  Redécouvrez le goût authentique des produits laitiers artisanaux, élaborés dans le respect de nos
+                  traditions.
                 </p>
                 <ul className="space-y-2 ml-4">
                   <li className="flex items-start">
