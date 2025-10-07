@@ -26,7 +26,7 @@ const Cremeries = () => {
     },
     {
       name: "Yaourt bio du champsaur (100g, 125 g, 5 kg)",
-      image: "/lovable-uploads/yaourt-bio-champsaur.png",
+      image: "/lovable-uploads/yaourt-champsaur.png",
     },
     {
       name: "Fromage blanc 1 kg et 5 kg",
@@ -34,7 +34,7 @@ const Cremeries = () => {
     },
     {
       name: "Fromage à la coupe, pasteurisé et lait cru",
-      image: "/lovable-uploads/yaourt-bio-pack.png",
+      image: "/lovable-uploads/fromage-a-la-coupe.png",
     },
   ];
 
