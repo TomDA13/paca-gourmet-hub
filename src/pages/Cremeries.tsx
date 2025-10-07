@@ -40,18 +40,25 @@ const Cremeries = () => {
 
   const producers = [
     {
-      name: "Fromagerie des Alpilles",
+      name: "Ferme du Buissonet à Selonnet (04)",
       description:
-        "Maître fromager depuis 20 ans, Jean-Claude perpétue les traditions fromagères provençales. Ses fromages de chèvre affinés dans les caves naturelles des Alpilles développent des saveurs uniques.",
-      image: "/lovable-uploads/fromager.avif",
-      specialty: "Fromages de chèvre AOP",
+        "La Famille Michel travaille depuis 2013 avec Localizz en proposant leurs produits laitiers fermiers à la restauration collective et commerciale. Tous les produits sont fabriqués à la ferme : yaourts, fromages blancs et fromages.",
+      image: "/lovable-uploads/ferme-buissonet.png",
+      specialty: "Produits laitiers fermiers",
     },
     {
-      name: "Ferme laitière du Ventoux",
+      name: "Coopérative de l'Ubaye à La Bréole",
       description:
-        "Élevage de vaches laitières en agriculture biologique au pied du Mont Ventoux. Leurs produits laitiers sont transformés à la ferme selon des méthodes artisanales traditionnelles.",
-      image: "/lovable-uploads/fromager2.avif",
-      specialty: "Produits laitiers Bio",
+        "Créée en 1949, la Coopérative Laitière de la Vallée de l'Ubaye valorise la production laitière de montagne. Elle collecte le lait de 12 exploitations de vaches et 2 exploitations de chèvres pour fabriquer fromages frais et yaourts sous la marque Le Chambeyron.",
+      image: "/lovable-uploads/cooperative-ubaye.png",
+      specialty: "Fromages de montagne",
+    },
+    {
+      name: "ESAT de la Haute Lèbre à Revest-du-Bion",
+      description:
+        "Établissement de Services et d'Aide par le Travail implanté sur 150 hectares entre Ventoux et Durance. Le Domaine renoue avec les traditions locales et artisanales pour produire des fromages de chèvre de qualité.",
+      image: "/lovable-uploads/esat-haute-lebre.png",
+      specialty: "Fromages de chèvre artisanaux",
     },
   ];
 
