@@ -44,18 +44,25 @@ const Epicerie = () => {
 
   const producers = [
     {
-      name: "Moulin des Oliviers",
+      name: "Moulin St Joseph à Grans (13)",
       description:
-        "Moulin familial depuis 1850, ils pressent à froid les olives de leurs propres oliviers centenaires. Leur huile d'olive extra vierge AOP de Provence est reconnue pour sa finesse et ses arômes fruités.",
-      image: "/lovable-uploads/44886672-833c-4a35-9136-87e1904f657b.png",
-      specialty: "Huile d'olive AOP Provence",
+        "Moulin traditionnel produisant des farines de qualité supérieure. Ce moulin historique perpétue le savoir-faire artisanal provençal pour offrir des produits authentiques respectant les méthodes ancestrales de fabrication.",
+      image: "/lovable-uploads/moulin-st-joseph.png",
+      specialty: "Farines artisanales",
     },
     {
-      name: "Rucher du Ventoux",
+      name: "Duransia",
       description:
-        "Apiculteur passionné depuis 30 ans, Michel récolte ses miels selon les floraisons du Mont Ventoux. Lavande, thym, acacia... chaque miel révèle les secrets aromatiques de la Provence.",
-      image: "/lovable-uploads/46b2ee52-f1f3-4fca-a2ef-35256b615fe1.png",
-      specialty: "Miels de Provence",
+        "Coopérative agricole au cœur du territoire Provence Alpes avec certification équitable et bio. Duransia accompagne les agriculteurs de la graine aux consommateurs avec des produits de qualité et des services durables.",
+      image: "/lovable-uploads/duransia.png",
+      specialty: "Céréales équitables et bio",
+    },
+    {
+      name: "Carret Munos à Peynier",
+      description:
+        "Fabricant de couscous de qualité supérieure depuis 3 générations. Pionnier du couscous gourmand et sain, la maison privilégie la qualité des blés et céréales pour offrir des produits d'exception.",
+      image: "/lovable-uploads/carret-munoz.png",
+      specialty: "Couscous artisanal",
     },
   ];
 
