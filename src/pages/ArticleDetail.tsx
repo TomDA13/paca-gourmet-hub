@@ -51,36 +51,73 @@ const ArticleDetail = () => {
       {/* Article Content */}
       <article className="py-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Article Meta */}
-            <div className="flex items-center gap-4 mb-6 text-sm text-gray-500">
-              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">
-                {article.category}
-              </span>
-              <span>{article.date}</span>
-              <span>{article.readTime} de lecture</span>
-              <span>Par {article.author}</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              {/* Main Content Column */}
+              <div className="lg:col-span-8">
+                {/* Article Meta */}
+                <div className="flex items-center gap-4 mb-6 text-sm text-gray-500">
+                  <span className="bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">
+                    {article.category}
+                  </span>
+                  <span>{article.date}</span>
+                  <span>{article.readTime} de lecture</span>
+                  <span>Par {article.author}</span>
+                </div>
+
+                {/* Article Title */}
+                <h1 className="text-3xl md:text-4xl font-bold text-primary mb-8">
+                  {article.title}
+                </h1>
+
+                {/* Article Image */}
+                <div className="aspect-video rounded-lg overflow-hidden mb-8">
+                  <img 
+                    src={article.image} 
+                    alt={article.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Article Content */}
+                <div 
+                  className="prose prose-lg max-w-none text-gray-700 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: article.content }}
+                />
+              </div>
+
+              {/* Sticky CTA Column */}
+              <aside className="lg:col-span-4">
+                <div className="sticky top-8">
+                  <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 text-white shadow-xl">
+                    <h3 className="text-2xl font-bold mb-4">
+                      On passe à la vitesse supérieure ?
+                    </h3>
+                    <p className="text-lg mb-6 text-white/90">
+                      Localizz vous accompagne dans votre approvisionnement local et responsable.
+                    </p>
+                    <Button 
+                      onClick={() => navigate('/contact')}
+                      className="w-full bg-white text-primary hover:bg-white/90 font-semibold mb-6"
+                      size="lg"
+                    >
+                      C'est parti !
+                    </Button>
+                    <div className="border-t border-white/20 pt-6">
+                      <p className="text-sm text-white/80 mb-2">
+                        Ou appelez-nous et laissez votre message sur notre répondeur
+                      </p>
+                      <a 
+                        href="tel:0413600013" 
+                        className="text-xl font-bold hover:text-white/90 transition-colors"
+                      >
+                        04 13 60 00 13
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </aside>
             </div>
-
-            {/* Article Title */}
-            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-8">
-              {article.title}
-            </h1>
-
-            {/* Article Image */}
-            <div className="aspect-video rounded-lg overflow-hidden mb-8">
-              <img 
-                src={article.image} 
-                alt={article.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Article Content */}
-            <div 
-              className="prose prose-lg max-w-none text-gray-700 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: article.content }}
-            />
           </div>
         </div>
       </article>
