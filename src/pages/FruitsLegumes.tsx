@@ -104,7 +104,7 @@ const FruitsLegumes = () => {
 
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Nos Spécialités</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Le meilleur de notre région</h2>
           <Carousel className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
               {productTypes.map((product, index) => (
