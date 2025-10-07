@@ -91,7 +91,7 @@ const ArticleDetail = () => {
                 <div className="sticky top-8">
                   <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 text-white shadow-xl">
                     <h3 className="text-2xl font-bold mb-4">
-                      On passe à la vitesse supérieure ?
+                      On passe au local ?
                     </h3>
                     <p className="text-lg mb-6 text-white/90">
                       Localizz vous accompagne dans votre approvisionnement local et responsable.
@@ -111,7 +111,7 @@ const ArticleDetail = () => {
                         href="tel:0413600013" 
                         className="text-xl font-bold hover:text-white/90 transition-colors"
                       >
-                        04 13 60 00 13
+                        07 82 35 21 27
                       </a>
                     </div>
                   </div>
