@@ -53,9 +53,12 @@ const menuItems: MenuItem[] = [
     href: "/qui-sommes-nous",
     subItems: [
       { title: "Notre histoire", href: "/qui-sommes-nous#notre-histoire" },
-      { title: "L'équipe", href: "/qui-sommes-nous#equipe" },
-      { title: "Nos Engagements", href: "/nos-engagements" }
+      { title: "L'équipe", href: "/qui-sommes-nous#equipe" }
     ]
+  },
+  {
+    title: "Nos Engagements",
+    href: "/nos-engagements"
   },
   {
     title: "Actualités",
