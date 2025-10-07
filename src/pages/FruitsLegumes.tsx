@@ -93,7 +93,7 @@ const FruitsLegumes = () => {
             </div>
             <div className="relative">
               <img
-                src="/lovable-uploads/fruitetlégume.jpg"
+                src="/lovable-uploads/image.png"
                 alt="Fruits et légumes frais"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
