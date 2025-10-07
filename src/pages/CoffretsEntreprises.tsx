@@ -146,7 +146,7 @@ const CoffretsEntreprises = () => {
             <div className="text-center group">
               <div className="w-full h-48 mb-6 overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/631f1ef7-a043-48d8-803d-e3164ed2a751.png"
+                  src="/lovable-uploads/esat.png"
                   alt="Préparation des paniers par les ESAT"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
