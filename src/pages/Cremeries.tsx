@@ -17,24 +17,24 @@ const Cremeries = () => {
 
   const productTypes = [
     {
-      name: "Fromages",
+      name: "Oeufs plein aire et Bio",
+      image: "/lovable-uploads/oeufs-plein-air.png",
+    },
+    {
+      name: "Fromage fermier HVE",
       image: "/lovable-uploads/raclette.png",
     },
     {
-      name: "Yaourts",
-      image: "/lovable-uploads/faisselle.png",
+      name: "Yaourt bio du champsaur (100g, 125 g, 5 kg)",
+      image: "/lovable-uploads/yaourt-bio-champsaur.png",
     },
     {
-      name: "Lait",
-      image: "/lovable-uploads/lait.png",
+      name: "Fromage blanc 1 kg et 5 kg",
+      image: "/lovable-uploads/fromage-blanc.png",
     },
     {
-      name: "Beurre",
-      image: "/lovable-uploads/beurre.png",
-    },
-    {
-      name: "Œufs",
-      image: "/lovable-uploads/oeuf.jpg",
+      name: "Fromage à la coupe, pasteurisé et lait cru",
+      image: "/lovable-uploads/yaourt-bio-pack.png",
     },
   ];
 
