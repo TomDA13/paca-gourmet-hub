@@ -34,7 +34,7 @@ const Epicerie = () => {
     },
     {
       name: "Jus et nectar provençaux",
-      image: "/lovable-uploads/jus-nectar.png",
+      image: "/lovable-uploads/jusnectar.png",
     },
     {
       name: "Confiture (fruits provençaux)",
