@@ -39,7 +39,7 @@ const FruitsLegumes = () => {
       name: "Rachid Rifi",
       description:
         "Producteur passionné de fruits et légumes frais, Rachid cultive avec soin ses produits pour offrir une qualité exceptionnelle. Son engagement pour la fraîcheur et la saveur fait de lui un partenaire de confiance de Localizz.",
-      image: "/lovable-uploads/fruitetlégume.jpg",
+      image: "/lovable-uploads/rachid.jpg",
       specialty: "Fruits et légumes frais",
     },
     {
