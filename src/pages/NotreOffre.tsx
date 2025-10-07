@@ -244,8 +244,8 @@ const NotreOffre = () => {
                 </div>
                 <div className="flex-1">
                   <img 
-                    src="/lovable-uploads/placeholder1.png" 
-                    alt="Solution logistique" 
+                    src="/lovable-uploads/camion-livraison.jpg" 
+                    alt="Solution logistique clé en main avec notre camion Localizz" 
                     className="w-full h-80 object-cover rounded-2xl shadow-lg"
                   />
                 </div>
@@ -270,8 +270,8 @@ const NotreOffre = () => {
                 </div>
                 <div className="flex-1">
                   <img 
-                    src="/lovable-uploads/placeholder2.png" 
-                    alt="Chaîne de valeurs" 
+                    src="/lovable-uploads/melons-champ.png" 
+                    alt="Récolte de melons en circuit court dans nos champs" 
                     className="w-full h-80 object-cover rounded-2xl shadow-lg"
                   />
                 </div>
@@ -295,8 +295,8 @@ const NotreOffre = () => {
                 </div>
                 <div className="flex-1">
                   <img 
-                    src="/lovable-uploads/placeholder3.png" 
-                    alt="Produits de qualité" 
+                    src="/lovable-uploads/pommes-qualite.png" 
+                    alt="Pommes locales de qualité récoltées à juste maturité" 
                     className="w-full h-80 object-cover rounded-2xl shadow-lg"
                   />
                 </div>
@@ -321,8 +321,8 @@ const NotreOffre = () => {
                 </div>
                 <div className="flex-1">
                   <img 
-                    src="/lovable-uploads/placeholder4.png" 
-                    alt="Outils de communication" 
+                    src="/lovable-uploads/animation-enfants.png" 
+                    alt="Animation pédagogique avec des enfants sur les fruits et légumes" 
                     className="w-full h-80 object-cover rounded-2xl shadow-lg"
                   />
                 </div>
