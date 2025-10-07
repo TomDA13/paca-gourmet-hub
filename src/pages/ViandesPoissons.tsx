@@ -1,80 +1,81 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import BannerSection from '@/components/BannerSection';
-import PhoneBanner from '@/components/PhoneBanner';
-import { Button } from '@/components/ui/button';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
-import { useNavigate } from 'react-router-dom';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import BannerSection from "@/components/BannerSection";
+import PhoneBanner from "@/components/PhoneBanner";
+import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const ViandesPoissons = () => {
   const navigate = useNavigate();
 
   const handleContactUs = () => {
-    navigate('/contact');
+    navigate("/contact");
     window.scrollTo(0, 0);
   };
 
   const productTypes = [
     {
       name: "Taureau",
-      image: "/lovable-uploads/taureau.jpg"
+      image: "/lovable-uploads/taureau.jpg",
     },
     {
       name: "Bœuf",
-      image: "/lovable-uploads/boeuf.png"
+      image: "/lovable-uploads/boeuf.png",
     },
     {
       name: "Porc",
-      image: "/lovable-uploads/porc.png"
+      image: "/lovable-uploads/porc.png",
     },
     {
       name: "Loup",
-      image: "/lovable-uploads/loup.jpg"
+      image: "/lovable-uploads/loup.jpg",
     },
     {
       name: "Poissons",
-      image: "/lovable-uploads/0cb8b301-fb4d-433e-82e0-721cf0a64d9c.png"
-    }
+      image: "/lovable-uploads/0cb8b301-fb4d-433e-82e0-721cf0a64d9c.png",
+    },
   ];
 
   const producers = [
     {
       name: "Élevage Martin",
-      description: "Éleveur de taureaux camarguais depuis 3 générations, Pascal Martin perpétue la tradition familiale dans le respect du bien-être animal. Ses bêtes pâturent librement dans les marais de Camargue.",
+      description:
+        "Éleveur de taureaux camarguais depuis 3 générations, Pascal Martin perpétue la tradition familiale dans le respect du bien-être animal. Ses bêtes pâturent librement dans les marais de Camargue.",
       image: "/lovable-uploads/0ff5f2e6-a1fb-4734-934e-06bb06e5d3c1.png",
-      specialty: "Taureau de Camargue AOP"
+      specialty: "Taureau de Camargue AOP",
     },
     {
       name: "Ferme des Alpilles",
-      description: "Exploitation familiale située au cœur des Alpilles, la famille Dubois élève des bœufs de race Aubrac en plein air. Une viande d'exception, tendre et savoureuse.",
+      description:
+        "Exploitation familiale située au cœur des Alpilles, la famille Dubois élève des bœufs de race Aubrac en plein air. Une viande d'exception, tendre et savoureuse.",
       image: "/lovable-uploads/11f16898-57c5-448b-8ca8-1b361fd5662d.png",
-      specialty: "Bœuf de race Aubrac"
+      specialty: "Bœuf de race Aubrac",
     },
     {
       name: "Pêcherie Méditerranée",
-      description: "Pêcheurs artisanaux basés à Martigues, ils sélectionnent quotidiennement les meilleurs poissons de la côte méditerranéenne selon les arrivages et la saison.",
+      description:
+        "Pêcheurs artisanaux basés à Martigues, ils sélectionnent quotidiennement les meilleurs poissons de la côte méditerranéenne selon les arrivages et la saison.",
       image: "/lovable-uploads/13a3b908-a80d-4605-90a3-e8f8af450b4f.png",
-      specialty: "Poissons de Méditerranée"
-    }
+      specialty: "Poissons de Méditerranée",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero Section avec titre et description */}
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Nos Viandes & Poissons
-              </h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Nos Viandes & Poissons</h1>
               <div className="text-lg text-muted-foreground space-y-4">
                 <p>
-                  Découvrez notre sélection de viandes et poissons d'exception, 
-                  rigoureusement choisis auprès de producteurs locaux de confiance.
+                  Découvrez notre sélection de viandes et poissons d'exception, rigoureusement choisis auprès de
+                  producteurs locaux de confiance.
                 </p>
                 <ul className="space-y-2 ml-4">
                   <li className="flex items-start">
@@ -95,7 +96,7 @@ const ViandesPoissons = () => {
                   </li>
                 </ul>
               </div>
-              <Button 
+              <Button
                 onClick={handleContactUs}
                 className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 mt-8"
               >
@@ -116,9 +117,7 @@ const ViandesPoissons = () => {
       {/* Section Carrousel Produits */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Nos Spécialités
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Le meilleur de notre région</h2>
           <Carousel className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
               {productTypes.map((product, index) => (
@@ -126,16 +125,10 @@ const ViandesPoissons = () => {
                   <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <CardContent className="p-0">
                       <div className="aspect-square relative overflow-hidden rounded-lg">
-                        <img
-                          src={product.image}
-                          alt={product.name}
-                          className="w-full h-full object-cover"
-                        />
+                        <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div className="absolute bottom-4 left-4 right-4">
-                          <h3 className="text-white font-semibold text-lg text-center">
-                            {product.name}
-                          </h3>
+                          <h3 className="text-white font-semibold text-lg text-center">{product.name}</h3>
                         </div>
                       </div>
                     </CardContent>
@@ -152,29 +145,22 @@ const ViandesPoissons = () => {
       {/* Section Producteurs */}
       <section className="py-16 bg-gradient-to-br from-secondary/5 to-background">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">
-            Nos Producteurs Partenaires
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Nos Producteurs Partenaires</h2>
           <div className="space-y-16">
             {producers.map((producer, index) => (
-              <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+              <div
+                key={index}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
+              >
+                <div className={`space-y-6 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
                   <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
                     {producer.specialty}
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">
-                    {producer.name}
-                  </h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    {producer.description}
-                  </p>
+                  <h3 className="text-2xl font-bold text-foreground">{producer.name}</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">{producer.description}</p>
                 </div>
-                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                  <img
-                    src={producer.image}
-                    alt={producer.name}
-                    className="w-full h-auto rounded-2xl shadow-xl"
-                  />
+                <div className={`relative ${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
+                  <img src={producer.image} alt={producer.name} className="w-full h-auto rounded-2xl shadow-xl" />
                 </div>
               </div>
             ))}

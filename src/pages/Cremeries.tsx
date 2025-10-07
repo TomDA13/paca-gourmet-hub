@@ -1,73 +1,73 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import BannerSection from '@/components/BannerSection';
-import PhoneBanner from '@/components/PhoneBanner';
-import { Button } from '@/components/ui/button';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
-import { useNavigate } from 'react-router-dom';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import BannerSection from "@/components/BannerSection";
+import PhoneBanner from "@/components/PhoneBanner";
+import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const Cremeries = () => {
   const navigate = useNavigate();
 
   const handleContactUs = () => {
-    navigate('/contact');
+    navigate("/contact");
     window.scrollTo(0, 0);
   };
 
   const productTypes = [
     {
       name: "Fromages",
-      image: "/lovable-uploads/raclette.png"
+      image: "/lovable-uploads/raclette.png",
     },
     {
       name: "Yaourts",
-      image: "/lovable-uploads/faisselle.png"
+      image: "/lovable-uploads/faisselle.png",
     },
     {
       name: "Lait",
-      image: "/lovable-uploads/lait.png"
+      image: "/lovable-uploads/lait.png",
     },
     {
       name: "Beurre",
-      image: "/lovable-uploads/beurre.png"
+      image: "/lovable-uploads/beurre.png",
     },
     {
       name: "Œufs",
-      image: "/lovable-uploads/oeuf.jpg"
-    }
+      image: "/lovable-uploads/oeuf.jpg",
+    },
   ];
 
   const producers = [
     {
       name: "Fromagerie des Alpilles",
-      description: "Maître fromager depuis 20 ans, Jean-Claude perpétue les traditions fromagères provençales. Ses fromages de chèvre affinés dans les caves naturelles des Alpilles développent des saveurs uniques.",
+      description:
+        "Maître fromager depuis 20 ans, Jean-Claude perpétue les traditions fromagères provençales. Ses fromages de chèvre affinés dans les caves naturelles des Alpilles développent des saveurs uniques.",
       image: "/lovable-uploads/fromager.avif",
-      specialty: "Fromages de chèvre AOP"
+      specialty: "Fromages de chèvre AOP",
     },
     {
       name: "Ferme laitière du Ventoux",
-      description: "Élevage de vaches laitières en agriculture biologique au pied du Mont Ventoux. Leurs produits laitiers sont transformés à la ferme selon des méthodes artisanales traditionnelles.",
+      description:
+        "Élevage de vaches laitières en agriculture biologique au pied du Mont Ventoux. Leurs produits laitiers sont transformés à la ferme selon des méthodes artisanales traditionnelles.",
       image: "/lovable-uploads/fromager2.avif",
-      specialty: "Produits laitiers Bio"
-    }
+      specialty: "Produits laitiers Bio",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Nos Crémeries
-              </h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Nos Crémeries</h1>
               <div className="text-lg text-muted-foreground space-y-4">
                 <p>
-                  Redécouvrez le goût authentique des produits laitiers artisanaux, 
-                  élaborés dans le respect des traditions fromagères provençales.
+                  Redécouvrez le goût authentique des produits laitiers artisanaux, élaborés dans le respect des
+                  traditions fromagères provençales.
                 </p>
                 <ul className="space-y-2 ml-4">
                   <li className="flex items-start">
@@ -88,7 +88,7 @@ const Cremeries = () => {
                   </li>
                 </ul>
               </div>
-              <Button 
+              <Button
                 onClick={handleContactUs}
                 className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-6 px-8 mt-8"
               >
@@ -108,9 +108,7 @@ const Cremeries = () => {
 
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Nos Spécialités
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Le meilleur de notre région</h2>
           <Carousel className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
               {productTypes.map((product, index) => (
@@ -118,16 +116,10 @@ const Cremeries = () => {
                   <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <CardContent className="p-0">
                       <div className="aspect-square relative overflow-hidden rounded-lg">
-                        <img
-                          src={product.image}
-                          alt={product.name}
-                          className="w-full h-full object-cover"
-                        />
+                        <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div className="absolute bottom-4 left-4 right-4">
-                          <h3 className="text-white font-semibold text-lg text-center">
-                            {product.name}
-                          </h3>
+                          <h3 className="text-white font-semibold text-lg text-center">{product.name}</h3>
                         </div>
                       </div>
                     </CardContent>
@@ -143,29 +135,22 @@ const Cremeries = () => {
 
       <section className="py-16 bg-gradient-to-br from-secondary/5 to-background">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">
-            Nos Producteurs Partenaires
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Nos Producteurs Partenaires</h2>
           <div className="space-y-16">
             {producers.map((producer, index) => (
-              <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+              <div
+                key={index}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
+              >
+                <div className={`space-y-6 ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
                   <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
                     {producer.specialty}
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">
-                    {producer.name}
-                  </h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    {producer.description}
-                  </p>
+                  <h3 className="text-2xl font-bold text-foreground">{producer.name}</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">{producer.description}</p>
                 </div>
-                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                  <img
-                    src={producer.image}
-                    alt={producer.name}
-                    className="w-full h-auto rounded-2xl shadow-xl"
-                  />
+                <div className={`relative ${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
+                  <img src={producer.image} alt={producer.name} className="w-full h-auto rounded-2xl shadow-xl" />
                 </div>
               </div>
             ))}
