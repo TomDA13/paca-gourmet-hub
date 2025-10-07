@@ -37,7 +37,7 @@ const MissionSection = () => {
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/lovable-uploads/682c4a34-56e2-4abc-9dbd-4e7bebbf0508.png"
+                  src="/lovable-uploads/terre-de-crau.png"
                   alt="Partenariat avec les producteurs"
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
                 />
