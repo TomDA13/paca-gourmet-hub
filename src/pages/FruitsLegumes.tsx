@@ -36,18 +36,25 @@ const FruitsLegumes = () => {
 
   const producers = [
     {
-      name: "Ferme Bio du Luberon",
+      name: "Rachid Rifi",
       description:
-        "Installés depuis 15 ans au pied du Luberon, Marie et Pierre cultivent leurs fruits et légumes en agriculture biologique. Leurs tomates cerises et courgettes sont reconnues pour leur saveur exceptionnelle.",
-      image: "/lovable-uploads/1d6bbf14-846c-4283-86bd-43a619a37a92.png",
-      specialty: "Légumes Bio du Luberon",
+        "Producteur passionné de fruits et légumes frais, Rachid cultive avec soin ses produits pour offrir une qualité exceptionnelle. Son engagement pour la fraîcheur et la saveur fait de lui un partenaire de confiance de Localizz.",
+      image: "/lovable-uploads/fruitetlégume.jpg",
+      specialty: "Fruits et légumes frais",
     },
     {
-      name: "Vergers de Provence",
+      name: "Terre de Crau / Mas St Paul",
       description:
-        "Exploitation familiale de 3ème génération, spécialisée dans les fruits à noyaux. Leurs pêches, abricots et melons bénéficient du soleil généreux de la Provence.",
-      image: "/lovable-uploads/1f842070-584e-48cc-bae2-e013363e5e32.png",
-      specialty: "Fruits de Provence",
+        "Groupement de producteurs de fruits à noyau autour de Mouriès, St Martin de Crau et Fos. Sarah Monteux a repris le flambeau familial et propose des fruits bio et non bio. Localizz travaille avec eux depuis 2 ans pour toute la saison des fruits à noyaux.",
+      image: "/lovable-uploads/terre-de-crau.png",
+      specialty: "Fruits à noyau Bio et conventionnels",
+    },
+    {
+      name: "GAEC des Bougainvilliers",
+      description:
+        "Loïc Laber cultive avec passion une grande variété de fruits et légumes de saison. Cette exploitation familiale près d'Aix-en-Provence privilégie les méthodes respectueuses de l'environnement pour offrir des produits de qualité.",
+      image: "/lovable-uploads/gaec-bougainvilliers.png",
+      specialty: "Maraîchage de saison",
     },
   ];
 
