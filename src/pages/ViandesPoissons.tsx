@@ -17,24 +17,24 @@ const ViandesPoissons = () => {
 
   const productTypes = [
     {
-      name: "Taureau",
-      image: "/lovable-uploads/taureau.jpg",
+      name: "Taureau de Camargue AOP",
+      image: "/lovable-uploads/taureau-camargue.png",
     },
     {
-      name: "Bœuf",
-      image: "/lovable-uploads/boeuf.png",
+      name: "Porc plein air de la crau HVE",
+      image: "/lovable-uploads/porc-plein-air.png",
     },
     {
-      name: "Porc",
-      image: "/lovable-uploads/porc.png",
+      name: "Boeuf race à viande",
+      image: "/lovable-uploads/boeuf-race-viande.png",
     },
     {
-      name: "Loup",
-      image: "/lovable-uploads/loup.jpg",
+      name: "Saucisserie de qualité",
+      image: "/lovable-uploads/saucisserie.png",
     },
     {
-      name: "Poissons",
-      image: "/lovable-uploads/0cb8b301-fb4d-433e-82e0-721cf0a64d9c.png",
+      name: "Charcuterie de terroir des hautes Alpes",
+      image: "/lovable-uploads/charcuterie-hautes-alpes.png",
     },
   ];
 
