@@ -22,11 +22,11 @@ const Cremeries = () => {
     },
     {
       name: "Fromage fermier HVE",
-      image: "/lovable-uploads/raclette.png",
+      image: "/lovable-uploads/fromage-fermier-hve.png",
     },
     {
       name: "Yaourt bio du champsaur (100g, 125 g, 5 kg)",
-      image: "/lovable-uploads/yaourt-champsaur.png",
+      image: "/lovable-uploads/yaourt-bio-ebrard.png",
     },
     {
       name: "Fromage blanc 1 kg et 5 kg",
