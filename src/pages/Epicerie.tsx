@@ -17,28 +17,20 @@ const Epicerie = () => {
 
   const productTypes = [
     {
-      name: "Riz de camargue IGP",
+      name: "Riz",
       image: "/lovable-uploads/riz.png",
     },
     {
-      name: "Lentille Blondes équitable",
-      image: "/lovable-uploads/lentilles.png",
+      name: "Pâtes",
+      image: "/lovable-uploads/pate500.png",
     },
     {
-      name: "Calissons d'AIX artisanaux",
+      name: "Miel",
+      image: "/lovable-uploads/miel.png",
+    },
+    {
+      name: "Calissons",
       image: "/lovable-uploads/calisson.png",
-    },
-    {
-      name: "Sauce Tomate issue de tomates provençales",
-      image: "/lovable-uploads/sauce-tomate.png",
-    },
-    {
-      name: "Jus et nectar provençaux",
-      image: "/lovable-uploads/jus-nectar.png",
-    },
-    {
-      name: "Confiture (fruits provençaux)",
-      image: "/lovable-uploads/confiture.jpg",
     },
   ];
 
