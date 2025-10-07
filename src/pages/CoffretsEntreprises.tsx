@@ -19,20 +19,20 @@ const CoffretsEntreprises = () => {
       <PhoneBanner />
       
       {/* Hero Section */}
-      <section className="relative h-[45vh] flex items-center justify-center overflow-hidden pt-10">
+      <section className="relative h-[45vh] min-h-[500px] flex items-center justify-center overflow-hidden pt-10 pb-8">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
           style={{
-            backgroundImage: "url('/lovable-uploads/733a6292-c8dd-407c-8dba-008f6a7f47b5.png')",
-            backgroundPosition: "center 55%"
+            backgroundImage: "url('/lovable-uploads/coffret-prestige.png')",
+            backgroundPosition: "center 75%"
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-primary/50"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto pb-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up">
             Des coffrets gourmands locaux, durables et solidaires
           </h1>
@@ -61,7 +61,7 @@ const CoffretsEntreprises = () => {
             <img 
               src="/lovable-uploads/3c8f6a3d-67be-497f-b393-06800f4b4b47.png" 
               alt="Badge 100 valeurs du Sud" 
-              className="w-24 h-24 md:w-28 md:h-28 opacity-90" 
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 opacity-90 mt-2" 
             />
           </div>
         </div>
