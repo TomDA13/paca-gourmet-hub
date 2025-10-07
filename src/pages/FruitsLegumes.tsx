@@ -17,20 +17,20 @@ const FruitsLegumes = () => {
 
   const productTypes = [
     {
-      name: "Tomates",
-      image: "/lovable-uploads/tomate.png",
+      name: "Fruits et légumes « Moches »",
+      image: "/lovable-uploads/legumes-moches.webp",
     },
     {
-      name: "Courgettes",
-      image: "/lovable-uploads/courgette.jpg",
+      name: "Légumes ultra frais",
+      image: "/lovable-uploads/legumes-ultra-frais.png",
     },
     {
-      name: "Carottes",
-      image: "/lovable-uploads/carotte.jpg",
+      name: "Fruit cueillis à juste maturité",
+      image: "/lovable-uploads/fruit-maturite.jpg",
     },
     {
-      name: "Oignon",
-      image: "/lovable-uploads/oignon.jpg",
+      name: "4ème et 5ème gammes local",
+      image: "/lovable-uploads/4eme-5eme-gamme.jpg",
     },
   ];
 
