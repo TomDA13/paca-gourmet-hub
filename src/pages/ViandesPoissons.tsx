@@ -40,25 +40,25 @@ const ViandesPoissons = () => {
 
   const producers = [
     {
-      name: "Élevage Martin",
+      name: "Alazard",
       description:
-        "Éleveur de taureaux camarguais depuis 3 générations, Pascal Martin perpétue la tradition familiale dans le respect du bien-être animal. Ses bêtes pâturent librement dans les marais de Camargue.",
-      image: "/lovable-uploads/0ff5f2e6-a1fb-4734-934e-06bb06e5d3c1.png",
-      specialty: "Taureau de Camargue AOP",
+        "Maison familiale située à Tarascon en Provence aux portes de la Camargue. Alazard et Roux commercialise des viandes régionales de qualité avec un savoir-faire transmis de génération en génération.",
+      image: "/lovable-uploads/alazard.png",
+      specialty: "Viandes régionales de Camargue",
     },
     {
-      name: "Ferme des Alpilles",
+      name: "Comptoir des Salaisons",
       description:
-        "Exploitation familiale située au cœur des Alpilles, la famille Dubois élève des bœufs de race Aubrac en plein air. Une viande d'exception, tendre et savoureuse.",
-      image: "/lovable-uploads/11f16898-57c5-448b-8ca8-1b361fd5662d.png",
-      specialty: "Bœuf de race Aubrac",
+        "Artisan charcutier à l'Estaque (13), le Comptoir des Salaisons propose des saucisses, plats cuisinés et charcuteries artisanales élaborés avec passion. Des produits d'exception préparés selon des recettes traditionnelles.",
+      image: "/lovable-uploads/comptoir-salaisons.png",
+      specialty: "Charcuterie artisanale",
     },
     {
-      name: "Pêcherie Méditerranée",
+      name: "Salaisons du Champsaur",
       description:
-        "Pêcheurs artisanaux basés à Martigues, ils sélectionnent quotidiennement les meilleurs poissons de la côte méditerranéenne selon les arrivages et la saison.",
-      image: "/lovable-uploads/13a3b908-a80d-4605-90a3-e8f8af450b4f.png",
-      specialty: "Poissons de Méditerranée",
+        "Charcuterie artisanale des Hautes-Alpes (05), cette entreprise familiale de père en filles travaille en circuit court avec des élevages de montagne à taille humaine. Des recettes uniques créées avec passion depuis 1920.",
+      image: "/lovable-uploads/salaisons-champsaur.png",
+      specialty: "Porc de montagne en circuit court",
     },
   ];
 
