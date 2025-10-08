@@ -1,4 +1,3 @@
-
 export interface Article {
   id: string;
   title: string;
@@ -15,7 +14,8 @@ export const articles: Article[] = [
   {
     id: "loi-egalim-restauration-collective-paca-2025",
     title: "Loi EGAlim : guide complet pour les cantines et collectivités en PACA (2025)",
-    excerpt: "Découvrez comment appliquer concrètement la loi EGAlim dans votre restauration collective : obligations, étapes pratiques, bénéfices et solutions locales en région PACA.",
+    excerpt:
+      "Découvrez comment appliquer concrètement la loi EGAlim dans votre restauration collective : obligations, étapes pratiques, bénéfices et solutions locales en région PACA.",
     content: `
       <div class="space-y-6">
         <div class="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
@@ -173,7 +173,7 @@ export const articles: Article[] = [
         <h2 class="text-2xl font-bold mt-8 mb-4">7. Ressources utiles</h2>
 
         <ul class="list-disc list-inside space-y-2 ml-4">
-          <li><a href="https://ma-cantine.agriculture.gouv.fr/blog/25/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Guide officiel EGAlim – Ministère de l'Agriculture</a></li>
+          <li><a href="https://agriculture.gouv.fr/tout-comprendre-de-la-loi-egalim-2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Guide officiel EGAlim – Ministère de l'Agriculture</a></li>
           <li>Textes de référence sur Légifrance</li>
           <li>Agence de la transition écologique (ADEME)</li>
           <li><a href="/nos-engagements" class="text-primary hover:underline font-medium">Nos engagements pour une alimentation durable</a></li>
@@ -193,12 +193,13 @@ export const articles: Article[] = [
     date: "15 Jan 2025",
     category: "Réglementation",
     readTime: "8 min",
-    author: "Équipe Localizz"
+    author: "Équipe Localizz",
   },
   {
     id: "localizz-solutions-locales-marseille",
     title: "Localizz : Des solutions locales et durables pour l'agriculture et l'alimentation à Marseille",
-    excerpt: "Rencontre entre Localizz et la municipalité de Marseille pour soutenir l'approvisionnement local, l'accessibilité alimentaire et l'agriculture urbaine dans le cadre du Projet Agri-Alimentaire Marseillais.",
+    excerpt:
+      "Rencontre entre Localizz et la municipalité de Marseille pour soutenir l'approvisionnement local, l'accessibilité alimentaire et l'agriculture urbaine dans le cadre du Projet Agri-Alimentaire Marseillais.",
     content: `
       <p>Nous avons récemment eu le plaisir de recevoir les équipes de SIF Aïcha, adjointe au Maire de Marseille, pour échanger autour des grands enjeux actuels de l'alimentation durable sur le territoire marseillais. Cette rencontre, organisée dans le cadre du Projet Agri-Alimentaire Marseillais (PAAM), a permis de mettre en avant l'expertise de <a href="/notre-offre" class="text-primary hover:underline">Localizz en matière d'approvisionnement en produits locaux</a> issus de circuits courts et de développement durable.</p>
       
@@ -218,12 +219,13 @@ export const articles: Article[] = [
     date: "20 Déc 2024",
     category: "Partenariats",
     readTime: "4 min",
-    author: "Équipe Localizz"
+    author: "Équipe Localizz",
   },
   {
     id: "juste-remuneration-producteurs-salon-agriculture",
     title: "Pour une juste rémunération des producteurs locaux : plaidoyer au Salon International de l'Agriculture",
-    excerpt: "Table ronde sur la rémunération équitable des agriculteurs dans la commande publique, organisée au Salon de l'Agriculture avec la Ville de Nice, Max Havelaar France et plusieurs acteurs institutionnels.",
+    excerpt:
+      "Table ronde sur la rémunération équitable des agriculteurs dans la commande publique, organisée au Salon de l'Agriculture avec la Ville de Nice, Max Havelaar France et plusieurs acteurs institutionnels.",
     content: `
       <p>Nous sommes très fiers d'avoir participé à une table ronde essentielle sur la question de la juste rémunération des producteurs, organisée lors du Salon International de l'Agriculture. Cet événement a permis de mettre en lumière un enjeu fondamental : aujourd'hui, les collectivités n'ont que très rarement de visibilité sur la façon dont les agriculteurs et agricultrices sont rémunérés à travers la commande publique.</p>
       
@@ -251,12 +253,13 @@ export const articles: Article[] = [
     date: "15 Déc 2024",
     category: "Événements",
     readTime: "6 min",
-    author: "Équipe Localizz"
+    author: "Équipe Localizz",
   },
   {
     id: "partenariat-loubatas-ecologique",
     title: "Le Loubatas et Localizz : un partenariat écologique pour une alimentation durable et locale",
-    excerpt: "Collaboration entre Le Loubatas et Localizz pour sensibiliser les jeunes à l'alimentation responsable à travers des ateliers de jardin et de cuisine, tout en soutenant les circuits courts et les producteurs locaux.",
+    excerpt:
+      "Collaboration entre Le Loubatas et Localizz pour sensibiliser les jeunes à l'alimentation responsable à travers des ateliers de jardin et de cuisine, tout en soutenant les circuits courts et les producteurs locaux.",
     content: `
       <p>Le Loubatas est fier de renforcer sa collaboration avec Localizz, un fournisseur et mécène engagé en faveur d'une alimentation durable et locale. Grâce à ce partenariat, nous proposons régulièrement aux jeunes des ateliers de sensibilisation à l'alimentation : chaque soir, des activités de jardinage et de cuisine sont organisées au Loubatas, créant ainsi un véritable lien entre la terre et l'assiette.</p>
       
@@ -277,12 +280,13 @@ export const articles: Article[] = [
     date: "10 Déc 2024",
     category: "Éducation",
     readTime: "3 min",
-    author: "Le Loubatas"
+    author: "Le Loubatas",
   },
   {
     id: "localizz-education-alimentation-loubatas",
     title: "Localizz : agir pour l'éducation à une alimentation saine et durable avec Le Loubatas",
-    excerpt: "Localizz s'engage en tant que mécène aux côtés du Loubatas pour sensibiliser petits et grands à une alimentation locale, saine et responsable à travers des ateliers pratiques de jardin et de cuisine.",
+    excerpt:
+      "Localizz s'engage en tant que mécène aux côtés du Loubatas pour sensibiliser petits et grands à une alimentation locale, saine et responsable à travers des ateliers pratiques de jardin et de cuisine.",
     content: `
       <p>Chez Localizz, l'éducation à l'alimentation est au cœur de nos valeurs. Nous sommes convaincus que la transition vers une alimentation saine, locale et durable commence par la sensibilisation, dès le plus jeune âge, aux bienfaits de nouveaux modes de consommation.</p>
       
@@ -296,12 +300,14 @@ export const articles: Article[] = [
     date: "05 Déc 2024",
     category: "Éducation",
     readTime: "3 min",
-    author: "Équipe Localizz"
+    author: "Équipe Localizz",
   },
   {
     id: "localizz-limite-gaspillage-alimentaire",
-    title: "Comment Localizz limite le gaspillage alimentaire dans la région Sud : un modèle d'approvisionnement ultra-frais et responsable",
-    excerpt: "Les méthodes innovantes de Localizz pour réduire drastiquement les déchets alimentaires dans la livraison de produits locaux aux restaurants de la région Sud PACA.",
+    title:
+      "Comment Localizz limite le gaspillage alimentaire dans la région Sud : un modèle d'approvisionnement ultra-frais et responsable",
+    excerpt:
+      "Les méthodes innovantes de Localizz pour réduire drastiquement les déchets alimentaires dans la livraison de produits locaux aux restaurants de la région Sud PACA.",
     content: `
       <p>Chez Localizz, la lutte contre le gaspillage alimentaire fait partie intégrante de notre démarche. En 2023, sur les 720 tonnes de produits locaux que nous avons livrés dans les restaurants de la région SUD PACA, nous avons généré moins de déchets alimentaires qu'un foyer de deux personnes : soit moins de 300 kg par an !</p>
       
@@ -323,16 +329,16 @@ export const articles: Article[] = [
     date: "01 Déc 2024",
     category: "Environnement",
     readTime: "4 min",
-    author: "Équipe Localizz"
-  }
+    author: "Équipe Localizz",
+  },
 ];
 
 export const getArticleById = (id: string): Article | undefined => {
-  return articles.find(article => article.id === id);
+  return articles.find((article) => article.id === id);
 };
 
 export const getRelatedArticles = (currentId: string, limit: number = 3): Article[] => {
-  return articles.filter(article => article.id !== currentId).slice(0, limit);
+  return articles.filter((article) => article.id !== currentId).slice(0, limit);
 };
 
 export const getLatestArticles = (limit: number = 5): Article[] => {
