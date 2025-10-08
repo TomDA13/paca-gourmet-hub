@@ -8,6 +8,16 @@ export interface Article {
   category: string;
   readTime: string;
   author: string;
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    keywords?: string[];
+    canonicalUrl?: string;
+    faqItems?: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
 }
 
 export const articles: Article[] = [
@@ -16,6 +26,48 @@ export const articles: Article[] = [
     title: "Loi EGAlim : guide complet pour les cantines et collectivités en PACA (2025)",
     excerpt:
       "Découvrez comment appliquer concrètement la loi EGAlim dans votre restauration collective : obligations, étapes pratiques, bénéfices et solutions locales en région PACA.",
+    seo: {
+      metaTitle: "Loi EGAlim : guide complet cantines et collectivités PACA 2025",
+      metaDescription: "Guide pratique loi EGAlim : obligations 50% produits durables, menu végétarien, lutte gaspillage. Solutions locales pour cantines en région PACA. Application concrète.",
+      keywords: [
+        "loi egalim",
+        "restauration collective",
+        "cantines",
+        "paca",
+        "produits locaux",
+        "circuits courts",
+        "agriculture durable",
+        "50% produits durables",
+        "menu végétarien",
+        "approvisionnement local",
+        "collectivités",
+        "région sud",
+        "localizz"
+      ],
+      canonicalUrl: "https://localizz.fr/actualites/loi-egalim-restauration-collective-paca-2025",
+      faqItems: [
+        {
+          question: "Où trouver le texte officiel de la loi EGAlim ?",
+          answer: "Le texte officiel de la loi EGAlim est disponible sur legifrance.gouv.fr dans la rubrique alimentation et agriculture, ainsi que sur le site du Ministère de l'Agriculture."
+        },
+        {
+          question: "Le repas végétarien est-il obligatoire dans toutes les cantines ?",
+          answer: "Oui, la loi EGAlim impose un repas végétarien obligatoire au moins une fois par semaine dans les établissements scolaires publics depuis 2019."
+        },
+        {
+          question: "La loi EGAlim concerne-t-elle aussi le secteur privé ?",
+          answer: "Oui, depuis 2024, la loi s'applique progressivement aux entreprises de restauration privée, incluant les cantines d'entreprises et la restauration sous contrat, avec les mêmes objectifs de durabilité."
+        },
+        {
+          question: "Comment prouver la conformité à la loi EGAlim ?",
+          answer: "La conformité se prouve par la tenue d'un registre de traçabilité, les factures des produits achetés, et l'affichage public des taux de produits durables et biologiques dans les menus."
+        },
+        {
+          question: "Existe-t-il des aides pour appliquer la loi EGAlim en PACA ?",
+          answer: "Oui, certaines régions et départements PACA proposent des subventions pour les diagnostics alimentaires et la formation des personnels de restauration collective."
+        }
+      ]
+    },
     content: `
       <div class="space-y-6">
         <div class="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
