@@ -173,7 +173,7 @@ export const articles: Article[] = [
         <h2 class="text-2xl font-bold mt-8 mb-4">7. Ressources utiles</h2>
 
         <ul class="list-disc list-inside space-y-2 ml-4">
-          <li>Guide officiel EGAlim – Ministère de l'Agriculture</li>
+          <li><a href="https://ma-cantine.agriculture.gouv.fr/blog/25/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Guide officiel EGAlim – Ministère de l'Agriculture</a></li>
           <li>Textes de référence sur Légifrance</li>
           <li>Agence de la transition écologique (ADEME)</li>
           <li><a href="/nos-engagements" class="text-primary hover:underline font-medium">Nos engagements pour une alimentation durable</a></li>
