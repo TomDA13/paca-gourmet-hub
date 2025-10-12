@@ -17,7 +17,7 @@ const Cremeries = () => {
 
   const productTypes = [
     {
-      name: "Oeufs plein aire et Bio",
+      name: "Oeufs plein air et Bio",
       image: "/lovable-uploads/oeufs-plein-air.png",
     },
     {
@@ -29,13 +29,14 @@ const Cremeries = () => {
       image: "/lovable-uploads/yaourt-bio-ebrard.png",
     },
     {
-      name: "Fromage blanc 1 kg et 5 kg",
-      image: "/lovable-uploads/fromage-blanc.png",
-    },
-    {
       name: "Fromage à la coupe, pasteurisé et lait cru",
       image: "/lovable-uploads/fromage-a-la-coupe.png",
     },
+    {
+      name: "Fromage blanc 1 kg et 5 kg",
+      image: "/lovable-uploads/fromage-blanc.png",
+    },
+
   ];
 
   const producers = [
@@ -49,7 +50,7 @@ const Cremeries = () => {
     {
       name: "Coopérative de l'Ubaye à La Bréole",
       description:
-        "Créée en 1949, la Coopérative Laitière de la Vallée de l'Ubaye valorise la production laitière de montagne. Elle collecte le lait de 12 exploitations de vaches et 2 exploitations de chèvres pour fabriquer fromages frais et yaourts sous la marque Le Chambeyron.",
+        "Créée en 1949, la Coopérative Laitière de la Vallée de l'Ubaye valorise la production laitière de montagne. Elle collecte le lait de 12 exploitations de vaches et 2 exploitations de chèvres pour fabriquer des fromages frais et affinés et des yaourts.",
       image: "/lovable-uploads/cooperative-ubaye.png",
       specialty: "Fromages de montagne",
     },
@@ -79,7 +80,7 @@ const Cremeries = () => {
                 <ul className="space-y-2 ml-4">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                    <span>Lait local provenant d'élevages éthiques</span>
+                    <span>Lait local provenant d’élevage du 04 et 05</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
@@ -142,7 +143,7 @@ const Cremeries = () => {
 
       <section className="py-16 bg-gradient-to-br from-secondary/5 to-background">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Nos Producteurs Partenaires</h2>
+          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Aperçu de nos producteurs</h2>
           <div className="space-y-16">
             {producers.map((producer, index) => (
               <div

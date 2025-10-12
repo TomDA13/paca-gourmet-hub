@@ -46,7 +46,7 @@ const Epicerie = () => {
     {
       name: "Moulin St Joseph à Grans (13)",
       description:
-        "Moulin traditionnel produisant des farines de qualité supérieure. Ce moulin historique perpétue le savoir-faire artisanal provençal pour offrir des produits authentiques respectant les méthodes ancestrales de fabrication.",
+        "Moulin traditionnel produisant des farines bio de qualité supérieure. Ce moulin historique perpétue le savoir-faire artisanal en utilisant la force motrice de l’eau pour offrir des produits authentiques respectant les méthodes ancestrales de fabrication.",
       image: "/lovable-uploads/moulin-st-joseph.png",
       specialty: "Farines artisanales",
     },
@@ -60,7 +60,7 @@ const Epicerie = () => {
     {
       name: "Carret Munos à Peynier",
       description:
-        "Fabricant de couscous de qualité supérieure depuis 3 générations. Pionnier du couscous gourmand et sain, la maison privilégie la qualité des blés et céréales pour offrir des produits d'exception.",
+        "Fabricant de couscous de qualité supérieure depuis 3 générations. Pionnier du couscous gourmand et sain, la maison privilégie la qualité des blés et céréales de la région.",
       image: "/lovable-uploads/carret-munoz.png",
       specialty: "Couscous artisanal",
     },
@@ -77,13 +77,13 @@ const Epicerie = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Notre Épicerie Fine</h1>
               <div className="text-lg text-muted-foreground space-y-4">
                 <p>
-                  Découvrez notre sélection de produits d'épicerie fine, élaborés par des artisans passionnés selon des
+                  Découvrez notre sélection de produits d'épicerie fine, élaborés par des PME passionnés selon des
                   méthodes traditionnelles.
                 </p>
                 <ul className="space-y-2 ml-4">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                    <span>Huiles d'olive première pression à froid</span>
+                    <span>Des pates et du riz à base de céréale locales </span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
@@ -95,7 +95,7 @@ const Epicerie = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-3 mr-3 flex-shrink-0"></span>
-                    <span>Épices et aromates de qualité supérieure</span>
+                    <span>Épices AOP et aromates de qualité supérieure</span>
                   </li>
                 </ul>
               </div>
@@ -146,7 +146,7 @@ const Epicerie = () => {
 
       <section className="py-16 bg-gradient-to-br from-secondary/5 to-background">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Nos Producteurs Partenaires</h2>
+          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Aperçu de nos producteurs</h2>
           <div className="space-y-16">
             {producers.map((producer, index) => (
               <div

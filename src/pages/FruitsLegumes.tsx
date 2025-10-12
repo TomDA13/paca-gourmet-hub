@@ -17,7 +17,7 @@ const FruitsLegumes = () => {
 
   const productTypes = [
     {
-      name: "Fruits et légumes « Moches »",
+      name: "Fruits et légumes «Moches»",
       image: "/lovable-uploads/legumes-moches.webp",
     },
     {
@@ -29,7 +29,7 @@ const FruitsLegumes = () => {
       image: "/lovable-uploads/fruit-maturite.jpg",
     },
     {
-      name: "4ème et 5ème gammes local",
+      name: "4ème et 5ème gamme local",
       image: "/lovable-uploads/4eme-5eme-gamme.jpg",
     },
   ];
@@ -138,7 +138,7 @@ const FruitsLegumes = () => {
 
       <section className="py-16 bg-gradient-to-br from-secondary/5 to-background">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Nos Producteurs Partenaires</h2>
+          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Aperçu de nos producteurs</h2>
           <div className="space-y-16">
             {producers.map((producer, index) => (
               <div

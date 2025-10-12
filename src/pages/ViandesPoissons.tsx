@@ -40,7 +40,7 @@ const ViandesPoissons = () => {
 
   const producers = [
     {
-      name: "Alazard",
+      name: "Alazard et Roux ",
       description:
         "Maison familiale située à Tarascon en Provence aux portes de la Camargue. Alazard et Roux commercialise des viandes régionales de qualité avec un savoir-faire transmis de génération en génération.",
       image: "/lovable-uploads/alazard.png",
@@ -74,7 +74,7 @@ const ViandesPoissons = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Nos Viandes & Poissons</h1>
               <div className="text-lg text-muted-foreground space-y-4">
                 <p>
-                  Découvrez notre sélection de viandes et poissons d'exception, rigoureusement choisis auprès de
+                  Découvrez notre sélection de viandes et poissons de qualité, rigoureusement choisis auprès de
                   producteurs locaux de confiance.
                 </p>
                 <ul className="space-y-2 ml-4">
@@ -145,7 +145,7 @@ const ViandesPoissons = () => {
       {/* Section Producteurs */}
       <section className="py-16 bg-gradient-to-br from-secondary/5 to-background">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Nos Producteurs Partenaires</h2>
+          <h2 className="text-3xl font-bold text-center mb-16 text-foreground">Aperçu de nos producteurs</h2>
           <div className="space-y-16">
             {producers.map((producer, index) => (
               <div
