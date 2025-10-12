@@ -5,8 +5,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleCard from '@/components/ArticleCard';
 import BannerSection from '@/components/BannerSection';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { formatDateISO, generateArticleBreadcrumbs } from '@/utils/seo-schemas';
 
 const ArticleDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -32,6 +34,19 @@ const ArticleDetail = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title={article.seo?.metaTitle || article.title}
+        description={article.seo?.metaDescription || article.excerpt}
+        keywords={article.seo?.keywords || []}
+        image={article.image}
+        url={`/actualites/${article.id}`}
+        canonicalUrl={article.seo?.canonicalUrl}
+        type="article"
+        author={article.author}
+        publishedTime={formatDateISO(article.date)}
+        faqItems={article.seo?.faqItems}
+        breadcrumbs={generateArticleBreadcrumbs(article.title, `/actualites/${article.id}`)}
+      />
       <Header />
       
       {/* Article Header */}

@@ -74,10 +74,14 @@ const Epicerie = () => {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Notre Épicerie Fine</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Notre Épicerie</h1>
               <div className="text-lg text-muted-foreground space-y-4">
                 <p>
+<<<<<<< HEAD
                   Découvrez notre sélection de produits d'épicerie fine, élaborés par des PME passionnés selon des
+=======
+                  Découvrez notre sélection de produits d'épicerie, élaborés par des artisans passionnés selon des
+>>>>>>> a8207a8ac46b76dc67175f1bbe1a11c13590e887
                   méthodes traditionnelles.
                 </p>
                 <ul className="space-y-2 ml-4">
@@ -109,7 +113,7 @@ const Epicerie = () => {
             <div className="relative">
               <img
                 src="/lovable-uploads/pates.jpg"
-                alt="Produits d'épicerie fine"
+                alt="Produits d'épicerie"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
             </div>

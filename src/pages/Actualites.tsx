@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import ArticleCard from '@/components/ArticleCard';
+import SEO from '@/components/SEO';
 import { articles } from '@/data/articles';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -23,6 +24,25 @@ const Actualites = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Actualités Localizz - Partenariats et nouveautés locales PACA"
+        description="Découvrez nos actualités, partenariats avec les collectivités, événements et nouveautés pour l'approvisionnement local en région PACA. Cantines, loi EGAlim, producteurs."
+        keywords={[
+          "actualités localizz",
+          "partenariats collectivités",
+          "approvisionnement local",
+          "paca",
+          "restauration collective",
+          "loi egalim",
+          "producteurs locaux",
+          "agriculture durable"
+        ]}
+        url="/actualites"
+        breadcrumbs={[
+          { name: 'Accueil', url: '/' },
+          { name: 'Actualités', url: '/actualites' }
+        ]}
+      />
       <Header />
       
       {/* Hero Section */}
