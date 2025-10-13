@@ -36,21 +36,21 @@ const FruitsLegumes = () => {
 
   const producers = [
     {
-      name: "Rachid Rifi",
+      name: "Rachid Rifi (13)",
       description:
         "Producteur passionné de fruits et légumes frais, Rachid cultive avec soin ses produits pour offrir une qualité exceptionnelle. Son engagement pour la fraîcheur et la saveur fait de lui un partenaire de confiance de Localizz.",
       image: "/lovable-uploads/rachid.jpg",
       specialty: "Fruits et légumes frais",
     },
     {
-      name: "Terre de Crau / Mas St Paul",
+      name: "Terre de Crau / Mas St Paul (13)",
       description:
         "Groupement de producteurs de fruits à noyau autour de Mouriès, St Martin de Crau et Fos. Sarah Monteux a repris le flambeau familial et propose des fruits bio et non bio. Localizz travaille avec eux depuis 2 ans pour toute la saison des fruits à noyaux.",
       image: "/lovable-uploads/terre-de-crau.png",
       specialty: "Fruits à noyau Bio et conventionnels",
     },
     {
-      name: "GAEC des Bougainvilliers",
+      name: "GAEC des Bougainvilliers (13)",
       description:
         "Loïc Laber cultive avec passion une grande variété de fruits et légumes de saison. Cette exploitation familiale près d'Aix-en-Provence privilégie les méthodes respectueuses de l'environnement pour offrir des produits de qualité.",
       image: "/lovable-uploads/gaec-bougainvilliers.png",

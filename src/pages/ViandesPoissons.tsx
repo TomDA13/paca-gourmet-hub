@@ -40,21 +40,21 @@ const ViandesPoissons = () => {
 
   const producers = [
     {
-      name: "Alazard et Roux ",
+      name: "Alazard et Roux (13)",
       description:
         "Maison familiale située à Tarascon en Provence aux portes de la Camargue. Alazard et Roux commercialise des viandes régionales de qualité avec un savoir-faire transmis de génération en génération.",
       image: "/lovable-uploads/alazard.png",
       specialty: "Viandes régionales de Camargue",
     },
     {
-      name: "Comptoir des Salaisons",
+      name: "Comptoir des Salaisons (13)",
       description:
         "Artisan charcutier à l'Estaque (13), le Comptoir des Salaisons propose des saucisses, plats cuisinés et charcuteries artisanales élaborés avec passion. Des produits d'exception préparés selon des recettes traditionnelles.",
       image: "/lovable-uploads/comptoir-salaisons.png",
       specialty: "Charcuterie artisanale",
     },
     {
-      name: "Salaisons du Champsaur",
+      name: "Salaisons du Champsaur (05)",
       description:
         "Charcuterie artisanale des Hautes-Alpes (05), cette entreprise familiale de père en filles travaille en circuit court avec des élevages de montagne à taille humaine. Des recettes uniques créées avec passion depuis 1920.",
       image: "/lovable-uploads/salaisons-champsaur.png",

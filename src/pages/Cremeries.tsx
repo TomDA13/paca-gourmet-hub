@@ -48,14 +48,14 @@ const Cremeries = () => {
       specialty: "Produits laitiers fermiers",
     },
     {
-      name: "Coopérative de l'Ubaye à La Bréole",
+      name: "Coopérative de l'Ubaye à La Bréole (04)",
       description:
         "Créée en 1949, la Coopérative Laitière de la Vallée de l'Ubaye valorise la production laitière de montagne. Elle collecte le lait de 12 exploitations de vaches et 2 exploitations de chèvres pour fabriquer des fromages frais et affinés et des yaourts.",
       image: "/lovable-uploads/cooperative-ubaye.png",
       specialty: "Fromages de montagne",
     },
     {
-      name: "ESAT de la Haute Lèbre à Revest-du-Bion",
+      name: "ESAT de la Haute Lèbre à Revest-du-Bion (04)",
       description:
         "Établissement de Services et d'Aide par le Travail implanté sur 150 hectares entre Ventoux et Durance. Le Domaine renoue avec les traditions locales et artisanales pour produire des fromages de chèvre de qualité.",
       image: "/lovable-uploads/esat-haute-lebre.png",
