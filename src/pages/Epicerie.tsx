@@ -51,14 +51,14 @@ const Epicerie = () => {
       specialty: "Farines artisanales",
     },
     {
-      name: "Duransia",
+      name: "Duransia (04)",
       description:
         "Coopérative agricole au cœur du territoire Provence Alpes avec certification équitable et bio. Duransia accompagne les agriculteurs de la graine aux consommateurs avec des produits de qualité et des services durables.",
       image: "/lovable-uploads/duransia.png",
       specialty: "Céréales équitables et bio",
     },
     {
-      name: "Carret Munos à Peynier",
+      name: "Carret Munos à Peynier (13)",
       description:
         "Fabricant de couscous de qualité supérieure depuis 3 générations. Pionnier du couscous gourmand et sain, la maison privilégie la qualité des blés et céréales de la région.",
       image: "/lovable-uploads/carret-munoz.png",
