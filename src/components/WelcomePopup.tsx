@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, X } from 'lucide-react';
 
@@ -41,12 +41,12 @@ const WelcomePopup = () => {
           <DialogTitle className="text-lg font-semibold text-primary mb-4">
             Bienvenue sur notre nouveau site pour les professionnels
           </DialogTitle>
+          <DialogDescription className="text-gray-600 leading-relaxed">
+            Si vous êtes un particulier et que vous souhaitez passer une commande de produits locaux, veuillez vous rendre sur le site boutique.
+          </DialogDescription>
         </DialogHeader>
         
         <div className="text-center space-y-4">
-          <p className="text-gray-600 leading-relaxed">
-            Si vous êtes un particulier et que vous souhaitez passer une commande de produits locaux, veuillez vous rendre sur le site boutique.
-          </p>
           
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
             <Button 
