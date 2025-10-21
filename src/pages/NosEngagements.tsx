@@ -2,8 +2,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import CommitmentCard from '@/components/CommitmentCard';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const NosEngagements = () => {
+  const navigate = useNavigate();
+
   const commitments = [
     {
       id: 1,
@@ -82,7 +87,7 @@ const NosEngagements = () => {
               Nos Engagements
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Découvrez nos valeurs et notre engagement pour un approvisionnement local et responsable
+              Découvrez nos valeurs et notre engagement pour un approvisionnement local et responsable. Notre démarche s'inscrit pleinement dans le cadre de la <button onClick={() => { navigate('/actualites/loi-egalim-restauration-collective-sud-paca'); window.scrollTo(0, 0); }} className="underline hover:text-accent transition-colors font-semibold">loi EGAlim</button>.
             </p>
           </div>
         </div>
@@ -105,6 +110,25 @@ const NosEngagements = () => {
                 content={commitment.content}
               />
             ))}
+          </div>
+          
+          {/* Section supplémentaire avec lien vers l'article EGAlim */}
+          <div className="max-w-4xl mx-auto mt-16 bg-white rounded-2xl shadow-lg p-8 border border-primary/10">
+            <h3 className="text-2xl font-bold text-primary mb-4 text-center">
+              Notre engagement EGAlim en restauration collective
+            </h3>
+            <p className="text-gray-700 leading-relaxed mb-6 text-center">
+              Localizz accompagne les professionnels de la restauration collective dans leur mise en conformité avec la loi EGAlim. Découvrez comment nous vous aidons à atteindre les objectifs de 50% de produits durables et de qualité, dont 20% de produits biologiques.
+            </p>
+            <div className="text-center">
+              <Button
+                onClick={() => { navigate('/actualites/loi-egalim-restauration-collective-sud-paca'); window.scrollTo(0, 0); }}
+                className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              >
+                En savoir plus sur la loi EGAlim
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+            </div>
           </div>
         </div>
       </section>

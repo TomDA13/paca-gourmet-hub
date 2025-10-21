@@ -57,7 +57,13 @@ const NotreOffre = () => {
             {/* Description */}
             <div className="text-center mb-16">
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-                Plus de <strong>700 références</strong> de produits alimentaires sourcés dans la région Sud pour les professionnels de la restauration
+                Plus de <strong>700 références</strong> de produits alimentaires sourcés dans la région Sud pour les professionnels de la restauration. Tous nos produits sont conformes aux exigences de la{" "}
+                <button 
+                  onClick={() => { navigate('/actualites/loi-egalim-restauration-collective-sud-paca'); window.scrollTo(0, 0); }}
+                  className="font-bold text-primary underline hover:text-secondary transition-colors"
+                >
+                  loi EGAlim
+                </button>.
               </p>
             </div>
 

@@ -108,7 +108,12 @@ const MissionSection = () => {
                 <h3 className="text-xl font-bold text-primary mb-3">Des produits sous signes de qualité</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Des produits <strong>labélisés et certifiés</strong> répondant aux exigences de la{" "}
-                  <strong>loi EGALIM</strong> en restauration collective
+                  <button 
+                    onClick={() => { navigate('/actualites/loi-egalim-restauration-collective-sud-paca'); window.scrollTo(0, 0); }}
+                    className="font-bold underline hover:text-secondary transition-colors"
+                  >
+                    loi EGALIM
+                  </button> en restauration collective
                 </p>
               </div>
             </div>
