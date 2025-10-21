@@ -241,7 +241,7 @@ export const articles: Article[] = [
         </div>
       </div>
     `,
-    image: "/lovable-uploads/loi-egalim-paca.png",
+    image: "/lovable-uploads/cantine.jpg",
     date: "15 Jan 2025",
     category: "Réglementation",
     readTime: "8 min",

@@ -77,7 +77,7 @@ const Epicerie = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Notre Épicerie</h1>
               <div className="text-lg text-muted-foreground space-y-4">
                 <p>
-                  Découvrez notre sélection de produits d'épicerie, élaborés par des artisans passionnés selon des
+                  Découvrez notre sélection de produits d'épicerie, élaborés par des PME passionnés selon des
                   méthodes traditionnelles.
                 </p>
                 <ul className="space-y-2 ml-4">

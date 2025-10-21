@@ -57,7 +57,7 @@ const Cremeries = () => {
     {
       name: "ESAT de la Haute Lèbre à Revest-du-Bion (04)",
       description:
-        "Établissement de Services et d'Aide par le Travail implanté sur 150 hectares entre Ventoux et Durance. Le Domaine renoue avec les traditions locales et artisanales pour produire des fromages de chèvre de qualité.",
+        "Établissement de Services et d'Aide par le Travail implanté sur 150 hectares entre Ventoux et Durance. Le Domaine renoue avec les traditions locales et artisanales pour produire des fromages de chèvre de qualité et le fameux Banon AOP",
       image: "/lovable-uploads/esat-haute-lebre.png",
       specialty: "Fromages de chèvre artisanaux",
     },
