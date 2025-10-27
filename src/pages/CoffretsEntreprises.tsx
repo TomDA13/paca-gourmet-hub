@@ -4,6 +4,8 @@ import PhoneBanner from '@/components/PhoneBanner';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { Gift, Heart, Truck, Users, Building, Calendar } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
 const CoffretsEntreprises = () => {
   const navigate = useNavigate();
@@ -12,6 +14,41 @@ const CoffretsEntreprises = () => {
     navigate('/contact');
     window.scrollTo(0, 0);
   };
+
+  const productTypes = [
+    {
+      name: "Bisque de homard",
+      image: "/lovable-uploads/Photo bisque de homard 400 gr.jpg",
+    },
+    {
+      name: "Crackers aux olives & romarin",
+      image: "/lovable-uploads/Photo crackers olives romarin.png",
+    },
+    {
+      name: "Croustillant enrobés de chocolats",
+      image: "/lovable-uploads/Photo Croustillants enrobés de chocolats.png",
+    },
+    {
+      name: "Gardianne de Taureau de Manade",
+      image: "/lovable-uploads/Photo gardianne de Taureau 400 gr.png",
+    },
+    {
+      name: "Pétillant de pomme (sans alcool)",
+      image: "/lovable-uploads/Photo pétillant de pomme.jpg",
+    },
+    {
+      name: "Rillettes de saumon à l'aneth",
+      image: "/lovable-uploads/Photo rillettes saumon à l'aneth 100 gr.jpg",
+    },
+    {
+      name: "Petites barques de Marseille",
+      image: "/lovable-uploads/Photo Petites barques marseillaises parfum Citron.png",
+    },
+    {
+      name: "Houmous BIO",
+      image: "/lovable-uploads/Photo houmous BIO.jpg",
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -113,6 +150,33 @@ const CoffretsEntreprises = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Le meilleur de notre région</h2>
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {productTypes.map((product, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/4">
+                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <CardContent className="p-0">
+                      <div className="aspect-square relative overflow-hidden rounded-lg">
+                        <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div className="absolute bottom-4 left-4 right-4">
+                          <h3 className="text-white font-semibold text-lg text-center">{product.name}</h3>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
