@@ -14,10 +14,10 @@ const BannerSection = () => {
 
   const featuredArticles = [
     {
-      id: 'loi-egalim-restauration-collective-sud-paca',
+      id: 'actualites/loi-egalim-restauration-collective-paca-2025',
       title: 'Loi EGAlim en restauration collective',
       description: 'Tout comprendre sur les obligations EGAlim et comment Localizz vous accompagne',
-      image: '/lovable-uploads/loi-egalim-paca.png'
+      image: '/lovable-uploads/cantine.jpg'
     },
     {
       id: 'actualites',
