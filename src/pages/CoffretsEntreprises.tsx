@@ -26,7 +26,7 @@ const CoffretsEntreprises = () => {
     },
     {
       name: "Croustillant enrobés de chocolats",
-      image: "/lovable-uploads/Photo Croustillants enrobés de chocolats.png",
+      image: "/lovable-uploads/croustillant.png",
     },
     {
       name: "Gardianne de Taureau de Manade",
@@ -34,11 +34,11 @@ const CoffretsEntreprises = () => {
     },
     {
       name: "Pétillant de pomme (sans alcool)",
-      image: "/lovable-uploads/Photo pétillant de pomme.jpg",
+      image: "/lovable-uploads/petillant.jpg",
     },
     {
       name: "Rillettes de saumon à l'aneth",
-      image: "/lovable-uploads/Photo rillettes saumon à l'aneth 100 gr.jpg",
+      image: "/lovable-uploads/rillettes.jpg",
     },
     {
       name: "Petites barques de Marseille",
@@ -47,6 +47,18 @@ const CoffretsEntreprises = () => {
     {
       name: "Houmous BIO",
       image: "/lovable-uploads/Photo houmous BIO.jpg",
+    },
+    {
+      name: "Nougat",
+      image: "/lovable-uploads/nougat.png",
+    },
+    {
+      name: "Pâtes de coing de Provence ",
+      image: "/lovable-uploads/coing.png",
+    },
+    {
+      name: "Crème de Caponata",
+      image: "/lovable-uploads/caponata.png",
     },
   ];
 
