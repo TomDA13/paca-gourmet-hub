@@ -155,11 +155,11 @@ const CoffretsEntreprises = () => {
 
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Le meilleur de notre région</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Les produits de nos coffrets</h2>
           <Carousel className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
               {productTypes.map((product, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/4">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/5">
                   <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <CardContent className="p-0">
                       <div className="aspect-square relative overflow-hidden rounded-lg">
