@@ -35,7 +35,8 @@ const menuItems: MenuItem[] = [
       { title: "Notre Gamme", href: "/notre-offre#notre-gamme" },
       { title: "Logistique optimisée", href: "/notre-offre#logistique-optimisee" },
       { title: "Un service complet", href: "/notre-offre#service-360" },
-      { title: "Nos Coffrets Entreprises", href: "/nos-coffrets-entreprises" }
+      { title: "Nos Coffrets Entreprises", href: "/nos-coffrets-entreprises" },
+      { title: "Loi EGAlim", href: "/loi-egalim" }
     ]
   },
   {

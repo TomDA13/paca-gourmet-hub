@@ -17,6 +17,7 @@ import ViandesPoissons from "./pages/ViandesPoissons";
 import Cremeries from "./pages/Cremeries";
 import Epicerie from "./pages/Epicerie";
 import CoffretsEntreprises from "./pages/CoffretsEntreprises";
+import LoiEgalim from "./pages/LoiEgalim";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/nos-produits/cremeries" element={<Cremeries />} />
           <Route path="/nos-produits/epicerie" element={<Epicerie />} />
           <Route path="/nos-coffrets-entreprises" element={<CoffretsEntreprises />} />
+          <Route path="/loi-egalim" element={<LoiEgalim />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
