@@ -63,6 +63,12 @@ const NotreOffre = () => {
                   className="font-bold text-primary underline hover:text-secondary transition-colors"
                 >
                   loi EGAlim
+                </button>. Notre travail s'inscrit dans la{" "}
+                <button 
+                  onClick={() => { navigate('/loi-egalim'); window.scrollTo(0, 0); }}
+                  className="font-bold text-primary underline hover:text-secondary transition-colors"
+                >
+                  dynamique EGAlim PACA
                 </button>.
               </p>
             </div>

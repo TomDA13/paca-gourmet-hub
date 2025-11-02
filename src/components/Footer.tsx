@@ -43,6 +43,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Informations</h4>
             <ul className="space-y-2 text-gray-300">
+              <li><a href="/loi-egalim" className="hover:text-white transition-colors">Guide : Loi EGAlim PACA 2025</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Mentions Légales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Conditions Générales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Politique de Confidentialité</a></li>

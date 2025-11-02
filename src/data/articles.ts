@@ -74,7 +74,7 @@ export const articles: Article[] = [
           <p class="text-lg leading-relaxed">Depuis 2018, la loi EGAlim (Équilibre des relations commerciales dans le secteur agricole et alimentaire) bouleverse la manière dont les cantines, hôpitaux, EHPAD ou entreprises s'approvisionnent. Au-delà d'un texte réglementaire, c'est une transformation profonde du modèle alimentaire français : plus durable, plus local, plus transparent.</p>
         </div>
 
-        <p>En région PACA, cette loi résonne tout particulièrement : la diversité agricole et la richesse des productions locales en font un terrain idéal pour réussir cette transition. Mais comment s'y conformer concrètement ? Quelles obligations réelles pour la restauration collective ? Et comment s'organiser localement ?</p>
+        <p>En région PACA, cette loi résonne tout particulièrement : la diversité agricole et la richesse des productions locales en font un terrain idéal pour réussir cette transition. Mais comment s'y conformer concrètement ? Quelles obligations réelles pour la restauration collective ? Et comment s'organiser localement ? <a href="/loi-egalim" class="text-primary hover:underline font-medium">Découvrez notre guide Loi EGAlim PACA</a>.</p>
 
         <h2 class="text-2xl font-bold mt-8 mb-4">1. Qu'est-ce que la loi EGAlim ?</h2>
         
