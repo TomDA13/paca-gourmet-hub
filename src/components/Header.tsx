@@ -44,7 +44,8 @@ const menuItems: MenuItem[] = [
     href: "/nos-produits/fruits-et-legumes",
     subItems: [
       { title: "Fruits et légumes", href: "/nos-produits/fruits-et-legumes" },
-      { title: "Viandes", href: "/nos-produits/viandes" },
+      { title: "Viandes et Poissons", href: "/nos-produits/viandes" },
+      { title: "Taureau de Camargue AOP", href: "/taureaux-de-camargue-aop" },
       { title: "Beurre oeuf et fromage", href: "/nos-produits/cremeries" },
       { title: "Épicerie", href: "/nos-produits/epicerie" }
     ]

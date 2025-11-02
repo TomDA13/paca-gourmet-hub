@@ -18,6 +18,7 @@ import Cremeries from "./pages/Cremeries";
 import Epicerie from "./pages/Epicerie";
 import CoffretsEntreprises from "./pages/CoffretsEntreprises";
 import LoiEgalim from "./pages/LoiEgalim";
+import TaureauCamargue from "./pages/TaureauCamargue";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/nos-produits/epicerie" element={<Epicerie />} />
           <Route path="/nos-coffrets-entreprises" element={<CoffretsEntreprises />} />
           <Route path="/loi-egalim" element={<LoiEgalim />} />
+          <Route path="/taureaux-de-camargue-aop" element={<TaureauCamargue />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
