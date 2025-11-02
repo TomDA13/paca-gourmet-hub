@@ -186,7 +186,7 @@ const TaureauCamargue = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/taureau.jpg" 
+                  src="/lovable-uploads/taureauproducteur.png" 
                   alt="Manade camarguaise partenaire de Localizz, élevage de taureaux en liberté"
                   className="w-full h-auto object-cover"
                 />
@@ -224,16 +224,16 @@ const TaureauCamargue = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => { navigate('/producteurs'); window.scrollTo(0, 0); }}
+                onClick={() => { navigate('/nos-produits/cremeries'); window.scrollTo(0, 0); }}
               >
-                Nos producteurs partenaires
+                Beurre, oeuf et fromage
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => { navigate('/loi-egalim'); window.scrollTo(0, 0); }}
+                onClick={() => { navigate('/nos-produits/epicerie'); window.scrollTo(0, 0); }}
               >
-                Guide Loi EGAlim PACA
+                Notre Epicerie
               </Button>
               <Button 
                 variant="outline" 
