@@ -58,7 +58,7 @@ const CoffretsEntreprises = () => {
     },
     {
       name: "Crème de Caponata",
-      image: "/lovable-uploads/caponata.png",
+      image: "/lovable-uploads/caponata.jpg",
     },
   ];
 
