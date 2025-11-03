@@ -78,19 +78,8 @@ const TaureauCamargue = () => {
         <Header />
         <PhoneBanner />
         
-        {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
-          <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
-              Taureaux de Camargue AOP
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto text-center leading-relaxed">
-              La viande de <strong>taureau de Camargue AOP</strong> est issue d'un élevage traditionnel unique dans les manades camarguaises. 
-              Cette viande locale au goût intense reflète l'authenticité d'un territoire de traditions et de savoir-faire ancestraux. 
-              Découvrez une viande d'exception, maigre et riche en saveurs, élevée en liberté dans les marais de Camargue.
-            </p>
-          </div>
-        </section>
+      
+
 
         {/* Le taureau de Camargue, symbole du territoire */}
         <section className="py-16 bg-background">
