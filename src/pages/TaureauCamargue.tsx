@@ -113,29 +113,20 @@ const TaureauCamargue = () => {
         {/* Une viande d'exception issue du terroir */}
         <section className="py-16 bg-gradient-to-br from-secondary/5 to-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-primary mb-8">Une viande d'exception issue du terroir</h2>
+            <h2 className="text-3xl font-bold text-primary mb-8 text-center">Une viande d'exception issue du terroir</h2>
             
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/taureau.jpg" 
-                  alt="Viande de taureau de Camargue AOP, viande rouge maigre et savoureuse"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              <div className="space-y-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  La <strong>viande de taureau AOP</strong> se caractérise par sa couleur rouge intense, son faible taux de matière grasse et son goût prononcé. 
-                  Plus maigre que le bœuf traditionnel, elle est particulièrement <strong>riche en fer</strong> et en protéines de qualité. 
-                  Sa texture ferme et sa saveur authentique en font une <strong>viande camarguaise</strong> recherchée par les amateurs de produits de caractère.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Cette viande d'exception se distingue du bœuf par son élevage unique en Camargue et son alimentation naturelle variée. 
-                  Le mode d'élevage extensif et le terroir salin confèrent à la viande des qualités nutritionnelles supérieures et une typicité gustative incomparable. 
-                  C'est un <strong>produit local durable</strong> qui s'inscrit parfaitement dans les critères de qualité de la restauration collective, 
-                  notamment dans le cadre de la <a href="/loi-egalim" className="text-primary hover:text-secondary underline font-semibold">loi EGAlim</a>.
-                </p>
-              </div>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                La <strong>viande de taureau AOP</strong> se caractérise par sa couleur rouge intense, son faible taux de matière grasse et son goût prononcé. 
+                Plus maigre que le bœuf traditionnel, elle est particulièrement <strong>riche en fer</strong> et en protéines de qualité. 
+                Sa texture ferme et sa saveur authentique en font une <strong>viande camarguaise</strong> recherchée par les amateurs de produits de caractère.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Cette viande d'exception se distingue du bœuf par son élevage unique en Camargue et son alimentation naturelle variée. 
+                Le mode d'élevage extensif et le terroir salin confèrent à la viande des qualités nutritionnelles supérieures et une typicité gustative incomparable. 
+                C'est un <strong>produit local durable</strong> qui s'inscrit parfaitement dans les critères de qualité de la restauration collective, 
+                notamment dans le cadre de la <a href="/loi-egalim" className="text-primary hover:text-secondary underline font-semibold">loi EGAlim</a>.
+              </p>
             </div>
           </div>
         </section>
