@@ -30,6 +30,21 @@ const TaureauCamargue = () => {
       name: "Côtes de Taureau des Manades",
       image: "/lovable-uploads/cotes-taureau-manades.png",
       alt: "Côtes de taureau de Camargue AOP, viande de qualité des manades"
+    },
+    {
+      name: "Merguez au Taureau de Camargue AOP",
+      image: "/lovable-uploads/mergueztaureau.png",
+      alt: "Merguez au Taureau de Camargue AOP, viande rouge maigre et tendre"
+    },
+    {
+      name: "Saucissette Camarguaise de Taureau AOP",
+      image: "/lovable-uploads/saucissetaureau.png",
+      alt: "Saucissette Camarguaise de Taureau AOP, viande rouge maigre et tendre"
+    },
+    {
+      name: "Saucisson au Taureau de Camargue AOP",
+      image: "/lovable-uploads/saucissontaureau.png",
+      alt: "Saucisson au Taureau de Camargue AOP, viande rouge maigre et tendre"
     }
   ];
 
@@ -52,7 +67,7 @@ const TaureauCamargue = () => {
     },
     {
       question: "Où trouver la viande de taureau de Camargue ?",
-      answer: "Localizz travaille en partenariat direct avec les Abattoirs du Pays d'Arles pour fournir la viande de taureau de Camargue AOP aux professionnels de la restauration collective en région PACA. Contactez-nous pour connaître la disponibilité et les modalités de commande."
+      answer: "Localizz travaille en partenariat direct avec les Abattoirs de Tarascon pour fournir la viande de taureau de Camargue AOP aux professionnels de la restauration collective en région PACA. Contactez-nous pour connaître la disponibilité et les modalités de commande."
     }
   ];
 
@@ -60,7 +75,7 @@ const TaureauCamargue = () => {
     <>
       <SEO
         title="Taureaux de Camargue AOP – Viande locale et produits du terroir"
-        description="Découvrez la viande de taureau de Camargue AOP : élevage en liberté, terroir unique, produits locaux issus des manades camarguaises. En partenariat avec les Abattoirs du Pays d'Arles."
+        description="Découvrez la viande de taureau de Camargue AOP : élevage en liberté, terroir unique, produits locaux issus des manades camarguaises. En partenariat avec les Abattoirs de Tarascon."
         keywords={["viande de taureau de Camargue", "taureau viande", "viande AOP Camargue", "taureau de Camargue", "produits locaux Camargue", "élevage de taureau Camargue", "gardianne de taureau", "manades camarguaises", "race Raço di Biòu"]}
         url="https://www.localizz.fr/taureaux-de-camargue-aop"
         image="/lovable-uploads/taureau-camargue.png"
@@ -118,7 +133,7 @@ const TaureauCamargue = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">Nos produits à base de taureau de Camargue</h2>
             
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-6 gap-8 max-w-6xl mx-auto">
               {products.map((product, index) => (
                 <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="aspect-square overflow-hidden">
@@ -160,17 +175,17 @@ const TaureauCamargue = () => {
         {/* Notre producteur partenaire */}
         <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-primary mb-8">Notre producteur partenaire : Abattoirs du Pays d'Arles</h2>
+            <h2 className="text-3xl font-bold text-primary mb-8">Notre producteur partenaire : Abattoirs de Tarascon</h2>
             
             <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Localizz travaille en partenariat direct avec les <strong>Abattoirs du Pays d'Arles</strong>, acteur majeur de la filière 
+                  Localizz travaille en partenariat direct avec les <strong>Abattoirs de Tarascon</strong>, acteur majeur de la filière 
                   <strong> AOP Taureau de Camargue</strong>. Cette collaboration garantit la traçabilité complète, depuis les <strong>manades de Camargue</strong> 
                   jusqu'aux cuisines de nos clients professionnels.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Les Abattoirs du Pays d'Arles s'engagent à respecter le cahier des charges strict de l'AOP, valorisant un <strong>élevage en plein air</strong> 
+                  Les Abattoirs de Tarascon s'engagent à respecter le cahier des charges strict de l'AOP, valorisant un <strong>élevage en plein air</strong> 
                   respectueux du bien-être animal et des traditions camarguaises. La transformation locale et le savoir-faire artisanal préservent 
                   toutes les qualités de cette viande d'exception.
                 </p>
