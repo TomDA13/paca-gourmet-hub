@@ -14,6 +14,12 @@ const BannerSection = () => {
 
   const featuredArticles = [
     {
+      id: 'taureaux-de-camargue-aop',
+      title: 'Taureau de Camargue AOP',
+      description: 'Découvrez la viande de taureau de Camargue, élevée en liberté dans les manades',
+      image: '/lovable-uploads/taureau-camargue.png'
+    },
+    {
       id: 'actualites/loi-egalim-restauration-collective-paca-2025',
       title: 'Loi EGAlim en restauration collective',
       description: 'Tout comprendre sur les obligations EGAlim et comment Localizz vous accompagne',
@@ -73,7 +79,7 @@ const BannerSection = () => {
             </h3>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {featuredArticles.map((article) => (
               <Card 
                 key={article.id}
