@@ -35,8 +35,7 @@ const menuItems: MenuItem[] = [
       { title: "Notre Gamme", href: "/notre-offre#notre-gamme" },
       { title: "Logistique optimisée", href: "/notre-offre#logistique-optimisee" },
       { title: "Un service complet", href: "/notre-offre#service-360" },
-      { title: "Nos Coffrets Entreprises", href: "/nos-coffrets-entreprises" },
-      { title: "Loi EGAlim", href: "/loi-egalim" }
+      { title: "Nos Coffrets Entreprises", href: "/nos-coffrets-entreprises" }
     ]
   },
   {
@@ -45,7 +44,6 @@ const menuItems: MenuItem[] = [
     subItems: [
       { title: "Fruits et légumes", href: "/nos-produits/fruits-et-legumes" },
       { title: "Viandes et Poissons", href: "/nos-produits/viandes" },
-      { title: "Taureau de Camargue AOP", href: "/taureaux-de-camargue-aop" },
       { title: "Beurre oeuf et fromage", href: "/nos-produits/cremeries" },
       { title: "Épicerie", href: "/nos-produits/epicerie" }
     ]
