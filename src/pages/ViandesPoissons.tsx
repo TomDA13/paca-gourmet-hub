@@ -19,22 +19,27 @@ const ViandesPoissons = () => {
     {
       name: "Taureau de Camargue AOP",
       image: "/lovable-uploads/taureau-camargue.png",
+      link: "/taureaux-de-camargue-aop",
     },
     {
       name: "Porc plein air de la crau HVE",
       image: "/lovable-uploads/porc-plein-air.png",
+      link: "/nos-produits/viandes",
     },
     {
       name: "Boeuf race à viande",
       image: "/lovable-uploads/boeuf-race-viande.png",
+      link: "/nos-produits/viandes",
     },
     {
       name: "Saucisserie de qualité",
       image: "/lovable-uploads/saucisserie.png",
+      link: "/nos-produits/viandes",
     },
     {
       name: "Charcuterie de terroir des hautes Alpes",
       image: "/lovable-uploads/charcuterie-hautes-alpes.png",
+      link: "/nos-produits/viandes",
     },
   ];
 
@@ -122,17 +127,19 @@ const ViandesPoissons = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {productTypes.map((product, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3 lg:basis-1/4">
-                  <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                    <CardContent className="p-0">
-                      <div className="aspect-square relative overflow-hidden rounded-lg">
-                        <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div className="absolute bottom-4 left-4 right-4">
-                          <h3 className="text-white font-semibold text-lg text-center">{product.name}</h3>
+                  <a href={product.link} className="block">
+                    <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+                      <CardContent className="p-0">
+                        <div className="aspect-square relative overflow-hidden rounded-lg">
+                          <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                          <div className="absolute bottom-4 left-4 right-4">
+                            <h3 className="text-white font-semibold text-lg text-center">{product.name}</h3>
+                          </div>
                         </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </a>
                 </CarouselItem>
               ))}
             </CarouselContent>
