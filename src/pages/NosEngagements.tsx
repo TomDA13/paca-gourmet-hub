@@ -87,7 +87,7 @@ const NosEngagements = () => {
               Nos Engagements
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Découvrez nos valeurs et notre engagement pour un approvisionnement local et responsable. Notre démarche s'inscrit pleinement dans le cadre de la <button onClick={() => { navigate('/actualites/loi-egalim-restauration-collective-sud-paca'); window.scrollTo(0, 0); }} className="underline hover:text-accent transition-colors font-semibold">loi EGAlim</button>.
+              Découvrez nos valeurs et notre engagement pour un approvisionnement local et responsable. Notre démarche s'inscrit pleinement dans le cadre de la <button onClick={() => { navigate('/loi-egalim'); window.scrollTo(0, 0); }} className="underline hover:text-accent transition-colors font-semibold">loi EGAlim</button>.
             </p>
           </div>
         </div>
