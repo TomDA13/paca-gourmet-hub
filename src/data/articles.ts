@@ -20,9 +20,131 @@
     };
   }
 
-  export const articles: Article[] = [
-    {
-      id: "loi-egalim-restauration-collective-paca-2025",
+export const articles: Article[] = [
+  {
+    id: "filiere-taureau-camargue-aop-paca",
+    title: "Filière Taureau de Camargue AOP : des manades à la restauration collective",
+    excerpt: "Élevage extensif en manades, traçabilité maîtrisée et transformation locale : la filière AOP Taureau de Camargue incarne un modèle durable qui relie patrimoine, biodiversité et alimentation de proximité pour la restauration collective et commerciale en région PACA.",
+    seo: {
+      metaTitle: "Filière Taureau de Camargue AOP : des manades à la restauration collective",
+      metaDescription: "Élevage extensif en manades, traçabilité et transformation locale : la filière AOP Taureau de Camargue relie patrimoine, biodiversité et alimentation de proximité pour la restauration collective et commerciale en région PACA.",
+      keywords: [
+        "taureau de camargue",
+        "aop taureau",
+        "manades camargue",
+        "viande locale paca",
+        "restauration collective",
+        "élevage extensif",
+        "raço di biòu",
+        "filière courte",
+        "loi egalim",
+        "localizz"
+      ],
+      canonicalUrl: "https://www.localizz.fr/actualites/filiere-taureau-camargue-aop-paca"
+    },
+    content: `
+      <div class="space-y-6">
+        <figure class="mb-8">
+          <img
+            src="/lovable-uploads/taureau-camargue.png"
+            alt="Taureau de Camargue de race Raço di Biòu en liberté dans les marais"
+            loading="lazy"
+            class="w-full h-auto rounded-xl object-cover"
+          />
+          <figcaption class="text-center text-muted-foreground mt-2">
+            Taureau de Camargue (Raço di Biòu) élevé en manade, au cœur des zones humides du delta du Rhône.
+          </figcaption>
+        </figure>
+
+        <div class="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
+          <p class="text-lg leading-relaxed">
+            Élevage extensif en manades, traçabilité maîtrisée et transformation locale : la filière
+            <strong>AOP Taureau de Camargue</strong> incarne un modèle durable qui relie patrimoine, biodiversité
+            et alimentation de proximité pour la restauration collective et commerciale en région PACA.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">Un élevage extensif unique en Europe</h2>
+        <p>
+          Entre Arles et les Saintes-Maries-de-la-Mer s'étend le berceau d'un élevage singulier : celui du
+          <strong>taureau de Camargue</strong>, de race <strong>Raço di Biòu</strong>. Les animaux vivent en
+          liberté dans les <em>manades</em>, pâturant naturellement herbes salées, roseaux et saladelles
+          sur plus de 90 000 hectares de zones humides. Ce rythme de vie extensif forge une viande
+          <strong>maigre</strong>, <strong>riche en fer</strong>, à la <strong>couleur rouge profonde</strong> et au
+          goût affirmé, recherchée par les cuisines centrales et les chefs attachés au terroir.
+        </p>
+        <p>
+          Pour découvrir les références disponibles et les conditionnements professionnels, consultez notre page
+          <a href="/taureaux-de-camargue-aop" class="text-primary hover:text-secondary underline font-semibold">Viande de taureau de Camargue AOP</a>.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">Les manades, gardiennes d'un patrimoine vivant</h2>
+        <p>
+          Les <strong>manadiers</strong> perpétuent un savoir-faire ancestral où le respect de l'animal et
+          l'équilibre écologique priment. Le pâturage extensif entretient les prairies naturelles, limite
+          l'enfrichement et contribue à la <strong>préservation de la biodiversité</strong>. Chaque manade est un
+          maillon de l'économie locale : elle valorise une agriculture extensive résiliente et transmet une culture
+          régionale singulière.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">La filière AOP : traçabilité et qualité contrôlée</h2>
+        <p>
+          L'<strong>Appellation d'Origine Protégée "Taureau de Camargue"</strong> encadre strictement la filière :
+          naissance et élevage au sein de la zone Camargue (Bouches-du-Rhône, Gard, Hérault), pâturage libre en zone
+          humide au moins six mois par an, et transformation locale au sein du périmètre certifié (notamment Tarascon).
+          Les races éligibles sont la <em>Raço di Biòu</em> et, selon usages, la race dite "de combat". Des contrôles
+          indépendants garantissent <strong>origine</strong>, <strong>conformité</strong> et <strong>sécurité
+          sanitaire</strong> à chaque étape.
+        </p>
+        <p>
+          En partenariat avec la filière d'abattage de <strong>Tarascon</strong>, Localizz assure un
+          <strong>approvisionnement professionnel traçable</strong> en <a href="/taureaux-de-camargue-aop" class="text-primary hover:text-secondary underline font-semibold">viande AOP
+          Taureau de Camargue</a> pour les collectivités, cuisines centrales et CHR.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">Une viande locale alignée avec la loi EGAlim</h2>
+        <p>
+          La demande en produits locaux et durables s'accélère, notamment avec la
+          <a href="/actualites/loi-egalim-restauration-collective-paca-2025" class="text-primary hover:text-secondary underline font-semibold">loi EGAlim</a> (50 % de produits
+          durables, transparence, lutte contre le gaspillage). La <strong>viande de taureau AOP</strong> répond à ces
+          exigences : ancrage territorial, traçabilité, qualité nutritionnelle et filière courte.
+        </p>
+        <p>
+          Pour vos menus, elle se décline en <strong>gardianne</strong>, <strong>bourguignon</strong>,
+          <strong>pavé grillé</strong> ou <strong>côte</strong> — des usages qui conjuguent identité culinaire et
+          régularité d'approvisionnement.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">Préserver un patrimoine, nourrir durablement</h2>
+        <p>
+          Choisir cette filière, c'est soutenir un <strong>modèle agro-écologique</strong> complet : élevage respectueux
+          des milieux, transformation locale, <strong>juste rémunération</strong> des éleveurs et
+          <strong>circuits courts</strong> vers la restauration collective. Grâce à l'organisation logistique de Localizz,
+          les établissements peuvent intégrer une viande d'exception à leurs cartes tout en renforçant leur démarche
+          durable.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">Conclusion : une filière d'identité au service du territoire</h2>
+        <p>
+          Le <strong>Taureau de Camargue AOP</strong> n'est pas qu'un symbole : c'est un écosystème où le terroir,
+          la culture et l'alimentation responsable se rejoignent. En PACA, Localizz relie les manades camarguaises et
+          les cuisines professionnelles pour faire vivre, au quotidien, une filière <strong>locale</strong>,
+          <strong>maîtrisée</strong> et <strong>durable</strong>.
+        </p>
+        <p>
+          👉 En savoir plus sur nos références : <a href="/taureaux-de-camargue-aop" class="text-primary hover:text-secondary underline font-semibold">Viande de taureau de Camargue AOP</a> ·
+          Guide réglementaire : <a href="/actualites/loi-egalim-restauration-collective-paca-2025" class="text-primary hover:text-secondary underline font-semibold">Loi EGAlim en PACA</a>.
+        </p>
+      </div>
+    `,
+    image: "/lovable-uploads/taureau-camargue.png",
+    date: "2025-01-15",
+    category: "Filières locales",
+    readTime: "8 min",
+    author: "Équipe Localizz"
+  },
+  {
+    id: "loi-egalim-restauration-collective-paca-2025",
       title: "Loi EGAlim : guide complet pour les cantines et collectivités en PACA (2025)",
       excerpt:
         "Découvrez comment appliquer concrètement la loi EGAlim dans votre restauration collective : obligations, étapes pratiques, bénéfices et solutions locales en région PACA.",

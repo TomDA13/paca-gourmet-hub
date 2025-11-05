@@ -26,8 +26,8 @@ const TaureauCamargue = () => {
 
   const faqItems = [
     { question: "Quelle différence avec le bœuf ?", answer: "Le taureau de Camargue (Raço di Biòu) est élevé en plein air en manade. Viande plus rouge, plus maigre, goût plus marqué. Idéal en mijotés et grillades." },
-    { question: "Qu’est-ce que l’AOP Taureau de Camargue ?", answer: "Appellation d’Origine Protégée garantissant l’origine camarguaise, l’élevage extensif en zone humide et la transformation locale selon cahier des charges." },
-    { question: "Comment l’intégrer en restauration collective ?", answer: "En gardianne, bourguignon, pavé grillé. Conditionnements adaptés, traçabilité fournie et supports de communication. Planification possible avec nos équipes." },
+    { question: "Qu'est-ce que l'AOP Taureau de Camargue ?", answer: "Appellation d'Origine Protégée garantissant l'origine camarguaise, l'élevage extensif en zone humide et la transformation locale selon cahier des charges." },
+    { question: "Comment l'intégrer en restauration collective ?", answer: "En gardianne, bourguignon, pavé grillé. Conditionnements adaptés, traçabilité fournie et supports de communication. Planification possible avec nos équipes." },
     { question: "Où est-elle disponible ?", answer: "Approvisionnement via Localizz pour PACA (collectivités, cuisines centrales). Contactez-nous pour volumes et fréquences." }
   ];
 
@@ -120,19 +120,25 @@ const TaureauCamargue = () => {
 
    
 
-        {/* Une viande d’exception */}
+        {/* Une viande d'exception */}
         <section className="py-16 bg-gradient-to-br from-secondary/5 to-primary/5">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-primary mb-8 text-center">Une viande d’exception issue du terroir</h2>
+            <h2 className="text-3xl font-bold text-primary mb-8 text-center">Une viande d'exception issue du terroir</h2>
             <div className="max-w-4xl mx-auto space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 La <strong>viande de taureau AOP</strong> se distingue par sa couleur rouge intense, son faible taux de matière grasse et son goût prononcé.
                 Plus maigre que le bœuf traditionnel, elle est <strong>riche en fer</strong> et en protéines de qualité. Texture ferme, saveur authentique, idéale pour une <strong>viande camarguaise</strong> de caractère.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                L’élevage extensif en Camargue et l’alimentation naturelle confèrent une typicité unique.
-                Ce <strong>produit local durable</strong> s’intègre aux critères de qualité de la restauration collective, notamment dans le cadre de la
-                <a href="/loi-egalim" className="text-primary hover:text-secondary underline font-semibold"> loi EGAlim</a>.
+                L'élevage extensif en Camargue et l'alimentation naturelle confèrent une typicité unique.
+                Ce <strong>produit local durable</strong> s'intègre aux critères de qualité de la restauration collective, notamment dans le cadre de la
+                <a href="/actualites/loi-egalim-restauration-collective-paca-2025" className="text-primary hover:text-secondary underline font-semibold"> loi EGAlim</a>.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Pour en savoir plus sur cette filière unique, découvrez notre article :{' '}
+                <a href="/actualites/filiere-taureau-camargue-aop-paca" className="text-primary hover:text-secondary underline font-semibold">
+                  Filière Taureau de Camargue AOP : des manades à la restauration collective
+                </a>.
               </p>
             </div>
           </div>
@@ -151,6 +157,13 @@ const TaureauCamargue = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Respect du cahier des charges AOP : <strong>élevage en plein air</strong> en zones humides camarguaises, transformation locale,
                   savoir-faire préservé. Qualité régulière et conformité pour la restauration professionnelle.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Découvrez{' '}
+                  <a href="/actualites/filiere-taureau-camargue-aop-paca" className="text-primary hover:text-secondary underline font-semibold">
+                    notre article complet sur la filière AOP Taureau de Camargue
+                  </a>{' '}
+                  pour comprendre tous les enjeux de cette production unique.
                 </p>
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
