@@ -45,12 +45,7 @@ export const articles: Article[] = [
     content: `
       <div class="space-y-6">
         <figure class="mb-8">
-          <img
-            src="/lovable-uploads/taureau-camargue.png"
-            alt="Taureau de Camargue de race Raço di Biòu en liberté dans les marais"
-            loading="lazy"
-            class="w-full h-auto rounded-xl object-cover"
-          />
+        
           <figcaption class="text-center text-muted-foreground mt-2">
             Taureau de Camargue (Raço di Biòu) élevé en manade, au cœur des zones humides du delta du Rhône.
           </figcaption>
