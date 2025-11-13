@@ -8,6 +8,7 @@
     category: string;
     readTime: string;
     author: string;
+    showInList?: boolean;
     seo?: {
       metaTitle?: string;
       metaDescription?: string;
@@ -25,6 +26,7 @@ export const articles: Article[] = [
     id: "filiere-taureau-camargue-aop-paca",
     title: "Filière Taureau de Camargue AOP : des manades à la restauration collective",
     excerpt: "Élevage extensif en manades, traçabilité maîtrisée et transformation locale : la filière AOP Taureau de Camargue incarne un modèle durable qui relie patrimoine, biodiversité et alimentation de proximité pour la restauration collective et commerciale en région PACA.",
+    showInList: false,
     seo: {
       metaTitle: "Filière Taureau de Camargue AOP : des manades à la restauration collective",
       metaDescription: "Élevage extensif en manades, traçabilité et transformation locale : la filière AOP Taureau de Camargue relie patrimoine, biodiversité et alimentation de proximité pour la restauration collective et commerciale en région PACA.",
