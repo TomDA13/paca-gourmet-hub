@@ -145,6 +145,7 @@ export const articles: Article[] = [
       title: "Loi EGAlim : guide complet pour les cantines et collectivités en PACA (2025)",
       excerpt:
         "Découvrez comment appliquer concrètement la loi EGAlim dans votre restauration collective : obligations, étapes pratiques, bénéfices et solutions locales en région PACA.",
+      showInList: false,
       seo: {
         metaTitle: "Loi EGAlim : guide complet cantines et collectivités PACA 2025",
         metaDescription: "Guide pratique loi EGAlim : obligations 50% produits durables, menu végétarien, lutte gaspillage. Solutions locales pour cantines en région PACA. Application concrète.",
