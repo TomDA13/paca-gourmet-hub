@@ -8,7 +8,6 @@
     category: string;
     readTime: string;
     author: string;
-    showInList?: boolean;
     seo?: {
       metaTitle?: string;
       metaDescription?: string;
@@ -26,7 +25,6 @@ export const articles: Article[] = [
     id: "filiere-taureau-camargue-aop-paca",
     title: "Filière Taureau de Camargue AOP : des manades à la restauration collective",
     excerpt: "Élevage extensif en manades, traçabilité maîtrisée et transformation locale : la filière AOP Taureau de Camargue incarne un modèle durable qui relie patrimoine, biodiversité et alimentation de proximité pour la restauration collective et commerciale en région PACA.",
-    showInList: false,
     seo: {
       metaTitle: "Filière Taureau de Camargue AOP : des manades à la restauration collective",
       metaDescription: "Élevage extensif en manades, traçabilité et transformation locale : la filière AOP Taureau de Camargue relie patrimoine, biodiversité et alimentation de proximité pour la restauration collective et commerciale en région PACA.",
@@ -47,7 +45,12 @@ export const articles: Article[] = [
     content: `
       <div class="space-y-6">
         <figure class="mb-8">
-        
+          <img
+            src="/lovable-uploads/taureau-camargue.png"
+            alt="Taureau de Camargue de race Raço di Biòu en liberté dans les marais"
+            loading="lazy"
+            class="w-full h-auto rounded-xl object-cover"
+          />
           <figcaption class="text-center text-muted-foreground mt-2">
             Taureau de Camargue (Raço di Biòu) élevé en manade, au cœur des zones humides du delta du Rhône.
           </figcaption>
@@ -145,7 +148,6 @@ export const articles: Article[] = [
       title: "Loi EGAlim : guide complet pour les cantines et collectivités en PACA (2025)",
       excerpt:
         "Découvrez comment appliquer concrètement la loi EGAlim dans votre restauration collective : obligations, étapes pratiques, bénéfices et solutions locales en région PACA.",
-      showInList: false,
       seo: {
         metaTitle: "Loi EGAlim : guide complet cantines et collectivités PACA 2025",
         metaDescription: "Guide pratique loi EGAlim : obligations 50% produits durables, menu végétarien, lutte gaspillage. Solutions locales pour cantines en région PACA. Application concrète.",
