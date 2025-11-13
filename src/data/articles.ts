@@ -1,24 +1,25 @@
-  export interface Article {
-    id: string;
-    title: string;
-    excerpt: string;
-    content: string;
-    image: string;
-    date: string;
-    category: string;
-    readTime: string;
-    author: string;
-    seo?: {
-      metaTitle?: string;
-      metaDescription?: string;
-      keywords?: string[];
-      canonicalUrl?: string;
-      faqItems?: Array<{
-        question: string;
-        answer: string;
-      }>;
-    };
-  }
+export interface Article {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  date: string;
+  category: string;
+  readTime: string;
+  author: string;
+  showInList?: boolean;
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    keywords?: string[];
+    canonicalUrl?: string;
+    faqItems?: Array<{
+      question: string;
+      answer: string;
+    }>;
+  };
+}
 
 export const articles: Article[] = [
   {
@@ -145,6 +146,7 @@ export const articles: Article[] = [
   },
   {
     id: "loi-egalim-restauration-collective-paca-2025",
+    showInList: false,
       title: "Loi EGAlim : guide complet pour les cantines et collectivités en PACA (2025)",
       excerpt:
         "Découvrez comment appliquer concrètement la loi EGAlim dans votre restauration collective : obligations, étapes pratiques, bénéfices et solutions locales en région PACA.",

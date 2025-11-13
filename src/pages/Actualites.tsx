@@ -19,7 +19,8 @@ const Actualites = () => {
     const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'Tous' || article.category === selectedCategory;
-    return matchesSearch && matchesCategory;
+    const showInList = article.showInList !== false;
+    return matchesSearch && matchesCategory && showInList;
   });
 
   return (
