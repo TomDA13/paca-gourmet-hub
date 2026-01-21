@@ -44,7 +44,25 @@ const handler = async (req: Request): Promise<Response> => {
       `,
     });
 
-    console.log("Email sent successfully:", emailResponse);
+    console.log("Email sent to team:", emailResponse);
+
+    // Envoi de l'email de confirmation au visiteur
+    const confirmationEmail = await resend.emails.send({
+      from: "Localizz <contact@localizz.fr>",
+      to: [email],
+      subject: "Votre message a bien été envoyé - Localizz",
+      html: `
+        <h2>Bonjour ${name},</h2>
+        <p>Nous avons bien reçu votre message.</p>
+        <p>Notre équipe vous répondra dans les plus brefs délais.</p>
+        <br>
+        <p>À très bientôt,</p>
+        <p><strong>L'équipe Localizz</strong></p>
+        <p>📞 07 82 35 21 27</p>
+      `,
+    });
+
+    console.log("Confirmation email sent to visitor:", confirmationEmail);
 
     return new Response(JSON.stringify({ 
       success: true, 
