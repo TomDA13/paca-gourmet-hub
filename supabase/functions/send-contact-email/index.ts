@@ -30,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Envoi de l'email à Localizz
     const emailResponse = await resend.emails.send({
-      from: "Localizz <onboarding@resend.dev>",
+      from: "Localizz <contact@localizz.fr>",
       to: ["contact@localizz.fr"],
       subject: `Nouvelle demande de contact - ${company}`,
       html: `
