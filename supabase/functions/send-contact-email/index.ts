@@ -1,4 +1,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import { Resend } from "npm:resend@2.0.0";
+
+const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -25,13 +28,28 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Sending contact email from:", email, "Name:", name, "Company:", company);
 
-    // TODO: Implement email sending with Resend
-    // For now, just log and return success
-    console.log("Email data:", { company, name, email, phone, message });
+    // Envoi de l'email à Localizz
+    const emailResponse = await resend.emails.send({
+      from: "Localizz <onboarding@resend.dev>",
+      to: ["contact@localizz.fr"],
+      subject: `Nouvelle demande de contact - ${company}`,
+      html: `
+        <h2>Nouvelle demande de contact depuis le site Localizz</h2>
+        <p><strong>Entreprise :</strong> ${company}</p>
+        <p><strong>Nom :</strong> ${name}</p>
+        <p><strong>Email :</strong> ${email}</p>
+        <p><strong>Téléphone :</strong> ${phone || 'Non renseigné'}</p>
+        <h3>Message :</h3>
+        <p>${message.replace(/\n/g, '<br>')}</p>
+      `,
+    });
+
+    console.log("Email sent successfully:", emailResponse);
 
     return new Response(JSON.stringify({ 
       success: true, 
-      message: "Demande enregistrée avec succès"
+      message: "Demande envoyée avec succès",
+      emailId: emailResponse.data?.id
     }), {
       status: 200,
       headers: {
