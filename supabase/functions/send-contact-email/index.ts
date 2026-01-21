@@ -2,6 +2,7 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@2.0.0";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+const BREVO_API_KEY = Deno.env.get("BREVO_API_KEY");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -64,10 +65,40 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Confirmation email sent to visitor:", confirmationEmail);
 
+    // Ajout du contact dans Brevo
+    let brevoResponse = null;
+    if (BREVO_API_KEY) {
+      try {
+        const brevoResult = await fetch("https://api.brevo.com/v3/contacts", {
+          method: "POST",
+          headers: {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "api-key": BREVO_API_KEY,
+          },
+          body: JSON.stringify({
+            email: email,
+            attributes: {
+              NOM: name,
+              ENTREPRISE: company,
+              TELEPHONE: phone || "",
+            },
+            updateEnabled: true, // Met à jour si le contact existe déjà
+          }),
+        });
+
+        brevoResponse = await brevoResult.json();
+        console.log("Contact added to Brevo:", brevoResponse);
+      } catch (brevoError) {
+        console.error("Erreur Brevo (non bloquante):", brevoError);
+      }
+    }
+
     return new Response(JSON.stringify({ 
       success: true, 
       message: "Demande envoyée avec succès",
-      emailId: emailResponse.data?.id
+      emailId: emailResponse.data?.id,
+      brevoContact: brevoResponse
     }), {
       status: 200,
       headers: {
