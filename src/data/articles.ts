@@ -168,7 +168,7 @@ export const articles: Article[] = [
           "région sud",
           "localizz"
         ],
-        canonicalUrl: "https://localizz.fr/actualites/loi-egalim-restauration-collective-paca-2025",
+        canonicalUrl: "https://www.localizz.fr/actualites/loi-egalim-restauration-collective-paca-2025",
         faqItems: [
           {
             question: "Où trouver le texte officiel de la loi EGAlim ?",

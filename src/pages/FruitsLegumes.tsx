@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -60,6 +61,28 @@ const FruitsLegumes = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Fruits et légumes locaux de saison PACA - Producteurs régionaux"
+        description="Fruits et légumes de saison cultivés par nos producteurs locaux en région PACA. Bio, HVE, IGP et AOP. Récolte quotidienne, livraison en restauration collective. Circuit court garanti."
+        keywords={[
+          "fruits légumes locaux paca",
+          "fruits saison provence",
+          "légumes bio paca",
+          "producteur fruits légumes marseille",
+          "fournisseur fruits légumes restauration collective",
+          "circuit court fruits légumes",
+          "fruits légumes HVE",
+          "maraîcher local paca",
+          "livraison fruits légumes professionnels"
+        ]}
+        url="/nos-produits/fruits-et-legumes"
+        canonicalUrl="https://www.localizz.fr/nos-produits/fruits-et-legumes"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Notre Offre", url: "/notre-offre" },
+          { name: "Fruits & Légumes", url: "/nos-produits/fruits-et-legumes" }
+        ]}
+      />
       <Header />
 
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">

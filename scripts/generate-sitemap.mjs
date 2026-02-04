@@ -5,7 +5,7 @@ const SITE_URL = 'https://www.localizz.fr';
 
 // Trailing slash ON (conseillé). Mets les URLs exactement comme servies en prod.
 const ROUTES = [
-  '/', 
+  '/',
   '/notre-offre/',
   '/nos-engagements/',
   '/qui-sommes-nous/',
@@ -16,10 +16,13 @@ const ROUTES = [
   '/nos-produits/cremeries/',
   '/nos-produits/epicerie/',
   '/nos-coffrets-entreprises/',
+  '/loi-egalim/',
+  '/taureaux-de-camargue-aop/',
 ];
 
-// Renseigne ici les slugs d’articles (remplace et ajoute)
+// Renseigne ici les slugs d'articles (remplace et ajoute)
 const ARTICLES = [
+  'filiere-taureau-camargue-aop-paca',
   'loi-egalim-restauration-collective-paca-2025',
   'localizz-solutions-locales-marseille',
   'juste-remuneration-producteurs-salon-agriculture',
@@ -47,7 +50,12 @@ for (const path of Array.from(new Set(allUrls))) {
     changefreq: path === '/' ? 'weekly' : path === '/actualites/' ? 'weekly' : 'monthly',
     priority:
       path === '/' ? 1.0 :
+      path === '/notre-offre/' ? 0.9 :
       path === '/actualites/' ? 0.8 :
+      path === '/loi-egalim/' ? 0.8 :
+      path === '/taureaux-de-camargue-aop/' ? 0.8 :
+      path.startsWith('/nos-produits/') ? 0.8 :
+      path === '/contact/' ? 0.7 :
       path.startsWith('/actualites/') ? 0.7 :
       0.6,
   });

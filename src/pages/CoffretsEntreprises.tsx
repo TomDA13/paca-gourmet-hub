@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PhoneBanner from '@/components/PhoneBanner';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { Gift, Heart, Truck, Users, Building, Calendar } from 'lucide-react';
@@ -64,6 +65,25 @@ const CoffretsEntreprises = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Coffrets gourmands entreprises PACA - Cadeaux locaux et solidaires"
+        description="Coffrets gourmands sur-mesure composés de produits locaux PACA pour entreprises, collectivités et événementiel. Confection par des ESAT, livraison en région Sud. Demandez un devis."
+        keywords={[
+          "coffrets gourmands entreprise paca",
+          "cadeaux entreprise produits locaux",
+          "panier garni provence",
+          "coffret cadeau terroir paca",
+          "cadeau solidaire esat",
+          "coffret noel entreprise local",
+          "cadeau collectivité produits régionaux"
+        ]}
+        url="/nos-coffrets-entreprises"
+        canonicalUrl="https://www.localizz.fr/nos-coffrets-entreprises"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Coffrets Entreprises", url: "/nos-coffrets-entreprises" }
+        ]}
+      />
       <Header />
       <PhoneBanner />
       

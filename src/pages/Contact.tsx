@@ -3,10 +3,28 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactSection from '@/components/ContactSection';
 import BannerSection from '@/components/BannerSection';
+import SEO from '@/components/SEO';
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Contact Localizz - Demande de devis approvisionnement local PACA"
+        description="Contactez Localizz pour vos besoins d'approvisionnement en produits locaux en région PACA. Demande de devis, informations sur nos services de livraison en restauration collective. Tél : 07 82 35 21 27."
+        keywords={[
+          "contact localizz",
+          "devis produits locaux paca",
+          "fournisseur restauration collective contact",
+          "approvisionnement local devis",
+          "livraison produits locaux paca"
+        ]}
+        url="/contact"
+        canonicalUrl="https://www.localizz.fr/contact"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Contact", url: "/contact" }
+        ]}
+      />
       <Header />
       
       {/* Hero Section - Dark background */}

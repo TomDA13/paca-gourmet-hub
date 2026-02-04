@@ -2,12 +2,32 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
+import SEO from '@/components/SEO';
 import Timeline from '@/components/Timeline';
 import TeamSection from '@/components/TeamSection';
 
 const QuiSommesNous = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Qui sommes-nous - Localizz, acteur du circuit court en PACA depuis 2013"
+        description="Découvrez l'histoire de Localizz, entreprise à missions spécialisée dans l'approvisionnement en produits locaux PACA. Plus de 10 ans au service de la restauration collective et des producteurs régionaux."
+        keywords={[
+          "localizz histoire",
+          "qui sommes nous localizz",
+          "entreprise à missions alimentaire",
+          "circuit court paca",
+          "approvisionnement local depuis 2013",
+          "équipe localizz",
+          "fournisseur local restauration"
+        ]}
+        url="/qui-sommes-nous"
+        canonicalUrl="https://www.localizz.fr/qui-sommes-nous"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Qui Sommes Nous", url: "/qui-sommes-nous" }
+        ]}
+      />
       <Header />
       
       {/* Hero Section - Dark background */}

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -68,6 +69,28 @@ const Epicerie = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Épicerie locale PACA - Riz de Camargue IGP, légumineuses, farines bio"
+        description="Épicerie artisanale de la région PACA : riz de Camargue IGP, légumineuses équitables, pâtes et farines bio, miels de Provence, confitures. Fournisseur restauration collective en circuit court."
+        keywords={[
+          "épicerie locale paca",
+          "riz camargue igp",
+          "légumineuses équitables",
+          "farine bio provence",
+          "miel provence",
+          "confiture artisanale paca",
+          "épicerie restauration collective",
+          "produits secs locaux",
+          "circuit court épicerie"
+        ]}
+        url="/nos-produits/epicerie"
+        canonicalUrl="https://www.localizz.fr/nos-produits/epicerie"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Notre Offre", url: "/notre-offre" },
+          { name: "Épicerie", url: "/nos-produits/epicerie" }
+        ]}
+      />
       <Header />
 
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">

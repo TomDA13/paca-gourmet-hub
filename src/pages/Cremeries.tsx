@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -65,6 +66,28 @@ const Cremeries = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Crémerie locale PACA - Fromages fermiers, yaourts bio, oeufs plein air"
+        description="Produits laitiers fermiers de la région PACA : fromages artisanaux des Alpes du Sud, yaourts bio, oeufs plein air, beurre et crème. Transformation à la ferme, livraison restauration collective."
+        keywords={[
+          "fromage fermier paca",
+          "produits laitiers locaux",
+          "yaourt bio alpes",
+          "oeufs plein air paca",
+          "crémerie artisanale provence",
+          "fromage banon aop",
+          "fournisseur crémerie restauration collective",
+          "lait local paca",
+          "fromage ubaye"
+        ]}
+        url="/nos-produits/cremeries"
+        canonicalUrl="https://www.localizz.fr/nos-produits/cremeries"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Notre Offre", url: "/notre-offre" },
+          { name: "Crémerie", url: "/nos-produits/cremeries" }
+        ]}
+      />
       <Header />
 
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">

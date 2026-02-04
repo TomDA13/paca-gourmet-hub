@@ -2,6 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
+import SEO from '@/components/SEO';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Beef, Egg, Apple, Package, Truck, Link, Award, MessageSquare } from 'lucide-react';
@@ -17,6 +18,28 @@ const NotreOffre = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Notre offre de produits locaux PACA pour la restauration collective"
+        description="Plus de 700 références de produits locaux PACA : fruits et légumes de saison, viandes Label Rouge et Bio, crémerie fermière, épicerie artisanale. Livraison en restauration collective et commerciale."
+        keywords={[
+          "produits locaux paca",
+          "approvisionnement restauration collective",
+          "fruits légumes saison paca",
+          "viande locale paca",
+          "crémerie fermière",
+          "épicerie artisanale provence",
+          "circuit court restauration",
+          "livraison produits locaux",
+          "fournisseur restauration collective",
+          "egalim paca"
+        ]}
+        url="/notre-offre"
+        canonicalUrl="https://www.localizz.fr/notre-offre"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Notre Offre", url: "/notre-offre" }
+        ]}
+      />
       <Header />
       
       <main>

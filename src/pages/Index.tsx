@@ -19,21 +19,23 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Localizz - Relocalisez !"
-        description="La solution clé en main d'approvisionnement 100% local en région SUD PACA pour la restauration collective. Produits frais, circuits courts, agriculture durable."
+        title="Localizz - Approvisionnement 100% local en région PACA pour la restauration"
+        description="Localizz, la solution clé en main d'approvisionnement 100% local en région SUD PACA. Fruits, légumes, viandes, crémerie et épicerie pour la restauration collective et commerciale. Circuit court garanti."
         keywords={[
-          "approvisionnement local",
-          "restauration collective",
-          "paca",
-          "produits locaux",
-          "circuits courts",
-          "agriculture durable",
-          "livraison locale",
-          "cantines",
-          "collectivités",
+          "approvisionnement local paca",
+          "fournisseur restauration collective paca",
+          "produits locaux paca",
+          "circuits courts restauration",
+          "livraison produits locaux",
+          "fruits légumes locaux marseille",
+          "viande locale paca",
+          "cantines produits locaux",
+          "collectivités approvisionnement local",
+          "egalim paca",
           "localizz"
         ]}
         url="/"
+        canonicalUrl="https://www.localizz.fr/"
       />
       <WelcomePopup />
       <Header />
