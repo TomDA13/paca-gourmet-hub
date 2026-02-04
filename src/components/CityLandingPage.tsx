@@ -274,23 +274,6 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
           </section>
         )}
 
-        {/* CTA Final */}
-        <section className="relative py-16 bg-primary overflow-hidden">
-          <div className="container mx-auto px-4 relative z-10 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Approvisionnez votre établissement à {data.cityName} en produits 100% locaux
-            </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Demandez un devis adapté à vos volumes et vos besoins. Réponse sous 24h.
-            </p>
-            <Button
-              className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-10"
-              onClick={handleContact}
-            >
-              Demander un devis
-            </Button>
-          </div>
-        </section>
       </main>
 
       <BannerSection />
