@@ -40,7 +40,7 @@ const data: CityLandingData = {
   products: {
     intro: 'Malgré la distance avec les zones de production du Rhône et de la Crau, notre logistique permet une livraison quotidienne de produits ultra-frais à Nice depuis l\'ensemble de la région PACA.',
     highlights: [
-      'Fruits et légumes de saison du Vaucluse et des vallées de la Durance, livrés sous 24h',
+      'Fruits et légumes de saison du Vaucluse et des vallées de la Durance, livrés en circuit court',
       'Taureau de Camargue AOP : une viande d\'exception pour différencier vos menus niçois',
       'Porc plein air de la Crau et boeuf HVE des Alpes : viandes locales traçables',
       'Riz de Camargue IGP, huiles d\'olive de Provence et miels mono-floraux pour vos recettes méditerranéennes',
@@ -74,7 +74,7 @@ const data: CityLandingData = {
     },
     {
       question: 'Les produits sont-ils vraiment locaux malgré la distance avec les zones de production ?',
-      answer: 'Oui, tous nos produits sont sourcés en région PACA (Bouches-du-Rhône, Vaucluse, Var, Alpes du Sud). Notre logistique en flux tendu assure une livraison sous 24h avec une fraîcheur optimale, même jusqu\'à Nice.',
+      answer: 'Oui, tous nos produits sont sourcés en région PACA (Bouches-du-Rhône, Vaucluse, Var, Alpes du Sud). Notre logistique en flux tendu assure une livraison rapide avec une fraîcheur optimale, même jusqu\'à Nice.',
     },
     {
       question: 'Travaillez-vous avec les sociétés de restauration collective à Nice ?',

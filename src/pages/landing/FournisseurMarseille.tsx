@@ -51,7 +51,7 @@ const data: CityLandingData = {
     points: [
       'Livraison quotidienne sur Marseille et toute la métropole Aix-Marseille-Provence',
       'Palettes multiproduits : une seule livraison pour l\'ensemble de vos gammes (fruits, viandes, crémerie, épicerie)',
-      'Flux tendu : produits collectés chez les producteurs et livrés sous 24 à 48h, sans stock intermédiaire',
+      'Flux tendu : produits collectés chez les producteurs et livrés rapidement, sans stock intermédiaire',
       'Chaîne du froid respectée de bout en bout, agréage à réception et avant livraison',
       'Récupération des cagettes pour les ramener aux producteurs : économie circulaire',
       'Périmètre de livraison complet : Marseille, Aubagne, Martigues, Istres, Salon, Étang de Berre',

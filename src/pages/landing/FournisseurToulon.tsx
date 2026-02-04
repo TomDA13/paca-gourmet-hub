@@ -51,7 +51,7 @@ const data: CityLandingData = {
     points: [
       'Livraison quotidienne sur Toulon, Hyères, La Seyne-sur-Mer, Fréjus, Draguignan, Brignoles',
       'Palettes multiproduits : une seule livraison combine fruits, légumes, viandes, crémerie et épicerie',
-      'Flux tendu : pas de stock intermédiaire, produits collectés chez les producteurs et livrés sous 24-48h',
+      'Flux tendu : pas de stock intermédiaire, produits collectés chez les producteurs et livrés rapidement',
       'Chaîne du froid maîtrisée : nos camions réfrigérés garantissent la qualité jusqu\'à votre quai',
       'Agréage systématique : triple contrôle qualité (producteur, plateforme, avant livraison)',
       'Commande la veille, livraison le lendemain : réactivité adaptée aux besoins de la restauration collective',
