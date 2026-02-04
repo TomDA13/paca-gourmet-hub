@@ -20,6 +20,15 @@ const ROUTES = [
   '/taureaux-de-camargue-aop/',
 ];
 
+// Landing pages SEO géographiques
+const LANDING_PAGES = [
+  '/fournisseur-restauration-collective-marseille/',
+  '/fournisseur-restauration-collective-aix-en-provence/',
+  '/fournisseur-restauration-collective-nice/',
+  '/fournisseur-restauration-collective-toulon/',
+  '/fournisseur-restauration-collective-avignon/',
+];
+
 // Renseigne ici les slugs d'articles (remplace et ajoute)
 const ARTICLES = [
   'filiere-taureau-camargue-aop-paca',
@@ -34,6 +43,7 @@ const ARTICLES = [
 // Construit la liste finale
 const allUrls = [
   ...ROUTES,
+  ...LANDING_PAGES,
   ...ARTICLES.map((slug) => `/actualites/${slug}/`),
 ];
 
@@ -55,6 +65,7 @@ for (const path of Array.from(new Set(allUrls))) {
       path === '/loi-egalim/' ? 0.8 :
       path === '/taureaux-de-camargue-aop/' ? 0.8 :
       path.startsWith('/nos-produits/') ? 0.8 :
+      path.startsWith('/fournisseur-') ? 0.8 :
       path === '/contact/' ? 0.7 :
       path.startsWith('/actualites/') ? 0.7 :
       0.6,
