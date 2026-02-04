@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
+import SEO from '@/components/SEO';
 import CommitmentCard from '@/components/CommitmentCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -72,8 +73,29 @@ const NosEngagements = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Nos engagements - Approvisionnement local responsable en PACA"
+        description="Les engagements de Localizz : produits locaux PACA garantis toute l'année, entreprise ESS à missions, qualité certifiée HACCP, traçabilité complète, conformité loi EGAlim."
+        keywords={[
+          "engagements localizz",
+          "approvisionnement local responsable",
+          "entreprise ess alimentaire",
+          "certification haccp restauration",
+          "traçabilité produits locaux",
+          "egalim paca",
+          "100 valeurs du sud",
+          "circuit court certifié bio",
+          "économie circulaire alimentaire"
+        ]}
+        url="/nos-engagements"
+        canonicalUrl="https://www.localizz.fr/nos-engagements"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Nos Engagements", url: "/nos-engagements" }
+        ]}
+      />
       <Header />
-      
+
       {/* Hero Section - Dark background */}
       <section className="relative py-20 bg-primary overflow-hidden">
         {/* Floating elements */}

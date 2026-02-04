@@ -19,6 +19,11 @@ import Epicerie from "./pages/Epicerie";
 import CoffretsEntreprises from "./pages/CoffretsEntreprises";
 import LoiEgalim from "./pages/LoiEgalim";
 import TaureauCamargue from "./pages/TaureauCamargue";
+import FournisseurMarseille from "./pages/landing/FournisseurMarseille";
+import FournisseurAix from "./pages/landing/FournisseurAix";
+import FournisseurNice from "./pages/landing/FournisseurNice";
+import FournisseurToulon from "./pages/landing/FournisseurToulon";
+import FournisseurAvignon from "./pages/landing/FournisseurAvignon";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +48,12 @@ const App = () => (
           <Route path="/nos-coffrets-entreprises" element={<CoffretsEntreprises />} />
           <Route path="/loi-egalim" element={<LoiEgalim />} />
           <Route path="/taureaux-de-camargue-aop" element={<TaureauCamargue />} />
+          {/* Landing pages SEO géographiques */}
+          <Route path="/fournisseur-restauration-collective-marseille" element={<FournisseurMarseille />} />
+          <Route path="/fournisseur-restauration-collective-aix-en-provence" element={<FournisseurAix />} />
+          <Route path="/fournisseur-restauration-collective-nice" element={<FournisseurNice />} />
+          <Route path="/fournisseur-restauration-collective-toulon" element={<FournisseurToulon />} />
+          <Route path="/fournisseur-restauration-collective-avignon" element={<FournisseurAvignon />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

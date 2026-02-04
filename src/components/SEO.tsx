@@ -25,12 +25,14 @@ interface SEOProps {
   breadcrumbs?: BreadcrumbItem[];
 }
 
+const SITE_BASE = 'https://www.localizz.fr';
+
 const SEO = ({
   title,
   description,
   keywords = [],
-  image = 'https://localizz.fr/affichesite.png',
-  url = 'https://localizz.fr',
+  image = `${SITE_BASE}/affichesite.png`,
+  url = SITE_BASE,
   type = 'website',
   author,
   publishedTime,
@@ -40,31 +42,86 @@ const SEO = ({
   breadcrumbs,
 }: SEOProps) => {
   const fullTitle = title.includes('Localizz') ? title : `${title} | Localizz`;
-  const siteUrl = url.startsWith('http') ? url : `https://localizz.fr${url}`;
-  const imageUrl = image.startsWith('http') ? image : `https://localizz.fr${image}`;
+  const siteUrl = url.startsWith('http') ? url : `${SITE_BASE}${url}`;
+  const imageUrl = image.startsWith('http') ? image : `${SITE_BASE}${image}`;
+  const canonical = canonicalUrl || siteUrl;
 
   // Organization Schema
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Localizz",
-    "url": "https://localizz.fr",
-    "logo": "https://localizz.fr/affichesite.png",
-    "description": "La solution clé en main d'approvisionnement 100% local en région SUD PACA pour la restauration",
+    "url": SITE_BASE,
+    "logo": `${SITE_BASE}/affichesite.png`,
+    "description": "La solution clé en main d'approvisionnement 100% local en région SUD PACA pour la restauration collective et commerciale",
     "address": {
       "@type": "PostalAddress",
-      "addressRegion": "PACA",
+      "addressRegion": "Provence-Alpes-Côte d'Azur",
       "addressCountry": "FR"
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+33782352127",
-      "contactType": "Customer Service"
+      "contactType": "Customer Service",
+      "areaServed": "FR-PAC",
+      "availableLanguage": "French"
     },
     "sameAs": [
       "https://www.linkedin.com/company/localizz"
     ]
   };
+
+  // LocalBusiness Schema
+  const localBusinessSchema = type !== 'article' ? {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Localizz",
+    "description": "Approvisionnement en produits locaux 100% PACA pour la restauration collective et commerciale. Fruits, légumes, viandes, crémerie, épicerie.",
+    "url": SITE_BASE,
+    "telephone": "+33782352127",
+    "email": "contact@localizz.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Provence-Alpes-Côte d'Azur",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.2965,
+      "longitude": 5.3698
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Bouches-du-Rhône"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Var"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Vaucluse"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Alpes-de-Haute-Provence"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Hautes-Alpes"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Alpes-Maritimes"
+      }
+    ],
+    "priceRange": "$$",
+    "image": `${SITE_BASE}/affichesite.png`,
+    "sameAs": [
+      "https://www.linkedin.com/company/localizz"
+    ]
+  } : null;
 
   // Article Schema (if type is article)
   const articleSchema = type === 'article' && publishedTime ? {
@@ -84,7 +141,7 @@ const SEO = ({
       "name": "Localizz",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://localizz.fr/affichesite.png"
+        "url": `${SITE_BASE}/affichesite.png`
       }
     },
     "mainEntityOfPage": {
@@ -115,7 +172,7 @@ const SEO = ({
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": item.url.startsWith('http') ? item.url : `https://localizz.fr${item.url}`
+      "item": item.url.startsWith('http') ? item.url : `${SITE_BASE}${item.url}`
     }))
   } : null;
 
@@ -126,7 +183,7 @@ const SEO = ({
       <meta name="description" content={description} />
       {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
       <meta name="author" content={author || "Localizz"} />
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      <link rel="canonical" href={canonical} />
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
@@ -138,7 +195,7 @@ const SEO = ({
       <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Localizz" />
       <meta property="og:locale" content="fr_FR" />
-      
+
       {type === 'article' && publishedTime && (
         <>
           <meta property="article:published_time" content={publishedTime} />
@@ -162,19 +219,25 @@ const SEO = ({
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>
-      
+
+      {localBusinessSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
+      )}
+
       {articleSchema && (
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
       )}
-      
+
       {faqSchema && (
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
       )}
-      
+
       {breadcrumbSchema && (
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}

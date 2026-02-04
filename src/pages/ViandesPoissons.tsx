@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -69,6 +70,28 @@ const ViandesPoissons = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Viandes locales PACA - Boeuf, Agneau, Taureau de Camargue AOP, Porc plein air"
+        description="Viandes locales de qualité en région PACA : boeuf race à viande HVE et Bio, taureau de Camargue AOP, agneau du Lubéron, porc plein air, volailles Label Rouge. Traçabilité complète, livraison restauration collective."
+        keywords={[
+          "viande locale paca",
+          "taureau camargue aop",
+          "boeuf bio paca",
+          "agneau lubéron",
+          "porc plein air crau",
+          "volaille label rouge paca",
+          "fournisseur viande restauration collective",
+          "charcuterie artisanale provence",
+          "viande circuit court"
+        ]}
+        url="/nos-produits/viandes"
+        canonicalUrl="https://www.localizz.fr/nos-produits/viandes"
+        breadcrumbs={[
+          { name: "Accueil", url: "/" },
+          { name: "Notre Offre", url: "/notre-offre" },
+          { name: "Viandes & Poissons", url: "/nos-produits/viandes" }
+        ]}
+      />
       <Header />
 
       {/* Hero Section avec titre et description */}
