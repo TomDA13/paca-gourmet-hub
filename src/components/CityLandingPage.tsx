@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import SEO from '@/components/SEO';
 import RelatedPages from '@/components/RelatedPages';
+import Breadcrumb from '@/components/Breadcrumb';
 import { Button } from '@/components/ui/button';
 import { Apple, Beef, Egg, Package, Truck, ShieldCheck, Users, Building, MessageSquare, FileText, Eye, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -69,6 +70,10 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         ]}
       />
       <Header />
+      <Breadcrumb items={[
+        { name: "Accueil", url: "/" },
+        { name: `Fournisseur ${data.cityName}`, url: `/${data.slug}` }
+      ]} />
 
       <main>
         {/* Hero Section */}

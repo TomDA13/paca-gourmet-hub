@@ -4,6 +4,7 @@ import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
 import SEO from "@/components/SEO";
 import RelatedPages from "@/components/RelatedPages";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -90,6 +91,11 @@ const Cremeries = () => {
         ]}
       />
       <Header />
+      <Breadcrumb items={[
+        { name: "Accueil", url: "/" },
+        { name: "Notre Offre", url: "/notre-offre" },
+        { name: "Crémerie", url: "/nos-produits/cremeries" }
+      ]} />
 
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">
         <div className="container mx-auto px-6 max-w-7xl">
