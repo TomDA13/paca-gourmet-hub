@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Apple, Beef, Egg, Package, Truck, ShieldCheck, Users, Building } from 'lucide-react';
+import { Apple, Beef, Egg, Package, Truck, ShieldCheck, Users, Building, MessageSquare, FileText, Eye, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export interface CityLandingData {
@@ -105,7 +105,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <p className="text-xl text-gray-700 leading-relaxed mb-12">
               {data.intro}
             </p>
@@ -131,7 +131,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                 className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
                 onClick={handleContact}
               >
-                Contactez-nous pour un devis
+                En savoir plus
               </Button>
             </div>
           </div>
@@ -141,7 +141,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute top-16 right-10 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
           <div className="absolute bottom-16 left-10 w-20 h-20 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">
               Plus de 700 références de produits locaux PACA
             </h2>
@@ -157,7 +157,11 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Fruits & Légumes</h3>
                 </div>
-                <p className="text-gray-600">De saison, récoltés à juste maturité, en 1ère et 4ème gamme. Calibres adaptés à la restauration collective.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Récoltés à juste maturité en fonction de vos jours de consommation</p>
+                  <p>• Une variété toute l'année sans rupture</p>
+                  <p>• Offre en 1ère gamme et 4ème gamme</p>
+                </div>
               </button>
 
               <button onClick={() => handleNavigate('/nos-produits/viandes')} className="bg-accent/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 text-left group">
@@ -167,7 +171,11 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Viandes</h3>
                 </div>
-                <p className="text-gray-600">Boeuf HVE/Bio, agneau du Lubéron, porc plein air de la Crau, taureau de Camargue AOP, volaille Label Rouge.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Bœuf en race à viande HVE et BIO</p>
+                  <p>• Porc plein air des Alpes et de la Crau HVE et BIO</p>
+                  <p>• Agneau du Lubéron, Taureau de Camargue AOP, Volailles Label Rouge</p>
+                </div>
               </button>
 
               <button onClick={() => handleNavigate('/nos-produits/cremeries')} className="bg-accent/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 text-left group">
@@ -177,7 +185,11 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Crémerie & Oeufs</h3>
                 </div>
-                <p className="text-gray-600">Fromages fermiers des Alpes du Sud, yaourts bio, oeufs plein air, Banon AOP. Direct producteurs.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Des produits en direct des Alpes du Sud</p>
+                  <p>• Fromages blancs, yaourts, fromages à la découpe</p>
+                  <p>• Œufs 100% plein air ou BIO</p>
+                </div>
               </button>
 
               <button onClick={() => handleNavigate('/nos-produits/epicerie')} className="bg-accent/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 text-left group">
@@ -187,27 +199,30 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Épicerie</h3>
                 </div>
-                <p className="text-gray-600">Riz de Camargue IGP, légumineuses équitables, farines bio, miel de Provence, confitures artisanales.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Légumineuses équitables, semoules, pâtes, farines BIO</p>
+                  <p>• Riz de Camargue IGP</p>
+                  <p>• Miel, confitures, jus et gamme apéritive</p>
+                </div>
               </button>
             </div>
 
-            {data.products.highlights.length > 0 && (
-              <div className="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
-                <h3 className="font-bold text-primary mb-3">Spécialités disponibles pour {data.cityName} :</h3>
-                <ul className="space-y-2">
-                  {data.products.highlights.map((h, i) => (
-                    <li key={i} className="text-gray-700">• {h}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            <div className="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
+              <h3 className="font-bold text-primary mb-3">Produits phares disponibles pour la ville de {data.cityName} :</h3>
+              <ul className="space-y-2">
+                <li className="text-gray-700">• <strong>Taureau de Camargue AOP</strong> – Viande d'exception élevée en liberté dans les manades camarguaises</li>
+                <li className="text-gray-700">• <strong>Yaourts bio du Champsaur</strong> – Produits laitiers fermiers des Hautes-Alpes</li>
+                <li className="text-gray-700">• <strong>Riz de Camargue IGP</strong> – Rond, long ou étuvé, cultivé dans les rizières du delta du Rhône</li>
+                <li className="text-gray-700">• <strong>Légumes de saison du Vaucluse</strong> – Tomates, courgettes, aubergines récoltés à juste maturité</li>
+              </ul>
+            </div>
           </div>
         </section>
 
         {/* Logistique */}
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-8 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">
               Livraison à {data.cityName} et dans tout le {data.department}
             </h2>
@@ -215,12 +230,110 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
               {data.logistics.intro}
             </p>
             <div className="grid md:grid-cols-2 gap-6">
-              {data.logistics.points.map((point, i) => (
-                <div key={i} className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
-                  <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">{point}</p>
+              {/* Point 1: dynamique selon la ville */}
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">{data.logistics.points[0]}</p>
+              </div>
+              {/* Points 2-6: identiques pour toutes les villes */}
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Une seule livraison pour toutes vos gammes de produits</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Approvisionnement direct auprès de nos producteurs PACA pour une fraîcheur optimale</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Chaîne du froid garantie sur tout le trajet</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Agréage systématique : contrôle qualité avant chaque livraison</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Commandes passées en début de semaine, livraison en fin de semaine</p>
+              </div>
+            </div>
+            <div className="text-center mt-8">
+              <Button
+                className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
+                onClick={handleContact}
+              >
+                Je commande mes produits locaux
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Communication Section */}
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="absolute top-16 left-10 w-28 h-28 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
+            <h2 className="text-3xl font-bold text-primary mb-12 text-center">
+              Valorisez vos produits locaux auprès de vos convives
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Image côté gauche */}
+              <div className="relative">
+                <div className="bg-accent/50 rounded-xl p-8 aspect-[4/3] flex items-center justify-center">
+                  <div className="text-center text-gray-500">
+                    <MessageSquare className="w-16 h-16 mx-auto mb-4 text-primary/40" />
+                    <p className="text-sm">Image à venir</p>
+                  </div>
                 </div>
-              ))}
+              </div>
+              
+              {/* Points clés côté droit */}
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                  Nous vous fournissons des <strong>supports de communication</strong> pour valoriser vos approvisionnements locaux et donner du sens à chaque repas.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <FileText className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Fiches produits personnalisées</h3>
+                      <p className="text-gray-600 text-sm">D'où vient le produit, qui le fabrique et comment — tout est expliqué simplement.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Eye className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Transparence totale</h3>
+                      <p className="text-gray-600 text-sm">Vos convives savent exactement ce qu'ils mangent et d'où ça vient.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Heart className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Engagement apprécié</h3>
+                      <p className="text-gray-600 text-sm">Les convives adorent découvrir l'histoire derrière leurs repas — ça rend le local concret et visible.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <MessageSquare className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Valorisez votre démarche</h3>
+                      <p className="text-gray-600 text-sm">Affichez fièrement votre engagement local et responsable auprès de tous.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -228,7 +341,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         {/* EGAlim */}
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">
               Conformité loi EGAlim à {data.cityName}
             </h2>
@@ -258,7 +371,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         {/* FAQ */}
         {data.faqItems.length > 0 && (
           <section className="relative py-20 bg-accent overflow-hidden">
-            <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+            <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
               <h2 className="text-3xl font-bold text-primary mb-12 text-center">
                 Questions fréquentes
               </h2>
@@ -274,23 +387,6 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
           </section>
         )}
 
-        {/* CTA Final */}
-        <section className="relative py-16 bg-primary overflow-hidden">
-          <div className="container mx-auto px-4 relative z-10 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Approvisionnez votre établissement à {data.cityName} en produits 100% locaux
-            </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Demandez un devis adapté à vos volumes et vos besoins. Réponse sous 24h.
-            </p>
-            <Button
-              className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-10"
-              onClick={handleContact}
-            >
-              Demander un devis
-            </Button>
-          </div>
-        </section>
       </main>
 
       <BannerSection />
