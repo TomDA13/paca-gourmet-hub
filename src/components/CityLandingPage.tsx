@@ -208,7 +208,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
             </div>
 
             <div className="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
-              <h3 className="font-bold text-primary mb-3">Quelques produits phares :</h3>
+              <h3 className="font-bold text-primary mb-3">Produits phares disponibles à {data.cityName} :</h3>
               <ul className="space-y-2">
                 <li className="text-gray-700">• <strong>Taureau de Camargue AOP</strong> – Viande d'exception élevée en liberté dans les manades camarguaises</li>
                 <li className="text-gray-700">• <strong>Yaourts bio du Champsaur</strong> – Produits laitiers fermiers des Hautes-Alpes</li>
