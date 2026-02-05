@@ -32,7 +32,7 @@ const data: CityLandingData = {
       'Cuisines centrales municipales et métropolitaines de Marseille',
       'Cantines scolaires : écoles, collèges, lycées de la ville et de la métropole Aix-Marseille',
       'EHPAD et établissements de santé des Bouches-du-Rhône',
-      'Restaurants d\'entreprise et sociétés de restauration collective (Elior, Compass, Sodexo) implantées à Marseille',
+      'Restaurants d\'entreprise et sociétés de restauration collective implantées à Marseille',
       'Restaurants commerciaux et CHR du Vieux-Port, du Panier et de la métropole',
       'Structures d\'accueil : crèches, centres de loisirs, foyers',
     ],
@@ -70,7 +70,7 @@ const data: CityLandingData = {
   faqItems: [
     {
       question: 'Quels types d\'établissements livrez-vous à Marseille ?',
-      answer: 'Nous livrons les cuisines centrales, cantines scolaires, EHPAD, restaurants d\'entreprise, sociétés de restauration collective (Elior, Compass, Sodexo) et restaurants commerciaux sur Marseille et toute la métropole Aix-Marseille-Provence.',
+      answer: 'Nous livrons les cuisines centrales, cantines scolaires, EHPAD, restaurants d\'entreprise, sociétés de restauration collective et restaurants commerciaux sur Marseille et toute la métropole Aix-Marseille-Provence.',
     },
     {
       question: 'Pouvez-vous répondre aux appels d\'offres de la Ville de Marseille ?',
