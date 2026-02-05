@@ -4,6 +4,7 @@ import BannerSection from '@/components/BannerSection';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Users, MapPin, Award, Handshake, Leaf, TrendingUp } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { useNavigate } from 'react-router-dom';
 
 const NosProducteurs = () => {
@@ -112,6 +113,60 @@ const NosProducteurs = () => {
                 <p className="text-gray-600">ingénieurs agronomes</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Producer Photos Carousel Section */}
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="absolute top-16 left-10 w-28 h-28 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
+            <h2 className="text-3xl font-bold text-primary mb-12 text-center">
+              Ils nous font confiance
+            </h2>
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {[
+                  { name: "Alazard et Roux", image: "/lovable-uploads/alazard.png", specialty: "Viandes régionales" },
+                  { name: "Comptoir des Salaisons", image: "/lovable-uploads/comptoir-salaisons.png", specialty: "Charcuterie artisanale" },
+                  { name: "Salaisons du Champsaur", image: "/lovable-uploads/salaisons-champsaur.png", specialty: "Porc de montagne" },
+                  { name: "Ferme du Buissonet", image: "/lovable-uploads/ferme-buissonet.png", specialty: "Produits laitiers" },
+                  { name: "Coopérative de l'Ubaye", image: "/lovable-uploads/cooperative-ubaye.png", specialty: "Fromages de montagne" },
+                  { name: "ESAT de la Haute Lèbre", image: "/lovable-uploads/esat-haute-lebre.png", specialty: "Fromages de chèvre" },
+                  { name: "Rachid Rifi", image: "/lovable-uploads/rachid.jpg", specialty: "Fruits et légumes" },
+                  { name: "Terre de Crau", image: "/lovable-uploads/terre-de-crau.png", specialty: "Fruits à noyau" },
+                  { name: "GAEC des Bougainvilliers", image: "/lovable-uploads/gaec-bougainvilliers.png", specialty: "Maraîchage" },
+                  { name: "Moulin St Joseph", image: "/lovable-uploads/moulin-st-joseph.png", specialty: "Farines artisanales" },
+                  { name: "Duransia", image: "/lovable-uploads/duransia.png", specialty: "Céréales équitables" },
+                  { name: "Carret Munos", image: "/lovable-uploads/carret-munoz.png", specialty: "Couscous artisanal" },
+                ].map((producer, index) => (
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <div className="p-2">
+                      <div className="bg-accent rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden">
+                        <div className="aspect-square relative">
+                          <img
+                            src={producer.image}
+                            alt={producer.name}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="p-4 text-center">
+                          <h3 className="font-bold text-primary text-sm md:text-base">{producer.name}</h3>
+                          <p className="text-muted-foreground text-xs mt-1">{producer.specialty}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex -left-4 bg-white/80 hover:bg-white border-muted" />
+              <CarouselNext className="hidden md:flex -right-4 bg-white/80 hover:bg-white border-muted" />
+            </Carousel>
           </div>
         </section>
 
