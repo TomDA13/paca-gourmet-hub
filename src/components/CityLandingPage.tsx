@@ -105,7 +105,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <p className="text-xl text-gray-700 leading-relaxed mb-12">
               {data.intro}
             </p>
@@ -141,7 +141,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute top-16 right-10 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
           <div className="absolute bottom-16 left-10 w-20 h-20 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">
               Plus de 700 références de produits locaux PACA
             </h2>
@@ -222,7 +222,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         {/* Logistique */}
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-8 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">
               Livraison à {data.cityName} et dans tout le {data.department}
             </h2>
@@ -271,7 +271,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         {/* Communication Section */}
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute top-16 left-10 w-28 h-28 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-6xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">
               Valorisez vos produits locaux auprès de vos convives
             </h2>
@@ -341,7 +341,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         {/* EGAlim */}
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">
               Conformité loi EGAlim à {data.cityName}
             </h2>
@@ -371,7 +371,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
         {/* FAQ */}
         {data.faqItems.length > 0 && (
           <section className="relative py-20 bg-accent overflow-hidden">
-            <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+            <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
               <h2 className="text-3xl font-bold text-primary mb-12 text-center">
                 Questions fréquentes
               </h2>
