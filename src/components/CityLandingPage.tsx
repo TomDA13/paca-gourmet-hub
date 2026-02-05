@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import SEO from '@/components/SEO';
+import RelatedPages from '@/components/RelatedPages';
 import { Button } from '@/components/ui/button';
 import { Apple, Beef, Egg, Package, Truck, ShieldCheck, Users, Building, MessageSquare, FileText, Eye, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -386,6 +387,37 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
             </div>
           </section>
         )}
+
+        {/* Maillage interne - Autres villes et services */}
+        <RelatedPages
+          title="Découvrez aussi nos services"
+          pages={[
+            {
+              title: 'Nos Producteurs PACA',
+              description: '150 producteurs partenaires en région Sud',
+              href: '/nos-producteurs-paca',
+              category: 'À propos',
+            },
+            {
+              title: 'Appels d\'offres PACA',
+              description: 'Marchés publics alimentaires en région Sud',
+              href: '/appels-offres-marches-publics-paca',
+              category: 'Services',
+            },
+            {
+              title: 'Loi EGAlim PACA',
+              description: 'Conformité et accompagnement EGAlim',
+              href: '/loi-egalim',
+              category: 'Services',
+            },
+            {
+              title: 'Notre Offre',
+              description: 'Plus de 700 références de produits locaux',
+              href: '/notre-offre',
+              category: 'Produits',
+            },
+          ]}
+        />
 
       </main>
 

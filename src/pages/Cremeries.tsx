@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
 import SEO from "@/components/SEO";
+import RelatedPages from "@/components/RelatedPages";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -188,6 +189,37 @@ const Cremeries = () => {
           </div>
         </div>
       </section>
+
+      {/* Maillage interne - Autres produits */}
+      <RelatedPages
+        title="Nos autres gammes"
+        pages={[
+          {
+            title: 'Fruits et Légumes',
+            description: 'Récoltés à juste maturité, de saison, 1ère et 4ème gamme',
+            href: '/nos-produits/fruits-et-legumes',
+            category: 'Produits',
+          },
+          {
+            title: 'Viandes',
+            description: 'Taureau de Camargue AOP, agneau du Lubéron, boeuf HVE et Bio',
+            href: '/nos-produits/viandes',
+            category: 'Produits',
+          },
+          {
+            title: 'Épicerie',
+            description: 'Riz de Camargue IGP, miel de Provence, légumineuses locales',
+            href: '/nos-produits/epicerie',
+            category: 'Produits',
+          },
+          {
+            title: 'Nos Producteurs PACA',
+            description: '150 producteurs partenaires en région Sud',
+            href: '/nos-producteurs-paca',
+            category: 'À propos',
+          },
+        ]}
+      />
 
       <BannerSection />
       <PhoneBanner />

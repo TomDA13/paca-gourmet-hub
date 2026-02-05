@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import SEO from '@/components/SEO';
+import RelatedPages, { RELATED_PAGES } from '@/components/RelatedPages';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Beef, Egg, Apple, Package, Truck, Link, Award, MessageSquare } from 'lucide-react';
@@ -366,8 +367,17 @@ const NotreOffre = () => {
             </div>
           </div>
         </section>
+
+        {/* Maillage interne - Pages associées */}
+        <RelatedPages
+          title="Découvrez aussi"
+          pages={[
+            ...RELATED_PAGES.products,
+            ...RELATED_PAGES.services.slice(0, 2),
+          ]}
+        />
       </main>
-      
+
       <BannerSection />
       <Footer />
     </div>

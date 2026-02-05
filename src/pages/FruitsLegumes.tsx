@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
 import SEO from "@/components/SEO";
+import RelatedPages from "@/components/RelatedPages";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -183,6 +184,37 @@ const FruitsLegumes = () => {
           </div>
         </div>
       </section>
+
+      {/* Maillage interne - Autres produits */}
+      <RelatedPages
+        title="Nos autres gammes"
+        pages={[
+          {
+            title: 'Viandes',
+            description: 'Taureau de Camargue AOP, agneau du Lubéron, boeuf HVE et Bio',
+            href: '/nos-produits/viandes',
+            category: 'Produits',
+          },
+          {
+            title: 'Crémerie et Oeufs',
+            description: 'Yaourts bio des Alpes, Banon AOP, oeufs plein air',
+            href: '/nos-produits/cremeries',
+            category: 'Produits',
+          },
+          {
+            title: 'Épicerie',
+            description: 'Riz de Camargue IGP, miel de Provence, légumineuses locales',
+            href: '/nos-produits/epicerie',
+            category: 'Produits',
+          },
+          {
+            title: 'Loi EGAlim',
+            description: 'Conformité et accompagnement EGAlim en PACA',
+            href: '/loi-egalim',
+            category: 'Services',
+          },
+        ]}
+      />
 
       <BannerSection />
       <PhoneBanner />
