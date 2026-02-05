@@ -33,7 +33,7 @@ const data: CityLandingData = {
       'Cantines scolaires : écoles primaires, collèges, lycées et restaurants universitaires',
       'EHPAD et établissements médico-sociaux du bassin aixois',
       'Restaurants d\'entreprise de la zone des Milles, du Technopôle de l\'Arbois et du centre-ville',
-      'Sociétés de restauration collective sous contrat (Elior, Compass, Sodexo) sur le secteur',
+      'Sociétés de restauration collective sous contrat sur le secteur',
       'Restauration commerciale et traiteurs du Pays d\'Aix',
     ],
   },
