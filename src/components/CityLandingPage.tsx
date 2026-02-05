@@ -157,7 +157,11 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Fruits & Légumes</h3>
                 </div>
-                <p className="text-gray-600">De saison, récoltés à juste maturité, en 1ère et 4ème gamme. Calibres adaptés à la restauration collective.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Récoltés à juste maturité en fonction de vos jours de consommation</p>
+                  <p>• Une variété toute l'année sans rupture</p>
+                  <p>• Offre en 1ère gamme et 4ème gamme</p>
+                </div>
               </button>
 
               <button onClick={() => handleNavigate('/nos-produits/viandes')} className="bg-accent/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 text-left group">
@@ -167,7 +171,11 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Viandes</h3>
                 </div>
-                <p className="text-gray-600">Boeuf HVE/Bio, agneau du Lubéron, porc plein air de la Crau, taureau de Camargue AOP, volaille Label Rouge.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Bœuf en race à viande HVE et BIO</p>
+                  <p>• Porc plein air des Alpes et de la Crau HVE et BIO</p>
+                  <p>• Agneau du Lubéron, Taureau de Camargue AOP, Volailles Label Rouge</p>
+                </div>
               </button>
 
               <button onClick={() => handleNavigate('/nos-produits/cremeries')} className="bg-accent/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 text-left group">
@@ -177,7 +185,11 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Crémerie & Oeufs</h3>
                 </div>
-                <p className="text-gray-600">Fromages fermiers des Alpes du Sud, yaourts bio, oeufs plein air, Banon AOP. Direct producteurs.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Des produits en direct des Alpes du Sud</p>
+                  <p>• Fromages blancs, yaourts, fromages à la découpe</p>
+                  <p>• Œufs 100% plein air ou BIO</p>
+                </div>
               </button>
 
               <button onClick={() => handleNavigate('/nos-produits/epicerie')} className="bg-accent/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 text-left group">
@@ -187,20 +199,23 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                   </div>
                   <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors">Épicerie</h3>
                 </div>
-                <p className="text-gray-600">Riz de Camargue IGP, légumineuses équitables, farines bio, miel de Provence, confitures artisanales.</p>
+                <div className="space-y-1 text-gray-600 text-sm">
+                  <p>• Légumineuses équitables, semoules, pâtes, farines BIO</p>
+                  <p>• Riz de Camargue IGP</p>
+                  <p>• Miel, confitures, jus et gamme apéritive</p>
+                </div>
               </button>
             </div>
 
-            {data.products.highlights.length > 0 && (
-              <div className="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
-                <h3 className="font-bold text-primary mb-3">Spécialités disponibles pour {data.cityName} :</h3>
-                <ul className="space-y-2">
-                  {data.products.highlights.map((h, i) => (
-                    <li key={i} className="text-gray-700">• {h}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            <div className="bg-accent/30 p-6 rounded-lg border-l-4 border-primary">
+              <h3 className="font-bold text-primary mb-3">Quelques produits phares :</h3>
+              <ul className="space-y-2">
+                <li className="text-gray-700">• <strong>Taureau de Camargue AOP</strong> – Viande d'exception élevée en liberté dans les manades camarguaises</li>
+                <li className="text-gray-700">• <strong>Yaourts bio du Champsaur</strong> – Produits laitiers fermiers des Hautes-Alpes</li>
+                <li className="text-gray-700">• <strong>Riz de Camargue IGP</strong> – Rond, long ou étuvé, cultivé dans les rizières du delta du Rhône</li>
+                <li className="text-gray-700">• <strong>Légumes de saison du Vaucluse</strong> – Tomates, courgettes, aubergines récoltés à juste maturité</li>
+              </ul>
+            </div>
           </div>
         </section>
 
