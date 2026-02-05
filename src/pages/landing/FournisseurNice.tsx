@@ -32,7 +32,7 @@ const data: CityLandingData = {
       'Cuisine centrale de la Ville de Nice et cantines scolaires de la métropole Nice Côte d\'Azur',
       'EHPAD et établissements de santé des Alpes-Maritimes',
       'Restaurants d\'entreprise et sociétés de restauration collective sur Nice',
-      'Restauration commerciale, hôtellerie et CHR de la Promenade des Anglais au Vieux-Nice',
+      'Restauration commerciale et hôtellerie dans les Alpes-Maritimes',
       'Cantines de collèges et lycées du département des Alpes-Maritimes',
       'Structures médico-sociales : crèches, centres de rééducation, foyers',
     ],
