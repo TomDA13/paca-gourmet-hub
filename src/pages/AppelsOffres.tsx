@@ -1,10 +1,10 @@
+import SEO from '@/components/SEO';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
-import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { FileText, CheckCircle, BarChart3, Users, Clock, Shield, Building, Truck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { FileText, CheckCircle, BarChart3, Users, Clock, Shield, MapPin } from 'lucide-react';
 
 const AppelsOffres = () => {
   const navigate = useNavigate();
@@ -92,16 +92,38 @@ const AppelsOffres = () => {
           </div>
         </section>
 
-        {/* Services Section */}
+        {/* Key Figures Section */}
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
+            <div className="grid md:grid-cols-3 gap-8 text-center mb-16">
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="text-5xl font-bold text-primary mb-2">~150</div>
+                <p className="text-gray-600">producteurs partenaires</p>
+              </div>
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="text-5xl font-bold text-primary mb-2">6</div>
+                <p className="text-gray-600">départements PACA couverts</p>
+              </div>
+              <div className="bg-white p-8 rounded-xl shadow-sm">
+                <div className="text-5xl font-bold text-primary mb-2">100%</div>
+                <p className="text-gray-600">traçabilité garantie</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="absolute top-16 right-10 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-16 left-10 w-20 h-20 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">
               Notre accompagnement sur vos marchés publics
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-accent text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FileText className="w-8 h-8 text-primary" />
                 </div>
@@ -111,7 +133,7 @@ const AppelsOffres = () => {
                   communes, intercommunalités, départements, établissements publics.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-accent text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BarChart3 className="w-8 h-8 text-primary" />
                 </div>
@@ -121,7 +143,7 @@ const AppelsOffres = () => {
                   et préparer vos bilans annuels EGAlim.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-accent text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-primary" />
                 </div>
@@ -136,10 +158,10 @@ const AppelsOffres = () => {
         </section>
 
         {/* Lots Section */}
-        <section className="relative py-20 bg-white overflow-hidden">
-          <div className="absolute top-16 right-10 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-16 left-10 w-20 h-20 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+        <section className="relative py-20 bg-accent overflow-hidden">
+          <div className="absolute top-20 left-8 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-20 right-8 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
               Les lots alimentaires que nous couvrons
             </h2>
@@ -148,36 +170,36 @@ const AppelsOffres = () => {
               dans un rayon de 200 km maximum.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-accent/50 p-6 rounded-xl">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-lg font-bold text-primary mb-3">Fruits et légumes</h3>
-                <ul className="text-gray-700 space-y-2 text-sm">
+                <ul className="text-gray-600 space-y-2 text-sm">
                   <li>• Maraîchage du Vaucluse et de la Crau</li>
                   <li>• Fruits de saison du Lubéron</li>
                   <li>• Gamme bio certifiée</li>
                   <li>• Livraison à juste maturité</li>
                 </ul>
               </div>
-              <div className="bg-accent/50 p-6 rounded-xl">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-lg font-bold text-primary mb-3">Viandes</h3>
-                <ul className="text-gray-700 space-y-2 text-sm">
+                <ul className="text-gray-600 space-y-2 text-sm">
                   <li>• Boeuf HVE région Sud</li>
                   <li>• Taureau de Camargue AOP</li>
                   <li>• Agneau du Lubéron</li>
                   <li>• Porc plein air de la Crau</li>
                 </ul>
               </div>
-              <div className="bg-accent/50 p-6 rounded-xl">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-lg font-bold text-primary mb-3">Crémerie</h3>
-                <ul className="text-gray-700 space-y-2 text-sm">
+                <ul className="text-gray-600 space-y-2 text-sm">
                   <li>• Yaourts bio des Alpes du Sud</li>
                   <li>• Fromages fermiers locaux</li>
                   <li>• Banon AOP</li>
                   <li>• Oeufs plein air certifiés</li>
                 </ul>
               </div>
-              <div className="bg-accent/50 p-6 rounded-xl">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="text-lg font-bold text-primary mb-3">Épicerie</h3>
-                <ul className="text-gray-700 space-y-2 text-sm">
+                <ul className="text-gray-600 space-y-2 text-sm">
                   <li>• Riz de Camargue IGP</li>
                   <li>• Miel de Provence</li>
                   <li>• Légumineuses locales</li>
@@ -189,15 +211,14 @@ const AppelsOffres = () => {
         </section>
 
         {/* Why Localizz Section */}
-        <section className="relative py-20 bg-accent overflow-hidden">
-          <div className="absolute top-20 left-8 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-20 right-8 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">
               Pourquoi choisir Localizz pour vos marchés publics ?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start gap-4 bg-white p-5 rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 bg-accent/50 p-5 rounded-lg">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <Users className="w-5 h-5 text-primary" />
                 </div>
@@ -209,7 +230,7 @@ const AppelsOffres = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4 bg-white p-5 rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 bg-accent/50 p-5 rounded-lg">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <CheckCircle className="w-5 h-5 text-primary" />
                 </div>
@@ -221,9 +242,9 @@ const AppelsOffres = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4 bg-white p-5 rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 bg-accent/50 p-5 rounded-lg">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Truck className="w-5 h-5 text-primary" />
+                  <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-primary mb-2">Flux tendu garanti</h3>
@@ -233,9 +254,9 @@ const AppelsOffres = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4 bg-white p-5 rounded-lg shadow-sm">
+              <div className="flex items-start gap-4 bg-accent/50 p-5 rounded-lg">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Building className="w-5 h-5 text-primary" />
+                  <FileText className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-bold text-primary mb-2">Interlocuteur unique</h3>
@@ -250,9 +271,9 @@ const AppelsOffres = () => {
         </section>
 
         {/* Coverage Section */}
-        <section className="relative py-20 bg-white overflow-hidden">
-          <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+        <section className="relative py-20 bg-accent overflow-hidden">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
               Couverture géographique
             </h2>
@@ -260,36 +281,37 @@ const AppelsOffres = () => {
               Nous répondons aux appels d'offres et livrons les établissements publics
               des 6 départements de la région PACA.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                'Bouches-du-Rhône (13)',
-                'Var (83)',
-                'Alpes-Maritimes (06)',
-                'Vaucluse (84)',
-                'Alpes-de-Haute-Provence (04)',
-                'Hautes-Alpes (05)',
+                { name: 'Bouches-du-Rhône (13)', desc: 'Marseille, Aix, Arles et toutes les communes du département.' },
+                { name: 'Var (83)', desc: 'Toulon, Hyères, Draguignan et l\'ensemble du littoral varois.' },
+                { name: 'Alpes-Maritimes (06)', desc: 'Nice, Cannes, Antibes et les vallées de l\'arrière-pays.' },
+                { name: 'Vaucluse (84)', desc: 'Avignon, Carpentras, Cavaillon et le Comtat Venaissin.' },
+                { name: 'Alpes-de-Haute-Provence (04)', desc: 'Digne, Manosque, Forcalquier et le Lubéron.' },
+                { name: 'Hautes-Alpes (05)', desc: 'Gap, Briançon, Embrun et les vallées alpines.' },
               ].map((dept) => (
-                <span
-                  key={dept}
-                  className="bg-accent/50 px-5 py-3 rounded-full text-primary font-medium"
-                >
-                  {dept}
-                </span>
+                <div key={dept.name} className="bg-white p-5 rounded-xl shadow-sm">
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    <h3 className="font-bold text-primary">{dept.name}</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">{dept.desc}</p>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="relative py-20 bg-accent overflow-hidden">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">
               Questions fréquentes sur les marchés publics
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 max-w-4xl mx-auto">
               {faqItems.map((faq, i) => (
-                <div key={i} className="bg-white p-6 rounded-lg shadow-sm">
+                <div key={i} className="bg-accent/30 p-6 rounded-lg">
                   <h3 className="font-bold text-primary mb-2">{faq.question}</h3>
                   <p className="text-gray-700">{faq.answer}</p>
                 </div>

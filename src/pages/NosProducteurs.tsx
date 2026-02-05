@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Users, MapPin, Award, Handshake, Leaf, TrendingUp, ShieldCheck } from 'lucide-react';
+import { Users, MapPin, Award, Handshake, Leaf, TrendingUp } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const NosProducteurs = () => {
@@ -97,7 +97,7 @@ const NosProducteurs = () => {
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <div className="grid md:grid-cols-3 gap-8 text-center mb-16">
               <div className="bg-white p-8 rounded-xl shadow-sm">
                 <div className="text-5xl font-bold text-primary mb-2">~150</div>
@@ -119,7 +119,7 @@ const NosProducteurs = () => {
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute top-16 right-10 w-28 h-28 bg-secondary/20 rounded-full animate-pulse"></div>
           <div className="absolute bottom-16 left-10 w-20 h-20 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
               Notre philosophie : l'unique intermédiaire
             </h2>
@@ -161,7 +161,7 @@ const NosProducteurs = () => {
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-8 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-20 right-8 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">
               Nos partenaires producteurs
             </h2>
@@ -203,7 +203,7 @@ const NosProducteurs = () => {
         {/* Geographic Coverage Section */}
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-4 text-center">
               Nos terroirs de sourcing
             </h2>
@@ -273,7 +273,7 @@ const NosProducteurs = () => {
         {/* Quality Section */}
         <section className="relative py-20 bg-accent overflow-hidden">
           <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">
               Notre démarche qualité producteurs
             </h2>
@@ -333,11 +333,11 @@ const NosProducteurs = () => {
         {/* FAQ Section */}
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary/10 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-5xl">
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-7xl">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">
               Questions sur nos producteurs
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 max-w-4xl mx-auto">
               {faqItems.map((faq, i) => (
                 <div key={i} className="bg-accent/30 p-6 rounded-lg">
                   <h3 className="font-bold text-primary mb-2">{faq.question}</h3>
