@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import BannerSection from '@/components/BannerSection';
 import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
-import { Apple, Beef, Egg, Package, Truck, ShieldCheck, Users, Building } from 'lucide-react';
+import { Apple, Beef, Egg, Package, Truck, ShieldCheck, Users, Building, MessageSquare, FileText, Eye, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export interface CityLandingData {
@@ -264,6 +264,76 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
               >
                 Je commande mes produits locaux
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Communication Section */}
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="absolute top-16 left-10 w-28 h-28 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="container mx-auto px-8 lg:px-16 relative z-10 max-w-6xl">
+            <h2 className="text-3xl font-bold text-primary mb-12 text-center">
+              Valorisez vos produits locaux auprès de vos convives
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Image côté gauche */}
+              <div className="relative">
+                <div className="bg-accent/50 rounded-xl p-8 aspect-[4/3] flex items-center justify-center">
+                  <div className="text-center text-gray-500">
+                    <MessageSquare className="w-16 h-16 mx-auto mb-4 text-primary/40" />
+                    <p className="text-sm">Image à venir</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Points clés côté droit */}
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                  Nous vous fournissons des <strong>supports de communication</strong> pour valoriser vos approvisionnements locaux et donner du sens à chaque repas.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <FileText className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Fiches produits personnalisées</h3>
+                      <p className="text-gray-600 text-sm">D'où vient le produit, qui le fabrique et comment — tout est expliqué simplement.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Eye className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Transparence totale</h3>
+                      <p className="text-gray-600 text-sm">Vos convives savent exactement ce qu'ils mangent et d'où ça vient.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Heart className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Engagement apprécié</h3>
+                      <p className="text-gray-600 text-sm">Les convives adorent découvrir l'histoire derrière leurs repas — ça rend le local concret et visible.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 bg-accent/30 p-4 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <MessageSquare className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Valorisez votre démarche</h3>
+                      <p className="text-gray-600 text-sm">Affichez fièrement votre engagement local et responsable auprès de tous.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
