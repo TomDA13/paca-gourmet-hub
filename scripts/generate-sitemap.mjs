@@ -20,6 +20,12 @@ const ROUTES = [
   '/taureaux-de-camargue-aop/',
 ];
 
+// Pages SEO thématiques
+const THEMATIC_PAGES = [
+  '/appels-offres-marches-publics-paca/',
+  '/nos-producteurs-paca/',
+];
+
 // Landing pages SEO géographiques
 const LANDING_PAGES = [
   '/fournisseur-restauration-collective-marseille/',
@@ -43,6 +49,7 @@ const ARTICLES = [
 // Construit la liste finale
 const allUrls = [
   ...ROUTES,
+  ...THEMATIC_PAGES,
   ...LANDING_PAGES,
   ...ARTICLES.map((slug) => `/actualites/${slug}/`),
 ];
@@ -66,6 +73,8 @@ for (const path of Array.from(new Set(allUrls))) {
       path === '/taureaux-de-camargue-aop/' ? 0.8 :
       path.startsWith('/nos-produits/') ? 0.8 :
       path.startsWith('/fournisseur-') ? 0.8 :
+      path === '/appels-offres-marches-publics-paca/' ? 0.8 :
+      path === '/nos-producteurs-paca/' ? 0.8 :
       path === '/contact/' ? 0.7 :
       path.startsWith('/actualites/') ? 0.7 :
       0.6,

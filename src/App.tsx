@@ -24,6 +24,8 @@ import FournisseurAix from "./pages/landing/FournisseurAix";
 import FournisseurNice from "./pages/landing/FournisseurNice";
 import FournisseurToulon from "./pages/landing/FournisseurToulon";
 import FournisseurAvignon from "./pages/landing/FournisseurAvignon";
+import AppelsOffres from "./pages/AppelsOffres";
+import NosProducteurs from "./pages/NosProducteurs";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +50,9 @@ const App = () => (
           <Route path="/nos-coffrets-entreprises" element={<CoffretsEntreprises />} />
           <Route path="/loi-egalim" element={<LoiEgalim />} />
           <Route path="/taureaux-de-camargue-aop" element={<TaureauCamargue />} />
+          {/* Pages SEO thématiques */}
+          <Route path="/appels-offres-marches-publics-paca" element={<AppelsOffres />} />
+          <Route path="/nos-producteurs-paca" element={<NosProducteurs />} />
           {/* Landing pages SEO géographiques */}
           <Route path="/fournisseur-restauration-collective-marseille" element={<FournisseurMarseille />} />
           <Route path="/fournisseur-restauration-collective-aix-en-provence" element={<FournisseurAix />} />
