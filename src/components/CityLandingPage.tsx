@@ -230,12 +230,32 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
               {data.logistics.intro}
             </p>
             <div className="grid md:grid-cols-2 gap-6">
-              {data.logistics.points.map((point, i) => (
-                <div key={i} className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
-                  <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">{point}</p>
-                </div>
-              ))}
+              {/* Point 1: dynamique selon la ville */}
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">{data.logistics.points[0]}</p>
+              </div>
+              {/* Points 2-6: identiques pour toutes les villes */}
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Une seule livraison pour toutes vos gammes de produits</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Approvisionnement direct auprès de nos producteurs PACA pour une fraîcheur optimale</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Chaîne du froid garantie sur tout le trajet</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Agréage systématique : contrôle qualité avant chaque livraison</p>
+              </div>
+              <div className="flex items-start gap-3 bg-white p-5 rounded-lg shadow-sm">
+                <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                <p className="text-gray-700">Commandes passées en début de semaine, livraison en fin de semaine</p>
+              </div>
             </div>
           </div>
         </section>
