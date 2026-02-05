@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
 import SEO from "@/components/SEO";
+import RelatedPages from "@/components/RelatedPages";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -92,6 +94,11 @@ const Epicerie = () => {
         ]}
       />
       <Header />
+      <Breadcrumb items={[
+        { name: "Accueil", url: "/" },
+        { name: "Notre Offre", url: "/notre-offre" },
+        { name: "Épicerie", url: "/nos-produits/epicerie" }
+      ]} />
 
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">
         <div className="container mx-auto px-6 max-w-7xl">
@@ -191,6 +198,37 @@ const Epicerie = () => {
           </div>
         </div>
       </section>
+
+      {/* Maillage interne - Autres produits */}
+      <RelatedPages
+        title="Nos autres gammes"
+        pages={[
+          {
+            title: 'Fruits et Légumes',
+            description: 'Récoltés à juste maturité, de saison, 1ère et 4ème gamme',
+            href: '/nos-produits/fruits-et-legumes',
+            category: 'Produits',
+          },
+          {
+            title: 'Viandes',
+            description: 'Taureau de Camargue AOP, agneau du Lubéron, boeuf HVE et Bio',
+            href: '/nos-produits/viandes',
+            category: 'Produits',
+          },
+          {
+            title: 'Crémerie et Oeufs',
+            description: 'Yaourts bio des Alpes, Banon AOP, oeufs plein air',
+            href: '/nos-produits/cremeries',
+            category: 'Produits',
+          },
+          {
+            title: 'Loi EGAlim',
+            description: 'Conformité et accompagnement EGAlim en PACA',
+            href: '/loi-egalim',
+            category: 'Services',
+          },
+        ]}
+      />
 
       <BannerSection />
       <PhoneBanner />

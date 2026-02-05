@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import BannerSection from "@/components/BannerSection";
 import PhoneBanner from "@/components/PhoneBanner";
 import SEO from "@/components/SEO";
+import RelatedPages from "@/components/RelatedPages";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -93,6 +95,11 @@ const ViandesPoissons = () => {
         ]}
       />
       <Header />
+      <Breadcrumb items={[
+        { name: "Accueil", url: "/" },
+        { name: "Notre Offre", url: "/notre-offre" },
+        { name: "Viandes & Poissons", url: "/nos-produits/viandes" }
+      ]} />
 
       {/* Hero Section avec titre et description */}
       <section className="py-16 bg-gradient-to-br from-background to-secondary/5">
@@ -197,6 +204,37 @@ const ViandesPoissons = () => {
           </div>
         </div>
       </section>
+
+      {/* Maillage interne - Autres produits */}
+      <RelatedPages
+        title="Nos autres gammes"
+        pages={[
+          {
+            title: 'Fruits et Légumes',
+            description: 'Récoltés à juste maturité, de saison, 1ère et 4ème gamme',
+            href: '/nos-produits/fruits-et-legumes',
+            category: 'Produits',
+          },
+          {
+            title: 'Crémerie et Oeufs',
+            description: 'Yaourts bio des Alpes, Banon AOP, oeufs plein air',
+            href: '/nos-produits/cremeries',
+            category: 'Produits',
+          },
+          {
+            title: 'Épicerie',
+            description: 'Riz de Camargue IGP, miel de Provence, légumineuses locales',
+            href: '/nos-produits/epicerie',
+            category: 'Produits',
+          },
+          {
+            title: 'Taureau de Camargue AOP',
+            description: 'Viande d\'exception élevée en liberté dans les manades',
+            href: '/taureaux-de-camargue-aop',
+            category: 'Spécialité',
+          },
+        ]}
+      />
 
       <BannerSection />
       <PhoneBanner />
