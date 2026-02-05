@@ -131,7 +131,7 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                 className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
                 onClick={handleContact}
               >
-                Contactez-nous pour un devis
+                En savoir plus
               </Button>
             </div>
           </div>
@@ -256,6 +256,14 @@ const CityLandingPage = ({ data }: { data: CityLandingData }) => {
                 <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                 <p className="text-gray-700">Commandes passées en début de semaine, livraison en fin de semaine</p>
               </div>
+            </div>
+            <div className="text-center mt-8">
+              <Button
+                className="bg-gradient-to-r from-secondary to-secondary/90 hover:from-secondary/90 hover:to-secondary text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg py-4 px-8"
+                onClick={handleContact}
+              >
+                Je commande mes produits locaux
+              </Button>
             </div>
           </div>
         </section>
