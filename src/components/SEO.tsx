@@ -50,12 +50,26 @@ const SEO = ({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${SITE_BASE}/#organization`,
     "name": "Localizz",
     "url": SITE_BASE,
-    "logo": `${SITE_BASE}/affichesite.png`,
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${SITE_BASE}/affichesite.png`,
+      "width": 1200,
+      "height": 630
+    },
     "description": "La solution clé en main d'approvisionnement 100% local en région SUD PACA pour la restauration collective et commerciale",
+    "foundingDate": "2013",
+    "founder": {
+      "@type": "Person",
+      "name": "Olivier Da Rold"
+    },
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Région PACA",
+      "addressLocality": "Marseille",
+      "postalCode": "13000",
       "addressRegion": "Provence-Alpes-Côte d'Azur",
       "addressCountry": "FR"
     },
@@ -63,12 +77,35 @@ const SEO = ({
       "@type": "ContactPoint",
       "telephone": "+33782352127",
       "contactType": "Customer Service",
+      "email": "contact@localizz.fr",
       "areaServed": "FR-PAC",
       "availableLanguage": "French"
     },
     "sameAs": [
       "https://www.linkedin.com/company/localizz"
     ]
+  };
+
+  // WebSite Schema (for sitelinks search box)
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_BASE}/#website`,
+    "name": "Localizz",
+    "url": SITE_BASE,
+    "description": "Plateforme d'approvisionnement en produits locaux PACA pour la restauration collective",
+    "publisher": {
+      "@id": `${SITE_BASE}/#organization`
+    },
+    "inLanguage": "fr-FR",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${SITE_BASE}/?s={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
   };
 
   // LocalBusiness Schema (enhanced for food industry)
@@ -321,6 +358,165 @@ const SEO = ({
     }))
   } : null;
 
+  // Flagship Products Schema (for product-rich results)
+  const productsSchema = type !== 'article' ? {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Produits phares Localizz",
+    "description": "Sélection de produits locaux PACA labellisés pour la restauration collective",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Taureau de Camargue AOP",
+          "description": "Viande de taureau élevé en liberté dans les marais de Camargue. Appellation d'Origine Protégée.",
+          "image": `${SITE_BASE}/lovable-uploads/taureau-camargue.jpg`,
+          "brand": {
+            "@type": "Brand",
+            "name": "AOP Taureau de Camargue"
+          },
+          "category": "Viandes",
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "award": "AOP - Appellation d'Origine Protégée",
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "areaServed": "Provence-Alpes-Côte d'Azur",
+            "seller": {
+              "@id": `${SITE_BASE}/#organization`
+            }
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Riz de Camargue IGP",
+          "description": "Riz cultivé dans les rizières de Camargue. Indication Géographique Protégée.",
+          "brand": {
+            "@type": "Brand",
+            "name": "IGP Riz de Camargue"
+          },
+          "category": "Épicerie",
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "award": "IGP - Indication Géographique Protégée",
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "areaServed": "Provence-Alpes-Côte d'Azur"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Banon AOP",
+          "description": "Fromage de chèvre affiné dans des feuilles de châtaignier. Spécialité des Alpes-de-Haute-Provence.",
+          "brand": {
+            "@type": "Brand",
+            "name": "AOP Banon"
+          },
+          "category": "Crémerie",
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "award": "AOP - Appellation d'Origine Protégée",
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "areaServed": "Provence-Alpes-Côte d'Azur"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "name": "Agneau de Sisteron IGP",
+          "description": "Agneau élevé en plein air dans les Alpes de Haute-Provence et les Hautes-Alpes.",
+          "brand": {
+            "@type": "Brand",
+            "name": "IGP Agneau de Sisteron"
+          },
+          "category": "Viandes",
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "award": "IGP - Indication Géographique Protégée",
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "areaServed": "Provence-Alpes-Côte d'Azur"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Product",
+          "name": "Miel de Lavande de Provence IGP",
+          "description": "Miel récolté sur les champs de lavande de Provence. Saveur florale caractéristique.",
+          "brand": {
+            "@type": "Brand",
+            "name": "IGP Miel de Provence"
+          },
+          "category": "Épicerie",
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "award": "IGP - Indication Géographique Protégée",
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "areaServed": "Provence-Alpes-Côte d'Azur"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Product",
+          "name": "Huile d'Olive de Provence AOP",
+          "description": "Huile d'olive vierge extra produite en Provence. Fruité vert ou fruité mûr selon les variétés.",
+          "brand": {
+            "@type": "Brand",
+            "name": "AOP Huile d'Olive de Provence"
+          },
+          "category": "Épicerie",
+          "countryOfOrigin": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "award": "AOP - Appellation d'Origine Protégée",
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "areaServed": "Provence-Alpes-Côte d'Azur"
+          }
+        }
+      }
+    ]
+  } : null;
+
   // Breadcrumb Schema
   const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
     "@context": "https://schema.org",
@@ -377,6 +573,10 @@ const SEO = ({
         {JSON.stringify(organizationSchema)}
       </script>
 
+      <script type="application/ld+json">
+        {JSON.stringify(webSiteSchema)}
+      </script>
+
       {localBusinessSchema && (
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
@@ -398,6 +598,12 @@ const SEO = ({
       {faqSchema && (
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
+        </script>
+      )}
+
+      {productsSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(productsSchema)}
         </script>
       )}
 
