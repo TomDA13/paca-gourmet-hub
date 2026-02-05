@@ -1,5 +1,5 @@
 import SEO from '@/components/SEO';
-import Navbar from '@/components/Navbar';
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -68,7 +68,7 @@ const AppelsOffres = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Navbar />
+      <Header />
 
       <main className="flex-grow">
         {/* Hero Section */}
