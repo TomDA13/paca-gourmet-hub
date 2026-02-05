@@ -71,17 +71,32 @@ const SEO = ({
     ]
   };
 
-  // LocalBusiness Schema
+  // LocalBusiness Schema (enhanced for food industry)
   const localBusinessSchema = type !== 'article' ? {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "FoodEstablishment"],
+    "@id": `${SITE_BASE}/#organization`,
     "name": "Localizz",
-    "description": "Approvisionnement en produits locaux 100% PACA pour la restauration collective et commerciale. Fruits, légumes, viandes, crémerie, épicerie.",
+    "alternateName": "Localizz PACA",
+    "description": "Approvisionnement en produits locaux 100% PACA pour la restauration collective et commerciale. Fruits, légumes, viandes, crémerie, épicerie. Fournisseur EGAlim pour cantines, cuisines centrales, EHPAD.",
     "url": SITE_BASE,
     "telephone": "+33782352127",
     "email": "contact@localizz.fr",
+    "foundingDate": "2013",
+    "founder": {
+      "@type": "Person",
+      "name": "Olivier Da Rold"
+    },
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "minValue": 10,
+      "maxValue": 50
+    },
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Région PACA",
+      "addressLocality": "Marseille",
+      "postalCode": "13000",
       "addressRegion": "Provence-Alpes-Côte d'Azur",
       "addressCountry": "FR"
     },
@@ -93,7 +108,8 @@ const SEO = ({
     "areaServed": [
       {
         "@type": "AdministrativeArea",
-        "name": "Bouches-du-Rhône"
+        "name": "Bouches-du-Rhône",
+        "sameAs": "https://fr.wikipedia.org/wiki/Bouches-du-Rh%C3%B4ne"
       },
       {
         "@type": "AdministrativeArea",
@@ -120,7 +136,148 @@ const SEO = ({
     "image": `${SITE_BASE}/affichesite.png`,
     "sameAs": [
       "https://www.linkedin.com/company/localizz"
-    ]
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Produits locaux PACA",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Fruits et Légumes",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Fruits et légumes de saison PACA",
+                "description": "Récoltés à juste maturité, 1ère et 4ème gamme"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Viandes",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Taureau de Camargue AOP"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Agneau du Lubéron"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Boeuf HVE région Sud"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Crémerie",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Banon AOP"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Yaourts bio des Alpes du Sud"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Épicerie",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Riz de Camargue IGP"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Miel de Provence"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "knowsAbout": [
+      "Approvisionnement local",
+      "Circuit court",
+      "Restauration collective",
+      "Loi EGAlim",
+      "Produits locaux PACA",
+      "Marchés publics alimentaires",
+      "MAPA restauration"
+    ],
+    "slogan": "L'unique intermédiaire entre vous et les producteurs"
+  } : null;
+
+  // FoodService Schema (B2B food supply)
+  const foodServiceSchema = type !== 'article' ? {
+    "@context": "https://schema.org",
+    "@type": "FoodService",
+    "name": "Localizz - Service de fourniture alimentaire",
+    "description": "Service de livraison de produits alimentaires locaux pour la restauration collective : cantines scolaires, cuisines centrales, EHPAD, restaurants d'entreprise",
+    "provider": {
+      "@type": "Organization",
+      "name": "Localizz",
+      "@id": `${SITE_BASE}/#organization`
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Provence-Alpes-Côte d'Azur"
+    },
+    "serviceType": [
+      "Livraison produits locaux",
+      "Approvisionnement restauration collective",
+      "Réponse appels d'offres MAPA",
+      "Fourniture EGAlim"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services Localizz",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Livraison multiproduits",
+          "description": "Une seule livraison pour fruits, légumes, viandes, crémerie et épicerie"
+        },
+        {
+          "@type": "Offer",
+          "name": "Reporting EGAlim",
+          "description": "Statistiques d'achats pour piloter vos taux de produits durables"
+        },
+        {
+          "@type": "Offer",
+          "name": "Traçabilité complète",
+          "description": "Justificatifs d'origine transmis à chaque livraison"
+        }
+      ]
+    }
   } : null;
 
   // Article Schema (if type is article)
@@ -223,6 +380,12 @@ const SEO = ({
       {localBusinessSchema && (
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
+        </script>
+      )}
+
+      {foodServiceSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(foodServiceSchema)}
         </script>
       )}
 
